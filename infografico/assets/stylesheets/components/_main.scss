@@ -262,6 +262,8 @@ h3{
         font-family: 'VistaSansAltLight';
         font-size: em(14px);
         color: #f39200;
+        -webkit-font-smoothing: initial;
+        -moz-osx-font-smoothing: grayscale;
     }
 
     .small{
