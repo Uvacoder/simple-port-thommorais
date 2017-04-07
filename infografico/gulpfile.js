@@ -1,12 +1,19 @@
 var gulp      = require('gulp'),
-    print   = require('gulp-print'),
-    concat = require('gulp-concat'),
-    babel = require('gulp-babel')
-    browserSync = require('browser-sync');
+    concat    = require('gulp-concat'),
+    babel     = require('gulp-babel')
+    browserSync = require('browser-sync'),
+    uglify      = require('gulp-uglify');
+var minify = require('gulp-minify');
+
 
 gulp.task('js', function(){
-  gulp.src('assets/javascripts/**/*.js')
+  return gulp.src('assets/javascripts/**/*.js')
+    // .pipe(babel({
+    //   ignore: 'gulpfile.babel.js'
+    // }))
+    // .pipe(minify())
     .pipe(concat('all.js'))
+    // .pipe(uglify())
     .pipe(gulp.dest('public/'))
 })
 

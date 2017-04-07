@@ -275,41 +275,6 @@
   </main>
 
   <script src="public/all.js"></script>
-  <script>
 
-      var shuttles = anime({
-        targets: '.shuttle',
-        translateY: -30,
-        translateX: 50,
-        rotate: 14,
-        loop: true,
-        duration: function(target) {
-          return target.getAttribute('data-duration') * 100
-        }
-
-      })
-
-      var ballons = anime({
-        targets: '.ballon',
-        translateY: -30,
-        opacity: 0,
-        loop: true,
-        easing: 'easeInQuad',
-        delay: function(target, index) {
-          return index * 72
-        },
-        duration: function(el, i, l) {
-          return 720 + (i * 100);
-        },
-        elasticity: 72
-
-
-      })
-
-
-      
-
-
-  </script>
 </body>
 </html>
