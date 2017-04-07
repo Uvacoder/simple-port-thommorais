@@ -1169,10 +1169,10 @@ imagesLoaded(body, function() {
       var shuttles = anime({
         targets: '.shuttle',
         translateY: -73,
-        translateX: 50,
+        translateX:  anime.random(0, 40),
         rotate: 17,
         loop: true,
-        elasticity: 620,
+        elasticity: 800,
         direction: 'alternate',
         duration: function(target) {
           return target.getAttribute('data-duration') * 100
@@ -1183,7 +1183,7 @@ imagesLoaded(body, function() {
       var ballons = anime({
         
         targets: '.ballon',
-        translateY: -30,
+        translateY: -42,
         opacity: 0,
         loop: true,
         easing: 'easeInQuad',
@@ -1195,5 +1195,7 @@ imagesLoaded(body, function() {
         }
 
       })
+
+
 
 })

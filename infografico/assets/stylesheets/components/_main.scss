@@ -56,7 +56,13 @@ h3{
 	font-family: 'VistaSansAltBlack';
     color: $c-1;
     font-size: 14px;
-    text-transform: uppercase;
+    text-transform: uppercase;  
+
+    span{
+      white-space: nowrap;
+      display: inline-block
+    }
+
 }
 
 .link{
@@ -101,9 +107,10 @@ h3{
 
     .centered{
         font-size: em(14px);
-        line-height: 1.3em;
+        line-height: 1.4em;
         margin: 0 auto;
         max-width: 450px;
+        color: rgba(#000, 0.8)
     }
 }
 
