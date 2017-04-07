@@ -755,7 +755,8 @@ h3{
     .avaliacao{
         svg{
             position: relative;
-            left: -103%;
+            left: -50%;
+            @include transform(translateX(-50%));
         }
     }
 
