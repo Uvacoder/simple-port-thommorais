@@ -1,0 +1,73 @@
+<!doctype html>
+<html class="no-js" lang="">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title></title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/css?family=Arimo:400,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Droid+Serif:400,400i,700,700i" rel="stylesheet">
+    <link rel="stylesheet" href="public/style.css">
+  </head>
+  <body class="signup-login">
+
+    <div class="form-content">
+        <div class="login">
+
+            <header>
+
+              <a href="index.html" class="logo">
+                <img src="assets/images/logo/logo.png" />
+              </a>
+
+              <h1 itemprop="name" class="entry-title">
+                Cadastre-se
+
+                <a href="login.html">Já tenho cadastro</a>
+              </h1>
+              <p>Faça o cadastro para acessar áreas restritas do site e para receber diariamente as novidades de Coletiva.net no seu e-mail.</p>
+
+            </header>
+
+
+            <form name="registerform" id="registerform" action="/register/" method="post">
+              <div class="field">
+                  <label for="user_login">Nome de usuário</label>
+                  <input type="text" name="user_login" id="user_login" class="input" value="" size="20" required="">
+              </div>
+
+              <div class="field">
+                  <label for="user_email">E-mail</label>
+                  <input type="text" name="user_email" id="user_email" class="input" value="" size="20" required="">
+              </div>
+
+              <div class="field" >
+                  <label for="pass1">Senha</label>
+                  <input autocomplete="off" name="pass1" id="pass1" class="input" size="20" value="" type="password">
+              </div>
+
+              <div class="field">
+                  <label for="pass2">Confirmar senha</label>
+                  <input autocomplete="off" name="pass2" id="pass2" class="input" size="20" value="" type="password">
+              </div>
+
+
+              <label class="checkbox">
+                <input type="checkbox" name="tos" value="1" required=""> Li e aceito os <a href="/privacidade" target="_blank">termos de cadastro</a>.
+              </label>
+
+              <div class=" send">
+                <button  type="submit">Enviar</button>
+              </div>
+
+            </form>
+
+        </div>
+
+    </div>
+
+    <script src="public/main.js"></script>
+
+  </body>
+</html>

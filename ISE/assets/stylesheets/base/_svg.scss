@@ -1,0 +1,18 @@
+svg {
+  path{
+    stroke-linejoin: round;
+    fill: inherit;
+  }
+  line{
+    fill:none;
+    stroke-linejoin:round;
+    stroke-width:1;
+    stroke:inherit;
+  }
+
+  polyline{
+    stroke-dasharray: 0;
+    stroke-dashoffset: 0;
+  }
+
+}

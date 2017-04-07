@@ -1,0 +1,43 @@
+.form-search{
+  position: relative;
+  display: inline-block;
+  max-width: 714px;
+  width: calc(100% - 400px);
+  background-color: lighten($c1,9);
+  border-radius: 4px;
+
+  input{
+    border:0;
+    display: block;
+    width: 100%;
+    padding:20px 15px;
+    outline: none;
+    font-size: em(14px);
+    color: $cWhite;
+    background-color: transparent;
+  }
+
+  svg{
+    position: absolute;
+    right: 10px;
+    top: 10px;
+  }
+
+}
+
+@media (max-width : 414px) {
+
+  .form-search{
+    display: none;
+  }
+
+  .header .add{
+    display: none;
+  }
+
+  .header h1{
+    display: table;
+    margin: 0 auto;
+  }
+
+}

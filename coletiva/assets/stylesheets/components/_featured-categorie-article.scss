@@ -1,0 +1,71 @@
+.featured{
+  display: table;
+  width: 100%;
+  max-width: 100%;
+
+  > a{
+    float: left;
+    max-width: 60%;
+    margin-right: 20px;
+  }
+
+  figure{
+    margin: 0;
+    padding: 0;
+
+    img{
+      display: block;
+      width: 100%;
+      height: auto;
+    }
+  }
+
+  header{
+    margin: 20px 0 0;
+    color: $cWhite;
+
+    time,h1, .author a{
+      color: $cWhite;
+    }
+
+    svg{
+      fill: $cWhite;
+    }
+
+    h1{
+      margin: 20px 0;
+      padding-right: 20px;
+    }
+
+  }
+
+  .entry{
+    a{
+      color: $cWhite;
+      padding-right: 20px;
+    }
+  }
+
+}
+
+
+@media (max-width : 414px) {
+
+  .featured{
+    width: 90vw;
+    header, p{
+      padding: 10px;
+    }
+
+    h1{
+      margin-bottom: 0 !important
+    }
+  }
+
+  .featured > a{
+    float: none;
+    max-width: 100%;
+    margin-right:0;
+  }
+
+}

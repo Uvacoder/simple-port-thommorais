@@ -1,0 +1,157 @@
+
+<!doctype html>
+<html lang="pt-BR">
+
+  <head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Thom Morais  /  Font-end developer </title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <style>
+
+      @import url("//fonts.googleapis.com/css?family=Inconsolata:700");
+
+      body {
+        background-color: #111;
+        color: #fff;
+        display: flex;
+        align-items: center;
+        height: 100vh;
+      }
+      p {
+        font-family: Inconsolata, Source Code Pro, Consolas, monospace;
+        margin-left: calc(50vw - 6em);
+        font-size: 24px;
+        font-weight: bold;
+      }
+    </style>
+
+  </head>
+
+  <body >
+
+    <main>
+
+    </main>
+
+    <script>
+    const prefix = 'I work with '
+    const skills = [
+      'JavaScript',
+      'HTML & CSS',
+      'jQuery',
+      'Node.js'
+    ]
+
+    const delay = 2
+    const step = 1
+    const tail = 5
+    const timeout = 75
+
+
+    const p = document.createElement('p')
+    document.body.appendChild(p)
+
+    const colors = [
+      "rgb(110,64,170)",
+      "rgb(150,61,179)",
+      "rgb(191,60,175)",
+      "rgb(228,65,157)",
+      "rgb(254,75,131)",
+      "rgb(255,94,99)",
+      "rgb(255,120,71)",
+      "rgb(251,150,51)",
+      "rgb(226,183,47)",
+      "rgb(198,214,60)",
+      "rgb(175,240,91)",
+      "rgb(127,246,88)",
+      "rgb(82,246,103)",
+      "rgb(48,239,130)",
+      "rgb(29,223,163)",
+      "rgb(26,199,194)",
+      "rgb(35,171,216)",
+      "rgb(54,140,225)",
+      "rgb(76,110,219)",
+      "rgb(96,84,200)",
+    ]
+    function getRandomColor() {
+      return colors[Math.floor(Math.random() * colors.length)]
+    }
+    function getRandomChar() {
+      return String.fromCharCode(Math.random() * (127 - 33) + 33)
+    }
+    function getRandomColoredString(n) {
+      const fragment = document.createDocumentFragment()
+      for (let i = 0; i < n; i++) {
+        const char = document.createElement('span')
+        char.textContent = getRandomChar()
+        char.style.color = getRandomColor()
+        fragment.appendChild(char)
+      }
+      return fragment
+    }
+
+    const State = {
+      text: '',
+      prefixP: -tail,
+      skillI: 0,
+      skillP: 0,
+      direction: 'forward',
+      delay,
+      step,
+    }
+
+
+    function render() {
+      const skill = skills[State.skillI]
+
+      if (State.step) {
+        State.step--
+      } else {
+        State.step = step
+        if (State.prefixP < prefix.length) {
+          if (State.prefixP >= 0) {
+            State.text += prefix[State.prefixP]
+          }
+          State.prefixP++
+        } else {
+          if (State.direction === 'forward') {
+            if (State.skillP < skill.length) {
+              State.text += skill[State.skillP]
+              State.skillP++
+            } else {
+              if (State.delay) {
+                State.delay--
+              } else {
+                State.direction = 'backward'
+                State.delay = delay
+              }
+            }
+          } else {
+            if (State.skillP > 0) {
+              State.text = State.text.slice(0, -1)
+              State.skillP--
+            } else {
+              State.skillI = (State.skillI + 1) % skills.length
+              State.direction = 'forward'
+            }
+          }
+        }
+      }
+
+      p.textContent = State.text
+      p.appendChild(getRandomColoredString(
+        State.prefixP < prefix.length ?
+        Math.min(tail, tail + State.prefixP):
+        Math.min(tail, skill.length - State.skillP)))
+      setTimeout(render, timeout)
+    }
+    setTimeout(render, 500)
+
+    </script>
+  </body>
+
+</html>

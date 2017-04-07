@@ -1,0 +1,61 @@
+<!doctype html>
+<html class="no-js" lang="">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title></title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/css?family=Arimo:400,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Droid+Serif:400,400i,700,700i" rel="stylesheet">
+    <link rel="stylesheet" href="public/style.css">
+  </head>
+  <body class="signup-login">
+
+    <div class="form-content">
+        <div class="login">
+
+            <header>
+
+              <a href="index.html" class="logo">
+                <img src="assets/images/logo/logo.png" />
+              </a>
+
+              <h1 itemprop="name" class="entry-title">
+                Login
+
+                <a href="cadastro.html">Fazer cadastro</a>
+              </h1>
+
+            </header>
+
+
+            <form name="registerform" id="registerform" action="/register/" method="post">
+
+              <div class="field">
+                  <label for="user_email">E-mail</label>
+                  <input type="text" name="user_email" id="user_email" class="input" value="" size="20" required="">
+              </div>
+
+              <div class="field" >
+                  <label for="pass1">Senha</label>
+                  <input autocomplete="off" name="pass1" id="pass1" class="input" size="20" value="" type="password">
+                  <a href="#" class="forgot-pass">esquece sua senha?</a>
+              </div>
+
+              <div class="send">
+                <label class="checkbox">
+                  <input type="checkbox" name="tos" value="1" required=""> Lembrar-me
+                </label><button  type="submit">Logar</button>
+              </div>
+
+            </form>
+
+        </div>
+
+    </div>
+
+    <script src="public/main.js"></script>
+
+  </body>
+</html>

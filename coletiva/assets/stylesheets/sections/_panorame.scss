@@ -1,0 +1,26 @@
+.panorame.green{
+
+  .section-title{
+    margin-bottom: 40px;
+
+    &:before{
+      background-color: $c4;
+    }
+
+    .title{
+      color:  $c4;
+    }
+
+  }
+
+  .ballon{
+    color: $cWhite;
+    background: $c4;
+
+    &:before{
+      border-right: 30px solid $c4;
+
+    }
+  }
+
+}

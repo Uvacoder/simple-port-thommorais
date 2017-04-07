@@ -1,0 +1,65 @@
+/*********************************************************************
+*  =Pre-project
+*********************************************************************/
+/*
+    Definindo  o projeto
+
+    - Base line e tamanho da fonte
+    - Analisar o grid
+    - Browser suport
+*/
+
+@import "base/variables";
+@import "base/functions";
+@import "base/mixins";
+@import "base/helpers";
+@import "base/defaults";
+@import "base/svg";
+
+@import "sections/header";
+
+@import "sections/sections";
+@import "sections/logo-container";
+@import "sections/main-content";
+@import "sections/footer";
+@import "sections/colors";
+@import "sections/news";
+@import "sections/columns";
+@import "sections/articles";
+@import "sections/panorame";
+@import "sections/single";
+@import "sections/related";
+@import "sections/agenda";
+@import "sections/signup";
+@import "sections/form";
+
+
+@import "components/top-header";
+@import "components/search";
+@import "components/nav";
+@import "components/swiper";
+@import "components/slider";
+
+@import "components/post-author";
+@import "components/article-widget";
+@import "components/featured-categorie-article";
+
+@import "components/ballon";
+@import "components/breadcrumb";
+
+@import "components/icon";
+@import "components/ballon";
+@import "components/aside";
+@import "components/widget";
+@import "components/agenda-widget";
+@import "components/date-widget";
+@import "components/view-more";
+@import "components/banner";
+@import "components/add";
+@import "components/where-they-are";
+@import "components/specials";
+@import "components/section-title";
+@import "components/tag";
+@import "components/columnist";
+
+@import "sections/nav";

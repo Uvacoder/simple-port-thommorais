@@ -1,0 +1,34 @@
+.columns.purple{
+
+  .section-title{
+    margin-bottom: 40px;
+
+    &:before{
+      background-color: $c6;
+    }
+
+    .title{
+      color:  $c6;
+    }
+
+  }
+
+  .ballon{
+    color: $cWhite;
+    background: $c6;
+
+    &:before{
+      border-right: 30px solid $c6;
+
+    }
+  }
+
+
+}
+
+.columnists{
+  margin: 40px auto;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}

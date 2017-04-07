@@ -1,0 +1,26 @@
+.articles.orange{
+
+    .section-title{
+      margin-bottom: 40px;
+
+      &:before{
+        background-color: $c5;
+      }
+
+      .title{
+        color:  $c5;
+      }
+
+    }
+
+    .ballon{
+      color: $cWhite;
+      background: $c5;
+
+      &:before{
+        border-right: 30px solid $c5;
+
+      }
+    }
+
+}

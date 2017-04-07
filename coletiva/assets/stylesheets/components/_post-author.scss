@@ -1,0 +1,15 @@
+.author{
+  margin-right: 10px;
+  display: inline-block;
+  font-size: em(11px);
+  letter-spacing: 0.2px;
+
+  a{
+    color: $cBlack;
+  }
+
+  img{
+    position: relative;
+    top: 2px;
+  }
+}

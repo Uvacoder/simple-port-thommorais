@@ -1,0 +1,60 @@
+.widget{
+  margin-bottom: 20px;
+  display: table;
+  padding: 20px;
+  width: 100%;
+  max-width: 330px;
+  border-radius: 3px;
+
+  .section-title{
+    margin-bottom: 30px;
+    padding-right: 0;
+    font-size: em(24px);
+    color: $cWhite;
+    letter-spacing: 1.8px;
+
+    &:before{
+      display: none;
+    }
+
+    .title{
+      background-color: transparent;
+      font-weight: 600;
+    }
+
+  }
+
+
+    .ballon{
+      letter-spacing: 0;
+      background: $cWhite;
+
+      &:before{
+        border-right: 30px solid $cWhite;
+      }
+
+    }
+
+    .view-more{
+      color: inherit;
+
+      &:hover{
+        color: $cWhite;
+      }
+    }
+
+
+}
+
+
+@media (max-width : 414px) {
+  .widget{
+    .section-title{
+      .title{
+        width: auto;
+      }
+    }
+
+  }
+
+}

@@ -1,0 +1,68 @@
+.specials{
+  border: 2px solid $c1;
+
+  .entrys{
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: space-between;
+    font-size: em(15px);
+    color:  lighten($cBlack, 25);
+    letter-spacing: 0;
+    line-height: 18px;
+    @include transition(transform 0.2s linear);
+
+    img{
+      border-radius: 2px;
+    }
+
+    div{
+      margin-left: 10px;
+    }
+
+    time{
+      display: block;
+      margin-bottom: 5px;
+    }
+
+    &:hover{
+      color:  lighten($cBlack, 5);
+      @include transform(translate3d(5px, 0, 0));
+
+    }
+
+  }
+
+  .ballon{
+    background: $c1;
+
+    &:before{
+      border-right: 30px solid $c1;
+    }
+  }
+
+  .section-title{
+    color: $cWhite;
+
+    .ballon{
+      color: inherit;
+    }
+
+    span{
+      color: $c1;
+    }
+  }
+
+  .view-more{
+    border: 2px solid $c1;
+    color: $cWhite;
+    background: $c1;
+
+    &:hover{
+      background: $cWhite;
+      color: $c1;
+
+    }
+
+  }
+
+}

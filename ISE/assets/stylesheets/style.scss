@@ -1,0 +1,33 @@
+/*********************************************************************
+*  =Pre-project
+*********************************************************************/
+/*
+    Definindo  o projeto
+
+    - Base line e tamanho da fonte
+    - Analisar o grid
+    - Browser suport
+*/
+
+// @import "bourbon";
+@import "neat";
+
+@import "base/variables";
+@import "base/functions";
+@import "base/mixins";
+@import "base/helpers";
+@import "base/defaults";
+@import "base/svg";
+
+@import "core/reset";
+@import "core/basic";
+@import "core/typography";
+
+@import "calendar/flatpickr";
+
+@import "sections/main";
+@import "sections/header";
+@import "sections/user";
+//
+@import "components/course";
+@import "components/modal";

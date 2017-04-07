@@ -1,0 +1,25 @@
+.main-content{
+  max-width: 740px;
+  width: 57vw;
+
+  section{
+    margin: 20px 0;
+
+    + .add{
+      overflow: hidden;
+      margin-bottom: 40px;
+    }
+
+  }
+
+  &.no-sidebar{
+    max-width: 100%;
+    width: 100%;
+  }
+}
+
+@media (max-width : 768px) {
+  .main-content{
+    width: 66vw;
+  }
+}

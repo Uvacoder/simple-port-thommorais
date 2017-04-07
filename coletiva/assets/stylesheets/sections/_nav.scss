@@ -1,0 +1,209 @@
+.hamburger {
+    display: none;
+    width: 45px;
+    height: 30px;
+    position: relative;
+    margin: 0;
+    top: 2px;
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg);
+    -webkit-transition: 0.5s ease-in-out;
+    -moz-transition: 0.5s ease-in-out;
+    -o-transition: 0.5s ease-in-out;
+    transition: 0.5s ease-in-out;
+    cursor: pointer;
+    outline: none;
+    border: none;
+    background-color: transparent;
+}
+
+.hamburger span {
+    display: block;
+    position: absolute;
+    height: 3px;
+    width: 50%;
+    background-color: $c1;
+    opacity: 1;
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg);
+    -webkit-transition: 0.25s ease-in-out;
+    -moz-transition: 0.25s ease-in-out;
+    -o-transition: 0.25s ease-in-out;
+    transition: 0.25s ease-in-out;
+}
+
+.hamburger span:nth-child(even) {
+    left: 50%;
+    border-radius: 0 9px 9px 0;
+}
+
+.hamburger span:nth-child(odd) {
+    left: 0;
+    border-radius: 9px 0 0 9px;
+}
+
+.hamburger span:nth-child(1),
+.hamburger span:nth-child(2) {
+    top: 0;
+}
+
+.hamburger span:nth-child(3),
+.hamburger span:nth-child(4) {
+    top: 12px;
+}
+
+.hamburger span:nth-child(5),
+.hamburger span:nth-child(6) {
+    top: 24px;
+}
+
+.hamburger.open span:nth-child(1),
+.hamburger.open span:nth-child(6) {
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+
+.hamburger.open span:nth-child(2),
+.hamburger.open span:nth-child(5) {
+    -webkit-transform: rotate(-45deg);
+    -moz-transform: rotate(-45deg);
+    -o-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+}
+
+.hamburger.open span:nth-child(1) {
+    left: 3px;
+    top: 8px;
+}
+
+.hamburger.open span:nth-child(2) {
+    left: calc(50% - 5px);
+    top: 8px;
+}
+
+.hamburger.open span:nth-child(3) {
+    left: -50%;
+    opacity: 0;
+}
+
+.hamburger.open span:nth-child(4) {
+    left: 100%;
+    opacity: 0;
+}
+
+.hamburger.open span:nth-child(5) {
+    left: 3px;
+    top: 22px;
+}
+
+.hamburger.open span:nth-child(6) {
+    left: calc(50% - 5px);
+    top: 22px;
+}
+
+.for-mobile {
+  display: none;
+}
+
+@media (max-width : 414px) {
+
+    .hamburger{
+      display: block;
+    }
+
+    nav {
+        position: fixed;
+        top: 0;
+        left: 0;
+        min-height: 100vh;
+        z-index: 99;
+        display: block;
+        width: 80vw;
+        background-color: $cWhite;
+        @include transform(translate3d(-82vw, 0, 0));
+        @include transition(transform 0.2s linear);
+
+        .container {
+            display: block;
+            width: 100%;
+        }
+
+        .for-mobile {
+            display: block;
+            max-width: 100%;
+            width: 100%;
+            border-radius: 0;
+
+            input {
+                border-radius: 0;
+                color: $cWhite;
+            }
+
+            button {
+                position: absolute;
+                right: 0;
+                top: 0;
+                height: 100%;
+                cursor: pointer;
+
+                svg {
+                    position: relative;
+                    top: 2px;
+                    right: 2px;
+                }
+            }
+        }
+
+        ul li {
+            display: block !important;
+            width: 100%;
+
+            a {
+                display: block;
+                padding: 10px 15px;
+                border-bottom: 1px solid rgba(#000, 0.05);
+            }
+
+            &:last-child {
+                a {
+                    border-bottom: none;
+                }
+            }
+        }
+
+        .login {
+            display: table;
+            margin: 25px 0 0 10px;
+        }
+    }
+}
+
+.menu-opned {
+    nav {
+        @include transform(translate3d(0, 0, 0));
+    }
+
+    &:after {
+        position: fixed;
+        top: 0;
+        left: 0;
+        content: '';
+        min-height: 100vh;
+        width: 100vw;
+        z-index: 3;
+        background-color: rgba(#000, 0.7);
+    }
+
+    .hamburger {
+        position: absolute;
+        top: 10px;
+        right: 2.5vw;
+        z-index: 999;
+    }
+}

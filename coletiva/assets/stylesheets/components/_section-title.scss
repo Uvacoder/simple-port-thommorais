@@ -1,0 +1,43 @@
+.section-title{
+  position: relative;
+  z-index: 2;
+  display: flex;
+  align-items: center;
+  font-size: em(24px);
+  letter-spacing: 1.2px;
+  line-height: 1em;
+
+  &:before{
+    position: absolute;
+    top: 50%;
+    left: 80px;
+    @include transform(translate(0, -50%));
+    content: '';
+    height: 4px;
+    width: calc(100% - 80px);
+  }
+
+  .title{
+    position: relative;
+    padding-right: 15px;
+    text-transform: uppercase;
+    background-color: #FAFAFA;
+    font-weight: 600;
+  }
+
+}
+
+
+@media (max-width : 414px) {
+
+  .section-title{
+    max-width: 90vw;
+    margin: 0 auto;
+
+    .title{
+      width: 68vw;
+    }
+
+  }
+
+}

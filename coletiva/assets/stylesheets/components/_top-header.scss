@@ -1,0 +1,38 @@
+.top-header{
+  background-color: $cWhite;
+
+  .container{
+    height: 40px;
+    align-items: center;
+  }
+
+  li{
+    display: inline-block;
+  }
+
+  a{
+    padding: 5px 10px;
+    font-size: 12px;
+    color: #515151;
+    letter-spacing: 1px;
+    line-height: 1.5em;
+
+    &:hover{
+      color: #000;
+    }
+
+  }
+
+
+}
+
+
+
+@media (max-width : 414px) {
+  .top-header{
+    ul{
+      display: none;
+    }
+  }
+
+}

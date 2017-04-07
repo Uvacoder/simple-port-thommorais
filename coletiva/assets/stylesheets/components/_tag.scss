@@ -1,0 +1,21 @@
+.tags{
+  margin-top: 20px;
+
+  a{
+    margin: 3px;
+    font-size: em(12px);
+    line-height: 1em;
+    display: inline-block;
+    padding: 5px 10px;
+    border-radius: 15px;
+    background: #AEAEAE;
+    color: $cWhite;
+    text-transform: uppercase;
+    letter-spacing: 1.2pt;
+
+    &.blue{
+      background: $c1;
+    }
+
+  }
+}

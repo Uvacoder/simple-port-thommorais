@@ -1,0 +1,51 @@
+.add{
+  margin-bottom: 20px;
+
+  &.full-width{
+    margin:40px 0 0;
+  }
+
+
+  figure{
+      margin: 0 2px;
+  }
+
+  img{
+    margin: 0 auto;
+    display: block;
+    max-width: 100%;
+  }
+
+  small{
+    font-size: em(9px);
+    text-transform: uppercase;
+  }
+
+  a{
+    color: inherit;
+  }
+}
+
+
+@media (max-width : 768px) {
+  .adds{
+    &.add{
+      figure{
+        width: 48%;
+        margin: 0 1%;
+      }
+    }
+  }
+}
+
+@media (max-width : 414px) {
+  .adds{
+    display: block;
+    
+    &.add{
+      figure{
+        width: 100%;
+      }
+    }
+  }
+}
