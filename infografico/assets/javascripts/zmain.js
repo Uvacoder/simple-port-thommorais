@@ -59,15 +59,20 @@ imagesLoaded(body, function() {
       var ballons = anime({
         
         targets: '.ballon',
-        translateY: -42,
-        opacity: 0,
+        translateY: - anime.random(0, 80),
+        opacity: .6,
         loop: true,
-        easing: 'easeInQuad',
+        opacity: 0,
+        easing: 'easeInCubic',
+        direction: 'alternate',
+        loop: true,
+
         delay: function(target, index) {
           return index * 72
         },
+
         duration: function(el, i, l) {
-          return 720 + (i * 100);
+          return 720 + (i * 10);
         }
 
       })
