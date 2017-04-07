@@ -652,3 +652,155 @@ h3{
 @keyframes pie1 {
   50%,100% {stroke-dasharray: 50, 40,0,0;}
 }
+
+@media (max-width: 600px) {
+    main{
+        width: 96vw;
+    }
+    section{
+        padding: 10px;
+    }
+
+    .intro img{
+        position: relative;
+        top: 0;
+        height: auto;
+    }
+
+    .intro img.two{
+        top: 0;
+    }
+
+    .data .big strong{
+        height: 44px;
+        font-size: em(54px);
+    }
+    
+    .data .big strong:before{
+        width: 10px;
+        right: -10px;
+        display: none;
+    }
+
+
+    .data .big{
+        height: 50px;
+    }
+    .data .big i{
+        // margin-left: 10px;
+        // top: 5px;
+        // width: 10px;
+        // height: 50px;
+        display: none;
+    }
+
+    .data .small strong{
+        font-size: em(26px);
+    }
+
+    .data .smalls .small{
+        margin-bottom: 10px;
+    }
+
+    .shuttle, .four{
+        display: none;
+    }
+
+    .data .desc{
+        font-size: em(11px);
+    }
+
+    .data .cat:before{
+        width: 10px;
+        right: -10px;
+    }
+
+    .data .cat:after{
+        right: -13px;
+    }
+
+    .data .cat{
+        font-size: em(12px);
+        padding: 3px 5px 5px 30px
+    }
+    .data .small .cat{
+        margin-left: -20px;
+    }
+
+    .data .desc{
+        margin-left: 20px
+    }
+
+    .metodologia .one, .metodologia .two{
+        position:relative;
+        top: 0;
+        display: inline-block;
+        width: 48%;
+    }
+
+    .metodologia .one{
+        left: 0;
+    }
+    .metodologia .two{
+        right: 0;
+    }
+
+    .avaliacao h3{
+        position: relative;
+        top: 30px;
+    }
+
+    .avaliacao{
+        svg{
+            position: relative;
+            left: -103%;
+        }
+    }
+
+    .avaliacao .flex{
+        display: block;
+    }
+
+    .avaliacao .item,
+    .avaliacao .item.three{
+        display: table;
+        margin:0 auto 50px;
+    }
+
+    .list{
+        top: 0;
+    }
+
+    .oquedizem{
+        padding: 0;
+    }
+
+    .oquedizem h3{
+        margin: 40px auto
+    }
+
+    .oquedizem .collum{
+        width: 40%;
+    }
+
+    .oquedizem img.one{
+        position: relative;
+        margin-bottom: 20px;
+        width: 30%;
+    }
+
+    .oquedizem .collum.left li .graph{
+        left: -35px;
+        top: -100px;
+    }
+
+    .oquedizem .collum.right li .graph{
+        left: -94px;
+        top: -100px;
+    }
+
+    .oquedizem .collum li p{
+        margin-top: 60px;
+    }
+
+}
