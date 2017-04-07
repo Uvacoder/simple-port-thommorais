@@ -1,0 +1,24 @@
+/*********************************************************************
+*  =Pre-project
+*********************************************************************/
+/*
+    Definindo  o projeto
+
+    - Base line e tamanho da fonte
+    - Analisar o grid
+    - Browser suport
+*/
+
+@import "compass";
+
+@import "base/variables";
+@import "base/functions";
+@import "base/mixins";
+@import "base/helpers";
+@import "base/defaults";
+@import "base/svg";
+
+
+@import "core/*";
+@import "components/*";
+@import "sections/*";

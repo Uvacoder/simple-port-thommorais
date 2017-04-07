@@ -1,0 +1,38 @@
+
+@font-face {
+	font-family: 'VistaSansAltBlack';
+	src: url('../assets/fonts/VistaSansAltBlack.eot');
+	src: url('../assets/fonts/VistaSansAltBlack.eot?#iefix') format('embedded-opentype'),
+		url('../assets/fonts/VistaSansAltBlack.woff') format('woff'),
+		url('../assets/fonts/VistaSansAltBlack.ttf') format('truetype');
+	font-weight: 500;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'VistaSansAltLight';
+	src: url('../assets/fonts/VistaSansAltLight.eot');
+	src: url('../assets/fonts/VistaSansAltLight.eot?#iefix') format('embedded-opentype'),
+		url('../assets/fonts/VistaSansAltLight.woff') format('woff'),
+		url('../assets/fonts/VistaSansAltLight.ttf') format('truetype');
+	font-weight: 300;
+	font-style: normal;
+}
+
+
+
+html, body{
+  overflow-x: hidden;
+  font-family: 'VistaSansAltLight';
+}
+
+strong{
+  font-family: 'VistaSansAltBlack';
+  font-weight: normal;
+}
+
+.flex{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
