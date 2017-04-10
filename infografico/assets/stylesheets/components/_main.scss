@@ -262,6 +262,8 @@ h3{
         font-family: 'VistaSansAltLight';
         font-size: em(14px);
         color: #f39200;
+        -webkit-font-smoothing: initial;
+        -moz-osx-font-smoothing: grayscale;
     }
 
     .small{
@@ -753,7 +755,8 @@ h3{
     .avaliacao{
         svg{
             position: relative;
-            left: -103%;
+            left: 50%;
+            @include transform(translateX(-50%));
         }
     }
 
