@@ -1,0 +1,279 @@
+@charset "UTF-8";
+/*********************************************************************
+*  =Pre-project
+*********************************************************************/
+/*
+    Definindo  o projeto
+
+    - Base line e tamanho da fonte
+    - Analisar o grid
+    - Browser suport
+*/
+/*********************************************************************
+*  =Variables
+*
+*   Todas as variáveis globais do projeto ficam aqui.
+*********************************************************************/
+/*********************************************************************
+*  =Grid and typograph
+*********************************************************************/
+/*********************************************************************
+*  =Colors
+*********************************************************************/
+/*********************************************************************
+*  = icon path
+*********************************************************************/
+/*********************************************************************
+*  =Functions
+*********************************************************************/
+/*********************************************************************
+*  =Mixins
+*
+*  Mixins que facilitam a nossa vida.
+*********************************************************************/
+/*********************************************************************
+*  =Colorful links
+*
+*  Provide a set of colors for normal, :visited, :hover, and :active
+*  links, based on a base color. Should be used like this:
+*
+*  .my-class a {
+*    @include colorful-links(#abcdef);
+*  }
+*********************************************************************/
+/*********************************************************************
+*  =Pseudo icon mixin
+*********************************************************************/
+/*********************************************************************
+*  Retina sprite
+*********************************************************************/
+/*********************************************************************
+*  Font face
+*********************************************************************/
+/*********************************************************************
+*  =Font smooth
+*********************************************************************/
+/*********************************************************************
+*  =Verticaly centered
+*********************************************************************/
+/*********************************************************************
+*  =Clearfix
+*********************************************************************/
+/*********************************************************************
+*  =Helpers
+*
+*  Placeholders que facilitam a nossa vida.
+*********************************************************************/
+/*********************************************************************
+*  =Clearfix
+*********************************************************************/
+/*********************************************************************
+*  =Image replacement
+*********************************************************************/
+/*********************************************************************
+*  =Centered content
+*********************************************************************/
+/*********************************************************************
+*  =No underline
+*********************************************************************/
+/*********************************************************************
+*  =Ellipsis
+*********************************************************************/
+/*********************************************************************
+*  =Pseudo Icon
+*********************************************************************/
+/*********************************************************************
+*  =Shadow Before
+*********************************************************************/
+html, body {
+  margin: 0;
+  font-family: sans-serif;
+  overflow-x: hidden;
+  background: #FAFAFA;
+  min-height: 100%; }
+
+.flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center; }
+
+ul, li {
+  padding: 0;
+  margin: 0;
+  list-style: none; }
+
+a {
+  text-decoration: none; }
+
+*,
+*:after,
+*:before {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box; }
+
+div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+h1, h2, h3, h4, h5, h6 {
+  display: block;
+  width: 100%; }
+
+strong {
+  font-weight: 600; }
+
+time {
+  font-size: 11px;
+  font-weight: 600;
+  color: #000;
+  letter-spacing: 0.8px; }
+
+svg path {
+  stroke-linejoin: round;
+  fill: inherit; }
+
+svg line {
+  fill: none;
+  stroke-linejoin: round;
+  stroke-width: 1;
+  stroke: inherit; }
+
+svg polyline {
+  stroke-dasharray: 0;
+  stroke-dashoffset: 0; }
+
+.buttons {
+  position: absolute;
+  bottom: 2vw;
+  width: 100%; }
+
+button {
+  display: block;
+  margin: 10px auto;
+  padding: 10px 15px;
+  background: none;
+  border: none;
+  font-family: 'Arimo', sans-serif;
+  font-size: 14px;
+  color: #344999;
+  line-height: 18px;
+  width: 240px;
+  cursor: pointer; }
+  button.next, button.send {
+    border: 1px solid #344999; }
+
+.send {
+  background: #344999;
+  color: #fff; }
+
+.siema {
+  position: relative;
+  margin: 0 auto;
+  width: 100vw;
+  max-width: 320px;
+  font-family: 'Arimo', sans-serif; }
+  .siema .slide {
+    position: relative;
+    padding: 30px 20px;
+    height: 100vh; }
+    .siema .slide .logo {
+      display: block;
+      width: 90%;
+      height: auto;
+      margin: 30px auto 0; }
+    .siema .slide svg {
+      fill: #344999; }
+      .siema .slide svg.center {
+        margin: 0 auto;
+        max-height: 100px; }
+
+h2 {
+  margin: 40px 0 20px;
+  text-align: center;
+  font-weight: 600;
+  font-size: 18px;
+  color: #344999; }
+
+h3 {
+  margin: 20px 0;
+  font-size: 14px;
+  color: #373737;
+  text-align: center; }
+
+h4 {
+  margin: 20px 0;
+  font-size: 14px;
+  color: #373737;
+  text-align: center; }
+
+.field input {
+  display: block;
+  width: 100%;
+  border: 1px solid #344999;
+  padding: 0.8em 0.5em;
+  font-size: 16px;
+  color: #344999;
+  border-bottom: none; }
+
+.field:last-child input {
+  border-bottom: 1px solid #344999; }
+
+p {
+  font-weight: 400;
+  font-size: 13px;
+  color: #373737;
+  line-height: 17px; }
+  p.center {
+    margin: 0 auto;
+    text-align: center;
+    max-width: 240px; }
+
+.flex {
+  display: flex;
+  justify-content: space-between;
+  margin: 20px 0 40px; }
+  .flex p {
+    width: 170px; }
+  .flex svg {
+    height: 70px;
+    width: 94px;
+    fill: #344999; }
+  .flex > div {
+    width: 32%;
+    text-align: center; }
+    .flex > div p {
+      margin-top: 5px;
+      width: 100%;
+      height: 40px; }
+    .flex > div svg {
+      display: block;
+      margin: 0 auto;
+      width: 45px;
+      height: 45px; }
+  .flex.sharing {
+    justify-content: space-around; }
+    .flex.sharing > div svg {
+      height: 70px;
+      width: 70px; }
