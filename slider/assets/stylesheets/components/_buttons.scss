@@ -9,12 +9,13 @@ button{
     padding: 10px 15px;
     background: none;
     border:none;
-    font-family: 'Arimo', sans-serif;
+	font-family: 'VistaSansAltBlack';
     font-size: 14px;
     color: #344999;
     line-height: 18px;
     width: 240px;
     cursor: pointer;
+    text-transform: uppercase;
 
     &.next, &.send{
         border: 1px solid #344999;
