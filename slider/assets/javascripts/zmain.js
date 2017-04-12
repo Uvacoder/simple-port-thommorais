@@ -1,10 +1,14 @@
-const mySiema = new Tuto()
+// const mySiema = new Tuto()
+
+    var swiper = new Swiper('.siema');
+
+
 const nxts = document.querySelectorAll('.next')
 const skip = document.querySelectorAll('.skip')
 
 
 
-for(let nxt of nxts) nxt.addEventListener('click', () => mySiema.next() )
+//for(let nxt of nxts) nxt.addEventListener('click', () => mySiema.next() )
 
 for(let skp of skip) skp.addEventListener('click', (e) =>{
     e.preventDefault() 
