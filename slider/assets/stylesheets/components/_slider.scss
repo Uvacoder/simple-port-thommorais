@@ -5,14 +5,14 @@
     margin: 0 auto;
     width: 100vw;
     max-width: 320px;
-    font-family: 'Arimo', sans-serif;
+	font-family: 'VistaSansAltBlack';
+    background: rgba(0,0,0,.4);
 
     .slide{
         position: relative;
         padding: 30px 20px;
         height: 100vh;
         //background-image: radial-gradient(52% 100%, #FFFFFF 50%, #B2BAC5 97%);
-
 
         .logo{
             display: block;
@@ -23,6 +23,10 @@
 
         svg{
             fill: #344999;
+            transition: transform 0.3s 0.2s ease, opacity .2s .1s;
+            will-change: transform;
+            opacity: 0;
+            @include transform(scale3d(.1, .1, .1));
 
             &.center{
                 margin: 0 auto;
@@ -30,8 +34,21 @@
             }
 
         }
+
+        &.swiper-slide-active{
+            svg{
+                opacity: 1;
+                @include transform(scale3d(1, 1, 1))
+            }
+        }
+
     }
 }
+
+
+
+
+
 
 
 h2{
@@ -40,6 +57,7 @@ h2{
     font-weight: 600;
     font-size: 18px;
     color: #344999;
+    text-transform: uppercase;
 }
 
 h3{
@@ -68,17 +86,27 @@ h4{
         color: #344999;
         border-bottom: none;
         pointer-events: auto;
+        background: transparent;
+       -moz-appearance:    textfield;
+        -webkit-appearance: textfield;
+        appearance: textfield;
     }
 
     &:last-child{
         input{
             border-bottom: 1px solid #344999;
+
         }
     }
 
 }
 
-
+input::-webkit-input-placeholder,
+input:-moz-placeholder,
+input::-moz-placeholder,
+input:-ms-input-placeholder {
+   color: #344999;
+}
 
 
 p{
@@ -86,7 +114,8 @@ p{
     font-size: 13px;
     color: #373737;
     line-height: 17px;
-
+    font-family: 'VistaSansAltLight';
+    -webkit-font-smoothing: initial;
     &.center{
         margin: 0 auto;
         text-align: center;
@@ -108,6 +137,7 @@ p{
         height: 70px;
         width: 94px;
         fill: #344999;
+        transition:all 0.3s ease;
     }
 
     > div{

@@ -87,10 +87,10 @@
 *********************************************************************/
 html, body {
   margin: 0;
-  font-family: sans-serif;
   overflow-x: hidden;
   background: #FAFAFA;
-  min-height: 100%; }
+  min-height: 100%;
+  font-family: 'Lato', sans-serif; }
 
 .flex {
   display: flex;
@@ -167,6 +167,7 @@ svg polyline {
 .buttons {
   position: absolute;
   bottom: 2vw;
+  left: 0;
   width: 100%; }
 
 button {
@@ -175,12 +176,13 @@ button {
   padding: 10px 15px;
   background: none;
   border: none;
-  font-family: 'Arimo', sans-serif;
+  font-family: 'VistaSansAltBlack';
   font-size: 14px;
   color: #344999;
   line-height: 18px;
   width: 240px;
-  cursor: pointer; }
+  cursor: pointer;
+  text-transform: uppercase; }
   button.next, button.send {
     border: 1px solid #344999; }
 
@@ -193,7 +195,8 @@ button {
   margin: 0 auto;
   width: 100vw;
   max-width: 320px;
-  font-family: 'Arimo', sans-serif; }
+  font-family: 'VistaSansAltBlack';
+  background: rgba(0, 0, 0, 0.4); }
   .siema .slide {
     position: relative;
     padding: 30px 20px;
@@ -204,17 +207,31 @@ button {
       height: auto;
       margin: 30px auto 0; }
     .siema .slide svg {
-      fill: #344999; }
+      fill: #344999;
+      transition: transform 0.3s 0.2s ease, opacity .2s .1s;
+      will-change: transform;
+      opacity: 0;
+      -webkit-transform: scale3d(0.1, 0.1, 0.1);
+      -moz-transform: scale3d(0.1, 0.1, 0.1);
+      -ms-transform: scale3d(0.1, 0.1, 0.1);
+      transform: scale3d(0.1, 0.1, 0.1); }
       .siema .slide svg.center {
         margin: 0 auto;
         max-height: 100px; }
+    .siema .slide.swiper-slide-active svg {
+      opacity: 1;
+      -webkit-transform: scale3d(1, 1, 1);
+      -moz-transform: scale3d(1, 1, 1);
+      -ms-transform: scale3d(1, 1, 1);
+      transform: scale3d(1, 1, 1); }
 
 h2 {
   margin: 40px 0 20px;
   text-align: center;
   font-weight: 600;
   font-size: 18px;
-  color: #344999; }
+  color: #344999;
+  text-transform: uppercase; }
 
 h3 {
   margin: 20px 0;
@@ -236,16 +253,28 @@ h4 {
   font-size: 18px;
   color: #344999;
   border-bottom: none;
-  pointer-events: auto; }
+  pointer-events: auto;
+  background: transparent;
+  -moz-appearance: textfield;
+  -webkit-appearance: textfield;
+  appearance: textfield; }
 
 .field:last-child input {
   border-bottom: 1px solid #344999; }
+
+input::-webkit-input-placeholder,
+input:-moz-placeholder,
+input::-moz-placeholder,
+input:-ms-input-placeholder {
+  color: #344999; }
 
 p {
   font-weight: 400;
   font-size: 13px;
   color: #373737;
-  line-height: 17px; }
+  line-height: 17px;
+  font-family: 'VistaSansAltLight';
+  -webkit-font-smoothing: initial; }
   p.center {
     margin: 0 auto;
     text-align: center;
@@ -260,7 +289,8 @@ p {
   .flex svg {
     height: 70px;
     width: 94px;
-    fill: #344999; }
+    fill: #344999;
+    transition: all 0.3s ease; }
   .flex > div {
     width: 32%;
     text-align: center; }
