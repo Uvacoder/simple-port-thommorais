@@ -19,12 +19,11 @@ function loadJSON(file) {
 }
 
 // shortcut to select DOM elements
-var d = document.querySelector.bind(document)
-
-
+const d = document.querySelector.bind(document)
+let clone = ''
 
 // caching the article item template
-var newsTemplate        = d('#newsItem'),
+const newsTemplate      = d('#newsItem'),
             itemfig     = newsTemplate.content.querySelector('figure'),
             itemThumb   = newsTemplate.content.querySelector('figure img'),
             item        = newsTemplate.content.querySelector('article'),
@@ -59,8 +58,8 @@ if(news_json){
 
 
 // caching the article template
-var clone = '',
-    articleTemplate = d('#articleJson'),
+
+   let articleTemplate = d('#articleJson'),
             article = articleTemplate.content.querySelector('article'),
             titule  = articleTemplate.content.querySelector('h1'),
             hat     = articleTemplate.content.querySelector('h3'),

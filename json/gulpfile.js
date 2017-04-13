@@ -15,14 +15,15 @@ var src = {
 
 // Compile JS into
 gulp.task('js', function() {
-
     gulp.src(src.js)
-        .pipe(concat('main.js'))
-        // .pipe(uglify())
-        // .pipe(babel({
-        //     presets: ['babili']
-        // }))
-        .pipe(gulp.dest('./'))
+    .pipe(babel({
+        // ignore: 'gulpfile.babel.js'
+        "presets": ["es2015"]
+    }))
+    
+    .pipe(concat('main.js'))
+    .pipe(uglify())
+    .pipe(gulp.dest('./'))
 })
 
 
