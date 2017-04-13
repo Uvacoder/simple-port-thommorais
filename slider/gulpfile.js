@@ -19,9 +19,10 @@ var src = {
 gulp.task('scripts', function () {
   return gulp.src([src.js])
     .pipe(babel({
-      ignore: 'gulpfile.babel.js'
+    //   ignore: 'gulpfile.babel.js'
+        "presets": ["es2015"]
     }))
-    //.pipe(uglify())      
+    .pipe(uglify())      
     .pipe(concat('scripts.min.js'))
     .pipe(gulp.dest(src.dist))
 })
