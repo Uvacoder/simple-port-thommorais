@@ -18,19 +18,18 @@ function loadJSON(file) {
     })
 }
 
-// caching the article template
+// shortcut to select DOM elements
 var d = document.querySelector.bind(document)
+
+// caching the article template
 var clone = '',
     articleTemplate  = d('#articleJson'),
             article = articleTemplate.content.querySelector('article'),
             titule  = articleTemplate.content.querySelector('h1'),
             hat     = articleTemplate.content.querySelector('h3'),
-            date    = articleTemplate.content.querySelector('time'),
+            date    = articleTemplate.content.querySelector('time span'),
             subject = articleTemplate.content.querySelector('.assunto'),
             content = articleTemplate.content.querySelector('.article-wrp')
-
-
-
 
 loadJSON(article_json)
     .then(response => {
@@ -48,24 +47,26 @@ loadJSON(article_json)
 
     })
 
+// caching the article item template
 
-var newsTemplate    = d('#newsItem'),
-            item    = newsTemplate.content.querySelector('article'),
-            titule  = newsTemplate.content.querySelector('h2'),
-            hat     = newsTemplate.content.querySelector('h3'),
-            date    = newsTemplate.content.querySelector('time')
+var newsTemplate        = d('#newsItem'),
+            item        = newsTemplate.content.querySelector('article'),
+            itemTitle   = newsTemplate.content.querySelector('h2'),
+            itemHat     = newsTemplate.content.querySelector('h3'),
+            itemDate    = newsTemplate.content.querySelector('time span')
 
 loadJSON(news_json)
     .then(response => {
         let list = response.data.campos.lista
 
         Object.keys(list).forEach( i => {
+            
+            console.log(list[i].campos.info)
 
-            item.innerHTML    =  list[i].campos.info.titulo
-            hat.innerHTML     =  list[i].campos.info.chapeu
-            date.innerHTML    =  list[i].campos.info.dt_publi
-            subject.innerHTML =  list[i].campos.info.assunto
-            content.innerHTML =  list[i].campos.info.conteudo
+            itemTitle.innerHTML   =  list[i].campos.info.titulo
+            itemHat.innerHTML     =  list[i].campos.info.apoio
+            itemDate.innerHTML    =  list[i].campos.info.hora
+
 
             clone = document.importNode(newsTemplate.content, true)
             document.querySelector('body').appendChild(clone)
