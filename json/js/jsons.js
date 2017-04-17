@@ -56,7 +56,6 @@ if(news_json){
 }
 
 
-
 // caching the article template
 
    let articleTemplate = d('#articleJson'),
