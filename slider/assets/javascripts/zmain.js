@@ -15,7 +15,7 @@ for(let nxt of nxts) nxt.addEventListener('click', () => swiper.slideNext(true, 
 
 for(let skp of skip) skp.addEventListener('click', (e) =>{
     e.preventDefault() 
-    document.querySelector('#tuto').remove()
+    document.querySelector('#tutorial').remove()
 })
 
 
@@ -55,6 +55,7 @@ $(function(){
         if(nome, empresa, email){
             RdIntegration.post(data_array);
             alert('Obrigado por se inscrever! :)');
+            document.querySelector('#tutorial').remove()
         }
 
     });

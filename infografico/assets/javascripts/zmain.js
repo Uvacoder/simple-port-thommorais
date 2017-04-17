@@ -1,10 +1,10 @@
 let options = {
-  useEasing : true, 
-  useGrouping : true, 
-  separator : '.', 
-  decimal : ',', 
-  prefix : '', 
-  suffix : '%' 
+  useEasing : true,
+  useGrouping : true,
+  separator : '.',
+  decimal : ',',
+  prefix : '',
+  suffix : '%'
 }
 
 const body = document.querySelector('body')
@@ -34,7 +34,7 @@ for(el of countThis){
     let i = 1
     if(isInt(el.dataset.final)){
       i = 0
-    }	
+    }
 
    let demo = new CountUp(el, 100, el.dataset.final, i, 2.5, options);
     demo.start()
@@ -57,7 +57,7 @@ imagesLoaded(body, function() {
       })
 
       var ballons = anime({
-        
+
         targets: '.ballon',
         translateY: - anime.random(0, 80),
         opacity: .6,
