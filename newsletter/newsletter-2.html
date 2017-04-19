@@ -1,0 +1,889 @@
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="pt">
+
+<head>
+	<meta charset="utf-8">
+	<!-- utf-8 works for most cases -->
+	<meta name="viewport" content="width=device-width">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Maven</title>
+
+	<style type="text/css">
+		html,
+		body {
+			margin: 0 auto !important;
+			padding: 0 !important;
+			height: 100% !important;
+			width: 100% !important;
+		}
+		
+		img.fluid {
+			max-width: 100%;
+			height: auto;
+		}
+		
+		img {
+			-ms-interpolation-mode: bicubic;
+		}
+		 
+		body {
+			-webkit-font-smoothing: antialiased;
+			-moz-osx-font-smoothing: grayscale;
+			width: 100%;
+			padding: 0;
+			margin: 0;
+		}
+		
+		td[class="big-title"] {
+			font-size: 36px !important;
+			font-weight: lighter !important;
+			padding-bottom: 5px !important;
+			text-align: left;
+		}
+
+		td[class="title-footer"]{
+			font-family: Helvetica, 'Arial', 'sans-serif' !important;
+			font-size: 15px !important;
+			font-weight: bolder !important;
+			color: #919191;
+		}
+
+		td[class="number-footer"]{
+			font-family: Helvetica, 'Arial', 'sans-serif' !important;
+			font-size: 15px !important;
+			font-weight: lighter !important;
+			color: #919191;
+		}
+
+		td[class="email-footer"]{
+			font-size: 12px !important;
+			color: #0086D1 !important;	
+			font-family: Helvetica, 'Arial', 'sans-serif' !important;
+		}
+
+		td[class="email-footer"] a{
+			font-size: 12px !important;
+			color: #0086D1 !important;	
+		}
+		
+		td[class="little-title"] {
+			font-size: 17px !important;
+			font-weight: lighter !important;
+			text-align: left;
+		}
+
+
+		td[class="little-cat"] {
+			font-weight: bolder !important;
+			font-size: 12px !important;
+			color: #0086D1 !important;
+		}
+
+		td[class="link-post-extra"] {
+			font-size: 12px !important;
+			color: #0086D1 !important;
+		}
+
+		td[class="link-post-extra"] a{
+			font-size: 12px !important;
+			color: #0086D1 !important;
+			font-weight: bolder;
+		}
+
+		td[class="little-text"]{
+			font-size: 14px !important;
+			color: #919191;
+		}
+
+		td[class="article-body"] {
+			font-size: 16px !important;
+			line-height: 1.3em !important;
+			text-align: justify;
+		}
+
+		td[class="rights"] {
+			line-height: 1.2em;
+		}
+
+		td[class="rights"] a{
+			font-size: 14px !important;
+			color: #0086D1 !important;	
+		}
+		
+		table td {
+			border-collapse: collapse;
+   			border-spacing: 0;
+		}
+		/* What it does: Hover styles for buttons */
+		
+		.button-td,
+		.button-a {
+			transition: all 100ms ease-in;
+		}
+		
+		.button-td:hover,
+		.button-a:hover {
+			background: #555555 !important;
+			border-color: #555555 !important;
+		}
+		/* Media Queries */
+		
+		@media screen and (max-width: 600px) {
+			.fluid,
+			.fluid-centered {
+				max-width: 100% !important;
+				height: auto !important;
+				Margin-left: auto !important;
+				Margin-right: auto !important;
+			}
+
+			.fluid-extra{
+				width: 320px !important;
+			}
+			
+			table[class="w320"] {
+				width: 320px !important;
+			}
+
+			td[class="big-title"] {
+				font-size: 26px !important;
+			}
+
+
+			td[class="padding"] {
+				width: 25px !important;
+			}
+
+			td[class="extras"] table{
+				margin-bottom: 25px!important; 
+			}
+
+		}
+	</style>
+</head>
+
+<body margin="0" padding="0" cellspacing="0" cellpadding="0" align="center" style="margin: 0; padding: 0; -webkit-font-smoothing: antialiased !important; border-collapse:collapse;"
+	bgcolor="#F8F8F8">
+
+	<table align="center" border="0" cellspacing="0" cellpadding="0" width="100%" bgcolor="#F8F8F8">
+		<tr>
+			<td valign="top" style="margin: 0; -webkit-font-smoothing: antialiased !important;" align="center" width="100%">
+
+				<table align="center" border="0" cellspacing="0" cellpadding="0" width="100%">
+
+					<tr>
+						<td valign="top" style="width: 100%; max-width: 600px !important; font-size:0" align="center" height="10" width="100%" bgcolor="#0086D1"></td>
+					</tr>
+
+					<tr>
+						<td valign="top" style="font-size: 12px; font-family: Helvetica, 'arial', 'sans-serif'; font-size: 11px;color: #FFFFFF; width: 100%; max-width: 600px !important;"
+							align="center" width="100%" bgcolor="#0086D1">
+							<a href="#" style="font-size: 12px; font-family: Helvetica, 'arial', 'sans-serif';font-size: 11px;color: #FFFFFF;">Visualize este email no navegador</a>
+						</td>
+					</tr>
+
+					<tr>
+						<td valign="top" style="width: 100%; max-width: 600px !important;font-size:0;" align="center" height="10" width="100%" bgcolor="#0086D1"></td>
+					</tr>
+
+
+					<!-- ########### HEADER -->
+					<tr>
+						<td valign="top" style="font-size: 16px; font-family: Helvetica, 'arial', 'sans-serif'; font-size: 11px;color: #FFFFFF; width: 100%  !important; padding: 0" align="center" width="100%" bgcolor="#f8f8f8">
+							<table align="center" border="0" cellspacing="0" cellpadding="0" width="600"class="w320">
+								<!-- ########### margem -->
+								<tr>
+									<td valign="top" colspan="2" height="40" style="font-size:0;" align="center"></td>
+								</tr>
+								<!-- ########### fim margem -->
+								<tr>
+									<td width="50%" align="left" valign="top" style="padding:0; font-size:0;">
+										<a href="http://maven.com.br" target="_blank">
+											<img src="n-imgs/logo-azul.png" width="159" height="56" alt="Maven Inventing" border="0" class="fluid">
+										</a>
+									</td>
+
+									<td width="120" align="right" valign="middle" style="padding:0; text-align: right; color:#373737">
+										Publicação digital para jornais,<br /> revistas e documentos
+									</td>
+								</tr>
+
+								<!-- ########### margem -->
+								<tr>
+									<td valign="top" colspan="2" height="40" style="padding:0; font-size:0;"></td>
+								</tr>
+								<!-- ########### fim margem -->
+							</table>
+						</td>
+					</tr>
+					<!-- ########### Fim  do HEADER -->
+		
+
+
+					<!-- ########### Imagem do artigo principal -->
+					<tr>
+						<td valign="top" style="width: 100%  !important; padding: 0"
+							align="center" width="100%" bgcolor="#f8f8f8">
+							<table align="center" border="0" cellspacing="0" cellpadding="0" width="100%">
+								<tr>
+									<td valign="top" style="padding:0; text-align: center">
+										<img src="http://placehold.it/600x300" width="600" height="300" alt="alt_text" border="0" class="fluid">
+									</td>
+								</tr>
+							</table>
+						</td>
+					</tr>
+					<!-- ########### Fim imagem do artigo principal -->
+
+					<!-- ########### Inicio do artigo principal -->
+					<tr>
+						<td valign="top" style=" width: 100%  !important; padding: 0; max-width: 600px;" align="center" width="100%">
+							<table align="center" border="0" cellspacing="0" cellpadding="0" width="600" bgcolor="#FFFFFF" class="w320" style=" border: 1px solid #E9E9E9; border-top: none;">
+
+								<!-- ########### margem -->
+								<tr>
+									<td valign="top" colspan="3" height="40"></td>
+								</tr>
+								<!-- ########### fim margem -->
+
+								<!-- ########### Inicio categoria -->
+								<tr>
+									<td class="padding" valign="top" width="50"></td>
+									<td valign="top" style="font-family: Helvetica, 'arial', 'sans-serif';  color: #373737; padding:0; text-align: left" height="30" class="little-cat">
+										DESTAQUE DO MÊS
+									</td>
+									<td class="padding" valign="top" width="50"></td>
+								</tr>
+								<!-- ########### FIM da categoria -->
+
+								<!-- ########### Inicio titulo -->
+								<tr>
+									<td class="padding" valign="top" width="50"></td>
+									<td valign="top" style="font-family: Helvetica, 'arial', 'sans-serif';  color: #373737; padding:0; text-align: left" class="big-title">
+										A fotografia dá cor, expressão e urgência a uma notícia
+									</td>
+									<td class="padding" valign="top" width="50"></td>
+								</tr>
+								<!-- ########### FIM do titulo -->
+
+
+								<!-- ########### margem -->
+								<tr>
+									<td valign="top" colspan="3" height="20"></td>
+								</tr>
+								<!-- ########### fim margem -->
+
+
+								<!-- ########### Inicio corpo do artigo -->
+								<tr>
+									<td class="padding" valign="top" width="50"></td>
+									<td valign="top" style="font-family: Helvetica, 'arial', 'sans-serif';  color: #373737; padding:0; text-align: left" class="article-body">
+										<strong>Um estímulo visual chega ao cérebro 60 mil vezes mais rápido que um estímulo de texto. E além disso, 90% das informações que retemos é visual.</strong>
+										<p> Destaque os fatos, publique a cobertura de um evento, ilustre suas histórias na publicação digital usando
+											a funcionalidade Galeria de Fotos na área administrativa do sistema! Não sabe como ativar essa funcionalidade?
+											Não se preocupe, nós aproveitamos que ontem (08) foi o dia nacional da fotografia e separamos para
+											você um passo a passo de como atualizar suas edições com ainda mais informação em imagens.</p>
+									</td>
+									<td class="padding" valign="top" width="50"></td>
+								</tr>
+								<!-- ########### FIM do corpo do titulo -->
+
+
+								<!-- ########### margem -->
+								<tr>
+									<td valign="top" colspan="3" height="30"></td>
+								</tr>
+								<!-- ########### fim margem -->
+
+
+								<!-- ########### Link do artigo principal -->
+								<tr>
+									<td class="padding" valign="top" width="50"></td>
+									<td valign="top">
+
+										<table align="left" border="0" cellspacing="0" cellpadding="0" width="180">
+
+											<tr>
+												<td valign="top" style="border-radius: 3px; background: #0086D1; text-align: center;" width="180" class="button-td">
+													<a href="http://www.google.com" style="background: #0086D1; border: 15px solid #0086D1; font-family: sans-serif; font-size: 13px; line-height: 1.1; text-align: center; text-decoration: none; display: block; border-radius: 3px; font-weight: bold;"
+														class="button-a">
+														<span style="color:#ffffff">Continuar lendo</span>
+													</a>
+												</td>
+											</tr>
+
+										</table>
+
+									</td>
+									<td class="padding" valign="top" width="50"></td>
+								</tr>
+								<!-- ########### Fim link do artigo principal -->
+
+
+								<!-- ########### margem -->
+								<tr>
+									<td valign="top" colspan="3" height="50"></td>
+								</tr>
+								<!-- ########### fim margem -->
+
+
+								<!-- ########### borda -->
+								<tr>
+									<td class="padding" valign="top" width="50"></td>
+									<td valign="top" height="2" bgcolor="#0086D1"></td>
+									<td class="padding" valign="top" width="50"></td>
+								</tr>
+								<!-- ########### fim borda -->
+
+							</table>
+						</td>
+					</tr>
+					<!-- ########### FIM  do artigo principal -->
+
+					<!-- ########### margem -->
+					<tr>
+						<td valign="top" height="30"></td>
+					</tr>
+					<!-- ########### fim margem -->					
+
+					<!-- ########### Inicio categoria -->
+					<tr>
+						<td valign="top" style="font-family: Helvetica, 'arial', 'sans-serif';  color: #373737; padding:0; text-align: left" class="little-cat">
+							<table align="center" border="0" width="600" cellspacing="0" cellpadding="0" class="w320">
+								<!-- ########### Inicio categoria -->
+								<tr>
+									<td valign="top" style="font-family: Helvetica, 'arial', 'sans-serif';  color: #373737; padding:0; text-align: left" height="30" class="little-cat">
+										DESTAQUE DO MÊS
+									</td>
+								</tr>
+								<!-- ########### FIM da categoria -->
+							</table>
+						</td>
+					</tr>
+					<!-- ########### FIM da categoria -->
+					
+					<!-- ########### Inicio outros artigos {GRID} -->
+					<tr>
+						<td valign="top" style=" width: 100%  !important; padding: 0; max-width: 600px;" align="center" width="100%">
+							<table align="center" border="0" cellspacing="0" cellpadding="0" width="600" class="w320" >
+								<tr>
+									<td valign="top" style=" width: 100%  !important; padding: 0; max-width: 600px;" align="center" width="100%" class="extras">
+										
+										<!-- ########### Inicio post extra  -->
+										<table align="left" border="0" cellspacing="0" cellpadding="0" width="275" bgcolor="#FFFFFF" class="w320"  style=" border: 1px solid #E9E9E9;">
+											
+											<!-- ########### Inicio da imagem do post extra -->											
+											<tr>
+												<td valign="top" colspan="3" style=" width: 100%  !important; padding: 0;" align="center" width="100%">
+													<img src="http://placehold.it/275x150" width="275" height="150" alt="alt_text" border="0" class="fluid-extra">
+												</td>
+											</tr>
+											<!-- ########### Fim da imagem do post extra -->											
+
+											<!-- ########### margem -->
+											<tr>
+												<td valign="top" colspan="3" height="25"></td>
+											</tr>
+											<!-- ########### fim margem -->		
+
+											<!-- ########### Inicio do corpo do post extra -->
+											<tr>
+												<!-- margem lateral -->
+												<td valign="top" width="20"></td>
+												<!-- fim margem lateral -->
+
+												<td valign="top" style="font-family: Helvetica, 'arial', 'sans-serif';  color: #373737; padding:0; text-align: left" height="30" class="little-title">
+													[E-book] Guia definitivo das métricas e indicadores para RH
+												</td>
+												
+												<!-- margem lateral -->
+												<td valign="top" width="25"></td>
+												<!-- fim margem lateral -->
+											
+					
+											</tr>
+											<!-- ########### Fim do corpo do post extra -->
+
+											<!-- ########### margem -->
+											<tr>
+												<td valign="top" colspan="3" height="15"></td>
+											</tr>
+											<!-- ########### fim margem -->
+
+											<!-- ########### Inicio do link do post extra -->
+											<tr>
+												<!-- margem lateral -->
+												<td valign="top" width="25"></td>
+												<!-- fim margem lateral -->
+
+												<td valign="top" style="font-family: Helvetica, 'arial', 'sans-serif';  color: #373737; padding:0; text-align: left" height="30" class="link-post-extra">
+													<a style="font-size: 12px !important;color: #0086D1 !important;" href="#">Ler mais  →</a>
+												</td>
+												
+												<!-- margem lateral -->
+												<td valign="top" width="25"></td>
+												<!-- fim margem lateral -->
+											
+											</tr>
+											<!-- ########### Fim do link do post extra -->
+
+
+											<!-- ########### margem -->
+											<tr>
+												<td valign="top" colspan="3" height="15"></td>
+											</tr>
+											<!-- ########### fim margem -->
+
+											<!-- ########### Inicio borda -->
+											<tr>
+												<td valign="top" width="25"></td>
+												<td valign="top" height="2" bgcolor="#0086D1"></td>
+												<td valign="top" width="25"></td>
+											</tr>
+											<!-- ########### fim borda -->
+										</table>
+										<!-- ########### Fim post extra  -->
+
+										<!-- ########### Inicio post extra  -->
+										<table align="right" border="0" cellspacing="0" cellpadding="0" width="275" bgcolor="#FFFFFF" class="w320"  style=" border: 1px solid #E9E9E9;">
+											
+											<!-- ########### Inicio da imagem do post extra -->											
+											<tr>
+												<td valign="top" colspan="3" style=" width: 100%  !important; padding: 0;" align="center" width="100%">
+													<img src="http://placehold.it/275x150" width="275" height="150" alt="alt_text" border="0" class="fluid-extra">
+												</td>
+											</tr>
+											<!-- ########### Fim da imagem do post extra -->											
+
+											<!-- ########### margem -->
+											<tr>
+												<td valign="top" colspan="3" height="25"></td>
+											</tr>
+											<!-- ########### fim margem -->		
+
+											<!-- ########### Inicio do corpo do post extra -->
+											<tr>
+												<!-- margem lateral -->
+												<td valign="top" width="25"></td>
+												<!-- fim margem lateral -->
+
+												<td valign="top" style="font-family: Helvetica, 'arial', 'sans-serif';  color: #373737; padding:0; text-align: left" height="30" class="little-title">
+													[E-book] Guia definitivo das métricas e indicadores para RH
+												</td>
+												
+												<!-- margem lateral -->
+												<td valign="top" width="25"></td>
+												<!-- fim margem lateral -->
+											
+					
+											</tr>
+											<!-- ########### Fim do corpo do post extra -->
+
+											<!-- ########### margem -->
+											<tr>
+												<td valign="top" colspan="3" height="15"></td>
+											</tr>
+											<!-- ########### fim margem -->
+
+											<!-- ########### Inicio do link do post extra -->
+											<tr>
+												<!-- margem lateral -->
+												<td valign="top" width="25"></td>
+												<!-- fim margem lateral -->
+
+												<td valign="top" style="font-family: Helvetica, 'arial', 'sans-serif';  color: #373737; padding:0; text-align: left" height="30" class="link-post-extra">
+													<a style="font-size: 12px !important;color: #0086D1 !important;" href="#">Ler mais  →</a>
+												</td>
+												
+												<!-- margem lateral -->
+												<td valign="top" width="25"></td>
+												<!-- fim margem lateral -->
+											
+											</tr>
+											<!-- ########### Fim do link do post extra -->
+
+
+											<!-- ########### margem -->
+											<tr>
+												<td valign="top" colspan="3" height="15"></td>
+											</tr>
+											<!-- ########### fim margem -->
+
+											<!-- ########### Inicio borda -->
+											<tr>
+												<td valign="top" width="25"></td>
+												<td valign="top" height="2" bgcolor="#0086D1"></td>
+												<td valign="top" width="25"></td>
+											</tr>
+											<!-- ########### fim borda -->
+										</table>
+										<!-- ########### Fim post extra  -->
+
+									</td>
+								</tr>
+							</table>
+						</td>
+					</tr>
+					<!-- ########### FIM de outros artigos {GRID} -->
+
+					<!-- ########### margem -->
+					<tr>
+						<td valign="top" height="50"></td>
+					</tr>
+					<!-- ########### fim margem -->					
+
+					<!-- ########### Inicio outros artigos {Linha pequenos} -->
+					<tr>
+						<td valign="top" style=" width: 100%  !important; padding: 0; max-width: 600px;" align="center" width="100%">
+							<table align="center" border="0" cellspacing="0" cellpadding="0" width="600" class="w320" >
+								<!-- ########### Inicio post extra  -->
+								<tr>
+									<td valign="top" style=" width: 100%  !important; padding: 0; max-width: 600px;" align="center" width="100%">
+										
+										<table align="center" border="0"  cellspacing="0" cellpadding="0" width="600" bgcolor="#FFFFFF" class="w320"  style=" border: 1px solid #E9E9E9;">
+											
+											<tr>
+												<!-- ########### Inicio da imagem do post extra -->											
+												<td valign="top" style=" padding: 0;" align="left" width="100">
+													<img src="http://placehold.it/100x100" width="100" height="100" alt="alt_text" border="0" class="fluid">
+												</td>
+												<!-- ########### Fim da imagem do post extra -->
+
+												<!-- margem lateral -->
+												<td valign="top" style=" padding: 0;" align="left" width="15"></td>
+												<!-- fim margem lateral -->
+
+												<!-- ########### Inicio do corpo do post extra -->
+												<td valign="top">
+												
+		
+													<table align="left" border="0" cellspacing="0" cellpadding="0" >
+														
+														<tr>
+															<td valign="top" style=" padding: 0;" height="10"></td>
+														</tr>
+
+														<tr>
+															<td height="60" valign="top" style="font-family: Helvetica, 'arial', 'sans-serif';  color: #373737; padding:0; text-align: left"  class="little-title">
+																[E-book] Guia definitivo das métricas e indicadores para RH
+															</td>
+														</tr>
+
+
+														<tr>
+															<td valign="top" style="font-family: Helvetica, 'arial', 'sans-serif';  color: #373737; padding:0; text-align: left" height="30" class="link-post-extra">
+																<a style="font-size: 12px !important;color: #0086D1 !important;" href="#">Ler mais  →</a>
+															</td>
+														</tr>
+													</table>
+
+												</td>
+												<!-- ########### Fim do corpo do post extra -->
+
+												<td valign="top" width="1" height="100%" bgcolor="#0086D1" align="right" style="font-size:0;"></td>
+
+											</tr>
+												<!-- ########### Fim do corpo do post extra -->
+
+										</table>
+									</td>
+								</tr>
+								<!-- ########### Fim post extra  -->
+							</table>
+						</td>
+					</tr>
+					<!-- ########### FIM de outros artigos {Linha pequenos} -->
+
+					<!-- ########### margem -->
+					<tr>
+						<td valign="top" height="50"></td>
+					</tr>
+					<!-- ########### fim margem -->					
+
+					<!-- ########### Inicio outros artigos {Linha grandes} -->
+					<tr>
+						<td style=" width: 100%  !important; padding: 0; max-width: 600px;" align="center" width="100%">
+							<table align="center" border="0" cellspacing="0" cellpadding="0" width="600" class="w320" >
+								<tr>
+									
+									<td valign="top" style=" width: 100%  !important; padding: 0; max-width: 600px;" align="center" width="100%">
+										
+										<!-- ########### Inicio post extra  -->
+										<table align="left" border="0" cellspacing="0" cellpadding="0" width="600" bgcolor="#FFFFFF" class="w320"  style=" border: 1px solid #E9E9E9;">
+											
+											<tr>										
+
+												<!-- ########### Inicio do corpo do post extra -->
+												<td valign="top" width="100%" >
+													
+													<table align="left" border="0" cellspacing="0" cellpadding="0" >
+														<!-- ########### Inicio da imagem do post extra -->											
+														<td valign="top" align="left" width="275">
+															<img src="http://placehold.it/275x180" width="275" height="180" alt="alt_text" border="0" class="fluid-extra">
+														</td>
+														<!-- ########### Fim da imagem do post extra -->	
+													</table>
+
+													<table align="right" border="0" cellspacing="0" cellpadding="0" width="320">
+														
+														<tr>
+															<td colspan="3" valign="top" style=" padding: 0;" height="20"></td>
+														</tr>
+
+														<tr>
+															<td valign="top" style=" padding: 0;" width="25"></td>
+															<td valign="top" style="font-family: Helvetica, 'arial', 'sans-serif';  color: #373737; padding:0; text-align: left"  class="little-title">
+																[E-book] Guia definitivo das métricas e indicadores para RH
+															</td>
+															<td valign="top" style=" padding: 0;" width="25"></td>
+														</tr>
+
+														<tr>
+															<td colspan="3" valign="top" style=" padding: 0;" height="10"></td>
+														</tr>
+
+														<tr>
+															<td valign="top" style=" padding: 0;" width="25"></td>
+															<td valign="top" style="font-family: Helvetica, 'arial', 'sans-serif';  color: #373737; padding:0; text-align: left"  class="little-text">
+																Destaque os fatos, publique a cobertura de um evento, ilustre suas histórias na publicação digital.
+															</td>
+															<td valign="top" style=" padding: 0;" width="25"></td>															
+														</tr>
+
+														<tr>
+															<td colspan="3" valign="top" style=" padding: 0;" height="10"></td>
+														</tr>
+
+														<tr>
+															<td valign="top" style=" padding: 0;" width="10"></td>
+															<td valign="top" style="font-family: Helvetica, 'arial', 'sans-serif';  color: #373737; padding:0; text-align: left" height="30" class="link-post-extra">
+																<a style="font-size: 12px !important;color: #0086D1 !important;"  href="#">Ler mais  →</a>
+															</td>
+															<td valign="top" style=" padding: 0;" width="10"></td>
+														</tr>
+													</table>
+												</td>
+
+												<!-- ########### Fim do corpo do post extra -->
+
+												<!-- margem lateral -->
+												<td valign="top" style=" padding: 0;" align="right" width="15"></td>
+												<!-- fim margem lateral -->
+
+
+											</tr>
+											<!-- ########### Fim da imagem do post extra -->											
+
+
+										</table>
+										<!-- ########### Fim post extra  -->
+
+									</td>
+
+								</tr>
+							</table>
+						</td>
+					</tr>
+					<!-- ########### FIM de outros artigos {Linha grandes} -->
+
+					<!-- ########### margem -->
+					<tr>
+						<td valign="top" height="50"></td>
+					</tr>
+					<!-- ########### fim margem -->					
+
+					<!-- ########### borda para o footer -->
+					<tr>
+						<td style=" width: 100%  !important; padding: 0; max-width: 600px;" align="center" width="100%">
+
+							<table align="center" border="0" cellspacing="0" cellpadding="0" width="600" class="w320" >
+								<tr>
+									<td height="2" width="100%"  bgcolor="#d1d1d1"></td>
+								</tr>
+							</table>
+
+						</td>
+					</tr>
+					<!-- ########### fim borda para o footer -->		
+
+					<!-- ########### margem -->
+					<tr>
+						<td valign="top" height="50"></td>
+					</tr>
+					<!-- ########### fim margem -->					
+
+					<!-- ########### Footer -->
+					<tr>
+						<td style=" width: 100%  !important; padding: 0; max-width: 600px;" align="center" width="100%" class="footer-tables">
+
+							<table align="center" border="0" cellspacing="0" cellpadding="0" width="600" class="w320" >
+								
+								<tr>
+									<td style=" padding: 0;" align="left" width="20"></td>
+									<td style="adding: 0; max-width: 600px;" align="center">
+										
+										<!-- ########### Esquerda Footer -->
+										<table align="left" border="0" cellspacing="0" cellpadding="0" width="275" class="w320">
+											<tr>
+												<td style="font-size: 15px;color: #919191" class="title-footer">VENDAS</td>
+											</tr>
+											
+											<!-- ########### margem -->
+											<tr>
+												<td height="5"></td>
+											</tr>
+											<!-- ########### fim margem -->	
+
+											<tr>
+												<td style="font-size: 15px;color: #919191" class="number-footer" height="20">(51) 3029.5080</td>
+											</tr>
+
+
+											<!-- ########### margem -->
+											<tr>
+												<td height="2"></td>
+											</tr>
+											<!-- ########### fim margem -->	
+
+
+											<tr>
+												<td style="font-size: 15px;color: #919191" class="email-footer" height="20">
+													<a style="font-size: 12px !important;color: #0086D1 !important;" href="mailto:comercial@maven.com.br">comercial@maven.com.br</a>
+												</td>
+											</tr>
+
+											<!-- ########### margem -->
+											<tr>
+												<td height="30"></td>
+											</tr>
+											<!-- ########### fim margem -->	
+
+											<tr>
+												<td style="font-size: 15px;color: #919191" class="title-footer">SUPORTE TÉCNICO</td>
+											</tr>
+
+											<!-- ########### margem -->
+											<tr>
+												<td height="5"></td>
+											</tr>
+											<!-- ########### fim margem -->	
+
+											<tr>
+												<td style="font-size: 15px;color: #919191" class="number-footer" height="20">(51) 3061.0380</td>
+											</tr>
+
+											<!-- ########### margem -->
+											<tr>
+												<td height="2"></td>
+											</tr>
+											<!-- ########### fim margem -->	
+
+											<tr>
+												<td style="font-size: 15px;color: #919191" class="email-footer" height="20">
+													<a style="font-size: 12px !important;color: #0086D1 !important;" href="mailto:comercial@maven.com.br">comercial@maven.com.br</a>
+												</td>
+											</tr>
+
+											<!-- ########### margem -->
+											<tr>
+												<td height="25"></td>
+											</tr>
+											<!-- ########### fim margem -->	
+
+										</table>
+										<!-- ########### Fim Esquerda Footer -->
+
+										<!-- ########### Direita Footer -->
+										<table align="right" border="0" cellspacing="0" cellpadding="0" width="275" class="w320">
+											<tr>
+												<td style="padding: 0;" align="left" width="46">
+													<img src="n-imgs/maven-footer.png" alt="Maven" />
+												</td>
+												<td style="padding: 0;" align="left" width="15"></td>
+												<td style="font-family: Arial, Helvetica, sans-serif; padding: 0; max-width: 600px; color: #919191" class="rights" align="left" width="220">
+													Maven Inventing Solutions. Todos os direitos reservados. 
+													<a style="font-size: 12px !important;color: #0086D1 !important;" href="#" target="_blank">www.maven.com.br </a>
+												</td>
+											</tr>
+
+											<!-- ########### margem -->
+											<tr>
+												<td height="30" colspan="3"></td>
+											</tr>
+											<!-- ########### fim margem -->	
+
+
+											<tr>
+												<td colspan="3" style="font-size: 15px;color: #919191" class="title-footer">NOS ACOMPANHE</td>
+											</tr>
+
+											<!-- ########### margem -->
+											<tr>
+												<td height="20" colspan="3"></td>
+											</tr>
+											<!-- ########### fim margem -->	
+
+											<tr>
+												<td colspan="3">
+													<table align="left" border="0" cellspacing="0" cellpadding="0" width="275" class="w320">
+														<tr>
+															<td>
+																<a href="" target="_balnk">
+																	<img src="n-imgs/facebook.png" alt="Facebook">
+																</a>
+															</td>
+															<td>
+																<a href="" target="_balnk">
+																	<img src="n-imgs/twitter.png" alt="Twitter">
+																</a>
+															</td>
+															<td>
+																<a href="" target="_balnk">
+																	<img src="n-imgs/youtube.png" alt="Youtube">
+																</a>
+															</td>
+															<td>
+																<a href="" target="_balnk">
+																	<img src="n-imgs/google-plus.png" alt="Google Plus">
+																</a>
+															</td>
+															<td>
+																<a href="" target="_balnk">
+																	<img src="n-imgs/linkedin.png" alt="Linkedin">
+																</a>
+															</td>
+														</tr>
+													</table>
+												</td>
+											</tr>
+
+											<!-- ########### margem -->
+											<tr>
+												<td height="50"></td>
+											</tr>
+											<!-- ########### fim margem -->	
+
+										</table>
+										<!-- ########### Fim Direita Footer -->
+
+
+									</td>
+									<td style=" padding: 0;" align="left" width="20"></td>
+								</tr>
+
+							</table>
+
+						</td>
+					</tr>
+					<!-- ########### fim do footer -->					
+
+
+				</table>
+
+			</td>
+		</tr>
+	</table>
+
+
+</body>
+
+</html>
