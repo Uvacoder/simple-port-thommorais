@@ -1,0 +1,16 @@
+.ratings{
+    @extend .flex;
+    align-items: center;
+    width: 75px;
+
+    svg{
+        height: 16px;
+        width: 16px;
+        fill: $c3;
+
+        &.active{
+            fill: $c6;
+        }
+
+    }
+}
