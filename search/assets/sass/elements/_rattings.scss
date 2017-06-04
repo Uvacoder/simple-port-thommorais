@@ -15,7 +15,7 @@
             
             @for $i from 0 through $steps {
                 &:nth-child(#{$i}) {
-                    @include animation(stretch-bounce .5s #{$i * 80}ms ease-in-out forwards);
+                    animation :stretch-bounce .5s #{$i * 80}ms ease-in-out forwards;
                 }
             }
         }

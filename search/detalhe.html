@@ -12,22 +12,15 @@
 
     </head>
     <body>
-
-        <style>
-            #header{
-                background-image: url(assets/images/bg.png);
-            }
-        </style>
-
         <div id="app" class="initial"> 
-            <header id="header">
+            <header id="header" class="bgplx">
 
                 <form class="search wrp flex">
 
                     <div class="select field">
-                        <select>
-                            <option>Restaurante</option>
-                            <option>Hoteis</option>
+                        <select id="select">
+                            <option value="restaurant">Restaurante</option>
+                            <option value="hotel">Hoteis</option>
                         </select>
                     </div>
 
@@ -186,5 +179,5 @@
     </svg>
 
 
-    <script src="public/app.js"></script>
+    <script async src="public/app.js"></script>
 </html>

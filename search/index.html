@@ -14,25 +14,29 @@
     <body>
 
         <style>
-            #header{
-                background-image: url(assets/images/bg.png);
-            }
+ 
         </style>
 
         <div id="app" class="initial"> 
-            <header id="header">
+            <header id="header" class="bgplx">
 
                 <form class="search wrp flex">
 
                     <div class="select field">
-                        <select>
-                            <option>Restaurante</option>
-                            <option>Hoteis</option>
+                        <select id="select">
+                            <option value="restaurant">Restaurante</option>
+                            <option value="hotel">Hoteis</option>
                         </select>
                     </div>
 
                     <div class="field input">
-                        <input type="search" name="search" id="search-input" placeholder="Localização ou nome do restaurante" />
+                        <input 
+                                type="search" 
+                                name="search" 
+                                id="search-input"
+                                data-placeholderhotel="Localização ou nome do Hotel"
+                                data-placeholderrestaurante="Localização ou nome do Restaurante"
+                        />
                     </div>
 
                     <div class="field">
@@ -158,5 +162,5 @@
     </svg>
 
 
-    <script src="public/app.js"></script>
+    <script async src="public/app.js"></script>
 </html>
