@@ -3,6 +3,7 @@ function parallax(parallaxEl) {
   // page current position
     let scrolledHeight = window.pageYOffset
     
+
     let limit = parallaxEl.offsetTop + parallaxEl.offsetHeight
 
     if (scrolledHeight > parallaxEl.offsetTop && scrolledHeight <= limit)

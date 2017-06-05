@@ -1,4 +1,4 @@
-const places = new Swiper('#places', {
+const places = new Swiper('.places', {
     pagination: '.swiper-pagination',
     paginationClickable: true,
     slidesPerView: 2,
