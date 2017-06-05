@@ -1,0 +1,37 @@
+
+.select{
+  position: relative;
+  padding-right: 5px;
+  border-radius: 5px;
+  overflow: hidden;
+  background: $cWhite;
+
+  &:after {
+    position: absolute;
+    right: 12px;
+    top: 50%;
+    margin-top: -6px;
+    transform: rotate(-45deg);
+    content: '';
+    width: 5px;
+    height: 5px;
+    pointer-events: none;
+    border-width: 1px;
+    border-style: solid;
+    border-color: transparent transparent $cBlack $cBlack;
+  }
+
+  select {
+    box-sizing: content-box;
+    background: transparent;
+    border: 0;
+    outline: 0;
+    padding: 10px;
+    width: 120%;
+    user-select: none;
+    appearance: none;
+
+  }
+
+
+}

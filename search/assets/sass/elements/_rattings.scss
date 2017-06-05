@@ -1,0 +1,43 @@
+  $steps:6;
+
+.ratings{
+    @extend .flex;
+    align-items: center;
+    width: 75px;
+
+    svg{
+        height: 16px;
+        width: 16px;
+        fill: rgba($c2, 0.3);
+
+        &.active{
+            fill: $c6;
+            
+            @for $i from 0 through $steps {
+                &:nth-child(#{$i}) {
+                    animation :stretch-bounce .5s #{$i * 80}ms ease-in-out forwards;
+                }
+            }
+        }
+
+    }
+}
+
+
+@-webkit-keyframes stretch-bounce {
+    0% {
+        -webkit-transform: scale(1);
+    }
+    25% {
+        -webkit-transform: scale(1.5);
+    }
+    50% {
+        -webkit-transform: scale(0.9);
+    }
+    75% {
+        -webkit-transform: scale(1.2);
+    }
+    100% {
+        -webkit-transform: scale(1);
+    }
+}
