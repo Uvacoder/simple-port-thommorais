@@ -53,9 +53,10 @@ gulp.task('scripts', () => {
 
     const mergeJs = gulp.src([`${dirs.src}/js/avendor/**`])
           .pipe(concat('app.js'))
+          .pipe(uglify())
           .pipe(gulp.dest(`${dirs.dest}`))
-
-    return merge(customJs, mergeJs)
+  
+      return merge(customJs, mergeJs)
 
 })
 

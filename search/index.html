@@ -30,13 +30,7 @@
                     </div>
 
                     <div class="field input">
-                        <input 
-                                type="search" 
-                                name="search" 
-                                id="search-input"
-                                data-placeholderhotel="Localização ou nome do Hotel"
-                                data-placeholderrestaurante="Localização ou nome do Restaurante"
-                        />
+                        <input type="search" name="search" id="search-input" placeholder="Localização ou nome do restaurante" />
                     </div>
 
                     <div class="field">
@@ -161,6 +155,12 @@
 
     </svg>
 
+    <script>
+        const placeholder ={
+            hotel: 'Localização ou nome do hotel',
+            restaurant: 'Localização ou nome do restaurante'
+        }
+    </script>
 
     <script async src="public/app.js"></script>
 </html>
