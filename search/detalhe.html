@@ -12,22 +12,15 @@
 
     </head>
     <body>
-
-        <style>
-            #header{
-                background-image: url(assets/images/bg.png);
-            }
-        </style>
-
         <div id="app" class="initial"> 
-            <header id="header">
+            <header id="header" class="bgplx">
 
                 <form class="search wrp flex">
 
                     <div class="select field">
-                        <select>
-                            <option>Restaurante</option>
-                            <option>Hoteis</option>
+                        <select id="select">
+                            <option value="restaurant">Restaurante</option>
+                            <option value="hotel">Hoteis</option>
                         </select>
                     </div>
 
@@ -107,7 +100,7 @@
                                 </li>
 
                                 <li>
-                                    <a href="mailto:contato@gmail.com">
+                                    <a href="mailto:contato@gmail.com" target="_top">
                                         <svg class="icon"><use class="ic-2" xlink:href="#email"/></svg>
                                         contato@gmail.com
                                     </a>
@@ -185,6 +178,18 @@
 
     </svg>
 
+    <script>
+        const placeholder ={
+            hotel: {
+                placeholder :  'Localização ou nome do hotel',
+                url : 'url("assets/images/hotel.png")'
+            },
+            restaurant : {
+                placeholder:  'Localização ou nome do restaurante',
+                url : 'url("assets/images/restaurant.png")'
+            }
+        }
+    </script>
 
-    <script src="public/app.js"></script>
+    <script async src="public/app.js"></script>
 </html>
