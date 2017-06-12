@@ -28,7 +28,7 @@ gulp.task('styles', () => {
     .pipe(sass.sync())
     .pipe(autoprefixer())
     .pipe(sourcemaps.write('.'))
-   // .pipe(minifycss())
+    .pipe(minifycss())
     .pipe(gulp.dest(sassPaths.dest))
 
 })
@@ -41,3 +41,7 @@ gulp.task('watch', () => {
 })
 
 gulp.task('default', ['styles', 'watch'])
+
+
+
+
