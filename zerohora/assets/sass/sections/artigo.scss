@@ -1,0 +1,39 @@
+.materia{
+    .main-nav{
+        margin: 0 auto;
+        max-width: 680px;
+    }
+
+    .navigation{
+        nav{
+            width: 100%;
+        }
+    }
+
+
+    article{
+
+        time{
+            margin: 15px 0;
+            display: block;
+            font-size: em(13px);        
+            text-transform: uppercase;
+            color: $c6;
+        }
+
+        h1{
+            margin: 5px 0 10px;
+            font-size: em(32px);
+            font-family: 'Merriweather', serif;
+        }
+
+        .tag{
+            margin: 10px 0 0;
+            color: $c4;
+            font-size: em(14px);
+            font-family: 'chbold';
+            text-transform: uppercase;
+        }
+
+   }
+}

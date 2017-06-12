@@ -1,0 +1,39 @@
+.navigation{
+    margin: 15px auto 0;
+    @extend %flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+ 
+    nav{
+        box-sizing: border-box;
+        padding: 8px 5px;
+        width: percentage(470px / 680px);
+        @extend %flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        background: #F6F6F6;
+        
+        span{
+            color: $c6;
+            font-size: em(10px);
+            text-transform: uppercase;            
+        }
+    }    
+    
+    a{
+        font-size: em(10px);
+        color: $c4;
+        text-transform: uppercase;
+    }
+
+    time{
+        min-width: 105px;
+        width: percentage(210px / 680px);
+        font-size: em(12px);        
+        text-align: center;
+        text-transform: uppercase;
+        color: $c6;
+    }
+
+}
