@@ -1,0 +1,448 @@
+@charset "UTF-8";
+/*********************************************************************
+*  =Variables
+*
+*   Todas as variáveis globais do projeto ficam aqui.
+*********************************************************************/
+/*********************************************************************
+*  =Grid and typograph
+*********************************************************************/
+/*********************************************************************
+*  =Colors
+*********************************************************************/
+/*********************************************************************
+*  = icon path
+*********************************************************************/
+/*********************************************************************
+*  =Media Screen
+*********************************************************************/
+/*********************************************************************
+*  =Functions
+*********************************************************************/
+/*********************************************************************
+*  =Mixins
+*
+*  Mixins que facilitam a nossa vida.
+*********************************************************************/
+/*********************************************************************
+*  =Colorful links
+*
+*  Provide a set of colors for normal, :visited, :hover, and :active
+*  links, based on a base color. Should be used like this:
+*
+*  .my-class a {
+*    @include colorful-links(#abcdef);
+*  }
+*********************************************************************/
+/*********************************************************************
+*  =Pseudo icon mixin
+*********************************************************************/
+/*********************************************************************
+*  Retina sprite
+*********************************************************************/
+/*********************************************************************
+*  Font face
+*********************************************************************/
+/*********************************************************************
+*  =Font smooth
+*********************************************************************/
+/*********************************************************************
+*  =Verticaly centered
+*********************************************************************/
+/*********************************************************************
+*  =Clearfix
+*********************************************************************/
+/*********************************************************************
+*  =Responsive
+*********************************************************************/
+/*********************************************************************
+*  =Gradient
+*********************************************************************/
+@font-face {
+  font-family: 'ch';
+  src: url("../assets/fonts/cooperhewitt-book-webfont.woff2") format("woff2"), url("../assets/fonts/cooperhewitt-book-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'chbold';
+  src: url("../assets/fonts/cooperhewitt-bold-webfont.woff2") format("woff2"), url("../assets/fonts/cooperhewitt-bold-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'chitalic';
+  src: url("../assets/fonts/cooperhewitt-bookitalic-webfont.woff2") format("woff2"), url("../assets/fonts/cooperhewitt-bookitalic-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'chmedium_italic';
+  src: url("../assets/fonts/cooperhewitt-mediumitalic-webfont.woff2") format("woff2"), url("../assets/fonts/cooperhewitt-mediumitalic-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'chmedium';
+  src: url("../assets/fonts/cooperhewitt-medium-webfont.woff2") format("woff2"), url("../assets/fonts/cooperhewitt-medium-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal; }
+
+/*
+@font-face {
+    font-family: 'chmedium';
+    src: url('../assets/fonts/cooperhewitt-medium-webfont.woff2') format('woff2'),
+         url('../assets/fonts/cooperhewitt-medium-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'chsemibold';
+    src: url('../assets/fonts/cooperhewitt-semibold-webfont.woff2') format('woff2'),
+         url('../assets/fonts/cooperhewitt-semibold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+*/
+html, body {
+  position: relative;
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+  overflow-x: hidden;
+  background: #fff;
+  font-family: 'ch', sans-serif;
+  -webkit-font-smoothing: antialiased; }
+
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box; }
+
+.main-nav ul, .navigation, .navigation nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
+
+.container {
+  margin: 0 auto;
+  width: 90vw;
+  max-width: 995px; }
+  .container.minor {
+    max-width: 660px; }
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none; }
+
+a {
+  text-decoration: none; }
+
+.top {
+  position: relative;
+  margin: -10px 0 20px;
+  float: right;
+  font-size: 0.75em;
+  color: #3A3A3A; }
+  .top:after {
+    position: absolute;
+    left: -12px;
+    bottom: 3px;
+    content: '';
+    border-width: 4px 4px 5px 4px;
+    border-style: solid;
+    border-color: transparent transparent #3A3A3A transparent; }
+
+/*********************************************************************
+*  =Helpers
+*
+*  Placeholders que facilitam a nossa vida.
+*********************************************************************/
+/*********************************************************************
+*  =Clearfix
+*********************************************************************/
+/*********************************************************************
+*  =Image replacement
+*********************************************************************/
+/*********************************************************************
+*  =Centered content
+*********************************************************************/
+/*********************************************************************
+*  =No underline
+*********************************************************************/
+/*********************************************************************
+*  =Ellipsis
+*********************************************************************/
+/*********************************************************************
+*  =Pseudo Icon
+*********************************************************************/
+/*********************************************************************
+*  =Shadow Before
+*********************************************************************/
+svg:not(.no-touch) path {
+  stroke-linejoin: round;
+  fill: inherit; }
+
+svg:not(.no-touch) line {
+  fill: none;
+  stroke-linejoin: round;
+  stroke-width: 1;
+  stroke: inherit; }
+
+svg:not(.no-touch) polyline {
+  stroke-dasharray: 0;
+  stroke-dashoffset: 0; }
+
+.box-gift {
+  fill: #A2E6FF;
+  height: 54px;
+  width: 54px; }
+
+.wrp {
+  margin: 0 auto;
+  width: 98%;
+  max-width: 960px; }
+
+.logo {
+  position: relative;
+  margin: 80px auto;
+  height: 47px;
+  width: 85px;
+  background: url(../assets/images/zh-logo.png) center center no-repeat;
+  background-size: cover;
+  z-index: 11; }
+  .logo .triangulo-logo {
+    position: absolute;
+    top: 8px;
+    left: -5px;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 47px 29px 0 0;
+    border-color: #ffd40e transparent transparent transparent; }
+
+.main-nav {
+  display: block;
+  border: 1px solid #E4E4E4;
+  border-bottom: none;
+  background: repeating-linear-gradient(0deg, #fff 0px, #E4E4E4 0.5px, #fff 1px, #fff 40px); }
+  .main-nav ul {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center; }
+  .main-nav > ul {
+    border-bottom: 1px solid #E4E4E4; }
+    .main-nav > ul:last-child {
+      border-bottom: none; }
+  .main-nav > ul > li {
+    padding: 2px 0; }
+    .main-nav > ul > li > a {
+      display: block;
+      padding: 8px 14px;
+      border-right: 1px dotted #E4E4E4;
+      font-family: 'chbold';
+      color: #F69d04; }
+  .main-nav a {
+    text-transform: uppercase;
+    text-decoration: none; }
+  .main-nav .submenu ul {
+    display: none; }
+
+.edicao-digital {
+  padding: 10px 10px 50px;
+  background: #EDEDED; }
+  .edicao-digital h4 {
+    padding: 4px;
+    margin: 0 0 10px;
+    color: #fff;
+    font-family: 'chbold';
+    text-align: center;
+    text-transform: uppercase;
+    background: #626262; }
+  .edicao-digital img {
+    max-width: 100%;
+    height: auto; }
+
+.navigation {
+  margin: 15px auto 0;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center; }
+  .navigation nav {
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    padding: 8px 5px;
+    width: 69.11765%;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    background: #F6F6F6; }
+    .navigation nav span {
+      color: #717171;
+      font-size: 0.625em;
+      text-transform: uppercase; }
+  .navigation a {
+    font-size: 0.625em;
+    color: #F69d04;
+    text-transform: uppercase; }
+  .navigation time {
+    min-width: 105px;
+    width: 30.88235%;
+    font-size: 0.75em;
+    text-align: center;
+    text-transform: uppercase;
+    color: #717171; }
+
+.tags {
+  margin-top: 15px; }
+  .tags .tag {
+    display: inline-block;
+    padding: 6px 10px 4px;
+    background: #ffd40e;
+    text-transform: uppercase;
+    line-height: 1.1em;
+    color: #000;
+    letter-spacing: .3pt;
+    font-size: 0.9375em;
+    font-family: 'chmedium', sans-serif;
+    border-radius: 4px; }
+
+.chamadas {
+  margin-bottom: 60px; }
+  .chamadas li {
+    padding: 15px 0;
+    border-bottom: 1px solid #E4E4E4; }
+  .chamadas h2 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin: 10px 0 5px;
+    color: #3A3A3A;
+    font-weight: 600;
+    font-size: 1.125em;
+    line-height: 1.2em;
+    font-family: 'Merriweather', serif; }
+    .chamadas h2 span {
+      margin-left: 5px;
+      font-size: 0.75em;
+      font-family: 'ch', sans-serif;
+      color: #717171;
+      text-transform: uppercase; }
+  .chamadas h4 {
+    margin: 8px 0;
+    font-size: 0.8125em;
+    font-family: 'Merriweather', serif;
+    color: #3A3A3A; }
+  .chamadas .tag {
+    color: #F69d04;
+    font-size: 0.75em;
+    letter-spacing: .3pt;
+    text-transform: uppercase;
+    font-family: 'chmedium_italic'; }
+  .chamadas.opinioes h2 {
+    font-size: 0.875em;
+    color: #F69d04; }
+
+.table {
+  border: 4px solid #F5F5F5;
+  border-right: 8px solid #F5F5F5;
+  border-left: 8px solid #F5F5F5; }
+  .table .row {
+    padding: 10px 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    border-bottom: 2px solid #F5F5F5;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between; }
+    .table .row:hover {
+      background: #F69d04; }
+      .table .row:hover .td {
+        color: #fff; }
+    .table .row:last-child {
+      border-bottom: none; }
+  .table .td {
+    padding: 0 5px;
+    text-align: center;
+    color: #3A3A3A;
+    font-size: 1em; }
+
+.cover {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between; }
+  .cover h1 {
+    margin: 0 0 15px;
+    font-size: 32px;
+    font-weight: 600;
+    color: #3A3A3A;
+    font-family: 'chbold', sans-serif;
+    text-transform: uppercase; }
+  .cover h5 {
+    font-size: 1em;
+    margin: 0 0 15px;
+    color: #3A3A3A; }
+  .cover .content {
+    width: 70.83333%; }
+  .cover aside {
+    width: 25%; }
+
+.lista {
+  padding: 30px 15px;
+  border: 1px solid #E4E4E4; }
+  .lista h1 {
+    margin: 0 0 15px;
+    font-size: 32px;
+    font-weight: 600;
+    color: #3A3A3A;
+    font-family: 'chbold', sans-serif;
+    text-transform: uppercase; }
+  .lista h4 {
+    color: #F69d04; }
+    .lista h4 strong {
+      font-family: 'chbold'; }
+
+.materia .main-nav {
+  margin: 0 auto;
+  max-width: 680px; }
+
+.materia .navigation nav {
+  width: 100%; }
+
+.materia article time {
+  margin: 15px 0;
+  display: block;
+  font-size: 0.8125em;
+  text-transform: uppercase;
+  color: #717171; }
+
+.materia article h1 {
+  margin: 5px 0 10px;
+  font-size: 2em;
+  font-family: 'Merriweather', serif; }
+
+.materia article .tag {
+  margin: 10px 0 0;
+  color: #F69d04;
+  font-size: 0.875em;
+  font-family: 'chbold';
+  text-transform: uppercase; }
+
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,21 @@
+@import "base/_variables.scss";
+@import "base/_functions.scss";
+@import "base/_mixins.scss";
+@import "base/_fonts.scss";	
+@import "base/_defaults.scss";	
+@import "base/_helpers.scss";
+@import "base/_svg.scss";
+
+
+@import "elements/container.scss";
+@import "elements/header.scss";
+@import "elements/main-nav.scss";
+@import "elements/edicao-digital.scss";
+@import "elements/navigation.scss";
+@import "elements/chamadas.scss";
+@import "elements/table.scss";
+
+
+@import "sections/guia-capa.scss";
+@import "sections/lista.scss";
+@import "sections/artigo.scss";
