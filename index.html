@@ -65,6 +65,7 @@
     <script>
 
     const prefix = 'Hi! I\'m Thom and I work with '
+
     const skills = [
       'JavaScript',
       'HTML & CSS',
@@ -75,7 +76,6 @@
     const step = 1
     const tail = 5
     const timeout = 75
-
 
     const p = document.createElement('p')
     document.body.appendChild(p)
@@ -103,20 +103,25 @@
       "rgb(96,84,200)",
 
     ]
+
     function getRandomColor() {
       return colors[Math.floor(Math.random() * colors.length)]
     }
+
     function getRandomChar() {
       return String.fromCharCode(Math.random() * (127 - 33) + 33)
     }
+
     function getRandomColoredString(n) {
       const fragment = document.createDocumentFragment()
+
       for (let i = 0; i < n; i++) {
         const char = document.createElement('span')
         char.textContent = getRandomChar()
         char.style.color = getRandomColor()
         fragment.appendChild(char)
       }
+      
       return fragment
     }
 
