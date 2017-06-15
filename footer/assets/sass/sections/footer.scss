@@ -1,0 +1,89 @@
+$my_width: 100% /  7;
+
+body {
+    margin: 0;
+}
+
+.custom-footer{
+	font-family: 'Hind',sans-serif;
+;
+	padding: 20px 10px;
+	background: #f4f4f4;
+
+
+	a{
+		text-decoration: none;
+	}
+
+	.row{
+		display: flex;
+		flex-wrap: wrap
+	}
+	
+	.col{
+		width: $my_width;
+		min-width: 120px;
+		padding: 0 5px;
+		box-sizing: border-box;
+
+
+
+		a.edicao-digital{
+
+			img{
+				width: 100%;
+				height: auto;
+				box-shadow: 3px 3px 2px -1px rgba(0,0,0,0.3);
+				transition: all 0.3s ease;
+				backface-visibility: hidden;
+				will-change: transform;
+				transform: perspective(1600px) rotateX(0) rotateY(0) translate3d(0,0,-10px);
+			}
+
+			&:hover{
+				img{
+					box-shadow: 5px 5px 2px -1px rgba(0,0,0,0.3);
+					animation: intro 0.7s cubic-bezier(0.315,0.605,0.375,0.925) 1;
+					animation-fill-mode: forwards;
+				}
+			}
+
+		}
+		
+
+		ul{
+			padding-left: 10px;
+		}
+	}
+
+	ul,li{
+		margin: 0;
+		padding: 0;
+		list-style: none;
+	}
+
+	h3{
+		margin-top: 0;
+		text-transform: capitalize;
+		line-height: 1.3em;
+
+		a{
+			color: #006496;
+		}
+	}
+
+	li{
+		line-height: 1.4em;
+
+		a{
+			color: #8f8f8f;
+			font-size: 14px;
+			font-weight: 600;
+			letter-spacing: .025em;
+		}
+
+
+	}
+
+
+}
