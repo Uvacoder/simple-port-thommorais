@@ -1,0 +1,199 @@
+$my_width: 100% /  7;
+
+body {
+    margin: 0;
+}
+
+@media (min-width: 1200px){
+	.container {
+		margin: 0 auto;
+		width: 1200px;
+	}
+}
+
+.custom-footer{
+	font-family: 'Hind',sans-serif;
+	padding: 20px 10px;
+	background: #f4f4f4;
+
+	a{
+		text-decoration: none;
+	}
+
+	.row{
+		margin-bottom: 15px;
+		display: flex;
+		flex-wrap: wrap
+	}
+	
+	.col{
+		width: $my_width;
+		min-width: 150px;
+		padding: 0 10px;
+		box-sizing: border-box;
+
+		 @include responsive($mobileM, 'max'){
+			width: 50%;
+			margin-bottom: 30px;
+		 }
+
+		a.edicao-digital{
+
+			img{
+				width: 100%;
+				height: auto;
+				box-shadow: 3px 3px 2px -1px rgba(0,0,0,0.3);
+				transition: all 0.3s ease;
+				backface-visibility: hidden;
+				will-change: transform;
+				transform: perspective(1600px) rotateX(0) rotateY(0) translate3d(0,0,-10px);
+			}
+
+			&:hover{
+				img{
+					box-shadow: 5px 5px 2px -1px rgba(0,0,0,0.3);
+					animation: intro 0.7s cubic-bezier(0.315,0.605,0.375,0.925) 1;
+					animation-fill-mode: forwards;
+				}
+			}
+
+		}
+		
+		ul{
+			padding-left: 10px;
+		}
+	}
+
+	ul,li{
+		margin: 0;
+		padding: 0;
+		list-style: none;
+	}
+
+	h3{
+		margin-top: 0;
+		text-transform: capitalize;
+		line-height: 1.3em;
+
+		 @include responsive($mobileM, 'max'){
+			margin-bottom: 0;
+		 }
+
+
+		a{
+			color: #006496;
+		}
+	}
+
+	li{
+		line-height: 1.4em;
+
+		a{
+			color: #8f8f8f;
+			font-size: 14px;
+			font-weight: 600;
+			letter-spacing: .025em;
+		}
+
+
+	}
+
+	.social-links{
+		display: flex;
+		width: 100%;
+		justify-content: flex-end;
+
+		@include responsive($mobileM, 'max'){
+			margin-bottom: 20px;
+			justify-content: center;
+		}
+
+		.social-link{
+			display: inline-block;
+			margin: 0 5px;
+			width: 50px;
+			height: 50px;
+			
+			svg{
+				fill: #006F91;
+				width: 100%;
+				height: 100%;
+			}
+
+			&:hover{
+				svg{
+					fill: darken(#006F91, 5%);
+				}
+			}
+		}
+	}
+
+	.between{
+		justify-content: space-between;
+		align-items: center;
+
+		.logo{
+			max-width: 235px;
+			order: 2;
+
+			@include responsive($mobileM, 'max'){
+				display: block;
+				margin: 0 auto;
+				order: 0;
+			}
+
+			img{
+				width: 100%;
+				height: auto;
+				filter: multiply;
+				mix-blend-mode: multiply;
+			}
+		}
+
+		.slogan{
+			line-height: 1.2em;
+			text-transform: uppercase;
+			font-size: em(22px);
+			order: 1;
+
+			@include responsive($mobileM, 'max'){
+				margin: 30px auto;
+			}
+
+			span{
+				margin: 0 0 5px;
+				display: inline-block;
+				padding: 6px 5px 1px;
+				background: $cBlack;
+				color: $cWhite;
+			}
+		}
+	}
+
+	.newsletter{
+		max-width: 300px;
+		padding: 5px 30px;
+		background: #006F91;
+		border-radius: 8px;
+		color: $cWhite;
+		box-sizing: border-box;
+		order: 3;
+
+		@include responsive($mobileM, 'max'){
+			margin: 0 auto;
+			order: 3;
+		}
+
+		p{
+			line-height: 1.1em;
+		}
+		strong{
+			margin: 15px 0 0;
+			font-size: em(36px);
+			text-transform: uppercase;
+			display: block;
+		}
+	}
+
+
+}
