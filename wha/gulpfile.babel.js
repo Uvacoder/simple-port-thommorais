@@ -42,6 +42,3 @@ gulp.task('watch', () => {
 
 gulp.task('default', ['styles', 'watch'])
 
-
-
-
