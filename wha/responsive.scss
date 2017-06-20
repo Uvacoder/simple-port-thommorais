@@ -1,5 +1,4 @@
 html {
-
     @include responsive($mobileB, 'max') {
         body {
             background: #F3F3F3;
@@ -21,7 +20,6 @@ html {
             z-index: 9999;
             display: none;
         }
-
         #boasVindas,
         #menuLogado,
         #mobile,
@@ -29,28 +27,30 @@ html {
         .post-outros-fundo {
             display: none;
         }
-
-        #login {
-            margin: 20px auto 50px;
-            float: none;
-            display: table;
-        }
-
         #meio .absolute {
             float: none;
             position: relative;
         }
-        #login .input {
+        #login {
+            margin: 20px auto 50px;
             float: none;
-            padding:10px;
-            display: block;
-            height: auto;
+            display: table;
             width: 100%;
-            margin: 0 auto 10px;
-            border-radius: 4px;
-            box-sizing: border-box;
-            background-image: none;
-            background-color: rgba(#fff, 0.8);
+            .input {
+                float: none;
+                padding: 10px;
+                display: block;
+                height: auto;
+                width: 98%;
+                margin: 0 auto 10px;
+                border-radius: 4px;
+                box-sizing: border-box;
+                background-image: none;
+                background-color: rgba(#fff, 0.8);
+            }
+            #login-rodape {
+                float: none;
+            }
         }
         #menu {
             position: fixed;
@@ -313,8 +313,7 @@ html {
             left: 10px;
             max-width: calc(100% - 20px);
         }
-        #meio {
-        }
+        #meio {}
         // .opacity1 {
         //     margin-bottom: 65px;
         // }
@@ -328,7 +327,6 @@ html {
             width: 33px;
             background: none;
             cursor: pointer;
-
             i {
                 position: relative;
                 top: 4px;
@@ -354,39 +352,176 @@ html {
                 }
             }
         }
-
-
- 
-
     }
-
-
-    #posts-box-centro-selects{
+    #posts-box-esquerdo {
+        display: none;
+    }
+    #posts-box-centro-selects {
         float: none;
     }
-
-
     .form-select,
-    .posts-box-centro-inputs{
+    .posts-box-centro-inputs {
         float: none;
         display: block;
         margin: 0;
     }
-
-    .posts-box-centro-inputs{
+    .posts-box-centro-inputs {
         background: none;
         border: 1px solid rgba(#000, 0.3);
         border-radius: 4px;
         width: 225px;
         text-align: left;
     }
-    
-
-    .or-question{
+    .or-question {
         position: static;
         margin: 10px auto;
         text-align: center;
     }
+    #posts-box-centro {
+        .post-outros-txt {
+            max-width: 300px;
+            float: none;
+            margin: 0;
+        }
+        .post-outros-mascara-txt {
+            background-size: cover;
+        }
+        .post-outros-mascara-txt,
+        .post-outros-txt,
+        .post-outros-fundo-txt {
+            width: 300px;
+            height: 360px;
+        }
+
+
+        .posts-box-centro-inputs-txt0,
+        .posts-box-centro-inputs-txt1,
+        .posts-box-centro-inputs-txt2,
+        .posts-box-centro-inputs-txt3 {
+            height: auto;
+            padding: 3px 5px;
+            background: none;
+            box-sizing: border-box;
+            border: 1px solid rgba(#000, 0.3);
+            border-radius: 4px;
+        }
+
+
+        #rptImgs_imgPostDiv_0,
+        #rptImgs_imgPostDiv_1,
+        #rptImgs_imgPostDiv_2,
+        #rptImgs_imgPostDiv_3 {
+            margin: 7px 10px;
+            height: 130px !important;
+            width: 130px !important;
+            img {
+                height: 100% !important;
+                width: 100% !important;
+            }
+        }
+        #rptImgs_imgPostDiv_2 {
+            position: relative;
+            top: 10px;
+            left: -1px;
+        }
+        #rptImgs_imgPostDiv_3 {
+            position: relative;
+            top: 10px;
+        }
+        .post-new-link-01,
+        .post-new-link-02,
+        .post-new-link-03,
+        .post-new-link-04 {
+            width: 130px;
+            height: 130px;
+            span {
+                width: 130px;
+                height: 130px;
+            }
+        }
+
+        .posts-box-check,
+        .posts-box-check-01,
+        .posts-box-check-02,
+        .posts-box-check-03{
+            display: none;
+        }
+
+        #posts-box-centro-tags{
+            width: 100%;
+            float: none;
+
+            label{
+                float: none;
+                margin: 0;
+            }
+
+            div{
+                float: none;
+                height: auto;
+                width: 300px;
+                background-image: none;
+
+                input{
+                    border: 1px solid rgba(#000, .3);
+                    border-radius: 4px;
+                    width: 100%;
+                    padding: 5px 10px;
+                    box-sizing: border-box;
+                    background-image: none;
+                }
+            }
+        }
+
+        .posts-box-centro-selects{
+            float: none;
+        }
+
+        .post-new-link-02 span {
+            left: 11px;
+            top: -1px;
+        }
+        .post-new-link-03 span {
+            top: 17px;
+            left: -7px;
+        }
+        .post-new-link-04 span {
+            top: 16px;
+            left: 14px;
+        }
+        .posts-box-centro-inputs-txt0,
+        .posts-box-centro-inputs-txt1,
+        .posts-box-centro-inputs-txt2,
+        .posts-box-centro-inputs-txt3 {
+            width: 134px;
+        }
+
+        .posts-box-centro-inputs-txt0,
+        .posts-box-centro-inputs-txt1{
+            top: 147px;
+        }
+        .posts-box-centro-inputs-txt2,  
+        .posts-box-centro-inputs-txt3{
+            top: 320px;
+        }
+
+        .posts-box-centro-inputs-txt3,
+        .posts-box-centro-inputs-txt1 {
+            left: 130px;
+        }
+
+
+        .img-actions0 {
+            margin: 15px 0px 0px -30px;
+        }
+        .img-actions1 {
+            margin: 15px 0px 0px 285px
+        }
+        .img-actions2 {
+            margin: 189px 0px 0px -30px;
+        }
+        .img-actions3 {
+            margin: 189px 0px 0px 285px;
+        }
+    }
 }
-
-
