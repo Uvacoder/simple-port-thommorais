@@ -1,0 +1,36 @@
+footer{
+	padding: 30px 0;
+	background: #333;
+
+	.wrp{
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+	}
+
+	nav{
+		display: flex;
+		align-items: center;
+		color: $cWhite;
+		
+		a{
+			border-right: 1px solid $cWhite;
+			padding: 0 1em;
+			font-size: em(11px);
+			line-height: 1em;
+			color: inherit;
+
+			&:last-child{
+				border-right: 0;
+			}
+		}
+
+		small{
+			position: relative;
+			top: 3px;
+			font-size: em(11px);
+			color: #CCC;
+		}
+
+	}
+}

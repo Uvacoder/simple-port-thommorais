@@ -298,6 +298,13 @@ svg:not(.no-touch) polyline {
     font-size: 0.625em;
     color: #F69d04;
     text-transform: uppercase; }
+    .navigation a svg {
+      position: relative;
+      top: 1px; }
+  .navigation svg {
+    fill: #F69d04;
+    height: 10px;
+    width: 10px; }
   .navigation time {
     min-width: 105px;
     width: 30.88235%;
@@ -426,23 +433,67 @@ svg:not(.no-touch) polyline {
 .materia .navigation nav {
   width: 100%; }
 
-.materia article time {
-  margin: 15px 0;
-  display: block;
-  font-size: 0.8125em;
-  text-transform: uppercase;
-  color: #717171; }
-
-.materia article h1 {
-  margin: 5px 0 10px;
-  font-size: 2em;
+.materia article {
+  margin: 0 auto 50px;
+  max-width: 945px;
+  font-weight: 400;
+  line-height: 1.4em;
   font-family: 'Merriweather', serif; }
+  .materia article time {
+    margin: 15px 0;
+    display: block;
+    font-size: 0.8125em;
+    text-transform: uppercase;
+    color: #717171; }
+  .materia article h1 {
+    margin: 5px 0 10px;
+    font-size: 2em;
+    line-height: 1.2em;
+    font-family: 'Merriweather', serif; }
+  .materia article .headline {
+    font-family: 'ch', sans-serif;
+    font-size: 1.125em;
+    margin-top: 18px; }
+  .materia article .tag {
+    margin: 10px 0 0;
+    color: #F69d04;
+    font-size: 0.875em;
+    font-family: 'chbold';
+    text-transform: uppercase; }
 
-.materia article .tag {
-  margin: 10px 0 0;
-  color: #F69d04;
-  font-size: 0.875em;
-  font-family: 'chbold';
-  text-transform: uppercase; }
+footer {
+  padding: 30px 0;
+  background: #333; }
+  footer .wrp {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between; }
+  footer nav {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    color: #fff; }
+    footer nav a {
+      border-right: 1px solid #fff;
+      padding: 0 1em;
+      font-size: 0.6875em;
+      line-height: 1em;
+      color: inherit; }
+      footer nav a:last-child {
+        border-right: 0; }
+    footer nav small {
+      position: relative;
+      top: 3px;
+      font-size: 0.6875em;
+      color: #CCC; }
 
 /*# sourceMappingURL=style.css.map */
