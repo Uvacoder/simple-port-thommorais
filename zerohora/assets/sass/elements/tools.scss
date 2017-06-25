@@ -1,0 +1,108 @@
+.tools{
+		
+	a{
+    	margin-left: 30px;
+        padding-right: 10px;
+		border-right: 1px solid rgba($c1, 0.5);
+
+		&:before{
+			position: absolute;
+			top: -1px;
+			left: -18px;
+			content: '';
+			background-image: url(../assets/images/bg-icones-off.png);
+			background-repeat: no-repeat;
+		}
+
+		&.outras-edicoes{
+			&:before{
+				height: 15px;
+				width: 14px;
+				background-position: 0 -440px;
+			}
+		}
+
+		&.listas{
+			&:before{
+				top: -2.2px;
+				left: -28px;
+				height: 15px;
+				width: 25px;
+				background-position: 0 -319px;
+			}			
+		}
+
+		&.imprimir{
+			&:before{
+				top: -3px;
+				height: 15px;
+				width: 15px;
+				background-position: 0 0;
+			}
+		}
+
+		&.enviar{
+			&:before{
+				top: -3px;
+				height: 14px;
+				width: 13px;
+				background-position: 0 -40px;
+			}
+		}
+
+		@include responsive($mobile, 'max'){
+			margin: 0 0 10px 0;
+			display: block;
+			border-right: none;
+		}
+
+	}
+
+	.font-size{
+		width: 100px;
+		margin: 0 0 0 8px;
+
+		a:before{
+			display: none;
+		}
+
+		a{
+			margin-left: 3px;
+			font-family: Georgia, "Times New Roman", Times, serif;
+			font-weight: bold;
+			&:last-child{
+				margin-left: 5px;
+				border-right: 0;
+			}
+
+			&:first-child{
+				padding-right: 5px;
+				border-right: 1px solid rgba($c1, 0.5);
+			}
+		}
+
+		.maior{
+			font-size: 17px;
+		}
+
+		.menor{
+			font-size: 10px;
+		}
+
+		@include responsive($mobile, 'max'){
+			margin: 0 0 0 -16px;
+			display: block;
+
+			a{
+				width: auto;
+				display: inline;
+
+				&:first-child{
+					border-right: none;
+				}
+			}
+		}
+
+	}
+
+}

@@ -4,21 +4,38 @@
     justify-content: space-between;
     flex-wrap: wrap;
     align-items: center;
- 
+
     nav{
+        min-height: 25px;
         box-sizing: border-box;
-        padding: 8px 5px;
+        padding: 4px 5px;
         width: percentage(470px / 680px);
         @extend %flex;
         justify-content: space-between;
+        align-items: center;
         flex-wrap: wrap;
         background: #F6F6F6;
         
-        span{
-            color: $c6;
-            font-size: em(10px);
-            text-transform: uppercase;            
+        .tools{
+            font-size: 0;
+            display: inherit;
+            align-items: center;
+            
+            a,
+            .font-size{
+                position: relative;
+                color: $c1;
+                text-transform: uppercase;
+                font-size: 10px;
+                line-height: 1em;
+            }
+            
+            @include responsive($mobile, 'max'){
+                display: block;
+            }
+
         }
+
     }    
     
     a{
@@ -32,7 +49,6 @@
         }
         
     }
-
 
     svg{
         fill:  $c4;

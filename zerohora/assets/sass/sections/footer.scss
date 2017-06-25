@@ -33,4 +33,29 @@ footer{
 		}
 
 	}
+
+
+	@include responsive($ms-mid-eight, 'max'){
+
+		.wrp{
+			display: block;
+		}
+
+		nav{
+			display: block;
+
+			a{
+				padding: 0 5px 0 0;
+			}
+
+
+
+			small, div{
+				margin-top: 20px;
+				display: block;
+			}
+		}
+
+	}
+
 }

@@ -1,6 +1,5 @@
 .materia{
-
-
+    
     .main-nav{
         margin: 0 auto;
         max-width: 680px;
@@ -20,13 +19,15 @@
         margin: 0 auto 50px;
         max-width: 945px;
         font-weight: 400;
-        line-height: 1.4em;
+        line-height: 1.5em;
+        color: $c1;
         font-family: 'Merriweather', serif;
 
         time{
             margin: 15px 0;
             display: block;
-            font-size: em(13px);        
+            font-family: 'ch', sans-serif;
+            font-size: 13px;        
             text-transform: uppercase;
             color: $c6;
         }
@@ -35,12 +36,13 @@
             margin: 5px 0 10px;
             font-size: em(32px);
             line-height: 1.2em;
+            color: $c1;
             font-family: 'Merriweather', serif;
         }
 
         .headline{
            font-family: 'ch', sans-serif;
-           font-size: em(18px);
+           font-size: em(14px);
            margin-top: 18px;
         }
 
@@ -51,6 +53,27 @@
             font-family: 'chbold';
             text-transform: uppercase;
         }
+
+        .signs{
+            a{
+                color: $c4;
+                padding-right: 7px;
+            }
+
+            div{
+                margin-top: 10px;
+            }
+
+            span{
+                text-transform: uppercase;
+                color: $cGrey2;
+                font-family: 'chmedium';
+            }
+        }
         
+
+        &+.navigation{
+            margin-bottom: 60px;
+        }
    }
 }
