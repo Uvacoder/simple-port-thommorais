@@ -498,6 +498,7 @@ svg:not(.no-touch) polyline {
     width: 25%; }
 
 .lista {
+  margin-bottom: 40px;
   padding: 30px 15px;
   border: 1px solid #E4E4E4; }
   .lista h1 {
