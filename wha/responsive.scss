@@ -2,19 +2,40 @@ html {
     @include responsive($mobileB, 'max') {
         body {
             background: #F3F3F3;
+
+            &.menu-open{
+                #menu {
+                    transform: translate3d(0, 0, 0);
+                }
+
+
+                 #mobile {
+                     i{
+                        top: 10px;
+                        transform: rotate(45deg);
+                        
+                         &:after {
+                            transform: rotate(45deg) translateX(-70%) scaleX(0);
+                         }
+
+                         &:before{
+                             transform: rotate(90deg);
+                             bottom: 1px;
+                         }
+                         
+                     }
+                 }
+
+            }
+
         }
         .container {
             width: 98%;
         }
-        #menu {
-            position: fixed;
-            top: 0;
-            left: 0;
-            margin: 0;
-            width: 100%;
-            height: 100vh;
-            background: #fff;
-            z-index: 999999;
+
+        header{
+            position: relative;
+            z-index: 99909;
         }
         #signup {
             z-index: 9999;
@@ -59,18 +80,24 @@ html {
             margin: 0;
             width: 100%;
             height: 100vh;
+            box-sizing: border-box;
             background: #fff;
-            z-index: 999999;
-            display: none;
             padding: 20px;
+            transform: translate3d(101%, 0, 0);
+            transition: transform 0.25s cubic-bezier(0.62, 0.02, 0.34, 1) 0.15s;
+            will-change: transform;
+
             #formSearch {
                 float: none;
                 display: table;
-                margin: 0 auto;
+                margin: 70px auto 0;
                 height: 40px;
+
                 input {
                     box-sizing: border-box;
+                    width: 225px;
                 }
+
                 input[type="text"] {
                     margin: 0;
                     padding: 6.5px 10px;
@@ -96,23 +123,40 @@ html {
                 }
             }
             .menu-logout {
+                position: absolute;
                 margin: 0 auto;
+                top: 35px;
+                left: 5.1%;
                 display: table;
-                width: 233px;
+                padding: 8px 10px 7px;
+                line-height: 1em;
+                width: auto;
                 text-align: right;
                 float: none;
+                font-size: em(18px);
+                text-transform: uppercase;
+                border: 1px solid rgba(#000, .7);
+                border-radius: 6px;
             }
             nav {
                 float: none;
                 margin: 0 auto;
-                max-width: 233px;
+                max-width: 100%;
+
                 a {
-                    display: block;
-                    padding: 5px 0;
+                    margin: 0;
                     float: none;
+                    display: block;
+                    padding: 8px 0;
+                    border-bottom: 1px solid rgba(#000, .5);
+
+                    &:last-child{
+                        border-bottom: none;
+                    }
                 }
             }
         }
+
         .first-post {
             margin: 0 !important;
         }
@@ -133,6 +177,14 @@ html {
             padding: 0;
             background-image: none;
         }
+
+        .asyncPosts{
+            .opacity1{
+                height: auto;
+                margin-bottom: 65px;
+            }
+        }
+        
         .first-post,
         .post-outros-campo,
         .post-outros {
@@ -313,7 +365,6 @@ html {
             left: 10px;
             max-width: calc(100% - 20px);
         }
-        #meio {}
         // .opacity1 {
         //     margin-bottom: 65px;
         // }
@@ -326,6 +377,7 @@ html {
             height: 33px;
             width: 33px;
             background: none;
+            z-index: 99999;
             cursor: pointer;
             i {
                 position: relative;
@@ -335,6 +387,9 @@ html {
                 display: block;
                 border-radius: 2px;
                 background: #603E93;
+                transition: 0.34s cubic-bezier(0.52, 0.01, 0.16, 1);
+                will-change: transform;
+
                 &:before,
                 &:after {
                     position: absolute;
@@ -343,10 +398,13 @@ html {
                     width: 33px;
                     border-radius: 2px;
                     background: #603E93;
+                    transition: 0.34s cubic-bezier(0.52, 0.01, 0.16, 1);
                 }
+
                 &:before {
                     bottom: -9px;
                 }
+
                 &:after {
                     bottom: -18px;
                 }

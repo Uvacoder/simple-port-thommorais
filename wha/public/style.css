@@ -1,19 +1,111 @@
 @charset "UTF-8";
-
+/*********************************************************************
+*  =Variables
+*
+*   Todas as variáveis globais do projeto ficam aqui.
+*********************************************************************/
+/*********************************************************************
+*  =Grid and typograph
+*********************************************************************/
+/*********************************************************************
+*  =Colors
+*********************************************************************/
+/*********************************************************************
+*  = icon path
+*********************************************************************/
+/*********************************************************************
+*  =Media Screen
+*********************************************************************/
+/*********************************************************************
+*  =Functions
+*********************************************************************/
+/*********************************************************************
+*  =Helpers
+*
+*  Placeholders que facilitam a nossa vida.
+*********************************************************************/
+/*********************************************************************
+*  =Clearfix
+*********************************************************************/
+/*********************************************************************
+*  =Image replacement
+*********************************************************************/
+/*********************************************************************
+*  =Centered content
+*********************************************************************/
+/*********************************************************************
+*  =No underline
+*********************************************************************/
+/*********************************************************************
+*  =Ellipsis
+*********************************************************************/
+/*********************************************************************
+*  =Pseudo Icon
+*********************************************************************/
+/*********************************************************************
+*  =Shadow Before
+*********************************************************************/
+/*********************************************************************
+*  =Mixins
+*
+*  Mixins que facilitam a nossa vida.
+*********************************************************************/
+/*********************************************************************
+*  =Colorful links
+*
+*  Provide a set of colors for normal, :visited, :hover, and :active
+*  links, based on a base color. Should be used like this:
+*
+*  .my-class a {
+*    @include colorful-links(#abcdef);
+*  }
+*********************************************************************/
+/*********************************************************************
+*  =Pseudo icon mixin
+*********************************************************************/
+/*********************************************************************
+*  Retina sprite
+*********************************************************************/
+/*********************************************************************
+*  Font face
+*********************************************************************/
+/*********************************************************************
+*  =Font smooth
+*********************************************************************/
+/*********************************************************************
+*  =Verticaly centered
+*********************************************************************/
+/*********************************************************************
+*  =Clearfix
+*********************************************************************/
+/*********************************************************************
+*  =Responsive
+*********************************************************************/
+/*********************************************************************
+*  =Gradient
+*********************************************************************/
 @media (max-width: 599px) {
   html body {
     background: #F3F3F3; }
+    html body.menu-open #menu {
+      -webkit-transform: translate3d(0, 0, 0);
+              transform: translate3d(0, 0, 0); }
+    html body.menu-open #mobile i {
+      top: 10px;
+      -webkit-transform: rotate(45deg);
+              transform: rotate(45deg); }
+      html body.menu-open #mobile i:after {
+        -webkit-transform: rotate(45deg) translateX(-70%) scaleX(0);
+                transform: rotate(45deg) translateX(-70%) scaleX(0); }
+      html body.menu-open #mobile i:before {
+        -webkit-transform: rotate(90deg);
+                transform: rotate(90deg);
+        bottom: 1px; }
   html .container {
     width: 98%; }
-  html #menu {
-    position: fixed;
-    top: 0;
-    left: 0;
-    margin: 0;
-    width: 100%;
-    height: 100vh;
-    background: #fff;
-    z-index: 999999; }
+  html header {
+    position: relative;
+    z-index: 99909; }
   html #signup {
     z-index: 9999;
     display: none; }
@@ -52,18 +144,26 @@
     margin: 0;
     width: 100%;
     height: 100vh;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
     background: #fff;
-    z-index: 999999;
-    display: none;
-    padding: 20px; }
+    padding: 20px;
+    -webkit-transform: translate3d(101%, 0, 0);
+            transform: translate3d(101%, 0, 0);
+    -webkit-transition: -webkit-transform 0.25s cubic-bezier(0.62, 0.02, 0.34, 1) 0.15s;
+    transition: -webkit-transform 0.25s cubic-bezier(0.62, 0.02, 0.34, 1) 0.15s;
+    transition: transform 0.25s cubic-bezier(0.62, 0.02, 0.34, 1) 0.15s;
+    transition: transform 0.25s cubic-bezier(0.62, 0.02, 0.34, 1) 0.15s, -webkit-transform 0.25s cubic-bezier(0.62, 0.02, 0.34, 1) 0.15s;
+    will-change: transform; }
     html #menu #formSearch {
       float: none;
       display: table;
-      margin: 0 auto;
+      margin: 70px auto 0;
       height: 40px; }
       html #menu #formSearch input {
         -webkit-box-sizing: border-box;
-                box-sizing: border-box; }
+                box-sizing: border-box;
+        width: 225px; }
       html #menu #formSearch input[type="text"] {
         margin: 0;
         padding: 6.5px 10px;
@@ -87,19 +187,32 @@
         html #menu #formSearch input[type="button"]:hover {
           background-position: 0; }
     html #menu .menu-logout {
+      position: absolute;
       margin: 0 auto;
+      top: 35px;
+      left: 5.1%;
       display: table;
-      width: 233px;
+      padding: 8px 10px 7px;
+      line-height: 1em;
+      width: auto;
       text-align: right;
-      float: none; }
+      float: none;
+      font-size: 1.125em;
+      text-transform: uppercase;
+      border: 1px solid rgba(0, 0, 0, 0.7);
+      border-radius: 6px; }
     html #menu nav {
       float: none;
       margin: 0 auto;
-      max-width: 233px; }
+      max-width: 100%; }
       html #menu nav a {
+        margin: 0;
+        float: none;
         display: block;
-        padding: 5px 0;
-        float: none; }
+        padding: 8px 0;
+        border-bottom: 1px solid rgba(0, 0, 0, 0.5); }
+        html #menu nav a:last-child {
+          border-bottom: none; }
   html .first-post {
     margin: 0 !important; }
   html .first-post,
@@ -118,6 +231,9 @@
     width: auto;
     padding: 0;
     background-image: none; }
+  html .asyncPosts .opacity1 {
+    height: auto;
+    margin-bottom: 65px; }
   html .first-post,
   html .post-outros-campo,
   html .post-outros {
@@ -277,6 +393,7 @@
     height: 33px;
     width: 33px;
     background: none;
+    z-index: 99999;
     cursor: pointer; }
     html #mobile i {
       position: relative;
@@ -285,14 +402,19 @@
       height: 4px;
       display: block;
       border-radius: 2px;
-      background: #603E93; }
+      background: #603E93;
+      -webkit-transition: 0.34s cubic-bezier(0.52, 0.01, 0.16, 1);
+      transition: 0.34s cubic-bezier(0.52, 0.01, 0.16, 1);
+      will-change: transform; }
       html #mobile i:before, html #mobile i:after {
         position: absolute;
         content: '';
         height: 4px;
         width: 33px;
         border-radius: 2px;
-        background: #603E93; }
+        background: #603E93;
+        -webkit-transition: 0.34s cubic-bezier(0.52, 0.01, 0.16, 1);
+        transition: 0.34s cubic-bezier(0.52, 0.01, 0.16, 1); }
       html #mobile i:before {
         bottom: -9px; }
       html #mobile i:after {
@@ -448,3 +570,4 @@
     margin: 0 auto;
     max-width: 300px; } }
 
+/*# sourceMappingURL=style.css.map */
