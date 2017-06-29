@@ -29,8 +29,9 @@ html {
             }
 
         }
+
         .container {
-            width: 98%;
+            width: 95%;
         }
 
         header{
@@ -71,6 +72,11 @@ html {
             }
             #login-rodape {
                 float: none;
+            }
+
+            .wrapper{
+                display: table;
+                margin: 0 auto;
             }
         }
         #menu {
@@ -142,7 +148,7 @@ html {
                 float: none;
                 margin: 0 auto;
                 max-width: 100%;
-
+                
                 a {
                     margin: 0;
                     float: none;

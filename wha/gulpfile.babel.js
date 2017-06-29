@@ -33,7 +33,7 @@ gulp.task('styles', () => {
     .pipe(sass.sync())
     .pipe(autoprefixer())
     .pipe(sourcemaps.write('.'))
-    //.pipe(minifycss())
+    .pipe(minifycss())
     .pipe(gulp.dest(sassPaths.dest))
 
 })
@@ -65,6 +65,7 @@ gulp.task('scripts', () => {
 gulp.task('watch', () => {
 
   gulp.watch(`${dirs.src}/**/*.scss`, ['styles'])
+  gulp.watch(`${dirs.src}/**/*.js`, ['scripts'])
 
 })
 
