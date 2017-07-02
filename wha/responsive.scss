@@ -4,6 +4,8 @@ html {
             background: #F3F3F3;
 
             &.menu-open{
+                overflow: hidden;
+
                 #menu {
                     transform: translate3d(0, 0, 0);
                 }
@@ -438,9 +440,6 @@ html {
             border-radius: 4px;
             width: 225px;
             text-align: left;
-        }
-        #posts-box-esquerdo {
-            display: none;
         }
         .or-question {
             position: static;
