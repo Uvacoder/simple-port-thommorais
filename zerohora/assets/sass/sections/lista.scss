@@ -1,0 +1,22 @@
+.lista{
+    margin-bottom: 40px;
+    padding: 30px 15px;
+    border: 1px solid $c3;
+
+    h1{
+        margin: 0 0 15px;
+        font-size: 32px;
+        font-weight: 600;
+        color: $c1;
+        font-family: 'chbold', sans-serif;
+        text-transform: uppercase;    
+    }
+
+    h4{
+        color: $c4;
+
+        strong{
+            font-family: 'chbold'; 
+        }
+    }
+}

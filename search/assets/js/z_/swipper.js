@@ -1,7 +1,11 @@
+let slides  = isMobile.any() ? 1 : 2
+
+console.log(slides)
+
 const places = new Swiper('.places', {
     pagination: '.swiper-pagination',
     paginationClickable: true,
-    slidesPerView: 2,
+    slidesPerView: slides,
     spaceBetween: 10
 })
 
