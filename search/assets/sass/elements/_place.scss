@@ -20,12 +20,11 @@
 
     figure{
         width: 100%;
-        min-height: 150px;
         margin: 0;
 
         img{
-            width: auto;
-            height: 150px;
+            width: 100%;
+            height: auto;
         }
     }
 
@@ -45,10 +44,19 @@
         padding: 0;
         justify-content: space-between;
         align-items: center;
+
+        @include responsive($mobileM) {
+            display: block;
+        }
+
     }
 
     .ratings{
         margin:0 10px 10px;
+
+        @include responsive($mobileM) {
+            display: flex;
+        }
     }
 
     .data{
@@ -58,6 +66,18 @@
         color: #9E9E9E;
         letter-spacing: 0.38px;
         
+        @include responsive($mobileM) {
+            display: block;
+
+            span{
+                display: block;
+                border-right: 0;
+                padding: 0;
+            }
+        }
+
+
+
         span{
             padding: 0 5px;
             border-right: 1px solid #D8D8D8;
@@ -76,6 +96,13 @@
             &:last-child{
                 border-right: none;
             }
+
+            @include responsive($mobileM) {
+                display: block;
+                border-right: 0;
+                padding: 0;
+            }
+
         }
 
         .distance{
@@ -102,5 +129,21 @@
             background: $c4;
             color: $cWhite;
         }
+
+        @include responsive($mobileM) {
+            margin: 10px 0 0;
+            display: block;
+            width: 100%;
+            padding: 10px 0;
+            text-align: center;
+            background: $c4;
+            color: $cWhite;
+
+                &:hover{
+                    background: $cWhite;
+                    color: $c4;
+                }
+        }
+
     }
 }
