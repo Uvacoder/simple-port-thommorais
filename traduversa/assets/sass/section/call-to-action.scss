@@ -1,0 +1,59 @@
+section.call-to-action{
+  padding: 40px 10px;
+  background: $c2;
+
+  .wrp{
+    align-items: center;
+
+    @include responsive (599px, 'max') {
+      display: block;
+      text-align: center;
+    }
+
+  }
+
+
+
+  h3{
+    margin: 0 auto 30px;
+    color: $cWhite;
+    font-family: 'Dosis', sans-serif;
+    font-weight: 400;
+    font-size: em(30px);
+
+    strong{
+        font-weight: normal;
+    }
+
+
+    @include responsive (599px, 'max') {
+
+      strong{
+        font-weight: bold;
+        display: block;
+      }
+
+    }
+  }
+
+  .call-to-action{
+    text-align: center;
+    padding: 20px 4%;
+    border-radius: 4px;
+    border: 2px solid $c1;
+    background-color: $c1;
+    text-transform: uppercase;
+    color: $cWhite;
+    font-size: em(18px);
+
+    &:hover{
+      background-color: transparent;
+    }
+
+    @include responsive (599px, 'max') {
+      display: block;
+    }
+
+  }
+
+}

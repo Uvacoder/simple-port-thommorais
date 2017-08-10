@@ -1,0 +1,75 @@
+html, body{
+  position: relative;
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
+  min-height: 100vh;
+  overflow-x: hidden;
+  background: $cWhite;
+  font-family: 'Montserrat', sans-serif;
+  -webkit-font-smoothing: antialiased;
+
+  @include responsive (599px, 'max') {
+    font-size: 4vmin;
+  }
+
+
+}
+
+*{
+  box-sizing: border-box;
+}
+
+@mixin clearfix {
+  &:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+}
+
+ul{
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+a{
+  text-decoration: none;
+}
+
+h1,h3{
+  font-weight: normal;
+}
+
+
+figure{
+  padding: 0;
+  margin: 0;
+}
+
+.block{
+  display: block;
+}
+
+.wrp{
+  margin: 0 auto;
+  max-width: 1180px;
+}
+
+%flex{
+  display: flex;
+  justify-content: space-between;
+}
+
+.flex{
+  @extend %flex;
+}
+
+
+%paragraph{
+  font-size: em(18px);
+  font-family: 'Montserrat', sans-serif;
+  color: $c2;
+
+}
