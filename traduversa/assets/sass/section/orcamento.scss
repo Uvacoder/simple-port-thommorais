@@ -1,0 +1,89 @@
+
+
+section.estimate{
+  background-color: $c2;
+
+  h1 + p, h1{
+    text-align: center;
+  }
+
+  h1 + p{
+    color: $cWhite;
+  }
+
+  form{
+    margin: 80px auto 0;
+    max-width: 820px;
+  }
+
+  .field input,
+  .field select{
+    background-color: #abaeb3;
+    color: $cBlack;
+    text-transform: capitalize;
+  }
+
+  .field select{
+    @extend %paragraph;
+    color: $cBlack;
+  }
+
+  [type="file"],
+  [TYPE="submit"]{
+    margin: 0 2%;
+    width: 45%;
+    max-width: 300px;
+
+    @include responsive (599px, 'max') {
+      width: 100%;
+      max-width: 100%;
+      margin: 0;
+    }
+
+  }
+
+  [for="file"]{
+    text-align: center;
+    cursor: pointer;
+    border: 2px solid #abaeb3;
+    color: $cWhite;
+
+    @include responsive (599px, 'max') {
+      width: 100%;
+      max-width: 100%;
+    }
+
+  }
+
+  [type="submit"]{
+
+    @include responsive (599px, 'max') {
+      margin: 30px 0 0;
+    }
+
+  }
+
+  .field{
+
+    label:not([for="file"]){
+      @extend %flyLabels;
+    }
+
+    .fly-label + *:not([for="file"]),
+      input:focus + *:not([for="file"]){
+        transform: translate(0, -160%);
+        opacity: .6;
+        font-size: em(12px);
+    }
+
+
+    small{
+      font-size: em(11px);
+    }
+
+  }
+
+
+
+
+}

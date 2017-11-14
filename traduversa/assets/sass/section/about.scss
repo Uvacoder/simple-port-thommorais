@@ -1,0 +1,38 @@
+.about{
+  background: $c3;
+
+  article{
+    width: 46%;
+    display: inline-block;
+    vertical-align: top;
+
+    h2{
+      font-size: em(24px);
+      font-family: 'Dosis', sans-serif;
+      color: $c1;
+    }
+
+
+
+  }
+
+  p{
+    margin-bottom: 15px;
+    @extend %paragraph;
+  }
+
+
+  .flex{
+    @include responsive (599px, 'max') {
+
+      flex-wrap: wrap;
+      
+      article{
+        width: 100%;
+      }
+
+    }
+  }
+
+
+}

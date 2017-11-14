@@ -1,0 +1,111 @@
+form .row{
+  @extend %flex;
+  flex-wrap: wrap;
+}
+
+.field{
+  position: relative;
+  width: 50%;
+  padding: 15px;
+
+  .full &{
+    width: 100%;
+
+    @include responsive (599px, 'max') {
+      flex-wrap: wrap;
+    }
+
+  }
+
+  &.center{
+    align-items: center;
+    justify-content: center;
+  }
+
+  select,
+  input:not(.avoid), textarea{
+    display: block;
+    padding: 20px 10px;
+    width: 100%;
+    border: 1px solid $c2;
+    font-size: em(18px);
+    background: none;
+  }
+
+  textarea{
+    min-height: 180px;
+  }
+
+
+  select {
+      border-radius: 0;
+      appearance: none;
+      text-indent: 1px;
+      text-overflow: '';
+
+  }
+
+  .custom-select{
+    position: relative;
+
+    &:before{
+      @extend %pseudo_icon;
+      position: absolute;
+      right: 10px;
+      top: calc(50% - 8px);
+      transform: rotate(45deg) translate(-50%, 0);
+      height: 16px;
+      width: 16px;
+      border: 2px solid $c2;
+      border-left: 0;
+      border-top: 0;
+      pointer-events: none;
+    }
+  }
+
+  @include responsive (599px, 'max') {
+    width: 100%;
+    padding: 15px 0;
+  }
+
+}
+
+  [type="submit"]{
+    padding: 20px 40px;
+    border: 2px solid $c1;
+    border-radius: 4px;
+    color: $cWhite;
+    font-size: em(18px);
+    letter-spacing: 1.4pt;
+    background-color: $c1;
+  }
+
+  [for="file"]{
+    padding: 20px 40px;
+    border-radius: 4px;
+    text-transform: uppercase;
+  }
+
+  [type="file"]{
+    position: absolute;
+    visibility: hidden;
+  }
+
+
+%flyLabels{
+  position: absolute;
+  transform: translate(0, -50%);
+  top: 50% ;
+  padding-left: 10px;
+  max-width: 100%;
+  @extend %paragraph;
+  opacity: 1;
+  color: $cBlack;
+  transition: all .2s;
+}
+
+
+%flyLabelstextArea{
+  transform: translate(0, -50%);
+  top: 35px;
+}
