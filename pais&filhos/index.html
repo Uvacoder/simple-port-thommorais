@@ -1,0 +1,132 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Seu bebê na capa</title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,700i" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Arvo" rel="stylesheet">
+  <link href="public/style.css" rel="stylesheet">
+
+</head>
+<body class="home">
+  <svg style="display: none">
+    <symbol viewBox="1141 541 17 31" id="arrow-to-right">
+      <path d="M1142.68506,542 C1142.40761,542.000073 1142.15787,542.168242 1142.05347,542.425298 C1141.94906,542.682353 1142.01082,542.977035 1142.20965,543.170543 L1155.36394,556.32484 L1142.20965,569.479137 C1142.03153,569.650149 1141.95978,569.904092 1142.02207,570.143028 C1142.08436,570.381965 1142.27095,570.568559 1142.50989,570.630848 C1142.74883,570.693137 1143.00277,570.621387 1143.17378,570.44327 L1157.29221,556.32484 L1143.17378,542.20641 C1143.04541,542.074456 1142.86915,542.000011 1142.68506,542 L1142.68506,542 Z" id="Shape" stroke="#FC3868" stroke-width="1" fill="#FC3868" fill-rule="evenodd"></path>
+    </symbol>
+  </svg>
+
+  <main id="seu-bebe-na-capa">
+    <form action="app.html" class="upload" method="post" enctype="multipart/form-data">
+
+      <div class="swiper-container main">
+
+        <div class="swiper-wrapper">
+          <div class="widget swiper-slide ">
+            <div>
+              <h2>Faça upload da foto do seu filho</h2>
+
+              <div class="box" data-func="upload-file">
+
+                <input type="file" name="file" id="upload" class="upload-input" />
+
+                <label class="upload-box" for="upload">
+
+                  <figure>
+                  </figure>
+
+                  <strong>
+                    Clique aqui para selecionar a foto.
+                  </strong>
+                </label>
+
+              </div>
+            </div>
+          </div>
+          <div class="widget swiper-slide  next">
+
+            <div>
+              <h2>Selecione a capa</h2>
+              <div class="box" data-func="selec-cover">
+                <div class="swiper-container select-cover">
+                  <div class="swiper-wrapper">
+
+                      <div class="swiper-slide">
+                        <input type="radio" class="" value="capa-1" name="capa" id="capa-1" />
+
+                        <label for="capa-1">
+                          <img src="assets/images/capas/capa-1.png" alt="capa 2" width="215"/>
+                        </label>
+                      </div>
+
+                      <div class="swiper-slide">
+                        <input type="radio" class="" value="capa-2" name="capa" id="capa-2" />
+
+                        <label for="capa-2">
+                          <img src="assets/images/capas/capa-2.png" alt="capa 2" width="215"/>
+                        </label>
+                      </div>
+
+                  </div>
+                </div>
+                <nav class="slider-nav">
+
+                  <button class="swiper-button-prev">
+                    <svg class="svg to-l" role="img"  title="Ornament">
+                      <use xlink:href="#arrow-to-right"/>
+                    </svg>
+                  </button>
+
+                  <button class="swiper-button-next">
+                    <svg class="svg to-r" role="img"  title="Ornament">
+                      <use xlink:href="#arrow-to-right"/>
+                    </svg>
+                  </button>
+
+                </nav>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+
+
+      <nav class="navigation">
+
+        <button type="button" class="nav back hidden left">
+          <i>
+            <svg class="svg to-l" role="img" title="Ornament">
+              <use xlink:href="#arrow-to-right"/>
+            </svg>
+          </i>
+          anterior
+        </button>
+
+        <div class="next-wrp">
+          <button type="button" class="nav btn-go not-yet right">
+            próximo
+            <i><svg class="svg to-r" role="img"  title="Ornament"><use xlink:href="#arrow-to-right"/></svg></i>
+          </button>
+
+          <button type="submit" class="nav to-submit btn-go off">
+            próximo
+            <i><svg class="svg to-r" role="img" title="Ornament"><use xlink:href="#arrow-to-right"/></svg></i>
+          </button>
+
+        </div>
+      </nav>
+
+    </form>
+
+
+  </main>
+
+  <span class="loading"></span>
+  <script src="public/all.js"></script>
+</body>
+</html>
