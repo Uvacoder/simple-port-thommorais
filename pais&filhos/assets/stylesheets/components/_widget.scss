@@ -13,6 +13,7 @@
   position: relative;
   margin: 0 auto;
   width: 100%;
+  padding: 10px 0;
   max-width: 600px;
   border-radius: 4px;
   background: $color-two;
@@ -21,26 +22,17 @@
 
 }
 
-@media (max-width: 360px) {
+@media (max-width: 420px) {
 
   .widget{
     top: 0;
-    margin: 50px auto;
-
-    &.actual{
-      opacity: 1;
-      @include transform(translate3d(-50%, 0, 0));
-    }
-
-    &.previous{
-      @include transform(translate3d(-250%, 0, 0));
-    }
-
-    &.next{
-      @include transform(translate3d(50%, 0, 0));
-    }
-
+    padding: 0 10px;
+    margin: 20px auto;
+    min-height: 70vh;
   }
 
+  .box{
+    max-width: 96vw;
+  }
 
 }

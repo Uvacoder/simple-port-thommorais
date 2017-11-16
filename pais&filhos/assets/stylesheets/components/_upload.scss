@@ -16,6 +16,11 @@
   min-height: 360px;
   cursor: pointer;
 
+  @media (max-width: 420px) {
+    min-height: 320px;
+  }
+
+
   figure{
     @extend .centered;
     width: 245px;
