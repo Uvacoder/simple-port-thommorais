@@ -1,0 +1,16 @@
+.link{
+  position: relative;
+  color: $c4;
+  text-decoration: underline;;
+
+  &:after{
+    position: absolute;
+    left: 0;
+    bottom: 5px;
+    width: 100%;
+    height: 1px;
+    content: '';
+    opacity: 0;
+    background-color: currentColor;
+  }
+}

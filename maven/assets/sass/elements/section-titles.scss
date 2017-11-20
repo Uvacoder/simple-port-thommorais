@@ -1,0 +1,17 @@
+.section-title{
+  font-size: em(24px);
+  font-weight: 700;
+
+  &.center{
+    text-align: center;
+  }
+
+  &.white{
+    color: $cWhite;
+  }
+
+  &.blue{
+    color: $c1;
+  }
+  
+}
