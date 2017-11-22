@@ -1,0 +1,60 @@
+.for-all-plataforms{
+  overflow: hidden;
+
+  .flex.wrp{
+    margin: 0 auto;
+    padding: 50px 0;
+    max-width: 1014px;
+  }
+
+  .section-intro{
+    color: $c4;
+  }
+
+  h2{
+    font-weight: 500;
+  }
+
+  .text{
+    width: 45%;
+    max-width: 420px;
+  }
+
+  .devices{
+    position: relative;
+    width: 55%;
+  }
+
+  figure{
+    position: absolute;
+    left: 0;
+    width: 55vw;
+    max-width: 680px;
+  }
+
+  .notebook{
+    position: relative;
+    width: 100%;
+    height: auto;
+  }
+
+  .ipad{
+    right: 0;
+    width: 32%;
+    height: auto;
+  }
+
+  .iphone{
+    left: 3%;
+    width: 17%;
+  }
+
+  .ipad,
+  .iphone{
+    position: absolute;
+    height: auto;
+    bottom: -10px;
+  }
+
+
+}

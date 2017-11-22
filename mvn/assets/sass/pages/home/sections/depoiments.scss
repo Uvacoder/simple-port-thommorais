@@ -1,0 +1,85 @@
+.depoiments{
+  position: relative;
+  padding: 50px 10px;
+
+  .ico-quote{
+    position: absolute;
+    top: 0;
+    left: -90px;
+    height: 100px;
+    fill: #DFE4EC;
+  }
+
+  .slider-depoiments{
+    margin: 0 auto;
+    max-width: 1024px;
+  }
+
+  .swiper-slide{
+    position: relative;
+  }
+
+  .depoiment-wrp{
+    max-width: 880px;
+    margin: 50px auto 30px;
+  }
+
+  .depoiment{
+    position: relative;
+    z-index: 1;
+    width: 100%;
+    padding: 50px;
+    border-radius: 5px;
+    @extend %background-blue;
+    
+    &:before{
+      left: 6%;
+      bottom: -5px;
+      content: '';
+      @extend %marker;
+      background: $c1;
+    }
+
+  }
+
+  p{
+    color: $cWhite;
+  }
+
+}
+
+.signature{
+  margin: 30px 0 0 22px;
+  align-items: center;
+
+  h4{
+    margin: 0;
+    font-size: em(20px);
+    color: $c1;
+  }
+
+  p{
+    margin: 0;
+    color: $c4;
+  }
+
+  div{
+    margin: 0 0 0 10px;
+    line-height: 1.2em;
+  }
+
+  figure{
+    position: relative;
+    height: 48px;
+    width: 48px;
+    border-radius: 30px;
+    overflow: hidden;
+  }
+
+  img{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+  }
+}
