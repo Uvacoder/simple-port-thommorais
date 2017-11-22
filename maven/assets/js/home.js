@@ -19,6 +19,7 @@ domready( () => {
 
   const parts = all('.part')
   const controls = the('.controlers-video')
+
   let videos = false
 
   const videoSlider = new Swiper('.slider-videos', {
@@ -97,7 +98,6 @@ domready( () => {
     entries.forEach(entry => {
       // Are we in viewport?
 
-      console.log(entry.intersectionRatio)
       if (entry.intersectionRatio > 0) {
         scroll.unobserve(entry.target)
         preloadImage(entry.target)
@@ -106,16 +106,16 @@ domready( () => {
     })
   }
 
-
   // depoiments
   new Swiper('.slider-humans', {
     slidesPerView: 'auto',
     lazy: true,
     spaceBetween: 0,
-    pagination: {
-      el: '.swiper-pagination',
-      clickable: true,
-    },
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+    }
+
   })
 
 })

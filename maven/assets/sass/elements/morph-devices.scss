@@ -1,0 +1,120 @@
+
+$bg-color: rgba(darken($c3, 5), .3);
+$outline: rgba(darken($c3, 5),0.1);
+
+.device {
+	position: relative;
+	overflow: hidden;
+	width: 100%;
+	padding-top: 70%;
+	margin: 0 auto;
+	border: 2px solid $c4;
+	border-radius: 6px;
+	box-shadow: 10px 10px 0 -2px $bg-color, 10px 10px 0 rgba(255,255,255,.2);
+	backface-visibility: hidden;
+	animation: morphDevice 10s infinite cubic-bezier(1,.015,.295,1.225) forwards;
+
+	figcaption {
+		position: absolute;
+		top: 12px;
+		left: 12px;
+		width: 10px;
+		height: 10px;
+		background: $c1;
+		box-shadow: 15px 0 0 rgba($c4,.3), 30px 0 0 rgba($c4,.3);
+		border-radius: 50%;
+		animation: morphButtons 10s infinite cubic-bezier(1,.015,.295,1.225) forwards;
+		backface-visibility: hidden;
+	}
+}
+
+@keyframes morphDevice {
+	0%, 15% {
+		width: 100%;
+		padding-top: 70%;
+		margin-top: 0;
+		box-shadow: 10px 10px 0 -2px $bg-color, 10px 10px 0 $outline;
+		transform: rotate(0);
+	}
+	25%, 40% {
+		width: 70%;
+		padding-top: 55%;
+		margin-top: 7.5%;
+		box-shadow: 9px -9px 0 -2px $bg-color, 9px -9px 0 $outline;
+		transform: rotate(90deg);
+	}
+	50%, 65% {
+		width: 28%;
+		padding-top: 42%;
+		margin-top: 15%;
+		box-shadow: -8px -8px 0 -2px $bg-color, -8px -8px 0 $outline;
+		transform: rotate(180deg);
+	}
+	75%, 90% {
+		width: 55%;
+		padding-top: 70%;
+		margin-top: 0;
+		box-shadow: -9px 9px 0 -2px $bg-color, -9px 9px 0 $outline;
+		transform: rotate(270deg);
+	}
+	100% {
+		width: 100%;
+		padding-top: 70%;
+		margin-top: 0;
+		box-shadow: 10px 10px 0 -2px $bg-color, 10px 10px 0 $outline;
+		transform: rotate(360deg);
+	}
+}
+
+
+@keyframes morphButtons {
+	0%, 15%, 100% {
+		top: 12px;
+		left: 12px;
+		margin: 0;
+		box-shadow: 15px 0 0 rgba($c4,.1), 30px 0 0 rgba($c4,.1);
+		transform: scale(1);
+	}
+	25%, 40% {
+		top: 50%;
+		left: 100%;
+		margin: -5px 0 0 -20px;
+		box-shadow: 0 0 0 250px rgba($c4,0.05), 0 0 0 100px transparent;
+		transform: scale(.9);
+	}
+	50%, 65% {
+		top: 10px;
+		left: 50%;
+		margin: 0 0 0 -5px;
+		box-shadow: 0 -30px 0 rgba($c4,.05), 0 -30px 0 rgba($c4,.05);
+		transform: scale(.8);
+	}
+	75%, 90% {
+		top: 100%;
+		left: 50%;
+		margin: -20px 0 0 -5px;
+		box-shadow: 0 0 0 250px rgba($c4,0.05), 0 0 0 100px transparent;
+		transform: scale(.9);
+	}
+}
+
+
+.absolute-center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 400px;
+  height: 300px;
+  transform: translate(-50%,-50%);
+}
+
+.ir {
+	font: 0/0 a;
+	text-shadow: none;
+	color: transparent;
+}
+
+.mocks{
+  position: relative;
+  height: 300px;
+}

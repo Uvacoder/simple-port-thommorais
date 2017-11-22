@@ -11,7 +11,7 @@
   line-height: 20px;
   cursor: pointer;
   border: none;
-  transition: box-shadow 0.2s linear, transform 0.1s linear;
+  transition: box-shadow 0.15s linear, transform 0.1s linear;
   transform: translate3d(0, -1px, 0);
 
   &.white{

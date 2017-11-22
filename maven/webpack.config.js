@@ -5,6 +5,7 @@ const BrowserSyncPlugin = require('browser-sync-webpack-plugin')
 const ExtractTextPlugin = require('extract-text-webpack-plugin')
 const globImporter = require('node-sass-glob-importer')
 
+
 // JS
 const scripts = {
   test: /\.js$/,
@@ -48,13 +49,14 @@ const browserSync = new BrowserSyncPlugin({
   }
 }, {reload: true})
 
-
+// webpack configuration
 module.exports = {
   entry: {
     app: [
      path.resolve(__dirname, 'assets/js/home.js'),
      path.resolve(__dirname, 'assets/sass/style.scss')
-    ]
+   ],
+   solution: path.resolve(__dirname, 'assets/js/solution.js')
   },
   output: {
     filename: '[name].js',

@@ -7,6 +7,10 @@ svg:not(.dflt) {
     transform: inherit;
   }
 
+  .tofill{
+    fill: $c4;
+  }
+
   line{
     fill:none;
     stroke-linejoin:round;
