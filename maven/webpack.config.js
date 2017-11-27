@@ -42,7 +42,6 @@ const styles = {
 // development
 const browserSync = new BrowserSyncPlugin({
   host: 'localhost',
-  port: 3000,
   files: ["**/*.html", "./**/*.js"],
   server: {
     baseDir: ['./']

@@ -60,7 +60,7 @@
 /******/ 	__webpack_require__.p = "";
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 2);
+/******/ 	return __webpack_require__(__webpack_require__.s = 4);
 /******/ })
 /************************************************************************/
 /******/ ([
@@ -73,8 +73,59 @@
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
+var doc = document;
+var the = doc.querySelector.bind(doc);
+var all = doc.querySelectorAll.bind(doc);
 
-var _webfontloader = __webpack_require__(1);
+// Detect request animation frame
+var animation = window.requestAnimationFrame || window.webkitRequestAnimationFrame || window.mozRequestAnimationFrame || window.msRequestAnimationFrame || window.oRequestAnimationFrame ||
+// IE Fallback, you can even fallback to onscroll
+function (callback) {
+  window.setTimeout(callback, 1000 / 60);
+};
+
+var getElemOffset = function getElemOffset(elem) {
+
+  // Width and height of container or element
+  /// const width = elem.offsetWidth
+  var height = elem.offsetHeight;
+
+  // Default top and left position of container or element
+  var top = 0;
+  //let left = 0
+
+  // Get total distance of container or element to document's top and left origin
+  do {
+    if (!isNaN(elem.offsetTop)) {
+      top += elem.offsetTop;
+    }
+    // if (!isNaN(elem.offsetLeft)) {
+    //   left += elem.offsetLeft
+    // }
+  } while ((elem = elem.offsetParent) !== null);
+
+  // Return dimensions and position
+  return { height: height, top: top };
+};
+
+exports.doc = doc;
+exports.the = the;
+exports.all = all;
+exports.animation = animation;
+exports.getElemOffset = getElemOffset;
+
+/***/ }),
+/* 1 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
+var _webfontloader = __webpack_require__(2);
 
 var _webfontloader2 = _interopRequireDefault(_webfontloader);
 
@@ -89,7 +140,7 @@ var fonts = _webfontloader2.default.load({
 exports.default = fonts;
 
 /***/ }),
-/* 1 */
+/* 2 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -447,37 +498,72 @@ var __WEBPACK_AMD_DEFINE_RESULT__;
 })();
 
 /***/ }),
-/* 2 */
-/***/ (function(module, exports, __webpack_require__) {
-
-__webpack_require__(3);
-module.exports = __webpack_require__(8);
-
-
-/***/ }),
 /* 3 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 
 
-var _fontLoader = __webpack_require__(0);
+var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol" ? function (obj) { return typeof obj; } : function (obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; };
+
+/*!
+  * domready (c) Dustin Diaz 2014 - License MIT
+  */
+!function (name, definition) {
+
+  if (true) module.exports = definition();else if (typeof define == 'function' && _typeof(define.amd) == 'object') define(definition);else this[name] = definition();
+}('domready', function () {
+
+  var fns = [],
+      _listener,
+      doc = document,
+      hack = doc.documentElement.doScroll,
+      domContentLoaded = 'DOMContentLoaded',
+      loaded = (hack ? /^loaded|^c/ : /^loaded|^i|^c/).test(doc.readyState);
+
+  if (!loaded) doc.addEventListener(domContentLoaded, _listener = function listener() {
+    doc.removeEventListener(domContentLoaded, _listener);
+    loaded = 1;
+    while (_listener = fns.shift()) {
+      _listener();
+    }
+  });
+
+  return function (fn) {
+    loaded ? setTimeout(fn, 0) : fns.push(fn);
+  };
+});
+
+/***/ }),
+/* 4 */
+/***/ (function(module, exports, __webpack_require__) {
+
+__webpack_require__(5);
+module.exports = __webpack_require__(9);
+
+
+/***/ }),
+/* 5 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+var _fontLoader = __webpack_require__(1);
 
 var _fontLoader2 = _interopRequireDefault(_fontLoader);
 
-var _domready = __webpack_require__(4);
+var _domready = __webpack_require__(3);
 
 var _domready2 = _interopRequireDefault(_domready);
 
-var _sliderHeader = __webpack_require__(5);
+var _sliderHeader = __webpack_require__(6);
 
 var _sliderHeader2 = _interopRequireDefault(_sliderHeader);
 
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+var _utils = __webpack_require__(0);
 
-var doc = document;
-var the = doc.querySelector.bind(doc);
-var all = doc.querySelectorAll.bind(doc);
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 (0, _domready2.default)(function () {
 
@@ -486,11 +572,10 @@ var all = doc.querySelectorAll.bind(doc);
       el: '.swiper-pagination',
       dynamicBullets: true
     }
-
   });
 
-  var parts = all('.part');
-  var controls = the('.controlers-video');
+  var parts = (0, _utils.all)('.part');
+  var controls = (0, _utils.the)('.controlers-video');
 
   var videos = false;
 
@@ -529,7 +614,7 @@ var all = doc.querySelectorAll.bind(doc);
   var playPauseVideos = function playPauseVideos(index) {
 
     if (!videos) {
-      videos = all('.slider-videos video');
+      videos = (0, _utils.all)('.slider-videos video');
     }
 
     videos.forEach(function (video) {
@@ -551,7 +636,7 @@ var all = doc.querySelectorAll.bind(doc);
   });
 
   // Lazzy imgs
-  var lazys = all('.lazzy');
+  var lazys = (0, _utils.all)('.lazzy');
 
   var preloadImage = function preloadImage(img) {
     img.src = img.dataset.src;
@@ -594,44 +679,7 @@ var all = doc.querySelectorAll.bind(doc);
 });
 
 /***/ }),
-/* 4 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol" ? function (obj) { return typeof obj; } : function (obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; };
-
-/*!
-  * domready (c) Dustin Diaz 2014 - License MIT
-  */
-!function (name, definition) {
-
-  if (true) module.exports = definition();else if (typeof define == 'function' && _typeof(define.amd) == 'object') define(definition);else this[name] = definition();
-}('domready', function () {
-
-  var fns = [],
-      _listener,
-      doc = document,
-      hack = doc.documentElement.doScroll,
-      domContentLoaded = 'DOMContentLoaded',
-      loaded = (hack ? /^loaded|^c/ : /^loaded|^i|^c/).test(doc.readyState);
-
-  if (!loaded) doc.addEventListener(domContentLoaded, _listener = function listener() {
-    doc.removeEventListener(domContentLoaded, _listener);
-    loaded = 1;
-    while (_listener = fns.shift()) {
-      _listener();
-    }
-  });
-
-  return function (fn) {
-    loaded ? setTimeout(fn, 0) : fns.push(fn);
-  };
-});
-
-/***/ }),
-/* 5 */
+/* 6 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -641,7 +689,7 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 
-var _swiper = __webpack_require__(6);
+var _swiper = __webpack_require__(7);
 
 var _swiper2 = _interopRequireDefault(_swiper);
 
@@ -650,7 +698,7 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 exports.default = _swiper2.default;
 
 /***/ }),
-/* 6 */
+/* 7 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -674,7 +722,7 @@ var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol
                                                                                                                                                                                                                                                                                * Released on: November 7, 2017
                                                                                                                                                                                                                                                                                */
 
-var _dom = __webpack_require__(7);
+var _dom = __webpack_require__(8);
 
 function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
 
@@ -7115,7 +7163,7 @@ Swiper$1.components = [Device$2, Support$2, Browser$2, Resize, Observer$1, Virtu
 exports.default = Swiper$1;
 
 /***/ }),
-/* 7 */
+/* 8 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -8712,7 +8760,7 @@ exports.resize = resize;
 exports.scroll = scroll;
 
 /***/ }),
-/* 8 */
+/* 9 */
 /***/ (function(module, exports) {
 
 // removed by extract-text-webpack-plugin

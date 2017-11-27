@@ -1,16 +1,34 @@
 .link{
   position: relative;
   color: $c4;
-  text-decoration: underline;;
 
   &:after{
     position: absolute;
     left: 0;
-    bottom: 5px;
+    bottom: 0;
     width: 100%;
     height: 1px;
     content: '';
-    opacity: 0;
+    transform-origin: 0;
     background-color: currentColor;
+    transition: transform 0.2s linear;
   }
+
+  &:hover{
+    &:after{
+      transform: translate3d(0, -12px, 0);
+    }
+  }
+
+}
+
+
+.link-to-cases{
+  margin: 0 auto;
+  display: table;
+  padding: 50px 0 0;
+  color: $cWhite;
+
+  text-align: center;
+
 }

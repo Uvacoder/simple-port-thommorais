@@ -1,11 +1,7 @@
 import fonts from './vendors/fontLoader'
 import domready from 'domready'
 import Swiper from './sliderHeader'
-
-
-const doc = document
-const the = doc.querySelector.bind(doc)
-const all = doc.querySelectorAll.bind(doc)
+import {the, all, doc} from './utils'
 
 domready( () => {
 
@@ -14,7 +10,6 @@ domready( () => {
       el: '.swiper-pagination',
       dynamicBullets: true,
     },
-
   })
 
   const parts = all('.part')

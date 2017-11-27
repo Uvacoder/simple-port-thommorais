@@ -5,12 +5,36 @@
   overflow: hidden;
 
   .section-intro{
-    margin: 0 auto 100px;
+    margin: 0 auto 80px;
     max-width: 620px;
     text-align: center;
+    color: $cWhite;
+  }
+
+  h2{
+    color: $cWhite;
   }
 }
 
-#cases{
+div > .cases-solution,
+.cases-solution{
+  position: relative;
+  color: $cWhite;
   @extend %defaultSection;
+
+  .ico-circle{
+    top: 50%;
+    stroke: $cWhite;
+    opacity: 0.1;
+  }
+
+  // &.white{
+  //   background: $cWhite;
+  //   color: $c4;
+  // }
+
+  p.section-intro{
+    color: currentColor;
+  }
+
 }

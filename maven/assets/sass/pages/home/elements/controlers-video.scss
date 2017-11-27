@@ -14,7 +14,7 @@
     cursor: pointer;
 
     &:hover{
-      
+
       h4{
         color:$c1;
       }
@@ -55,7 +55,7 @@
     @extend %marker;
     background: $cWhite;
     transform: rotate(45deg) translate3d(500%, -500%, 0);
-    transition: transform 0.2s ease-in;
+    transition: transform 0.2s $transitionss;
   }
 
   &.showing-0 .marker{

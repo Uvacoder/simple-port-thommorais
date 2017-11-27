@@ -1,13 +1,14 @@
 .navigation{
 
-  a{
+  > a, span{
     position: relative;
     display: inline-block;
-    padding: 10px 0;
+    padding: 10px 0 5px;
     margin: 0 0 0 3em;
     text-transform: uppercase;
     color: $cWhite;
-    
+    cursor: pointer;
+
     &:before{
       position: absolute;
       bottom: 0;
@@ -27,4 +28,44 @@
 
   }
 
+}
+
+.submenu{
+  position: absolute;
+  left: -1px;
+  top: 40px;
+  margin: 0;
+  transform: translate3d(0, 20px, 0);
+  width: 240px;
+  padding: 15px;
+  background: $cWhite;
+  border-radius: 2px;
+  @extend %grey-shadow;
+  pointer-events: none;
+  opacity: 0;
+  transition: opacity 0.2s $transition, transform 0.25s $transition;
+
+  span:hover &{
+    opacity: 1;
+    transform: translate3d(0, -1px, 0);
+    pointer-events: all;
+  }
+
+  li{
+    font-size: em(14px);
+    margin-bottom: 8px;
+
+    &:last-child{
+      margin-bottom: 0;
+    }
+
+  }
+
+  a{
+    color: $c4;
+
+    &:hover{
+      color: darken($c4, 10);
+    }
+  }
 }

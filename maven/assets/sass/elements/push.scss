@@ -1,0 +1,44 @@
+.pushs{
+  position: relative;
+  margin: 0 auto 30px;
+  padding:10px 15px;
+  max-width: 320px;
+  border-radius: 5px;
+  background: $c4;
+  color: $cWhite;
+
+  &:before{
+    position: absolute;
+    height: 20px;
+    width: 20px;
+    background: $c4;
+    content: '';
+    bottom: -7px;
+    left: 30px;
+    border-radius: 5px;
+    transform: rotate(45deg);
+  }
+
+  h5{
+    margin: 0;
+    font-size: em(15px);
+    text-transform: uppercase;
+    color: $cWhite;
+  }
+
+  svg{
+    position: relative;
+    top: 4px;
+    fill: none;
+    height: 20px;
+    width: 20px;
+  }
+
+  p{
+    position: relative;
+    margin:5px 0 0;
+    line-height: em(20px);
+    font-size: em(12px);
+    color: currentColor !important;
+  }
+}

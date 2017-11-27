@@ -60,12 +60,62 @@
 /******/ 	__webpack_require__.p = "";
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 9);
+/******/ 	return __webpack_require__(__webpack_require__.s = 10);
 /******/ })
 /************************************************************************/
-/******/ ({
+/******/ ([
+/* 0 */
+/***/ (function(module, exports, __webpack_require__) {
 
-/***/ 0:
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+var doc = document;
+var the = doc.querySelector.bind(doc);
+var all = doc.querySelectorAll.bind(doc);
+
+// Detect request animation frame
+var animation = window.requestAnimationFrame || window.webkitRequestAnimationFrame || window.mozRequestAnimationFrame || window.msRequestAnimationFrame || window.oRequestAnimationFrame ||
+// IE Fallback, you can even fallback to onscroll
+function (callback) {
+  window.setTimeout(callback, 1000 / 60);
+};
+
+var getElemOffset = function getElemOffset(elem) {
+
+  // Width and height of container or element
+  /// const width = elem.offsetWidth
+  var height = elem.offsetHeight;
+
+  // Default top and left position of container or element
+  var top = 0;
+  //let left = 0
+
+  // Get total distance of container or element to document's top and left origin
+  do {
+    if (!isNaN(elem.offsetTop)) {
+      top += elem.offsetTop;
+    }
+    // if (!isNaN(elem.offsetLeft)) {
+    //   left += elem.offsetLeft
+    // }
+  } while ((elem = elem.offsetParent) !== null);
+
+  // Return dimensions and position
+  return { height: height, top: top };
+};
+
+exports.doc = doc;
+exports.the = the;
+exports.all = all;
+exports.animation = animation;
+exports.getElemOffset = getElemOffset;
+
+/***/ }),
+/* 1 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -75,7 +125,7 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 
-var _webfontloader = __webpack_require__(1);
+var _webfontloader = __webpack_require__(2);
 
 var _webfontloader2 = _interopRequireDefault(_webfontloader);
 
@@ -90,8 +140,7 @@ var fonts = _webfontloader2.default.load({
 exports.default = fonts;
 
 /***/ }),
-
-/***/ 1:
+/* 2 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -449,20 +498,233 @@ var __WEBPACK_AMD_DEFINE_RESULT__;
 })();
 
 /***/ }),
-
-/***/ 9:
+/* 3 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 
 
-var _fontLoader = __webpack_require__(0);
+var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol" ? function (obj) { return typeof obj; } : function (obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; };
+
+/*!
+  * domready (c) Dustin Diaz 2014 - License MIT
+  */
+!function (name, definition) {
+
+  if (true) module.exports = definition();else if (typeof define == 'function' && _typeof(define.amd) == 'object') define(definition);else this[name] = definition();
+}('domready', function () {
+
+  var fns = [],
+      _listener,
+      doc = document,
+      hack = doc.documentElement.doScroll,
+      domContentLoaded = 'DOMContentLoaded',
+      loaded = (hack ? /^loaded|^c/ : /^loaded|^i|^c/).test(doc.readyState);
+
+  if (!loaded) doc.addEventListener(domContentLoaded, _listener = function listener() {
+    doc.removeEventListener(domContentLoaded, _listener);
+    loaded = 1;
+    while (_listener = fns.shift()) {
+      _listener();
+    }
+  });
+
+  return function (fn) {
+    loaded ? setTimeout(fn, 0) : fns.push(fn);
+  };
+});
+
+/***/ }),
+/* 4 */,
+/* 5 */,
+/* 6 */,
+/* 7 */,
+/* 8 */,
+/* 9 */,
+/* 10 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+var _fontLoader = __webpack_require__(1);
 
 var _fontLoader2 = _interopRequireDefault(_fontLoader);
 
+var _utils = __webpack_require__(0);
+
+var _domready = __webpack_require__(3);
+
+var _domready2 = _interopRequireDefault(_domready);
+
+var _Tabs = __webpack_require__(11);
+
+var _Tabs2 = _interopRequireDefault(_Tabs);
+
+var _ScrollHandler = __webpack_require__(12);
+
+var _ScrollHandler2 = _interopRequireDefault(_ScrollHandler);
+
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-/***/ })
+(0, _domready2.default)(function () {
+  return new _Tabs2.default();
+});
 
-/******/ });
+/***/ }),
+/* 11 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+var _utils = __webpack_require__(0);
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+var Tabs = function () {
+  function Tabs() {
+    _classCallCheck(this, Tabs);
+
+    this.cnt = (0, _utils.the)('.tabs') || false;
+
+    if (!this.cnt) return;
+
+    this.triggers = this.cnt.querySelectorAll('.tabber li');
+    this.tabs = this.cnt.querySelectorAll('.tab');
+    this.controler = [];
+    this.init();
+  }
+
+  _createClass(Tabs, [{
+    key: 'init',
+    value: function init() {
+      var _this = this;
+
+      this.triggers.forEach(function (trigger) {
+
+        var selector = trigger.dataset.tab;
+        var tab = (0, _utils.the)('.tab[data-tab=' + selector + ']');
+        _this.controler.push({ trigger: trigger, tab: tab, selector: selector });
+
+        trigger.addEventListener('click', function () {
+          _this.tabIt(selector);
+          _this.updateHash(selector);
+        });
+      });
+
+      var hash = window.location.hash || false;
+
+      if (hash) {
+        var selector = hash.replace("#", "");
+        this.tabIt(selector);
+      }
+    }
+  }, {
+    key: 'updateHash',
+    value: function updateHash(selector) {
+      window.location.hash = selector;
+    }
+  }, {
+    key: 'tabIt',
+    value: function tabIt(selector) {
+
+      this.controler.filter(function (e) {
+        return e.selector === selector;
+      }).forEach(function (active) {
+        active.tab.classList.add('active');
+        active.trigger.classList.add('active');
+      });
+
+      this.controler.filter(function (e) {
+        return e.selector !== selector;
+      }).forEach(function (inactive) {
+        inactive.tab.classList.remove('active');
+        inactive.trigger.classList.remove('active');
+      });
+    }
+  }]);
+
+  return Tabs;
+}();
+
+exports.default = Tabs;
+
+/***/ }),
+/* 12 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+var _utils = __webpack_require__(0);
+
+var _utils2 = _interopRequireDefault(_utils);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+var ScrollHandler = function () {
+    function ScrollHandler() {
+        _classCallCheck(this, ScrollHandler);
+    }
+
+    _createClass(ScrollHandler, [{
+        key: 'init',
+        value: function init(options) {
+            this.after = options.after || function () {};
+            this.before = options.before || function () {};
+            this.max = options.max || 0;
+            this.min = options.min || 0;
+            this.lastPosY = window.pageYOffset;
+            this.loop();
+        }
+    }, {
+        key: 'callback',
+        value: function callback() {
+            if (this.lastPosY >= this.max) {
+                this.after();
+            }
+
+            if (this.lastPosY <= this.min) {
+                this.before();
+            }
+        }
+    }, {
+        key: 'loop',
+        value: function loop() {
+            var scrollTop = window.pageYOffset;
+
+            if (this.lastPosY === scrollTop) {
+                (0, _utils2.default)(this.loop.bind(this));
+                return;
+            } else {
+                this.lastPosY = scrollTop;
+                this.callback();
+                (0, _utils2.default)(this.loop.bind(this));
+            }
+        }
+    }, {
+        key: 'stop',
+        value: function stop(name) {
+            this.loop = function () {
+                return null;
+            };
+        }
+    }]);
+
+    return ScrollHandler;
+}();
+
+/***/ })
+/******/ ]);
 //# sourceMappingURL=solution.js.map

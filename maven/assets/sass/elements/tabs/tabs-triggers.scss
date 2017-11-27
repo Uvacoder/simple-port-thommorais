@@ -1,3 +1,5 @@
+$transition1 :  cubic-bezier(1,.015,.295,1.225);
+
 .tabber{
   z-index: 5;
   @extend .flex;
@@ -20,7 +22,8 @@
     border-top-left-radius: 2px;
     border-top-right-radius: 2px;
     letter-spacing: 0;
-    @extend %tabshadow;
+
+    transition: 0.15s transform $transition1, color 0.3s linear;
 
   }
 
@@ -30,6 +33,7 @@
     background: $cWhite;
     font-size: em(24px);
     color: $c1;
+    @extend %tabshadow;
 
       &:after{
         position: absolute;
