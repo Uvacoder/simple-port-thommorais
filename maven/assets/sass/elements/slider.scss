@@ -20,7 +20,7 @@
     &.one{
       img{
         position: relative;
-        top: 50px;
+        top: 120px;
       }
     }
 
@@ -33,13 +33,13 @@
   }
 
   article{
-    width: 55%;
+    width: 51%;
     color: $cWhite;
     text-align: left;
   }
 
   img{
-    max-width: 45%;
+    max-width: 49%;
     height: auto;
     display: block;
     align-self: flex-end;
@@ -76,9 +76,11 @@ header .swiper-pagination{
   transform: translate(-50%, 0);
 
   span{
+    position: relative;
     background: $cWhite;
 
     &.swiper-pagination-bullet-active{
+        top: 1px;
         height: 10px;
         width: 10px;
     }

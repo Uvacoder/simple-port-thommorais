@@ -14,7 +14,7 @@
 
         <div class="flex wrp between header-top">
 
-          <a href="#" role="link">
+          <a href="./" role="link">
             <img role="logo" src="public/logo.png" alt="Maven inventing" />
           </a>
 
@@ -22,14 +22,29 @@
               <span role="menuitem">
                 Soluções
                 <ul class="submenu">
-                  <li><a href="#">PARA JORNAIS E REVISTAS</a></li>
-                  <li><a href="#">PARA GOVERNOS</a></li>
-                  <li><a href="#">PARA PORTAIS DE NOTÍCIAS</a></li>
+                  <li>
+                    <a href="revistas-e-jornais">
+                      <svg class="icon ic-magazine"><use xlink:href="#ic-magazine"></use></svg>
+                      PARA JORNAIS E REVISTAS
+                    </a>
+                  </li>
+                  <li>
+                    <a href="setor-publico">
+                      <svg class="icon ic-governament"><use xlink:href="#ic-governament"></use></svg>
+                      PARA GOVERNOS
+                    </a>
+                  </li>
+                  <li>
+                    <a href="portais-de-noticias">
+                      <svg class="icon ic-journal"><use xlink:href="#ic-journal"></use></svg>
+                      PARA PORTAIS DE NOTÍCIAS
+                    </a>
+                  </li>
                 </ul>
               </span>
 
               <a role="menuitem" href="#">Blog</a>
-              <a role="menuitem" href="#">Contato</a>
+              <a role="menuitem" href="#contact">Contato</a>
           </nav>
 
         </div>
@@ -181,15 +196,19 @@
         <div class="swiper-container slider-videos videos-wrp">
 
           <div class="swiper-wrapper">
+
             <div class="swiper-slide">
-              <video class="lazzy" data-src="public/jornal.mp4" loop></video>
+              <video class="lazzy" data-src="public/jornal.mp4" loop muted></video>
             </div>
+
             <div class="swiper-slide">
-              <video class="lazzy" data-src="public/gaz.mp4" loop></video>
+              <video class="lazzy" data-src="public/gaz.mp4" loop muted></video>
             </div>
+
             <div class="swiper-slide">
-              <video class="lazzy" data-src="public/doc.mp4" loop></video>
+              <video class="lazzy" data-src="public/doc.mp4" loop muted></video>
             </div>
+
           </div>
 
           <div class="swiper-pagination"></div>
@@ -204,6 +223,7 @@
         <div class="swiper-container slider-depoiments">
 
           <div class="swiper-wrapper">
+
             <div class="swiper-slide">
               <svg class="ico-quote"><use xlink:href="#ic-quote" /></svg>
 
@@ -216,9 +236,9 @@
                   </p>
                 </div>
                 <div class="signature flex">
-                  <figure>
+                  <!-- <figure>
                     <img src="public/depoiment.png" height="53" width="48" alt="Gimli son of Gloin" />
-                  </figure>
+                  </figure> -->
                   <div>
                     <h4>Gimli son of Gloin</h4>
                     <p>Lockbearer</p>
@@ -226,9 +246,56 @@
                 </div>
 
               </div>
-
-
             </div>
+
+            <div class="swiper-slide">
+              <svg class="ico-quote"><use xlink:href="#ic-quote" /></svg>
+
+              <div class="depoiment-wrp">
+
+                <div class="depoiment">
+                  <img src="public/rbs.png" width="130" height="35" alt="Grupo RBS" />
+                  <p>
+                    “Festicket empowers music fans with a seamless service to discover and book tickets and travel packages for music festivals worldwide. Our platform offers an end-to-end experience for music travellers, an efficient two-sided marketplace for 1,000+ music festivals across 40 different countries.
+                  </p>
+                </div>
+                <div class="signature flex">
+                  <!-- <figure>
+                    <img src="public/depoiment.png" height="53" width="48" alt="Gimli son of Gloin" />
+                  </figure> -->
+                  <div>
+                    <h4>Gimli son of Gloin</h4>
+                    <p>Lockbearer</p>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+
+            <div class="swiper-slide">
+              <svg class="ico-quote"><use xlink:href="#ic-quote" /></svg>
+
+              <div class="depoiment-wrp">
+
+                <div class="depoiment">
+                  <img src="public/rbs.png" width="130" height="35" alt="Grupo RBS" />
+                  <p>
+                    “Festicket empowers music fans with a seamless service to discover and book tickets and travel packages for music festivals worldwide. Our platform offers an end-to-end experience for music travellers, an efficient two-sided marketplace for 1,000+ music festivals across 40 different countries.
+                  </p>
+                </div>
+                <div class="signature flex">
+                  <!-- <figure>
+                    <img src="public/depoiment.png" height="53" width="48" alt="Gimli son of Gloin" />
+                  </figure> -->
+                  <div>
+                    <h4>Gimli son of Gloin</h4>
+                    <p>Lockbearer</p>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+
           </div>
 
           <div class="swiper-pagination"></div>
@@ -368,21 +435,21 @@
                 <a href="#" class="current">HOME</a>
               </li>
               <li>
-                <a href="#">SOLUÇÃO PARA REVISTAS E JORNAIS</a>
+                <a href="revistas-e-jornais">SOLUÇÃO PARA REVISTAS E JORNAIS</a>
               </li>
               <li>
-                <a href="#">SOLUÇÃO PARA GOVERNOS</a>
+                <a href="setor-publico">SOLUÇÃO PARA GOVERNOS</a>
               </li>
               <li>
-                <a href="#">SOLUÇÃO PARA PORTAIS DE NOTICÍAS</a>
+                <a href="portais-de-noticias">SOLUÇÃO PARA PORTAIS DE NOTICÍAS</a>
               </li>
             </ul>
 
             <ul class="social-itens">
-              <li><a href="#"><svg class="ico-facebook"><use xlink:href="#ic-facebook"/></svg></a></li>
-              <li><a href="#"><svg class="ico-instagram"><use xlink:href="#ic-instagram"/></svg></a></li>
-              <li><a href="#"><svg class="ico-linkedin"><use xlink:href="#ic-linkedin"/></svg></a></li>
-              <li><a href="#"><svg class="ico-twitter"><use xlink:href="#ic-twitter"/></svg></a></li>
+              <li><a href="https://www.facebook.com/Maven/" target="_blank"><svg class="ico-facebook"><use xlink:href="#ic-facebook"/></svg></a></li>
+              <li><a href="https://www.instagram.com/maveninventing/" target="_blank"><svg class="ico-instagram"><use xlink:href="#ic-instagram"/></svg></a></li>
+              <li><a href="https://www.linkedin.com/company/maven-inventing-solutions" target="_blank"><svg class="ico-linkedin"><use xlink:href="#ic-linkedin"/></svg></a></li>
+              <li><a href="https://twitter.com/maveninventing" target="_blank"><svg class="ico-twitter"><use xlink:href="#ic-twitter"/></svg></a></li>
             </ul>
           </div>
 

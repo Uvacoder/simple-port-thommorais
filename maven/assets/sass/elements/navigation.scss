@@ -1,5 +1,6 @@
 .navigation{
-
+  position: relative;
+  z-index: 999;
   > a, span{
     position: relative;
     display: inline-block;
@@ -51,12 +52,29 @@
     pointer-events: all;
   }
 
+
   li{
+    padding-bottom: 5px;
     font-size: em(14px);
-    margin-bottom: 8px;
+    margin-bottom: 10px;
+    border-bottom: 1px solid rgba($c4, 0.3);
 
     &:last-child{
+      padding-bottom: 0;
       margin-bottom: 0;
+      border-bottom: 0;
+
+      svg{
+        width: 33px;
+      }
+    }
+
+    svg{
+      display: block;
+      margin-bottom: 2px;
+      height: 30px;
+      width: 30px;
+      fill: $c4;
     }
 
   }
@@ -66,6 +84,11 @@
 
     &:hover{
       color: darken($c4, 10);
+
+      svg{
+        fill: darken($c4, 10);
+      }
+
     }
   }
 }

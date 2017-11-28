@@ -4,6 +4,7 @@ const path = require('path')
 const BrowserSyncPlugin = require('browser-sync-webpack-plugin')
 const ExtractTextPlugin = require('extract-text-webpack-plugin')
 const globImporter = require('node-sass-glob-importer')
+const { Gaze } = require('gaze')
 
 
 // JS
@@ -46,7 +47,10 @@ const browserSync = new BrowserSyncPlugin({
   server: {
     baseDir: ['./']
   }
-}, {reload: true})
+}, {reload: false})
+
+const gaze = new Gaze("./dist/app.css");
+gaze.on('all', () => browserSync.browserSync.reload("./dist/app.css"))
 
 // webpack configuration
 module.exports = {
