@@ -1,8 +1,14 @@
 import fonts from './vendors/fontLoader'
 import {the, all, doc} from './utils'
 import domready from 'domready'
-
 import Tabs from './controlers/Tabs'
-import ScrollHandler from './controlers/ScrollHandler'
+import scrollHandler from './scrollHandler'
+import lazzyLoad from './lazzyLoad'
 
-domready( () => new Tabs())
+domready( () => {
+
+  new Tabs()
+  lazzyLoad()
+  scrollHandler('.pushs', -50)
+
+})

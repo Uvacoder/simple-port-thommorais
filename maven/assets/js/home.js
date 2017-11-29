@@ -3,6 +3,8 @@ import domready from 'domready'
 import Swiper from './vendors/swiper.esm'
 import {the, all, doc} from './utils'
 import video from './video'
+import lazzyLoad from './lazzyLoad'
+
 
 domready( () => {
 
@@ -25,35 +27,7 @@ domready( () => {
     }
   })
 
-
-  // Lazzy imgs
-  const lazys = all('.lazzy')
-
-  const preloadImage = img =>{
-    img.src = img.dataset.src
-  }
-
-  const config = {
-    rootMargin: '50px 0px',
-    threshold: 0.01
-  }
-
-  const scroll = new IntersectionObserver(onIntersection, config)
-
-  lazys.forEach( lazy => scroll.observe(lazy))
-
-  function onIntersection(entries) {
-    // Loop through the entries
-    entries.forEach(entry => {
-      // Are we in viewport?
-
-      if (entry.intersectionRatio > 0) {
-        scroll.unobserve(entry.target)
-        preloadImage(entry.target)
-      }
-
-    })
-  }
+  lazzyLoad()
 
   // depoiments
   new Swiper('.slider-humans', {

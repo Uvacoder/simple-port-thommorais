@@ -6,7 +6,6 @@ const ExtractTextPlugin = require('extract-text-webpack-plugin')
 const globImporter = require('node-sass-glob-importer')
 const { Gaze } = require('gaze')
 
-
 // JS
 const scripts = {
   test: /\.js$/,
@@ -22,17 +21,25 @@ const extractSass = new ExtractTextPlugin({
   allChunks: true
 })
 
+
 const styles = {
   test: /\.scss$/,
   use: extractSass.extract({
     use: [
       {
-        loader: "css-loader"
+        loader: "css-loader",
+        options: {
+          sourceMap: true,
+        }
       }, {
-        loader: "postcss-loader"
+        loader: "postcss-loader",
+        options: {
+          sourceMap: true,
+        }
       }, {
         loader: "sass-loader",
         options: {
+          sourceMap: true,
           importer: globImporter()
         }
       }
@@ -49,8 +56,8 @@ const browserSync = new BrowserSyncPlugin({
   }
 }, {reload: false})
 
-const gaze = new Gaze("./dist/app.css");
-gaze.on('all', () => browserSync.browserSync.reload("./dist/app.css"))
+const gaze = new Gaze("./public/app.css");
+gaze.on('all', () => browserSync.browserSync.reload("./public/app.css"))
 
 // webpack configuration
 module.exports = {
@@ -63,7 +70,7 @@ module.exports = {
   },
   output: {
     filename: '[name].js',
-    path: path.resolve(__dirname, 'dist')
+    path: path.resolve(__dirname, 'public')
   },
   module: {
     loaders: [styles, scripts]

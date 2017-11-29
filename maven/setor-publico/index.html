@@ -6,16 +6,16 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="../dist/app.css">
+        <link rel="stylesheet" href="../public/app.css">
     </head>
 
     <body>
 
-      <header class="header-interna">
+      <header class="header-interna setor-publico">
 
         <div class="flex wrp between header-top">
 
-          <a href="./" role="link">
+          <a href="../" role="link">
             <img role="logo" src="../public/logo.png" alt="Maven inventing" />
           </a>
 
@@ -95,7 +95,7 @@
               <article class="process-itens">
 
                 <figure id="processos-ilustracao">
-                  <img src="../assets/img/processos.png" height="645" width="531" />
+                  <img class="lazzy" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" data-src="../public/processos.png" height="645" width="531" />
                 </figure>
 
                 <ul>
@@ -186,7 +186,7 @@
 
                   <article class="case">
                     <figure>
-                      <img src="../assets/img/zero.png" />
+                      <img class="lazzy" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" data-src="../public/TCE_case.png" />
                     </figure>
                     <h4>TCE</h4>
                     <p>Projeto desenvolvido para disponibilizar os processos no formato eletrônico, visando facilitar o
@@ -195,7 +195,7 @@
 
                   <article class="case">
                     <figure>
-                      <img src="../assets/img/zero.png" />
+                      <img class="lazzy" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" data-src="../public/mprs_case.png" />
                     </figure>
                     <h4>MPRS</h4>
                     <p>Foi desenvolvida uma solução para facilitar a integração do Processo Eletrônico disponibilizando uma interface
@@ -205,7 +205,7 @@
 
                   <article class="case">
                     <figure>
-                      <img src="../assets/img/zero.png" />
+                      <img class="lazzy" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" data-src="../public/TCU_case.png" />
                     </figure>
                     <h4>TCU</h4>
                     <p>Projeto desenvolvido para publicar todos os processos do Tribunal. Ao todo foram processados mais de 27 milhões de páginas.</p>
@@ -279,11 +279,11 @@
                   <p>Tenha uma área de conteúdo exclusivo para assinantes e traga ainda mais benefícios para quem assinar sua publicação.</p>
                 </article>
 
-                <article class="feature setor-publico">
+                <!-- <article class="feature setor-publico">
                   <svg class="ico-feature paywall"><use xlink:href="#ic-paywall" /></svg>
                   <h4>Paywall Integrado</h4>
                   <p>Crie uma parede de pagamento que irá travar o conteúdo apenas para assinantes. Integra a Paywall a plataformas de compras como Pagseguro e Paypal.</p>
-                </article>
+                </article> -->
 
                 <article class="feature setor-publico">
                   <svg class="ico-feature collection"><use xlink:href="#ic-collection" /></svg>
@@ -295,7 +295,32 @@
 
             </div>
 
-            <div class="cases-solution" >
+            <div class="responsive">
+
+              <h3 class="section-title blue center">RESPONSIVO E MOBILE</h3>
+              <p class="section-intro">Para facilitar a vida de quem usa, a plataforma da Maven é responsiva e compatível com qualquer tela (mobile, desktop e tablet).</p>
+
+              <div class="mocks">
+                <div class="absolute-center">
+                  <figure class="device">
+                    <figcaption class="ir">
+                      Responsive Web Design
+                    </figcaption>
+                  </figure>
+                </div>
+              </div>
+
+              <div class="pushs">
+                <h5>
+                  <svg class="ico-bell"><use xlink:href="#ic-bell" /></svg>
+                  Notificação em push</h5>
+                <p>Receba no celular notificações sobre qualquer atualização de processos que você acompanha.</p>
+              </div>
+
+            </div>
+
+
+            <div class="cases-solution">
               <svg class="ico-circle"><use xlink:href="#ic-circle" /></svg>
               <div class="wrp content">
                 <h2 class="section-title white center">CASES DE SUCESSO</h2>
@@ -305,7 +330,7 @@
 
                   <article class="case">
                     <figure>
-                      <img src="../assets/img/zero.png" />
+                      <img class="lazzy" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" data-src="../public/zero.png" />
                     </figure>
                     <h4>Zero Hora</h4>
                     <p>A ZH Digital tem insumos como vídeos, galerias de fotos e conteúdo exclusivo a assinantes.</p>
@@ -313,7 +338,7 @@
 
                   <article class="case">
                     <figure>
-                      <img src="../assets/img/mamae.png" />
+                      <img class="lazzy" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" data-src="../public/mamae.png" />
                     </figure>
                     <h4>Manual da Mamãe</h4>
                     <p>Revista com conteúdo gratuito para gestantes e mamães, nos formatos impresso e digital.</p>
@@ -321,7 +346,7 @@
 
                   <article class="case">
                     <figure>
-                      <img src="../assets/img/correio-do-povo.png" />
+                      <img class="lazzy" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" data-src="../public/correio-do-povo.png" />
                     </figure>
                     <h4>Correio do Povo</h4>
                     <p>Jornal centenário disponível em HTML5 para web e mobile</p>
@@ -569,13 +594,12 @@
             <path d="M224.1824.049c-.703.1353-1.371.4137-1.9622.8177L28.6156 121.082c-1.5207.954-2.4465 2.6208-2.4528 4.416v26.333c.0003 2.8905 2.3428 5.2336 5.2325 5.234h36.628v157.016h-36.628c-.1634-.0078-.327-.0078-.4905 0-2.6966.254-4.7537 2.5245-4.742 5.2337v20.9355H5.2326c-2.8898.0003-5.2323 2.3434-5.2326 5.234v36.637c.0003 2.8904 2.3428 5.2335 5.2326 5.2338h439.5348c2.8898-.0003 5.2323-2.3434 5.2326-5.234v-36.637c-.0003-2.8904-2.3428-5.2335-5.2326-5.2338h-20.9302v-20.9355c-.0003-2.8904-2.3428-5.2336-5.2325-5.2338h-78.4884V157.065h31.3953v130.8465c-.0267 1.8875.9648 3.6432 2.5947 4.5948 1.63.9515 3.6458.9515 5.2758 0 1.63-.9516 2.6214-2.7073 2.5947-4.5948V157.065h36.628c2.8897-.0004 5.2322-2.3435 5.2325-5.234v-26.333c-.0063-1.7953-.932-3.462-2.4528-4.416L227.7798.8667c-1.06-.7004-2.3388-.991-3.5974-.8178zM225 11.498l188.372 116.9442v18.155H36.628v-18.155L225 11.498zm0 35.6557c-17.2772 0-31.3953 14.1217-31.3953 31.4032 0 17.2814 14.118 31.403 31.3953 31.403 17.2772 0 31.3953-14.1216 31.3953-31.403 0-17.2816-14.118-31.4033-31.3953-31.4033zm0 10.4677c11.6214 0 20.9302 9.311 20.9302 20.9355 0 11.6242-9.3088 20.9353-20.9302 20.9353s-20.9302-9.311-20.9302-20.9354c0-11.6245 9.3088-20.9356 20.9302-20.9356zM78.4884 157.065h31.3953v157.016H78.4884V157.065zm41.8604 0h78.4884v157.016h-78.4884V157.065zm88.9535 0h31.3954v157.016h-31.3954V157.065zm41.8605 0h78.4884v157.016h-78.4884V157.065zM36.6278 324.5485h376.7443v20.9355c.0004 2.8905 2.343 5.2336 5.2327 5.234h20.9302v26.1693H10.465V350.718h20.9303c2.8898-.0004 5.2323-2.3435 5.2326-5.234v-20.9354z"/>
           </symbol>
 
-
           <symbol id="ic-collection" viewBox="0 0 86 80">
             <path fill-rule="nonzero" d="M12.8 0c-.5 0-.8.5-.8 1v9H9h-.2c-.5 0-.8.5-.8 1v9H5h-.2c-.5 0-.8.5-.8 1v9H1 .8c-.5 0-.8.5-.8 1v48c0 .6.4 1 1 1h84c.6 0 1-.4 1-1V31c0-.5-.4-1-1-1h-3v-9c0-.5-.4-1-1-1h-3v-9c0-.5-.4-1-1-1h-3V1c0-.5-.4-1-1-1H13h-.2zM14 2h58v8H14V2zm-4 10h66v8H10v-8zM6 22h74v8H6v-8zM2 32h82v46H2V32z"/>
           </symbol>
       </svg>
 
-      <script src="../dist/solution.js"></script>
+      <script src="../public/solution.js"></script>
 
     </body>
 

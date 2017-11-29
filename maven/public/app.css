@@ -154,18 +154,11 @@ svg:not(.dflt) circle {
 .case {
   position: relative;
   margin: 0 auto;
-  padding: 0 15px 15px;
+  padding: 15px;
   width: 32%;
   max-width: 290px;
-  color: #79889D; }
-.case:before {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    content: '';
-    width: 100%;
-    height: 240px;
-    background: #fff; }
+  color: #79889D;
+  background: #fff; }
 .case figure {
     position: relative;
     width: 100%; }
@@ -278,7 +271,7 @@ header {
   border-bottom: 1px solid #e0e5e8; }
 .intro {
   margin: 100px auto 200px;
-  color: #fff;
+  color: currentColor;
   text-align: center;
   max-width: 540px; }
 .intro h1 {
@@ -333,7 +326,9 @@ header {
   -webkit-backface-visibility: hidden;
           backface-visibility: hidden;
   -webkit-animation: device 10s infinite cubic-bezier(1, 0.015, 0.295, 1.225) forwards;
-          animation: device 10s infinite cubic-bezier(1, 0.015, 0.295, 1.225) forwards; }
+          animation: device 10s infinite cubic-bezier(1, 0.015, 0.295, 1.225) forwards;
+  background-repeat: no-repeat;
+  background-size: cover; }
 .device figcaption {
     position: absolute;
     top: 12px;
@@ -348,34 +343,33 @@ header {
     -webkit-backface-visibility: hidden;
             backface-visibility: hidden; }
 @-webkit-keyframes device {
-  0%, 15% {
+  0%, 20% {
     width: 100%;
     padding-top: 70%;
     margin-top: 0;
     box-shadow: 10px 10px 0 -2px rgba(227, 236, 246, 0.3), 10px 10px 0 rgba(227, 236, 246, 0.1);
     -webkit-transform: rotate(0);
-            transform: rotate(0); }
+            transform: rotate(0);
+    background-image: url("/public/senai-desktop.png");
+    background-position: 0 20px; }
   25%, 40% {
     width: 70%;
     padding-top: 55%;
     margin-top: 7.5%;
     box-shadow: 9px -9px 0 -2px rgba(227, 236, 246, 0.3), 9px -9px 0 rgba(227, 236, 246, 0.1);
     -webkit-transform: rotate(90deg);
-            transform: rotate(90deg); }
-  50%, 65% {
-    width: 28%;
-    padding-top: 42%;
-    margin-top: 15%;
+            transform: rotate(90deg);
+    background-image: url("/public/senai_tablet.png");
+    background-position: 0 0; }
+  60%, 80% {
+    width: 38%;
+    padding-top: 62%;
+    margin-top: 8%;
     box-shadow: -8px -8px 0 -2px rgba(227, 236, 246, 0.3), -8px -8px 0 rgba(227, 236, 246, 0.1);
     -webkit-transform: rotate(180deg);
-            transform: rotate(180deg); }
-  75%, 90% {
-    width: 55%;
-    padding-top: 70%;
-    margin-top: 0;
-    box-shadow: -9px 9px 0 -2px rgba(227, 236, 246, 0.3), -9px 9px 0 rgba(227, 236, 246, 0.1);
-    -webkit-transform: rotate(270deg);
-            transform: rotate(270deg); }
+            transform: rotate(180deg);
+    background-image: url("/public/senai_smartphone.png");
+    background-position: -6px 0; }
   100% {
     width: 100%;
     padding-top: 70%;
@@ -384,34 +378,33 @@ header {
     -webkit-transform: rotate(360deg);
             transform: rotate(360deg); } }
 @keyframes device {
-  0%, 15% {
+  0%, 20% {
     width: 100%;
     padding-top: 70%;
     margin-top: 0;
     box-shadow: 10px 10px 0 -2px rgba(227, 236, 246, 0.3), 10px 10px 0 rgba(227, 236, 246, 0.1);
     -webkit-transform: rotate(0);
-            transform: rotate(0); }
+            transform: rotate(0);
+    background-image: url("/public/senai-desktop.png");
+    background-position: 0 20px; }
   25%, 40% {
     width: 70%;
     padding-top: 55%;
     margin-top: 7.5%;
     box-shadow: 9px -9px 0 -2px rgba(227, 236, 246, 0.3), 9px -9px 0 rgba(227, 236, 246, 0.1);
     -webkit-transform: rotate(90deg);
-            transform: rotate(90deg); }
-  50%, 65% {
-    width: 28%;
-    padding-top: 42%;
-    margin-top: 15%;
+            transform: rotate(90deg);
+    background-image: url("/public/senai_tablet.png");
+    background-position: 0 0; }
+  60%, 80% {
+    width: 38%;
+    padding-top: 62%;
+    margin-top: 8%;
     box-shadow: -8px -8px 0 -2px rgba(227, 236, 246, 0.3), -8px -8px 0 rgba(227, 236, 246, 0.1);
     -webkit-transform: rotate(180deg);
-            transform: rotate(180deg); }
-  75%, 90% {
-    width: 55%;
-    padding-top: 70%;
-    margin-top: 0;
-    box-shadow: -9px 9px 0 -2px rgba(227, 236, 246, 0.3), -9px 9px 0 rgba(227, 236, 246, 0.1);
-    -webkit-transform: rotate(270deg);
-            transform: rotate(270deg); }
+            transform: rotate(180deg);
+    background-image: url("/public/senai_smartphone.png");
+    background-position: -6px 0; }
   100% {
     width: 100%;
     padding-top: 70%;
@@ -420,63 +413,49 @@ header {
     -webkit-transform: rotate(360deg);
             transform: rotate(360deg); } }
 @-webkit-keyframes button {
-  0%, 15%, 100% {
+  0%, 20%, 100% {
     top: 12px;
     left: 12px;
     margin: 0;
     box-shadow: 15px 0 0 rgba(121, 136, 157, 0.1), 30px 0 0 rgba(121, 136, 157, 0.1);
     -webkit-transform: scale(1);
             transform: scale(1); }
-  25%, 40% {
+  20%, 40% {
     top: 50%;
     left: 100%;
     margin: -5px 0 0 -20px;
     box-shadow: 0 0 0 250px rgba(121, 136, 157, 0), 0 0 0 100px transparent;
     -webkit-transform: scale(0.9);
             transform: scale(0.9); }
-  50%, 65% {
+  60%, 80% {
     top: 10px;
     left: 50%;
     margin: 0 0 0 -5px;
     box-shadow: 0 -30px 0 rgba(121, 136, 157, 0.05), 0 -30px 0 rgba(121, 136, 157, 0.05);
     -webkit-transform: scale(0.8);
-            transform: scale(0.8); }
-  75%, 90% {
-    top: 100%;
-    left: 50%;
-    margin: -20px 0 0 -5px;
-    box-shadow: 0 0 0 250px rgba(121, 136, 157, 0), 0 0 0 100px transparent;
-    -webkit-transform: scale(0.9);
-            transform: scale(0.9); } }
+            transform: scale(0.8); } }
 @keyframes button {
-  0%, 15%, 100% {
+  0%, 20%, 100% {
     top: 12px;
     left: 12px;
     margin: 0;
     box-shadow: 15px 0 0 rgba(121, 136, 157, 0.1), 30px 0 0 rgba(121, 136, 157, 0.1);
     -webkit-transform: scale(1);
             transform: scale(1); }
-  25%, 40% {
+  20%, 40% {
     top: 50%;
     left: 100%;
     margin: -5px 0 0 -20px;
     box-shadow: 0 0 0 250px rgba(121, 136, 157, 0), 0 0 0 100px transparent;
     -webkit-transform: scale(0.9);
             transform: scale(0.9); }
-  50%, 65% {
+  60%, 80% {
     top: 10px;
     left: 50%;
     margin: 0 0 0 -5px;
     box-shadow: 0 -30px 0 rgba(121, 136, 157, 0.05), 0 -30px 0 rgba(121, 136, 157, 0.05);
     -webkit-transform: scale(0.8);
-            transform: scale(0.8); }
-  75%, 90% {
-    top: 100%;
-    left: 50%;
-    margin: -20px 0 0 -5px;
-    box-shadow: 0 0 0 250px rgba(121, 136, 157, 0), 0 0 0 100px transparent;
-    -webkit-transform: scale(0.9);
-            transform: scale(0.9); } }
+            transform: scale(0.8); } }
 .absolute-center {
   position: absolute;
   top: 50%;
@@ -607,18 +586,18 @@ span:hover .submenu {
   max-width: 320px;
   border-radius: 5px;
   background: #79889D;
-  color: #fff; }
-.pushs:before {
-    position: absolute;
-    height: 20px;
-    width: 20px;
-    background: #79889D;
-    content: '';
-    bottom: -7px;
-    left: 30px;
-    border-radius: 5px;
-    -webkit-transform: rotate(45deg);
-            transform: rotate(45deg); }
+  color: #fff;
+  opacity: 0;
+  -webkit-transform: translate3d(0, 150%, 0);
+          transform: translate3d(0, 150%, 0);
+  will-change: transform;
+  transition: 0.325s cubic-bezier(0.175, 0.885, 0.32, 1.275) opacity, 0.75s cubic-bezier(0.175, 0.885, 0.32, 1.275) -webkit-transform;
+  transition: 0.75s cubic-bezier(0.175, 0.885, 0.32, 1.275) transform, 0.325s cubic-bezier(0.175, 0.885, 0.32, 1.275) opacity;
+  transition: 0.75s cubic-bezier(0.175, 0.885, 0.32, 1.275) transform, 0.325s cubic-bezier(0.175, 0.885, 0.32, 1.275) opacity, 0.75s cubic-bezier(0.175, 0.885, 0.32, 1.275) -webkit-transform; }
+.pushs.visible {
+    -webkit-transform: translate3d(0, 0, 0);
+            transform: translate3d(0, 0, 0);
+    opacity: 1; }
 .pushs h5 {
     margin: 0;
     font-size: 0.9375em;
@@ -629,7 +608,8 @@ span:hover .submenu {
     top: 4px;
     fill: none;
     height: 20px;
-    width: 20px; }
+    width: 20px;
+    stroke: #fff; }
 .pushs p {
     position: relative;
     margin: 5px 0 0;
@@ -1192,7 +1172,8 @@ button.swiper-pagination-bullet {
     -webkit-transform: translate(-50%, -90%);
             transform: translate(-50%, -90%);
     width: 95%;
-    max-width: 1024px; }
+    max-width: 1024px;
+    z-index: 9; }
 #cases .section-intro {
   margin-bottom: 40px; }
 .clients-wrp {
@@ -1310,7 +1291,36 @@ button.swiper-pagination-bullet {
 header {
   position: relative;
   z-index: 2;
-  padding: 0 30px; }
+  padding: 0 30px;
+  color: #fff; }
+header .header-top {
+    position: relative;
+    z-index: 10; }
+header.setor-publico:before {
+    background-image: url("/public/gov.jpg"); }
+header.jornais-e-revistas:before {
+    background-image: url("/public/jornaisErevistas.jpg"); }
+header.portais:before {
+    background-image: url("/public/portais.jpg"); }
+header.setor-publico:before, header.jornais-e-revistas:before, header.portais:before, header.setor-publico:after, header.jornais-e-revistas:after, header.portais:after {
+  position: absolute;
+  left: -20px;
+  top: -20px;
+  width: calc(100% + 40px);
+  height: calc(100% + 20px);
+  content: ''; }
+header.setor-publico:after, header.jornais-e-revistas:after, header.portais:after {
+  z-index: 2;
+  background-color: rgba(121, 136, 157, 0.6); }
+header.setor-publico:before, header.jornais-e-revistas:before, header.portais:before {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 0;
+  -webkit-filter: blur(8px);
+          filter: blur(8px); }
+header.setor-publico .intro, header.jornais-e-revistas .intro, header.portais .intro {
+  position: relative;
+  z-index: 999; }
 header, .depoiments .depoiment, .our-clients, .who-this-serves, .app, #attributes, div > .cases-solution, .cases-solution {
   background-color: #009EE0;
   background-image: linear-gradient(45deg, #009EE0 0, #2F7BB9 75%); }
@@ -1338,9 +1348,6 @@ header, .depoiments .depoiment, .our-clients, .who-this-serves, .app, #attribute
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center; }
-#solution-presentention h2 {
-    font-size: 1.375em;
-    color: currentColor; }
 #solution-presentention p {
     color: #79889D; }
 #solution-presentention .half {
