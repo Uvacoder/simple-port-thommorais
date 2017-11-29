@@ -1,14 +1,20 @@
 #solution-presentention{
   position: relative;
-  padding: 50px 0;
+  padding: 50px 0 0;
   background: $c5;
   overflow: hidden;
+  color: $c4;
   border-top: 1px solid $c5;
 
+  .ico-circle{
+    top: 5%;
+  }
+
   .section-intro{
-    margin: 0 auto;
+    margin: 0 auto 80px;
     text-align: center;
     max-width: 620px;
+    color: currentColor;
   }
 
   .product{
@@ -17,21 +23,21 @@
     max-width: 960px;
     justify-content: space-around;
   }
-  
+
   .flex{
     align-items: center;
   }
 
-  h2{
-    font-size: em(22px);
-    color: $c4;
-  }
+  // h2{
+  //   font-size: em(22px);
+  //   color: currentColor;
+  // }
 
   p{
     color: $c4;
   }
 
-  article{
+  .half{
     width: 45%;
     padding: 0 10px;
   }

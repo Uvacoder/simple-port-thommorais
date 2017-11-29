@@ -1,0 +1,27 @@
+.we-are-humans{
+  position: relative;
+  line-height: 0;
+
+  h2{
+    position: absolute;
+    z-index: 9;
+    top: 50%;
+    left: 50%;
+    margin: 0;
+    transform: translate(-50%, -50%);
+  }
+
+  .swiper-slide{
+    width: 33vw;
+    max-width: 450px;
+    overflow: hidden;
+
+    img{
+      width: 100%;
+      height: auto;
+      max-width: 450px;
+    }
+
+  }
+
+}

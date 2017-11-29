@@ -2,9 +2,11 @@ svg:not(.dflt) {
 
   path{
     fill: inherit;
-    // stroke: inherit;
-    // stroke-width: inherit;
-    transform: inherit;
+
+  }
+
+  .tofill{
+    fill: $c4;
   }
 
   line{

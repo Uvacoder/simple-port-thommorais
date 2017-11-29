@@ -1,0 +1,25 @@
+%tabshadow{
+   box-shadow: 0 4px 13px 0 rgba(0,0,0,0.09);
+}
+
+.tabs{
+  margin: 50px auto 0;
+  position: relative;
+}
+
+.tab{
+  position: relative;
+  z-index: 3;
+  padding: 50px 0;
+  background: $cWhite;
+  @extend %tabshadow;
+
+  .section-intro{
+    padding-bottom: 80px;
+  }
+
+  &:not(.active){
+    display: none;
+  }
+
+}

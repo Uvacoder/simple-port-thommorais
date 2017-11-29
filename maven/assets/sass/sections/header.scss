@@ -3,4 +3,69 @@ header{
   z-index: 2;
   @extend %background-blue;
   padding: 0 30px;
+  color: $cWhite;
+
+  .header-top{
+    position: relative;
+    z-index: 10;
+  }
+
+  &.setor-publico{
+    @extend %bg;
+
+    &:before{
+      background-image: url('~/public/gov.jpg');
+    }
+
+  }
+
+  &.jornais-e-revistas{
+    @extend %bg;
+
+    &:before{
+      background-image: url('~/public/jornaisErevistas.jpg');
+    }
+  }
+
+  &.portais{
+    @extend %bg;
+
+    &:before{
+      background-image: url('~/public/portais.jpg');
+    }
+  }
+
+
+
+}
+
+%bg{
+
+  &:before,
+  &:after{
+    position: absolute;
+    left: -20px;
+    top: -20px;
+    width: calc(100% + 40px);
+    height: calc(100% + 20px);
+    content: '';
+  }
+
+  &:after{
+    z-index: 2;
+    background-color: rgba($c4, 0.6);
+  }
+
+  &:before{
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 0;
+    filter: blur(8px);
+  }
+
+  .intro{
+    position: relative;
+    z-index: 999;
+  }
+
 }
