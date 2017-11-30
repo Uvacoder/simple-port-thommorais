@@ -1,0 +1,23 @@
+.ico-phone,
+.ico-pin{
+  stroke-width: 2;
+  stroke: $c1;
+  fill: transparent;
+  width: 31px;
+}
+
+.ico-phone{
+  height: 34px;
+}
+
+.ico-pin{
+  height: 35px;
+  width: 28px;
+}
+
+.ico-mail{
+  width: 41px;
+  height: 28px;
+  stroke-width: 0;
+  fill:$c1;
+}

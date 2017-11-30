@@ -1,0 +1,14 @@
+.paywall-logic{
+  position: relative;
+  padding: 60px 0;
+  background: $c5;
+  overflow: hidden;
+
+  article{
+    width: 50%;
+    color: $c4;
+  }
+
+  @extend %product;
+
+}

@@ -1,0 +1,38 @@
+.field{
+  margin-bottom: 30px;
+
+  label{
+    margin-bottom: 5px;
+    display: block;
+    font-size: em(12px);
+    font-weight: 700;
+    color: $c4;
+  }
+
+
+  input,
+  textarea{
+    width: 100%;
+    padding: 15px;
+    border: 1px solid $c4;
+    border-radius: 3px;
+    font-family: $defaultFont;
+    font-size: em(13px);
+    letter-spacing: .5pt;
+    color: $c4;
+    outline: none;
+    -webkit-tap-highlight-color: transparent;
+    transition: background-color .1s ease-in, box-shadow .2s ease-in;
+    &:focus{
+      border-color: $c1;
+      box-shadow: 0 0 0 1px $c1;
+    }
+  }
+
+
+  textarea{
+    resize: vertical;
+    min-height: 120px;
+  }
+
+}
