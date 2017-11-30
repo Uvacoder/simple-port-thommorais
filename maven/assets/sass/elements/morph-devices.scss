@@ -14,7 +14,9 @@ $outline: rgba(darken($c3, 5),0.1);
 	animation: device 10s infinite cubic-bezier(1,.015,.295,1.225) forwards;
   background-repeat: no-repeat;
   background-size: cover;
-
+	background-image: url('./senai-desktop.png');
+	background-position: 0 20px;
+	
 	figcaption {
 		position: absolute;
 		top: 12px;
@@ -37,7 +39,7 @@ $outline: rgba(darken($c3, 5),0.1);
 		margin-top: 0;
 		box-shadow: 10px 10px 0 -2px $bg-color, 10px 10px 0 $outline;
 		transform: rotate(0);
-    background-image: url('~/public/senai-desktop.png');
+    background-image: url('./senai-desktop.png');
     background-position: 0 20px;
 	}
 
@@ -47,7 +49,7 @@ $outline: rgba(darken($c3, 5),0.1);
 		margin-top: 7.5%;
 		box-shadow: 9px -9px 0 -2px $bg-color, 9px -9px 0 $outline;
 		transform: rotate(90deg);
-    background-image: url('~/public/senai_tablet.png');
+    background-image: url('./senai_tablet.png');
     background-position: 0 0;
 	}
 
@@ -65,7 +67,7 @@ $outline: rgba(darken($c3, 5),0.1);
     margin-top: 8%;
     box-shadow: -8px -8px 0 -2px $bg-color, -8px -8px 0 $outline;
     transform: rotate(180deg);
-    background-image: url('~/public/senai_smartphone.png');
+    background-image: url('./senai_smartphone.png');
     background-position: -6px 0;
 
 	}

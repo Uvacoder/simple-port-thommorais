@@ -1,0 +1,5953 @@
+{
+"AAInfo": "This is a CodeKit 3 project config file. MODIFYING THE CONTENTS OF THIS FILE IS A POOR LIFE DECISION. Doing so will cause CodeKit to crash and\/or corrupt your project. I know it looks like JSON, but it is *not*. Many numbers in this file are 64-bit long long bitFlags, which JSON does not support. These numbers *cannot* be treated as discrete values and if you attempt to parse this file as standard JSON with any public JSON parser, these values will be corrupted. This file is not backwards-compatible with CodeKit 1 or 2. For more information, see https:\/\/codekitapp.com\/",
+"buildSteps": [
+	{
+		"name": "Process All Remaining Files and Folders",
+		"stepType": 1,
+		"uuidString": "99BD5850-35AA-4402-81D1-BF09FFFE63BE"
+		}
+	],
+"creatorBuild": "26148",
+"files": {
+	"\/private\/.gitignore": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/private\/.gitignore",
+		"oF": 0
+		},
+	"\/private\/CNAME": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/private\/CNAME",
+		"oF": 0
+		},
+	"\/private\/index.html": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/private\/index.html",
+		"oF": 0
+		},
+	"\/private\/maven\/assets\/img\/icones.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "\/private\/maven\/assets\/img\/icones.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
+	"\/private\/maven\/assets\/img\/imgs.js": {
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/private\/maven\/assets\/img\/imgs-min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 0
+		},
+	"\/private\/maven\/assets\/img\/jornals.jpg": {
+		"ft": 16384,
+		"iS": 1738867,
+		"oA": 0,
+		"oAP": "\/private\/maven\/assets\/img\/jornals.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/private\/maven\/assets\/img\/logo.png": {
+		"ft": 32768,
+		"iS": 2624,
+		"oA": 0,
+		"oAP": "\/private\/maven\/assets\/img\/logo.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"\/private\/maven\/assets\/js\/controlers\/ScrollHandler.js": {
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/private\/maven\/assets\/js\/controlers\/ScrollHandler-min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 0
+		},
+	"\/private\/maven\/assets\/js\/controlers\/Tabs.js": {
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 1,
+		"oAP": "\/private\/maven\/assets\/js\/controlers\/Tabs-min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 0
+		},
+	"\/private\/maven\/assets\/js\/home.js": {
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/private\/maven\/assets\/js\/home-min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 0
+		},
+	"\/private\/maven\/assets\/js\/lazzyLoad.js": {
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 1,
+		"oAP": "\/private\/maven\/assets\/js\/lazzyLoad-min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 0
+		},
+	"\/private\/maven\/assets\/js\/scrollHandler.js": {
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 1,
+		"oAP": "\/private\/maven\/assets\/js\/scrollHandler-min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 0
+		},
+	"\/private\/maven\/assets\/js\/solution.js": {
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/private\/maven\/assets\/js\/solution-min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 0
+		},
+	"\/private\/maven\/assets\/js\/utils.js": {
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 1,
+		"oAP": "\/private\/maven\/assets\/js\/utils-min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 0
+		},
+	"\/private\/maven\/assets\/js\/vendors\/fontLoader.js": {
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 1,
+		"oAP": "\/private\/maven\/assets\/js\/vendors\/fontLoader-min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 0
+		},
+	"\/private\/maven\/assets\/js\/vendors\/polyfillIntersectionObserver.js": {
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 1,
+		"oAP": "\/private\/maven\/assets\/js\/vendors\/polyfillIntersectionObserver-min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 0
+		},
+	"\/private\/maven\/assets\/js\/vendors\/swiper.esm.js": {
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 1,
+		"oAP": "\/private\/maven\/assets\/js\/vendors\/swiper.esm-min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 0
+		},
+	"\/private\/maven\/assets\/js\/video.js": {
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 1,
+		"oAP": "\/private\/maven\/assets\/js\/video-min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 0
+		},
+	"\/private\/maven\/assets\/sass\/base\/_defaults.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "\/private\/maven\/assets\/sass\/base\/_defaults.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
+	"\/private\/maven\/assets\/sass\/base\/_functions.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "\/private\/maven\/assets\/sass\/base\/_functions.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
+	"\/private\/maven\/assets\/sass\/base\/_helpers.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "\/private\/maven\/assets\/sass\/base\/_helpers.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
+	"\/private\/maven\/assets\/sass\/base\/_mixins.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "\/private\/maven\/assets\/sass\/base\/_mixins.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
+	"\/private\/maven\/assets\/sass\/base\/_svg.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "\/private\/maven\/assets\/sass\/base\/_svg.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
+	"\/private\/maven\/assets\/sass\/base\/_variables.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "\/private\/maven\/assets\/sass\/base\/_variables.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
+	"\/private\/maven\/assets\/sass\/elements\/call-to-action.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 0,
+		"oAP": "\/private\/maven\/assets\/sass\/elements\/call-to-action.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
+	"\/private\/maven\/assets\/sass\/elements\/case.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 0,
+		"oAP": "\/private\/maven\/assets\/sass\/elements\/case.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
+	"\/private\/maven\/assets\/sass\/elements\/circle.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 0,
+		"oAP": "\/private\/maven\/assets\/sass\/elements\/circle.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
+	"\/private\/maven\/assets\/sass\/elements\/embed-responsive.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 0,
+		"oAP": "\/private\/maven\/assets\/sass\/elements\/embed-responsive.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
+	"\/private\/maven\/assets\/sass\/elements\/enclination.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 0,
+		"oAP": "\/private\/maven\/assets\/sass\/elements\/enclination.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
+	"\/private\/maven\/assets\/sass\/elements\/feature-item.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 0,
+		"oAP": "\/private\/maven\/assets\/sass\/elements\/feature-item.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
+	"\/private\/maven\/assets\/sass\/elements\/flex.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 0,
+		"oAP": "\/private\/maven\/assets\/sass\/elements\/flex.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
+	"\/private\/maven\/assets\/sass\/elements\/form.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 0,
+		"oAP": "\/private\/maven\/assets\/sass\/elements\/form.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
+	"\/private\/maven\/assets\/sass\/elements\/icons.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 0,
+		"oAP": "\/private\/maven\/assets\/sass\/elements\/icons.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
+	"\/private\/maven\/assets\/sass\/elements\/intro.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 0,
+		"oAP": "\/private\/maven\/assets\/sass\/elements\/intro.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
+	"\/private\/maven\/assets\/sass\/elements\/link.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 0,
+		"oAP": "\/private\/maven\/assets\/sass\/elements\/link.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
+	"\/private\/maven\/assets\/sass\/elements\/marker.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 0,
+		"oAP": "\/private\/maven\/assets\/sass\/elements\/marker.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
+	"\/private\/maven\/assets\/sass\/elements\/morph-devices.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 0,
+		"oAP": "\/private\/maven\/assets\/sass\/elements\/morph-devices.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
+	"\/private\/maven\/assets\/sass\/elements\/navigation.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 0,
+		"oAP": "\/private\/maven\/assets\/sass\/elements\/navigation.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
+	"\/private\/maven\/assets\/sass\/elements\/plataforms.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 0,
+		"oAP": "\/private\/maven\/assets\/sass\/elements\/plataforms.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
+	"\/private\/maven\/assets\/sass\/elements\/push.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 0,
+		"oAP": "\/private\/maven\/assets\/sass\/elements\/push.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
+	"\/private\/maven\/assets\/sass\/elements\/section-intro.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 0,
+		"oAP": "\/private\/maven\/assets\/sass\/elements\/section-intro.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
+	"\/private\/maven\/assets\/sass\/elements\/section-titles.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 0,
+		"oAP": "\/private\/maven\/assets\/sass\/elements\/section-titles.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
+	"\/private\/maven\/assets\/sass\/elements\/shadow.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 0,
+		"oAP": "\/private\/maven\/assets\/sass\/elements\/shadow.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
+	"\/private\/maven\/assets\/sass\/elements\/slider.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 0,
+		"oAP": "\/private\/maven\/assets\/sass\/elements\/slider.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
+	"\/private\/maven\/assets\/sass\/elements\/swipper.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 0,
+		"oAP": "\/private\/maven\/assets\/sass\/elements\/swipper.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
+	"\/private\/maven\/assets\/sass\/elements\/tabs\/tabs-triggers.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 0,
+		"oAP": "\/private\/maven\/assets\/sass\/elements\/tabs\/tabs-triggers.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
+	"\/private\/maven\/assets\/sass\/elements\/tabs\/tabs.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 0,
+		"oAP": "\/private\/maven\/assets\/sass\/elements\/tabs\/tabs.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
+	"\/private\/maven\/assets\/sass\/elements\/wrp.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 0,
+		"oAP": "\/private\/maven\/assets\/sass\/elements\/wrp.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
+	"\/private\/maven\/assets\/sass\/pages\/home\/elements\/controlers-video.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 0,
+		"oAP": "\/private\/maven\/assets\/sass\/pages\/home\/elements\/controlers-video.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
+	"\/private\/maven\/assets\/sass\/pages\/home\/elements\/we-are-clients-slider.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 0,
+		"oAP": "\/private\/maven\/assets\/sass\/pages\/home\/elements\/we-are-clients-slider.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
+	"\/private\/maven\/assets\/sass\/pages\/home\/sections\/depoiments.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 0,
+		"oAP": "\/private\/maven\/assets\/sass\/pages\/home\/sections\/depoiments.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
+	"\/private\/maven\/assets\/sass\/pages\/home\/sections\/for-all-plataforms.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 0,
+		"oAP": "\/private\/maven\/assets\/sass\/pages\/home\/sections\/for-all-plataforms.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
+	"\/private\/maven\/assets\/sass\/pages\/home\/sections\/our-clients.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 0,
+		"oAP": "\/private\/maven\/assets\/sass\/pages\/home\/sections\/our-clients.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
+	"\/private\/maven\/assets\/sass\/pages\/home\/sections\/we-are-humans.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 0,
+		"oAP": "\/private\/maven\/assets\/sass\/pages\/home\/sections\/we-are-humans.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
+	"\/private\/maven\/assets\/sass\/pages\/home\/sections\/who-this-serves.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 0,
+		"oAP": "\/private\/maven\/assets\/sass\/pages\/home\/sections\/who-this-serves.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
+	"\/private\/maven\/assets\/sass\/pages\/solution\/elements\/icons.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 0,
+		"oAP": "\/private\/maven\/assets\/sass\/pages\/solution\/elements\/icons.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
+	"\/private\/maven\/assets\/sass\/pages\/solution\/elements\/setor-features.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 0,
+		"oAP": "\/private\/maven\/assets\/sass\/pages\/solution\/elements\/setor-features.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
+	"\/private\/maven\/assets\/sass\/pages\/solution\/sections\/app.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 0,
+		"oAP": "\/private\/maven\/assets\/sass\/pages\/solution\/sections\/app.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
+	"\/private\/maven\/assets\/sass\/pages\/solution\/sections\/attributes.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 0,
+		"oAP": "\/private\/maven\/assets\/sass\/pages\/solution\/sections\/attributes.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
+	"\/private\/maven\/assets\/sass\/pages\/solution\/sections\/cases.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 0,
+		"oAP": "\/private\/maven\/assets\/sass\/pages\/solution\/sections\/cases.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
+	"\/private\/maven\/assets\/sass\/pages\/solution\/sections\/paywall-logic.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 0,
+		"oAP": "\/private\/maven\/assets\/sass\/pages\/solution\/sections\/paywall-logic.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
+	"\/private\/maven\/assets\/sass\/pages\/solution\/sections\/processos-eletronicos.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 0,
+		"oAP": "\/private\/maven\/assets\/sass\/pages\/solution\/sections\/processos-eletronicos.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
+	"\/private\/maven\/assets\/sass\/pages\/solution\/sections\/responsive.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 0,
+		"oAP": "\/private\/maven\/assets\/sass\/pages\/solution\/sections\/responsive.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
+	"\/private\/maven\/assets\/sass\/pages\/solution\/sections\/see-in-action.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 0,
+		"oAP": "\/private\/maven\/assets\/sass\/pages\/solution\/sections\/see-in-action.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
+	"\/private\/maven\/assets\/sass\/pages\/solution\/sections\/solucao2.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 0,
+		"oAP": "\/private\/maven\/assets\/sass\/pages\/solution\/sections\/solucao2.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
+	"\/private\/maven\/assets\/sass\/pages\/solution\/setor-publico.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 0,
+		"oAP": "\/private\/maven\/assets\/sass\/pages\/solution\/setor-publico.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
+	"\/private\/maven\/assets\/sass\/pages\/solution\/solution.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 0,
+		"oAP": "\/private\/maven\/assets\/sass\/pages\/solution\/solution.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
+	"\/private\/maven\/assets\/sass\/sections\/bullets.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 0,
+		"oAP": "\/private\/maven\/assets\/sass\/sections\/bullets.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
+	"\/private\/maven\/assets\/sass\/sections\/call-to-action-section.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 0,
+		"oAP": "\/private\/maven\/assets\/sass\/sections\/call-to-action-section.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
+	"\/private\/maven\/assets\/sass\/sections\/cases.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 0,
+		"oAP": "\/private\/maven\/assets\/sass\/sections\/cases.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
+	"\/private\/maven\/assets\/sass\/sections\/clients-wrp.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 0,
+		"oAP": "\/private\/maven\/assets\/sass\/sections\/clients-wrp.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
+	"\/private\/maven\/assets\/sass\/sections\/contact.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 0,
+		"oAP": "\/private\/maven\/assets\/sass\/sections\/contact.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
+	"\/private\/maven\/assets\/sass\/sections\/features.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 0,
+		"oAP": "\/private\/maven\/assets\/sass\/sections\/features.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
+	"\/private\/maven\/assets\/sass\/sections\/footer.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 0,
+		"oAP": "\/private\/maven\/assets\/sass\/sections\/footer.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
+	"\/private\/maven\/assets\/sass\/sections\/header-top.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 0,
+		"oAP": "\/private\/maven\/assets\/sass\/sections\/header-top.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
+	"\/private\/maven\/assets\/sass\/sections\/header.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 0,
+		"oAP": "\/private\/maven\/assets\/sass\/sections\/header.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
+	"\/private\/maven\/assets\/sass\/sections\/sections.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 0,
+		"oAP": "\/private\/maven\/assets\/sass\/sections\/sections.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
+	"\/private\/maven\/assets\/sass\/sections\/solution-presentention.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 0,
+		"oAP": "\/private\/maven\/assets\/sass\/sections\/solution-presentention.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
+	"\/private\/maven\/assets\/sass\/style.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 0,
+		"oAP": "\/private\/maven\/assets\/sass\/style.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
+	"\/private\/maven\/cases.html": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/private\/maven\/cases.html",
+		"oF": 0
+		},
+	"\/private\/maven\/index.html": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/private\/maven\/index.html",
+		"oF": 0
+		},
+	"\/private\/maven\/maven.zip": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/private\/maven\/maven.zip",
+		"oF": 0
+		},
+	"\/private\/maven\/package-lock.json": {
+		"ft": 524288,
+		"oA": 1,
+		"oAP": "\/private\/maven\/package-lock-min.json",
+		"oF": 0,
+		"oO": 0,
+		"oS": 1
+		},
+	"\/private\/maven\/package.json": {
+		"ft": 524288,
+		"oA": 1,
+		"oAP": "\/private\/maven\/package-min.json",
+		"oF": 0,
+		"oO": 0,
+		"oS": 1
+		},
+	"\/private\/maven\/portais-de-noticias\/index.html": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/private\/maven\/portais-de-noticias\/index.html",
+		"oF": 0
+		},
+	"\/private\/maven\/public\/app.css": {
+		"aP": 1,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 0,
+		"oAP": "\/private\/maven\/public\/app-min.css",
+		"oF": 0,
+		"oS": 3
+		},
+	"\/private\/maven\/public\/app.css.map": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/private\/maven\/public\/app.css.map",
+		"oF": 0
+		},
+	"\/private\/maven\/public\/app.js": {
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/private\/maven\/public\/app-min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 0
+		},
+	"\/private\/maven\/public\/app.js.map": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/private\/maven\/public\/app.js.map",
+		"oF": 0
+		},
+	"\/private\/maven\/public\/clientsLogo.jpg": {
+		"ft": 16384,
+		"iS": 21401,
+		"oA": 0,
+		"oAP": "\/private\/maven\/public\/clientsLogo.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/private\/maven\/public\/coletiva.jpg": {
+		"ft": 16384,
+		"iS": 17369,
+		"oA": 0,
+		"oAP": "\/private\/maven\/public\/coletiva.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/private\/maven\/public\/correio-do-povo.png": {
+		"ft": 32768,
+		"iS": 47467,
+		"oA": 0,
+		"oAP": "\/private\/maven\/public\/correio-do-povo.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"\/private\/maven\/public\/correiodopovo.png": {
+		"ft": 32768,
+		"iS": 9437,
+		"oA": 0,
+		"oAP": "\/private\/maven\/public\/correiodopovo.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"\/private\/maven\/public\/depoiment.png": {
+		"ft": 32768,
+		"iS": 9134,
+		"oA": 0,
+		"oAP": "\/private\/maven\/public\/depoiment.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"\/private\/maven\/public\/desktop.png": {
+		"ft": 32768,
+		"iS": 106330,
+		"oA": 0,
+		"oAP": "\/private\/maven\/public\/desktop.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"\/private\/maven\/public\/doc.mp4": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/private\/maven\/public\/doc.mp4",
+		"oF": 0
+		},
+	"\/private\/maven\/public\/gaz.mp4": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/private\/maven\/public\/gaz.mp4",
+		"oF": 0
+		},
+	"\/private\/maven\/public\/gov.jpg": {
+		"ft": 16384,
+		"iS": 232218,
+		"oA": 0,
+		"oAP": "\/private\/maven\/public\/gov.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/private\/maven\/public\/icons-clients.png": {
+		"ft": 32768,
+		"iS": 57477,
+		"oA": 0,
+		"oAP": "\/private\/maven\/public\/icons-clients.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"\/private\/maven\/public\/informativo.jpg": {
+		"ft": 16384,
+		"iS": 27949,
+		"oA": 0,
+		"oAP": "\/private\/maven\/public\/informativo.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/private\/maven\/public\/ipad-solucoes.png": {
+		"ft": 32768,
+		"iS": 55936,
+		"oA": 0,
+		"oAP": "\/private\/maven\/public\/ipad-solucoes.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"\/private\/maven\/public\/ipad.png": {
+		"ft": 32768,
+		"iS": 75804,
+		"oA": 0,
+		"oAP": "\/private\/maven\/public\/ipad.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"\/private\/maven\/public\/iphone-solucoes.png": {
+		"ft": 32768,
+		"iS": 3051,
+		"oA": 0,
+		"oAP": "\/private\/maven\/public\/iphone-solucoes.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"\/private\/maven\/public\/jornaisErevistas.jpg": {
+		"ft": 16384,
+		"iS": 1739935,
+		"oA": 0,
+		"oAP": "\/private\/maven\/public\/jornaisErevistas.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/private\/maven\/public\/jornal.mp4": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/private\/maven\/public\/jornal.mp4",
+		"oF": 0
+		},
+	"\/private\/maven\/public\/laptop-solucoes.png": {
+		"ft": 32768,
+		"iS": 150398,
+		"oA": 0,
+		"oAP": "\/private\/maven\/public\/laptop-solucoes.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"\/private\/maven\/public\/logicaPaywall.jpg": {
+		"ft": 16384,
+		"iS": 290943,
+		"oA": 0,
+		"oAP": "\/private\/maven\/public\/logicaPaywall.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/private\/maven\/public\/logo-senai.png": {
+		"ft": 32768,
+		"iS": 9761,
+		"oA": 0,
+		"oAP": "\/private\/maven\/public\/logo-senai.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"\/private\/maven\/public\/logo.png": {
+		"ft": 32768,
+		"iS": 1358,
+		"oA": 0,
+		"oAP": "\/private\/maven\/public\/logo.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"\/private\/maven\/public\/mamae.png": {
+		"ft": 32768,
+		"iS": 47206,
+		"oA": 0,
+		"oAP": "\/private\/maven\/public\/mamae.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"\/private\/maven\/public\/mprs_case.png": {
+		"ft": 32768,
+		"iS": 94308,
+		"oA": 0,
+		"oAP": "\/private\/maven\/public\/mprs_case.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"\/private\/maven\/public\/noticiasApp.png": {
+		"ft": 32768,
+		"iS": 25318,
+		"oA": 0,
+		"oAP": "\/private\/maven\/public\/noticiasApp.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"\/private\/maven\/public\/portais.jpg": {
+		"ft": 16384,
+		"iS": 349959,
+		"oA": 0,
+		"oAP": "\/private\/maven\/public\/portais.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/private\/maven\/public\/processos.png": {
+		"ft": 32768,
+		"iS": 93055,
+		"oA": 0,
+		"oAP": "\/private\/maven\/public\/processos.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"\/private\/maven\/public\/rbs.png": {
+		"ft": 32768,
+		"iS": 3187,
+		"oA": 0,
+		"oAP": "\/private\/maven\/public\/rbs.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"\/private\/maven\/public\/senai-desktop.png": {
+		"ft": 32768,
+		"iS": 148470,
+		"oA": 0,
+		"oAP": "\/private\/maven\/public\/senai-desktop.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"\/private\/maven\/public\/senai_desktop.jpg": {
+		"ft": 16384,
+		"iS": 321957,
+		"oA": 0,
+		"oAP": "\/private\/maven\/public\/senai_desktop.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/private\/maven\/public\/senai_smartphone.png": {
+		"ft": 32768,
+		"iS": 277809,
+		"oA": 0,
+		"oAP": "\/private\/maven\/public\/senai_smartphone.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"\/private\/maven\/public\/senai_tablet.png": {
+		"ft": 32768,
+		"iS": 216129,
+		"oA": 0,
+		"oAP": "\/private\/maven\/public\/senai_tablet.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"\/private\/maven\/public\/slider-1.png": {
+		"ft": 32768,
+		"iS": 50635,
+		"oA": 0,
+		"oAP": "\/private\/maven\/public\/slider-1.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"\/private\/maven\/public\/slider-2.png": {
+		"ft": 32768,
+		"iS": 100323,
+		"oA": 0,
+		"oAP": "\/private\/maven\/public\/slider-2.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"\/private\/maven\/public\/slider-3.png": {
+		"ft": 32768,
+		"iS": 32809,
+		"oA": 0,
+		"oAP": "\/private\/maven\/public\/slider-3.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"\/private\/maven\/public\/solution.js": {
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/private\/maven\/public\/solution-min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 0
+		},
+	"\/private\/maven\/public\/solution.js.map": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/private\/maven\/public\/solution.js.map",
+		"oF": 0
+		},
+	"\/private\/maven\/public\/somoshumanos1.jpg": {
+		"ft": 16384,
+		"iS": 48121,
+		"oA": 0,
+		"oAP": "\/private\/maven\/public\/somoshumanos1.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/private\/maven\/public\/somoshumanos2.jpg": {
+		"ft": 16384,
+		"iS": 73020,
+		"oA": 0,
+		"oAP": "\/private\/maven\/public\/somoshumanos2.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/private\/maven\/public\/somoshumanos3.jpg": {
+		"ft": 16384,
+		"iS": 63454,
+		"oA": 0,
+		"oAP": "\/private\/maven\/public\/somoshumanos3.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/private\/maven\/public\/somoshumanos4.jpg": {
+		"ft": 16384,
+		"iS": 59833,
+		"oA": 0,
+		"oAP": "\/private\/maven\/public\/somoshumanos4.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/private\/maven\/public\/somoshumanos5.jpg": {
+		"ft": 16384,
+		"iS": 51710,
+		"oA": 0,
+		"oAP": "\/private\/maven\/public\/somoshumanos5.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/private\/maven\/public\/TCE_case.png": {
+		"ft": 32768,
+		"iS": 33408,
+		"oA": 0,
+		"oAP": "\/private\/maven\/public\/TCE_case.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"\/private\/maven\/public\/TCU_case.png": {
+		"ft": 32768,
+		"iS": 39215,
+		"oA": 0,
+		"oAP": "\/private\/maven\/public\/TCU_case.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"\/private\/maven\/public\/tecnologia.jpg": {
+		"ft": 16384,
+		"iS": 27479,
+		"oA": 0,
+		"oAP": "\/private\/maven\/public\/tecnologia.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/private\/maven\/public\/zero.png": {
+		"ft": 32768,
+		"iS": 43152,
+		"oA": 0,
+		"oAP": "\/private\/maven\/public\/zero.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"\/private\/maven\/revistas-e-jornais\/index.html": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/private\/maven\/revistas-e-jornais\/index.html",
+		"oF": 0
+		},
+	"\/private\/maven\/setor-publico\/index.html": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/private\/maven\/setor-publico\/index.html",
+		"oF": 0
+		},
+	"\/private\/maven\/webpack.config.js": {
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/private\/maven\/webpack.config-min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 0
+		},
+	"\/private\/mvn\/assets\/img\/icones.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "\/private\/mvn\/assets\/img\/icones.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
+	"\/private\/mvn\/assets\/img\/icons-clients.png": {
+		"ft": 32768,
+		"iS": 210889,
+		"oA": 0,
+		"oAP": "\/private\/mvn\/assets\/img\/icons-clients.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"\/private\/mvn\/assets\/img\/imgs.js": {
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/private\/mvn\/assets\/img\/imgs-min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 0
+		},
+	"\/private\/mvn\/assets\/img\/logo.png": {
+		"ft": 32768,
+		"iS": 3161,
+		"oA": 0,
+		"oAP": "\/private\/mvn\/assets\/img\/logo.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"\/private\/mvn\/assets\/img\/processos.png": {
+		"ft": 32768,
+		"iS": 353559,
+		"oA": 0,
+		"oAP": "\/private\/mvn\/assets\/img\/processos.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"\/private\/mvn\/assets\/js\/home.js": {
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/private\/mvn\/assets\/js\/home-min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 0
+		},
+	"\/private\/mvn\/assets\/js\/sliderHeader.js": {
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 1,
+		"oAP": "\/private\/mvn\/assets\/js\/sliderHeader-min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 0
+		},
+	"\/private\/mvn\/assets\/js\/solution.js": {
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/private\/mvn\/assets\/js\/solution-min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 0
+		},
+	"\/private\/mvn\/assets\/js\/vendors\/fontLoader.js": {
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 1,
+		"oAP": "\/private\/mvn\/assets\/js\/vendors\/fontLoader-min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 0
+		},
+	"\/private\/mvn\/assets\/js\/vendors\/swiper.esm.js": {
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 1,
+		"oAP": "\/private\/mvn\/assets\/js\/vendors\/swiper.esm-min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 0
+		},
+	"\/private\/mvn\/assets\/sass\/base\/_defaults.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "\/private\/mvn\/assets\/sass\/base\/_defaults.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
+	"\/private\/mvn\/assets\/sass\/base\/_functions.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "\/private\/mvn\/assets\/sass\/base\/_functions.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
+	"\/private\/mvn\/assets\/sass\/base\/_helpers.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "\/private\/mvn\/assets\/sass\/base\/_helpers.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
+	"\/private\/mvn\/assets\/sass\/base\/_mixins.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "\/private\/mvn\/assets\/sass\/base\/_mixins.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
+	"\/private\/mvn\/assets\/sass\/base\/_svg.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "\/private\/mvn\/assets\/sass\/base\/_svg.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
+	"\/private\/mvn\/assets\/sass\/base\/_variables.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "\/private\/mvn\/assets\/sass\/base\/_variables.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
+	"\/private\/mvn\/assets\/sass\/elements\/call-to-action.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 0,
+		"oAP": "\/private\/mvn\/assets\/sass\/elements\/call-to-action.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
+	"\/private\/mvn\/assets\/sass\/elements\/circle.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 0,
+		"oAP": "\/private\/mvn\/assets\/sass\/elements\/circle.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
+	"\/private\/mvn\/assets\/sass\/elements\/feature-item.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 0,
+		"oAP": "\/private\/mvn\/assets\/sass\/elements\/feature-item.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
+	"\/private\/mvn\/assets\/sass\/elements\/flex.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 0,
+		"oAP": "\/private\/mvn\/assets\/sass\/elements\/flex.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
+	"\/private\/mvn\/assets\/sass\/elements\/form.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 0,
+		"oAP": "\/private\/mvn\/assets\/sass\/elements\/form.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
+	"\/private\/mvn\/assets\/sass\/elements\/icons.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 0,
+		"oAP": "\/private\/mvn\/assets\/sass\/elements\/icons.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
+	"\/private\/mvn\/assets\/sass\/elements\/intro.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 0,
+		"oAP": "\/private\/mvn\/assets\/sass\/elements\/intro.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
+	"\/private\/mvn\/assets\/sass\/elements\/link.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 0,
+		"oAP": "\/private\/mvn\/assets\/sass\/elements\/link.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
+	"\/private\/mvn\/assets\/sass\/elements\/marker.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 0,
+		"oAP": "\/private\/mvn\/assets\/sass\/elements\/marker.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
+	"\/private\/mvn\/assets\/sass\/elements\/morph-devices.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 0,
+		"oAP": "\/private\/mvn\/assets\/sass\/elements\/morph-devices.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
+	"\/private\/mvn\/assets\/sass\/elements\/navigation.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 0,
+		"oAP": "\/private\/mvn\/assets\/sass\/elements\/navigation.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
+	"\/private\/mvn\/assets\/sass\/elements\/plataforms.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 0,
+		"oAP": "\/private\/mvn\/assets\/sass\/elements\/plataforms.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
+	"\/private\/mvn\/assets\/sass\/elements\/section-intro.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 0,
+		"oAP": "\/private\/mvn\/assets\/sass\/elements\/section-intro.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
+	"\/private\/mvn\/assets\/sass\/elements\/section-titles.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 0,
+		"oAP": "\/private\/mvn\/assets\/sass\/elements\/section-titles.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
+	"\/private\/mvn\/assets\/sass\/elements\/shadow.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 0,
+		"oAP": "\/private\/mvn\/assets\/sass\/elements\/shadow.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
+	"\/private\/mvn\/assets\/sass\/elements\/slider.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 0,
+		"oAP": "\/private\/mvn\/assets\/sass\/elements\/slider.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
+	"\/private\/mvn\/assets\/sass\/elements\/swipper.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 0,
+		"oAP": "\/private\/mvn\/assets\/sass\/elements\/swipper.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
+	"\/private\/mvn\/assets\/sass\/elements\/tabs\/tabs-triggers.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 0,
+		"oAP": "\/private\/mvn\/assets\/sass\/elements\/tabs\/tabs-triggers.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
+	"\/private\/mvn\/assets\/sass\/elements\/tabs\/tabs.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 0,
+		"oAP": "\/private\/mvn\/assets\/sass\/elements\/tabs\/tabs.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
+	"\/private\/mvn\/assets\/sass\/elements\/wrp.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 0,
+		"oAP": "\/private\/mvn\/assets\/sass\/elements\/wrp.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
+	"\/private\/mvn\/assets\/sass\/pages\/home\/elements\/controlers-video.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 0,
+		"oAP": "\/private\/mvn\/assets\/sass\/pages\/home\/elements\/controlers-video.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
+	"\/private\/mvn\/assets\/sass\/pages\/home\/elements\/we-are-clients-slider.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 0,
+		"oAP": "\/private\/mvn\/assets\/sass\/pages\/home\/elements\/we-are-clients-slider.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
+	"\/private\/mvn\/assets\/sass\/pages\/home\/sections\/depoiments.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 0,
+		"oAP": "\/private\/mvn\/assets\/sass\/pages\/home\/sections\/depoiments.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
+	"\/private\/mvn\/assets\/sass\/pages\/home\/sections\/for-all-plataforms.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 0,
+		"oAP": "\/private\/mvn\/assets\/sass\/pages\/home\/sections\/for-all-plataforms.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
+	"\/private\/mvn\/assets\/sass\/pages\/home\/sections\/our-clients.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 0,
+		"oAP": "\/private\/mvn\/assets\/sass\/pages\/home\/sections\/our-clients.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
+	"\/private\/mvn\/assets\/sass\/pages\/home\/sections\/we-are-humans.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 0,
+		"oAP": "\/private\/mvn\/assets\/sass\/pages\/home\/sections\/we-are-humans.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
+	"\/private\/mvn\/assets\/sass\/pages\/home\/sections\/who-this-serves.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 0,
+		"oAP": "\/private\/mvn\/assets\/sass\/pages\/home\/sections\/who-this-serves.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
+	"\/private\/mvn\/assets\/sass\/pages\/solution\/elements\/setor-features.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 0,
+		"oAP": "\/private\/mvn\/assets\/sass\/pages\/solution\/elements\/setor-features.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
+	"\/private\/mvn\/assets\/sass\/pages\/solution\/elements\/setor-publico-icons.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 0,
+		"oAP": "\/private\/mvn\/assets\/sass\/pages\/solution\/elements\/setor-publico-icons.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
+	"\/private\/mvn\/assets\/sass\/pages\/solution\/sections\/attributes.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 0,
+		"oAP": "\/private\/mvn\/assets\/sass\/pages\/solution\/sections\/attributes.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
+	"\/private\/mvn\/assets\/sass\/pages\/solution\/sections\/cases.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 0,
+		"oAP": "\/private\/mvn\/assets\/sass\/pages\/solution\/sections\/cases.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
+	"\/private\/mvn\/assets\/sass\/pages\/solution\/sections\/processos-eletronicos.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 0,
+		"oAP": "\/private\/mvn\/assets\/sass\/pages\/solution\/sections\/processos-eletronicos.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
+	"\/private\/mvn\/assets\/sass\/pages\/solution\/sections\/see-in-action.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 0,
+		"oAP": "\/private\/mvn\/assets\/sass\/pages\/solution\/sections\/see-in-action.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
+	"\/private\/mvn\/assets\/sass\/pages\/solution\/setor-publico.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 0,
+		"oAP": "\/private\/mvn\/assets\/sass\/pages\/solution\/setor-publico.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
+	"\/private\/mvn\/assets\/sass\/pages\/solution\/solution.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 0,
+		"oAP": "\/private\/mvn\/assets\/sass\/pages\/solution\/solution.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
+	"\/private\/mvn\/assets\/sass\/sections\/bullets.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 0,
+		"oAP": "\/private\/mvn\/assets\/sass\/sections\/bullets.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
+	"\/private\/mvn\/assets\/sass\/sections\/call-to-action-section.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 0,
+		"oAP": "\/private\/mvn\/assets\/sass\/sections\/call-to-action-section.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
+	"\/private\/mvn\/assets\/sass\/sections\/clients-wrp.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 0,
+		"oAP": "\/private\/mvn\/assets\/sass\/sections\/clients-wrp.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
+	"\/private\/mvn\/assets\/sass\/sections\/contact.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 0,
+		"oAP": "\/private\/mvn\/assets\/sass\/sections\/contact.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
+	"\/private\/mvn\/assets\/sass\/sections\/header-top.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 0,
+		"oAP": "\/private\/mvn\/assets\/sass\/sections\/header-top.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
+	"\/private\/mvn\/assets\/sass\/sections\/header.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 0,
+		"oAP": "\/private\/mvn\/assets\/sass\/sections\/header.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
+	"\/private\/mvn\/assets\/sass\/sections\/sections.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 0,
+		"oAP": "\/private\/mvn\/assets\/sass\/sections\/sections.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
+	"\/private\/mvn\/assets\/sass\/sections\/solution-presentention.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 0,
+		"oAP": "\/private\/mvn\/assets\/sass\/sections\/solution-presentention.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
+	"\/private\/mvn\/assets\/sass\/style.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 0,
+		"oAP": "\/private\/mvn\/assets\/sass\/style.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
+	"\/private\/mvn\/cases.html": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/private\/mvn\/cases.html",
+		"oF": 0
+		},
+	"\/private\/mvn\/dist\/app.css": {
+		"aP": 1,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 0,
+		"oAP": "\/private\/mvn\/dist\/app-min.css",
+		"oF": 0,
+		"oS": 3
+		},
+	"\/private\/mvn\/dist\/app.css.map": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/private\/mvn\/dist\/app.css.map",
+		"oF": 0
+		},
+	"\/private\/mvn\/dist\/app.js": {
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/private\/mvn\/dist\/app-min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 0
+		},
+	"\/private\/mvn\/dist\/app.js.map": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/private\/mvn\/dist\/app.js.map",
+		"oF": 0
+		},
+	"\/private\/mvn\/dist\/logo.png": {
+		"ft": 32768,
+		"iS": 3161,
+		"oA": 0,
+		"oAP": "\/private\/mvn\/dist\/logo.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"\/private\/mvn\/dist\/solution.js": {
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/private\/mvn\/dist\/solution-min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 0
+		},
+	"\/private\/mvn\/dist\/solution.js.map": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/private\/mvn\/dist\/solution.js.map",
+		"oF": 0
+		},
+	"\/private\/mvn\/index.html": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/private\/mvn\/index.html",
+		"oF": 0
+		},
+	"\/private\/mvn\/package-lock.json": {
+		"ft": 524288,
+		"oA": 1,
+		"oAP": "\/private\/mvn\/package-lock-min.json",
+		"oF": 0,
+		"oO": 0,
+		"oS": 1
+		},
+	"\/private\/mvn\/package.json": {
+		"ft": 524288,
+		"oA": 1,
+		"oAP": "\/private\/mvn\/package-min.json",
+		"oF": 0,
+		"oO": 0,
+		"oS": 1
+		},
+	"\/private\/mvn\/postcss.config.js": {
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/private\/mvn\/postcss.config-min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 0
+		},
+	"\/private\/mvn\/public\/clientsLogo.jpg": {
+		"ft": 16384,
+		"iS": 77678,
+		"oA": 0,
+		"oAP": "\/private\/mvn\/public\/clientsLogo.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/private\/mvn\/public\/depoiment.png": {
+		"ft": 32768,
+		"iS": 23166,
+		"oA": 0,
+		"oAP": "\/private\/mvn\/public\/depoiment.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"\/private\/mvn\/public\/desktop.png": {
+		"ft": 32768,
+		"iS": 573804,
+		"oA": 0,
+		"oAP": "\/private\/mvn\/public\/desktop.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"\/private\/mvn\/public\/ipad-solucoes.png": {
+		"ft": 32768,
+		"iS": 241089,
+		"oA": 0,
+		"oAP": "\/private\/mvn\/public\/ipad-solucoes.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"\/private\/mvn\/public\/ipad.png": {
+		"ft": 32768,
+		"iS": 367733,
+		"oA": 0,
+		"oAP": "\/private\/mvn\/public\/ipad.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"\/private\/mvn\/public\/iphone-solucoes.png": {
+		"ft": 32768,
+		"iS": 24773,
+		"oA": 0,
+		"oAP": "\/private\/mvn\/public\/iphone-solucoes.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"\/private\/mvn\/public\/laptop-solucoes.png": {
+		"ft": 32768,
+		"iS": 788221,
+		"oA": 0,
+		"oAP": "\/private\/mvn\/public\/laptop-solucoes.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"\/private\/mvn\/public\/logo.png": {
+		"ft": 32768,
+		"iS": 1471,
+		"oA": 0,
+		"oAP": "\/private\/mvn\/public\/logo.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"\/private\/mvn\/public\/rbs.png": {
+		"ft": 32768,
+		"iS": 7800,
+		"oA": 0,
+		"oAP": "\/private\/mvn\/public\/rbs.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"\/private\/mvn\/public\/slider-1.png": {
+		"ft": 32768,
+		"iS": 54098,
+		"oA": 0,
+		"oAP": "\/private\/mvn\/public\/slider-1.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"\/private\/mvn\/public\/somoshumanos1.jpg": {
+		"ft": 16384,
+		"iS": 198748,
+		"oA": 0,
+		"oAP": "\/private\/mvn\/public\/somoshumanos1.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/private\/mvn\/public\/somoshumanos2.jpg": {
+		"ft": 16384,
+		"iS": 233351,
+		"oA": 0,
+		"oAP": "\/private\/mvn\/public\/somoshumanos2.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/private\/mvn\/public\/somoshumanos3.jpg": {
+		"ft": 16384,
+		"iS": 207958,
+		"oA": 0,
+		"oAP": "\/private\/mvn\/public\/somoshumanos3.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/private\/mvn\/public\/somoshumanos4.jpg": {
+		"ft": 16384,
+		"iS": 215878,
+		"oA": 0,
+		"oAP": "\/private\/mvn\/public\/somoshumanos4.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/private\/mvn\/public\/somoshumanos5.jpg": {
+		"ft": 16384,
+		"iS": 188642,
+		"oA": 0,
+		"oAP": "\/private\/mvn\/public\/somoshumanos5.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/private\/mvn\/solucao-setor-publico-1.html": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/private\/mvn\/solucao-setor-publico-1.html",
+		"oF": 0
+		},
+	"\/private\/mvn\/solucao.html": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/private\/mvn\/solucao.html",
+		"oF": 0
+		},
+	"\/private\/mvn\/video.webm": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/private\/mvn\/video.webm",
+		"oF": 0
+		},
+	"\/private\/mvn\/webpack.config.js": {
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/private\/mvn\/webpack.config-min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 0
+		},
+	"\/private\/pais&filhos.zip": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/private\/pais&filhos.zip",
+		"oF": 0
+		},
+	"\/private\/pais&filhos\/.sass-cache\/03c45831a24c65dd3faafa2571e6953b4b925c2f\/_grid-background.scssc": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 1,
+		"oAP": "\/private\/pais&filhos\/.sass-cache\/03c45831a24c65dd3faafa2571e6953b4b925c2f\/_grid-background.scssc",
+		"oF": 0
+		},
+	"\/private\/pais&filhos\/.sass-cache\/0c2c36259375d010b8ec520b13b53ebe333a9e13\/_utilities.scssc": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 1,
+		"oAP": "\/private\/pais&filhos\/.sass-cache\/0c2c36259375d010b8ec520b13b53ebe333a9e13\/_utilities.scssc",
+		"oF": 0
+		},
+	"\/private\/pais&filhos\/.sass-cache\/276bbb23b25ba445e51dc29d0bc936adfe62d559\/_compass.scssc": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 1,
+		"oAP": "\/private\/pais&filhos\/.sass-cache\/276bbb23b25ba445e51dc29d0bc936adfe62d559\/_compass.scssc",
+		"oF": 0
+		},
+	"\/private\/pais&filhos\/.sass-cache\/29100ef14d941d24037634488922cc9d4d2148bd\/_editor.scssc": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 1,
+		"oAP": "\/private\/pais&filhos\/.sass-cache\/29100ef14d941d24037634488922cc9d4d2148bd\/_editor.scssc",
+		"oF": 0
+		},
+	"\/private\/pais&filhos\/.sass-cache\/29100ef14d941d24037634488922cc9d4d2148bd\/_main.scssc": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 1,
+		"oAP": "\/private\/pais&filhos\/.sass-cache\/29100ef14d941d24037634488922cc9d4d2148bd\/_main.scssc",
+		"oF": 0
+		},
+	"\/private\/pais&filhos\/.sass-cache\/2f78987e07e008014215028cbc508849d3ce836d\/style.scssc": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/private\/pais&filhos\/.sass-cache\/2f78987e07e008014215028cbc508849d3ce836d\/style.scssc",
+		"oF": 0
+		},
+	"\/private\/pais&filhos\/.sass-cache\/34875e12da83b03f1a174b4eb42bfda70a3103bf\/_alternating-rows-and-columns.scssc": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 1,
+		"oAP": "\/private\/pais&filhos\/.sass-cache\/34875e12da83b03f1a174b4eb42bfda70a3103bf\/_alternating-rows-and-columns.scssc",
+		"oF": 0
+		},
+	"\/private\/pais&filhos\/.sass-cache\/34875e12da83b03f1a174b4eb42bfda70a3103bf\/_borders.scssc": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 1,
+		"oAP": "\/private\/pais&filhos\/.sass-cache\/34875e12da83b03f1a174b4eb42bfda70a3103bf\/_borders.scssc",
+		"oF": 0
+		},
+	"\/private\/pais&filhos\/.sass-cache\/34875e12da83b03f1a174b4eb42bfda70a3103bf\/_scaffolding.scssc": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 1,
+		"oAP": "\/private\/pais&filhos\/.sass-cache\/34875e12da83b03f1a174b4eb42bfda70a3103bf\/_scaffolding.scssc",
+		"oF": 0
+		},
+	"\/private\/pais&filhos\/.sass-cache\/3cafed289197ac575b97e2ad47a5a25524bc2a2e\/style.scssc": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/private\/pais&filhos\/.sass-cache\/3cafed289197ac575b97e2ad47a5a25524bc2a2e\/style.scssc",
+		"oF": 0
+		},
+	"\/private\/pais&filhos\/.sass-cache\/4fd21082cc7c2aa70608d2181f034359226bf89f\/_board.scssc": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 1,
+		"oAP": "\/private\/pais&filhos\/.sass-cache\/4fd21082cc7c2aa70608d2181f034359226bf89f\/_board.scssc",
+		"oF": 0
+		},
+	"\/private\/pais&filhos\/.sass-cache\/4fd21082cc7c2aa70608d2181f034359226bf89f\/_capas.scssc": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 1,
+		"oAP": "\/private\/pais&filhos\/.sass-cache\/4fd21082cc7c2aa70608d2181f034359226bf89f\/_capas.scssc",
+		"oF": 0
+		},
+	"\/private\/pais&filhos\/.sass-cache\/4fd21082cc7c2aa70608d2181f034359226bf89f\/_loaders.scssc": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 1,
+		"oAP": "\/private\/pais&filhos\/.sass-cache\/4fd21082cc7c2aa70608d2181f034359226bf89f\/_loaders.scssc",
+		"oF": 0
+		},
+	"\/private\/pais&filhos\/.sass-cache\/4fd21082cc7c2aa70608d2181f034359226bf89f\/_sharer.scssc": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 1,
+		"oAP": "\/private\/pais&filhos\/.sass-cache\/4fd21082cc7c2aa70608d2181f034359226bf89f\/_sharer.scssc",
+		"oF": 0
+		},
+	"\/private\/pais&filhos\/.sass-cache\/4fd21082cc7c2aa70608d2181f034359226bf89f\/_slider.scssc": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 1,
+		"oAP": "\/private\/pais&filhos\/.sass-cache\/4fd21082cc7c2aa70608d2181f034359226bf89f\/_slider.scssc",
+		"oF": 0
+		},
+	"\/private\/pais&filhos\/.sass-cache\/4fd21082cc7c2aa70608d2181f034359226bf89f\/_title.scssc": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 1,
+		"oAP": "\/private\/pais&filhos\/.sass-cache\/4fd21082cc7c2aa70608d2181f034359226bf89f\/_title.scssc",
+		"oF": 0
+		},
+	"\/private\/pais&filhos\/.sass-cache\/4fd21082cc7c2aa70608d2181f034359226bf89f\/_upload.scssc": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 1,
+		"oAP": "\/private\/pais&filhos\/.sass-cache\/4fd21082cc7c2aa70608d2181f034359226bf89f\/_upload.scssc",
+		"oF": 0
+		},
+	"\/private\/pais&filhos\/.sass-cache\/4fd21082cc7c2aa70608d2181f034359226bf89f\/_widget.scssc": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 1,
+		"oAP": "\/private\/pais&filhos\/.sass-cache\/4fd21082cc7c2aa70608d2181f034359226bf89f\/_widget.scssc",
+		"oF": 0
+		},
+	"\/private\/pais&filhos\/.sass-cache\/4fd21082cc7c2aa70608d2181f034359226bf89f\/navigation.scssc": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/private\/pais&filhos\/.sass-cache\/4fd21082cc7c2aa70608d2181f034359226bf89f\/navigation.scssc",
+		"oF": 0
+		},
+	"\/private\/pais&filhos\/.sass-cache\/50156a2e408896367c9d667e8f008fe02bde994c\/_animation.scssc": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 1,
+		"oAP": "\/private\/pais&filhos\/.sass-cache\/50156a2e408896367c9d667e8f008fe02bde994c\/_animation.scssc",
+		"oF": 0
+		},
+	"\/private\/pais&filhos\/.sass-cache\/50156a2e408896367c9d667e8f008fe02bde994c\/_appearance.scssc": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 1,
+		"oAP": "\/private\/pais&filhos\/.sass-cache\/50156a2e408896367c9d667e8f008fe02bde994c\/_appearance.scssc",
+		"oF": 0
+		},
+	"\/private\/pais&filhos\/.sass-cache\/50156a2e408896367c9d667e8f008fe02bde994c\/_background-clip.scssc": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 1,
+		"oAP": "\/private\/pais&filhos\/.sass-cache\/50156a2e408896367c9d667e8f008fe02bde994c\/_background-clip.scssc",
+		"oF": 0
+		},
+	"\/private\/pais&filhos\/.sass-cache\/50156a2e408896367c9d667e8f008fe02bde994c\/_background-origin.scssc": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 1,
+		"oAP": "\/private\/pais&filhos\/.sass-cache\/50156a2e408896367c9d667e8f008fe02bde994c\/_background-origin.scssc",
+		"oF": 0
+		},
+	"\/private\/pais&filhos\/.sass-cache\/50156a2e408896367c9d667e8f008fe02bde994c\/_background-size.scssc": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 1,
+		"oAP": "\/private\/pais&filhos\/.sass-cache\/50156a2e408896367c9d667e8f008fe02bde994c\/_background-size.scssc",
+		"oF": 0
+		},
+	"\/private\/pais&filhos\/.sass-cache\/50156a2e408896367c9d667e8f008fe02bde994c\/_border-radius.scssc": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 1,
+		"oAP": "\/private\/pais&filhos\/.sass-cache\/50156a2e408896367c9d667e8f008fe02bde994c\/_border-radius.scssc",
+		"oF": 0
+		},
+	"\/private\/pais&filhos\/.sass-cache\/50156a2e408896367c9d667e8f008fe02bde994c\/_box-shadow.scssc": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 1,
+		"oAP": "\/private\/pais&filhos\/.sass-cache\/50156a2e408896367c9d667e8f008fe02bde994c\/_box-shadow.scssc",
+		"oF": 0
+		},
+	"\/private\/pais&filhos\/.sass-cache\/50156a2e408896367c9d667e8f008fe02bde994c\/_box-sizing.scssc": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 1,
+		"oAP": "\/private\/pais&filhos\/.sass-cache\/50156a2e408896367c9d667e8f008fe02bde994c\/_box-sizing.scssc",
+		"oF": 0
+		},
+	"\/private\/pais&filhos\/.sass-cache\/50156a2e408896367c9d667e8f008fe02bde994c\/_columns.scssc": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 1,
+		"oAP": "\/private\/pais&filhos\/.sass-cache\/50156a2e408896367c9d667e8f008fe02bde994c\/_columns.scssc",
+		"oF": 0
+		},
+	"\/private\/pais&filhos\/.sass-cache\/50156a2e408896367c9d667e8f008fe02bde994c\/_deprecated-support.scssc": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 1,
+		"oAP": "\/private\/pais&filhos\/.sass-cache\/50156a2e408896367c9d667e8f008fe02bde994c\/_deprecated-support.scssc",
+		"oF": 0
+		},
+	"\/private\/pais&filhos\/.sass-cache\/50156a2e408896367c9d667e8f008fe02bde994c\/_filter.scssc": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 1,
+		"oAP": "\/private\/pais&filhos\/.sass-cache\/50156a2e408896367c9d667e8f008fe02bde994c\/_filter.scssc",
+		"oF": 0
+		},
+	"\/private\/pais&filhos\/.sass-cache\/50156a2e408896367c9d667e8f008fe02bde994c\/_flexbox.scssc": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 1,
+		"oAP": "\/private\/pais&filhos\/.sass-cache\/50156a2e408896367c9d667e8f008fe02bde994c\/_flexbox.scssc",
+		"oF": 0
+		},
+	"\/private\/pais&filhos\/.sass-cache\/50156a2e408896367c9d667e8f008fe02bde994c\/_font-face.scssc": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 1,
+		"oAP": "\/private\/pais&filhos\/.sass-cache\/50156a2e408896367c9d667e8f008fe02bde994c\/_font-face.scssc",
+		"oF": 0
+		},
+	"\/private\/pais&filhos\/.sass-cache\/50156a2e408896367c9d667e8f008fe02bde994c\/_hyphenation.scssc": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 1,
+		"oAP": "\/private\/pais&filhos\/.sass-cache\/50156a2e408896367c9d667e8f008fe02bde994c\/_hyphenation.scssc",
+		"oF": 0
+		},
+	"\/private\/pais&filhos\/.sass-cache\/50156a2e408896367c9d667e8f008fe02bde994c\/_images.scssc": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 1,
+		"oAP": "\/private\/pais&filhos\/.sass-cache\/50156a2e408896367c9d667e8f008fe02bde994c\/_images.scssc",
+		"oF": 0
+		},
+	"\/private\/pais&filhos\/.sass-cache\/50156a2e408896367c9d667e8f008fe02bde994c\/_inline-block.scssc": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 1,
+		"oAP": "\/private\/pais&filhos\/.sass-cache\/50156a2e408896367c9d667e8f008fe02bde994c\/_inline-block.scssc",
+		"oF": 0
+		},
+	"\/private\/pais&filhos\/.sass-cache\/50156a2e408896367c9d667e8f008fe02bde994c\/_opacity.scssc": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 1,
+		"oAP": "\/private\/pais&filhos\/.sass-cache\/50156a2e408896367c9d667e8f008fe02bde994c\/_opacity.scssc",
+		"oF": 0
+		},
+	"\/private\/pais&filhos\/.sass-cache\/50156a2e408896367c9d667e8f008fe02bde994c\/_regions.scssc": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 1,
+		"oAP": "\/private\/pais&filhos\/.sass-cache\/50156a2e408896367c9d667e8f008fe02bde994c\/_regions.scssc",
+		"oF": 0
+		},
+	"\/private\/pais&filhos\/.sass-cache\/50156a2e408896367c9d667e8f008fe02bde994c\/_text-shadow.scssc": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 1,
+		"oAP": "\/private\/pais&filhos\/.sass-cache\/50156a2e408896367c9d667e8f008fe02bde994c\/_text-shadow.scssc",
+		"oF": 0
+		},
+	"\/private\/pais&filhos\/.sass-cache\/50156a2e408896367c9d667e8f008fe02bde994c\/_transform.scssc": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 1,
+		"oAP": "\/private\/pais&filhos\/.sass-cache\/50156a2e408896367c9d667e8f008fe02bde994c\/_transform.scssc",
+		"oF": 0
+		},
+	"\/private\/pais&filhos\/.sass-cache\/50156a2e408896367c9d667e8f008fe02bde994c\/_transition.scssc": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 1,
+		"oAP": "\/private\/pais&filhos\/.sass-cache\/50156a2e408896367c9d667e8f008fe02bde994c\/_transition.scssc",
+		"oF": 0
+		},
+	"\/private\/pais&filhos\/.sass-cache\/50156a2e408896367c9d667e8f008fe02bde994c\/_user-interface.scssc": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 1,
+		"oAP": "\/private\/pais&filhos\/.sass-cache\/50156a2e408896367c9d667e8f008fe02bde994c\/_user-interface.scssc",
+		"oF": 0
+		},
+	"\/private\/pais&filhos\/.sass-cache\/519fbfc195a7dbfd31e426763ea6c3a74d8c8aef\/_bullets.scssc": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 1,
+		"oAP": "\/private\/pais&filhos\/.sass-cache\/519fbfc195a7dbfd31e426763ea6c3a74d8c8aef\/_bullets.scssc",
+		"oF": 0
+		},
+	"\/private\/pais&filhos\/.sass-cache\/519fbfc195a7dbfd31e426763ea6c3a74d8c8aef\/_horizontal-list.scssc": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 1,
+		"oAP": "\/private\/pais&filhos\/.sass-cache\/519fbfc195a7dbfd31e426763ea6c3a74d8c8aef\/_horizontal-list.scssc",
+		"oF": 0
+		},
+	"\/private\/pais&filhos\/.sass-cache\/519fbfc195a7dbfd31e426763ea6c3a74d8c8aef\/_inline-block-list.scssc": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 1,
+		"oAP": "\/private\/pais&filhos\/.sass-cache\/519fbfc195a7dbfd31e426763ea6c3a74d8c8aef\/_inline-block-list.scssc",
+		"oF": 0
+		},
+	"\/private\/pais&filhos\/.sass-cache\/519fbfc195a7dbfd31e426763ea6c3a74d8c8aef\/_inline-list.scssc": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 1,
+		"oAP": "\/private\/pais&filhos\/.sass-cache\/519fbfc195a7dbfd31e426763ea6c3a74d8c8aef\/_inline-list.scssc",
+		"oF": 0
+		},
+	"\/private\/pais&filhos\/.sass-cache\/52568104a8c1516870e44fb93f6df1a07dd9a624\/_brightness.scssc": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 1,
+		"oAP": "\/private\/pais&filhos\/.sass-cache\/52568104a8c1516870e44fb93f6df1a07dd9a624\/_brightness.scssc",
+		"oF": 0
+		},
+	"\/private\/pais&filhos\/.sass-cache\/52568104a8c1516870e44fb93f6df1a07dd9a624\/_contrast.scssc": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 1,
+		"oAP": "\/private\/pais&filhos\/.sass-cache\/52568104a8c1516870e44fb93f6df1a07dd9a624\/_contrast.scssc",
+		"oF": 0
+		},
+	"\/private\/pais&filhos\/.sass-cache\/5d025e91cb0ad0a3c803abf06a66a0d208fc8684\/navigation.scssc": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/private\/pais&filhos\/.sass-cache\/5d025e91cb0ad0a3c803abf06a66a0d208fc8684\/navigation.scssc",
+		"oF": 0
+		},
+	"\/private\/pais&filhos\/.sass-cache\/611cfe99f7f032fbaed90906fd227a509c014268\/_hover-link.scssc": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 1,
+		"oAP": "\/private\/pais&filhos\/.sass-cache\/611cfe99f7f032fbaed90906fd227a509c014268\/_hover-link.scssc",
+		"oF": 0
+		},
+	"\/private\/pais&filhos\/.sass-cache\/611cfe99f7f032fbaed90906fd227a509c014268\/_link-colors.scssc": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 1,
+		"oAP": "\/private\/pais&filhos\/.sass-cache\/611cfe99f7f032fbaed90906fd227a509c014268\/_link-colors.scssc",
+		"oF": 0
+		},
+	"\/private\/pais&filhos\/.sass-cache\/611cfe99f7f032fbaed90906fd227a509c014268\/_unstyled-link.scssc": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 1,
+		"oAP": "\/private\/pais&filhos\/.sass-cache\/611cfe99f7f032fbaed90906fd227a509c014268\/_unstyled-link.scssc",
+		"oF": 0
+		},
+	"\/private\/pais&filhos\/.sass-cache\/77d2693ddc42a2c2e336eeec23c0a3f5f39914a9\/_css3.scssc": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 1,
+		"oAP": "\/private\/pais&filhos\/.sass-cache\/77d2693ddc42a2c2e336eeec23c0a3f5f39914a9\/_css3.scssc",
+		"oF": 0
+		},
+	"\/private\/pais&filhos\/.sass-cache\/77d2693ddc42a2c2e336eeec23c0a3f5f39914a9\/_support.scssc": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 1,
+		"oAP": "\/private\/pais&filhos\/.sass-cache\/77d2693ddc42a2c2e336eeec23c0a3f5f39914a9\/_support.scssc",
+		"oF": 0
+		},
+	"\/private\/pais&filhos\/.sass-cache\/77d2693ddc42a2c2e336eeec23c0a3f5f39914a9\/_typography.scssc": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 1,
+		"oAP": "\/private\/pais&filhos\/.sass-cache\/77d2693ddc42a2c2e336eeec23c0a3f5f39914a9\/_typography.scssc",
+		"oF": 0
+		},
+	"\/private\/pais&filhos\/.sass-cache\/77d2693ddc42a2c2e336eeec23c0a3f5f39914a9\/_utilities.scssc": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 1,
+		"oAP": "\/private\/pais&filhos\/.sass-cache\/77d2693ddc42a2c2e336eeec23c0a3f5f39914a9\/_utilities.scssc",
+		"oF": 0
+		},
+	"\/private\/pais&filhos\/.sass-cache\/7abb75c756b8c038df2d7d00ca5ae114adabb8e2\/components-slash-starc": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/private\/pais&filhos\/.sass-cache\/7abb75c756b8c038df2d7d00ca5ae114adabb8e2\/components-slash-starc",
+		"oF": 0
+		},
+	"\/private\/pais&filhos\/.sass-cache\/7abb75c756b8c038df2d7d00ca5ae114adabb8e2\/core-slash-starc": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/private\/pais&filhos\/.sass-cache\/7abb75c756b8c038df2d7d00ca5ae114adabb8e2\/core-slash-starc",
+		"oF": 0
+		},
+	"\/private\/pais&filhos\/.sass-cache\/7abb75c756b8c038df2d7d00ca5ae114adabb8e2\/sections-slash-starc": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/private\/pais&filhos\/.sass-cache\/7abb75c756b8c038df2d7d00ca5ae114adabb8e2\/sections-slash-starc",
+		"oF": 0
+		},
+	"\/private\/pais&filhos\/.sass-cache\/7eafe655ff2a00e157eeb5298233e92a945fe49d\/_editor.scssc": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 1,
+		"oAP": "\/private\/pais&filhos\/.sass-cache\/7eafe655ff2a00e157eeb5298233e92a945fe49d\/_editor.scssc",
+		"oF": 0
+		},
+	"\/private\/pais&filhos\/.sass-cache\/7eafe655ff2a00e157eeb5298233e92a945fe49d\/_main.scssc": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 1,
+		"oAP": "\/private\/pais&filhos\/.sass-cache\/7eafe655ff2a00e157eeb5298233e92a945fe49d\/_main.scssc",
+		"oF": 0
+		},
+	"\/private\/pais&filhos\/.sass-cache\/a04a03cd580e16889a2456d4cf195ac8b3ec1bf7\/_base.scssc": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 1,
+		"oAP": "\/private\/pais&filhos\/.sass-cache\/a04a03cd580e16889a2456d4cf195ac8b3ec1bf7\/_base.scssc",
+		"oF": 0
+		},
+	"\/private\/pais&filhos\/.sass-cache\/a04a03cd580e16889a2456d4cf195ac8b3ec1bf7\/_sprite-img.scssc": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 1,
+		"oAP": "\/private\/pais&filhos\/.sass-cache\/a04a03cd580e16889a2456d4cf195ac8b3ec1bf7\/_sprite-img.scssc",
+		"oF": 0
+		},
+	"\/private\/pais&filhos\/.sass-cache\/ae52e641213739d26e81bd03a5433fc4c224e70f\/components-slash-starc": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/private\/pais&filhos\/.sass-cache\/ae52e641213739d26e81bd03a5433fc4c224e70f\/components-slash-starc",
+		"oF": 0
+		},
+	"\/private\/pais&filhos\/.sass-cache\/ae52e641213739d26e81bd03a5433fc4c224e70f\/core-slash-starc": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/private\/pais&filhos\/.sass-cache\/ae52e641213739d26e81bd03a5433fc4c224e70f\/core-slash-starc",
+		"oF": 0
+		},
+	"\/private\/pais&filhos\/.sass-cache\/ae52e641213739d26e81bd03a5433fc4c224e70f\/sections-slash-starc": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/private\/pais&filhos\/.sass-cache\/ae52e641213739d26e81bd03a5433fc4c224e70f\/sections-slash-starc",
+		"oF": 0
+		},
+	"\/private\/pais&filhos\/.sass-cache\/c2aefbf1ffe3d7e2c018ca6310b460730eb7d8f9\/_color.scssc": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 1,
+		"oAP": "\/private\/pais&filhos\/.sass-cache\/c2aefbf1ffe3d7e2c018ca6310b460730eb7d8f9\/_color.scssc",
+		"oF": 0
+		},
+	"\/private\/pais&filhos\/.sass-cache\/c2aefbf1ffe3d7e2c018ca6310b460730eb7d8f9\/_general.scssc": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 1,
+		"oAP": "\/private\/pais&filhos\/.sass-cache\/c2aefbf1ffe3d7e2c018ca6310b460730eb7d8f9\/_general.scssc",
+		"oF": 0
+		},
+	"\/private\/pais&filhos\/.sass-cache\/c2aefbf1ffe3d7e2c018ca6310b460730eb7d8f9\/_sprites.scssc": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 1,
+		"oAP": "\/private\/pais&filhos\/.sass-cache\/c2aefbf1ffe3d7e2c018ca6310b460730eb7d8f9\/_sprites.scssc",
+		"oF": 0
+		},
+	"\/private\/pais&filhos\/.sass-cache\/c2aefbf1ffe3d7e2c018ca6310b460730eb7d8f9\/_tables.scssc": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 1,
+		"oAP": "\/private\/pais&filhos\/.sass-cache\/c2aefbf1ffe3d7e2c018ca6310b460730eb7d8f9\/_tables.scssc",
+		"oF": 0
+		},
+	"\/private\/pais&filhos\/.sass-cache\/c2d24c55675056295f455de1bee6c51dcf215dff\/_board.scssc": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 1,
+		"oAP": "\/private\/pais&filhos\/.sass-cache\/c2d24c55675056295f455de1bee6c51dcf215dff\/_board.scssc",
+		"oF": 0
+		},
+	"\/private\/pais&filhos\/.sass-cache\/c2d24c55675056295f455de1bee6c51dcf215dff\/_capas.scssc": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 1,
+		"oAP": "\/private\/pais&filhos\/.sass-cache\/c2d24c55675056295f455de1bee6c51dcf215dff\/_capas.scssc",
+		"oF": 0
+		},
+	"\/private\/pais&filhos\/.sass-cache\/c2d24c55675056295f455de1bee6c51dcf215dff\/_loaders.scssc": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 1,
+		"oAP": "\/private\/pais&filhos\/.sass-cache\/c2d24c55675056295f455de1bee6c51dcf215dff\/_loaders.scssc",
+		"oF": 0
+		},
+	"\/private\/pais&filhos\/.sass-cache\/c2d24c55675056295f455de1bee6c51dcf215dff\/_sharer.scssc": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 1,
+		"oAP": "\/private\/pais&filhos\/.sass-cache\/c2d24c55675056295f455de1bee6c51dcf215dff\/_sharer.scssc",
+		"oF": 0
+		},
+	"\/private\/pais&filhos\/.sass-cache\/c2d24c55675056295f455de1bee6c51dcf215dff\/_slider.scssc": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 1,
+		"oAP": "\/private\/pais&filhos\/.sass-cache\/c2d24c55675056295f455de1bee6c51dcf215dff\/_slider.scssc",
+		"oF": 0
+		},
+	"\/private\/pais&filhos\/.sass-cache\/c2d24c55675056295f455de1bee6c51dcf215dff\/_title.scssc": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 1,
+		"oAP": "\/private\/pais&filhos\/.sass-cache\/c2d24c55675056295f455de1bee6c51dcf215dff\/_title.scssc",
+		"oF": 0
+		},
+	"\/private\/pais&filhos\/.sass-cache\/c2d24c55675056295f455de1bee6c51dcf215dff\/_upload.scssc": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 1,
+		"oAP": "\/private\/pais&filhos\/.sass-cache\/c2d24c55675056295f455de1bee6c51dcf215dff\/_upload.scssc",
+		"oF": 0
+		},
+	"\/private\/pais&filhos\/.sass-cache\/c2d24c55675056295f455de1bee6c51dcf215dff\/_widget.scssc": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 1,
+		"oAP": "\/private\/pais&filhos\/.sass-cache\/c2d24c55675056295f455de1bee6c51dcf215dff\/_widget.scssc",
+		"oF": 0
+		},
+	"\/private\/pais&filhos\/.sass-cache\/c2d24c55675056295f455de1bee6c51dcf215dff\/navigation.scssc": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/private\/pais&filhos\/.sass-cache\/c2d24c55675056295f455de1bee6c51dcf215dff\/navigation.scssc",
+		"oF": 0
+		},
+	"\/private\/pais&filhos\/.sass-cache\/c65a493da768074fc2bb0f1f3c2b499ea5608996\/_links.scssc": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 1,
+		"oAP": "\/private\/pais&filhos\/.sass-cache\/c65a493da768074fc2bb0f1f3c2b499ea5608996\/_links.scssc",
+		"oF": 0
+		},
+	"\/private\/pais&filhos\/.sass-cache\/c65a493da768074fc2bb0f1f3c2b499ea5608996\/_lists.scssc": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 1,
+		"oAP": "\/private\/pais&filhos\/.sass-cache\/c65a493da768074fc2bb0f1f3c2b499ea5608996\/_lists.scssc",
+		"oF": 0
+		},
+	"\/private\/pais&filhos\/.sass-cache\/c65a493da768074fc2bb0f1f3c2b499ea5608996\/_text.scssc": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 1,
+		"oAP": "\/private\/pais&filhos\/.sass-cache\/c65a493da768074fc2bb0f1f3c2b499ea5608996\/_text.scssc",
+		"oF": 0
+		},
+	"\/private\/pais&filhos\/.sass-cache\/c65a493da768074fc2bb0f1f3c2b499ea5608996\/_units.scssc": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 1,
+		"oAP": "\/private\/pais&filhos\/.sass-cache\/c65a493da768074fc2bb0f1f3c2b499ea5608996\/_units.scssc",
+		"oF": 0
+		},
+	"\/private\/pais&filhos\/.sass-cache\/c65a493da768074fc2bb0f1f3c2b499ea5608996\/_vertical_rhythm.scssc": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 1,
+		"oAP": "\/private\/pais&filhos\/.sass-cache\/c65a493da768074fc2bb0f1f3c2b499ea5608996\/_vertical_rhythm.scssc",
+		"oF": 0
+		},
+	"\/private\/pais&filhos\/.sass-cache\/cc20b93feace78276c4b7b87177e767808665a5f\/_reset.scssc": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 1,
+		"oAP": "\/private\/pais&filhos\/.sass-cache\/cc20b93feace78276c4b7b87177e767808665a5f\/_reset.scssc",
+		"oF": 0
+		},
+	"\/private\/pais&filhos\/.sass-cache\/cc20b93feace78276c4b7b87177e767808665a5f\/_svg.scssc": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 1,
+		"oAP": "\/private\/pais&filhos\/.sass-cache\/cc20b93feace78276c4b7b87177e767808665a5f\/_svg.scssc",
+		"oF": 0
+		},
+	"\/private\/pais&filhos\/.sass-cache\/cc20b93feace78276c4b7b87177e767808665a5f\/_variables.scssc": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 1,
+		"oAP": "\/private\/pais&filhos\/.sass-cache\/cc20b93feace78276c4b7b87177e767808665a5f\/_variables.scssc",
+		"oF": 0
+		},
+	"\/private\/pais&filhos\/.sass-cache\/d2db6bac464de690c0a02fe6f8309c0bf7e76c33\/_clearfix.scssc": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 1,
+		"oAP": "\/private\/pais&filhos\/.sass-cache\/d2db6bac464de690c0a02fe6f8309c0bf7e76c33\/_clearfix.scssc",
+		"oF": 0
+		},
+	"\/private\/pais&filhos\/.sass-cache\/d2db6bac464de690c0a02fe6f8309c0bf7e76c33\/_float.scssc": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 1,
+		"oAP": "\/private\/pais&filhos\/.sass-cache\/d2db6bac464de690c0a02fe6f8309c0bf7e76c33\/_float.scssc",
+		"oF": 0
+		},
+	"\/private\/pais&filhos\/.sass-cache\/d2db6bac464de690c0a02fe6f8309c0bf7e76c33\/_hacks.scssc": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 1,
+		"oAP": "\/private\/pais&filhos\/.sass-cache\/d2db6bac464de690c0a02fe6f8309c0bf7e76c33\/_hacks.scssc",
+		"oF": 0
+		},
+	"\/private\/pais&filhos\/.sass-cache\/d2db6bac464de690c0a02fe6f8309c0bf7e76c33\/_min.scssc": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 1,
+		"oAP": "\/private\/pais&filhos\/.sass-cache\/d2db6bac464de690c0a02fe6f8309c0bf7e76c33\/_min.scssc",
+		"oF": 0
+		},
+	"\/private\/pais&filhos\/.sass-cache\/d2db6bac464de690c0a02fe6f8309c0bf7e76c33\/_reset.scssc": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 1,
+		"oAP": "\/private\/pais&filhos\/.sass-cache\/d2db6bac464de690c0a02fe6f8309c0bf7e76c33\/_reset.scssc",
+		"oF": 0
+		},
+	"\/private\/pais&filhos\/.sass-cache\/d2db6bac464de690c0a02fe6f8309c0bf7e76c33\/_tag-cloud.scssc": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 1,
+		"oAP": "\/private\/pais&filhos\/.sass-cache\/d2db6bac464de690c0a02fe6f8309c0bf7e76c33\/_tag-cloud.scssc",
+		"oF": 0
+		},
+	"\/private\/pais&filhos\/.sass-cache\/ddfdd9d7032970bf6e53b738bfdc5357712f4aca\/navigation.scssc": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/private\/pais&filhos\/.sass-cache\/ddfdd9d7032970bf6e53b738bfdc5357712f4aca\/navigation.scssc",
+		"oF": 0
+		},
+	"\/private\/pais&filhos\/.sass-cache\/eef96d12fd1cf65a3ee7e0e63aa363b709b071ee\/_ellipsis.scssc": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 1,
+		"oAP": "\/private\/pais&filhos\/.sass-cache\/eef96d12fd1cf65a3ee7e0e63aa363b709b071ee\/_ellipsis.scssc",
+		"oF": 0
+		},
+	"\/private\/pais&filhos\/.sass-cache\/eef96d12fd1cf65a3ee7e0e63aa363b709b071ee\/_force-wrap.scssc": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 1,
+		"oAP": "\/private\/pais&filhos\/.sass-cache\/eef96d12fd1cf65a3ee7e0e63aa363b709b071ee\/_force-wrap.scssc",
+		"oF": 0
+		},
+	"\/private\/pais&filhos\/.sass-cache\/eef96d12fd1cf65a3ee7e0e63aa363b709b071ee\/_nowrap.scssc": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 1,
+		"oAP": "\/private\/pais&filhos\/.sass-cache\/eef96d12fd1cf65a3ee7e0e63aa363b709b071ee\/_nowrap.scssc",
+		"oF": 0
+		},
+	"\/private\/pais&filhos\/.sass-cache\/eef96d12fd1cf65a3ee7e0e63aa363b709b071ee\/_replacement.scssc": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 1,
+		"oAP": "\/private\/pais&filhos\/.sass-cache\/eef96d12fd1cf65a3ee7e0e63aa363b709b071ee\/_replacement.scssc",
+		"oF": 0
+		},
+	"\/private\/pais&filhos\/.sass-cache\/f81662142c30a26639cab8ca159f2ca7d6476bd2\/_reset.scssc": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 1,
+		"oAP": "\/private\/pais&filhos\/.sass-cache\/f81662142c30a26639cab8ca159f2ca7d6476bd2\/_reset.scssc",
+		"oF": 0
+		},
+	"\/private\/pais&filhos\/.sass-cache\/f81662142c30a26639cab8ca159f2ca7d6476bd2\/_svg.scssc": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 1,
+		"oAP": "\/private\/pais&filhos\/.sass-cache\/f81662142c30a26639cab8ca159f2ca7d6476bd2\/_svg.scssc",
+		"oF": 0
+		},
+	"\/private\/pais&filhos\/.sass-cache\/f81662142c30a26639cab8ca159f2ca7d6476bd2\/_variables.scssc": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 1,
+		"oAP": "\/private\/pais&filhos\/.sass-cache\/f81662142c30a26639cab8ca159f2ca7d6476bd2\/_variables.scssc",
+		"oF": 0
+		},
+	"\/private\/pais&filhos\/app.html": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/private\/pais&filhos\/app.html",
+		"oF": 0
+		},
+	"\/private\/pais&filhos\/assets\/images\/capas\/capa-1.png": {
+		"ft": 32768,
+		"iS": 181293,
+		"oA": 0,
+		"oAP": "\/private\/pais&filhos\/assets\/images\/capas\/capa-1.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"\/private\/pais&filhos\/assets\/images\/capas\/capa-2.png": {
+		"ft": 32768,
+		"iS": 2207281,
+		"oA": 0,
+		"oAP": "\/private\/pais&filhos\/assets\/images\/capas\/capa-2.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"\/private\/pais&filhos\/assets\/images\/rotate.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "\/private\/pais&filhos\/assets\/images\/rotate.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
+	"\/private\/pais&filhos\/assets\/javascripts\/dependencies\/canvas2image.js": {
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/private\/pais&filhos\/assets\/javascripts\/dependencies\/canvas2image-min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 0
+		},
+	"\/private\/pais&filhos\/assets\/javascripts\/dependencies\/dropzone.js": {
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/private\/pais&filhos\/assets\/javascripts\/dependencies\/dropzone-min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 0
+		},
+	"\/private\/pais&filhos\/assets\/javascripts\/dependencies\/html2canvas.js": {
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/private\/pais&filhos\/assets\/javascripts\/dependencies\/html2canvas-min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 0
+		},
+	"\/private\/pais&filhos\/assets\/javascripts\/dependencies\/jquery-ui.min.js": {
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/private\/pais&filhos\/assets\/javascripts\/dependencies\/jquery-ui.min-min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 0
+		},
+	"\/private\/pais&filhos\/assets\/javascripts\/dependencies\/jquery.guillotine.js": {
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/private\/pais&filhos\/assets\/javascripts\/dependencies\/jquery.guillotine-min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 0
+		},
+	"\/private\/pais&filhos\/assets\/javascripts\/dependencies\/jquery.guillotine.min.js": {
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/private\/pais&filhos\/assets\/javascripts\/dependencies\/jquery.guillotine.min-min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 0
+		},
+	"\/private\/pais&filhos\/assets\/javascripts\/dependencies\/jquery.ui.rotatable.min.js": {
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/private\/pais&filhos\/assets\/javascripts\/dependencies\/jquery.ui.rotatable.min-min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 0
+		},
+	"\/private\/pais&filhos\/assets\/javascripts\/dependencies\/jquery.ui.touch-punch.min.js": {
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/private\/pais&filhos\/assets\/javascripts\/dependencies\/jquery.ui.touch-punch.min-min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 0
+		},
+	"\/private\/pais&filhos\/assets\/javascripts\/dependencies\/swiper.js": {
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/private\/pais&filhos\/assets\/javascripts\/dependencies\/swiper-min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 0
+		},
+	"\/private\/pais&filhos\/assets\/javascripts\/functions\/input.js": {
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/private\/pais&filhos\/assets\/javascripts\/functions\/input-min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 0
+		},
+	"\/private\/pais&filhos\/assets\/javascripts\/functions\/main.js": {
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/private\/pais&filhos\/assets\/javascripts\/functions\/main-min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 0
+		},
+	"\/private\/pais&filhos\/assets\/stylesheets\/base\/_reset.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "\/private\/pais&filhos\/assets\/stylesheets\/base\/_reset.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
+	"\/private\/pais&filhos\/assets\/stylesheets\/base\/_svg.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "\/private\/pais&filhos\/assets\/stylesheets\/base\/_svg.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
+	"\/private\/pais&filhos\/assets\/stylesheets\/base\/_variables.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "\/private\/pais&filhos\/assets\/stylesheets\/base\/_variables.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
+	"\/private\/pais&filhos\/assets\/stylesheets\/components\/_board.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "\/private\/pais&filhos\/assets\/stylesheets\/components\/_board.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
+	"\/private\/pais&filhos\/assets\/stylesheets\/components\/_capas.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "\/private\/pais&filhos\/assets\/stylesheets\/components\/_capas.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
+	"\/private\/pais&filhos\/assets\/stylesheets\/components\/_loaders.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "\/private\/pais&filhos\/assets\/stylesheets\/components\/_loaders.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
+	"\/private\/pais&filhos\/assets\/stylesheets\/components\/_sharer.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "\/private\/pais&filhos\/assets\/stylesheets\/components\/_sharer.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
+	"\/private\/pais&filhos\/assets\/stylesheets\/components\/_slider.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "\/private\/pais&filhos\/assets\/stylesheets\/components\/_slider.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
+	"\/private\/pais&filhos\/assets\/stylesheets\/components\/_title.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "\/private\/pais&filhos\/assets\/stylesheets\/components\/_title.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
+	"\/private\/pais&filhos\/assets\/stylesheets\/components\/_upload.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "\/private\/pais&filhos\/assets\/stylesheets\/components\/_upload.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
+	"\/private\/pais&filhos\/assets\/stylesheets\/components\/_widget.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "\/private\/pais&filhos\/assets\/stylesheets\/components\/_widget.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
+	"\/private\/pais&filhos\/assets\/stylesheets\/components\/navigation.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "\/private\/pais&filhos\/assets\/stylesheets\/components\/navigation.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
+	"\/private\/pais&filhos\/assets\/stylesheets\/sections\/_editor.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "\/private\/pais&filhos\/assets\/stylesheets\/sections\/_editor.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
+	"\/private\/pais&filhos\/assets\/stylesheets\/sections\/_main.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "\/private\/pais&filhos\/assets\/stylesheets\/sections\/_main.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
+	"\/private\/pais&filhos\/assets\/stylesheets\/style.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 0,
+		"oAP": "\/private\/pais&filhos\/assets\/stylesheets\/style.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
+	"\/private\/pais&filhos\/capa-1.png": {
+		"ft": 32768,
+		"iS": 181293,
+		"oA": 0,
+		"oAP": "\/private\/pais&filhos\/capa-1.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"\/private\/pais&filhos\/capa-2.png": {
+		"ft": 32768,
+		"iS": 2207281,
+		"oA": 0,
+		"oAP": "\/private\/pais&filhos\/capa-2.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"\/private\/pais&filhos\/compass_config.rb": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/private\/pais&filhos\/compass_config.rb",
+		"oF": 0
+		},
+	"\/private\/pais&filhos\/css\/jquery.guillotine.css": {
+		"aP": 1,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 0,
+		"oAP": "\/private\/pais&filhos\/css\/jquery.guillotine-min.css",
+		"oF": 0,
+		"oS": 3
+		},
+	"\/private\/pais&filhos\/gulpfile.js": {
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/private\/pais&filhos\/gulpfile-min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 0
+		},
+	"\/private\/pais&filhos\/IMG-20161010-WA0001.jpg": {
+		"ft": 16384,
+		"iS": 60830,
+		"oA": 0,
+		"oAP": "\/private\/pais&filhos\/IMG-20161010-WA0001.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/private\/pais&filhos\/index.html": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/private\/pais&filhos\/index.html",
+		"oF": 0
+		},
+	"\/private\/pais&filhos\/layout\/paisEfilhos.sketch": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/private\/pais&filhos\/layout\/paisEfilhos.sketch",
+		"oF": 0
+		},
+	"\/private\/pais&filhos\/maior.jpg": {
+		"ft": 16384,
+		"iS": 284034,
+		"oA": 0,
+		"oAP": "\/private\/pais&filhos\/maior.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/private\/pais&filhos\/menor.jpg": {
+		"ft": 16384,
+		"iS": 29811,
+		"oA": 0,
+		"oAP": "\/private\/pais&filhos\/menor.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/private\/pais&filhos\/package.json": {
+		"ft": 524288,
+		"oA": 1,
+		"oAP": "\/private\/pais&filhos\/package-min.json",
+		"oF": 0,
+		"oO": 0,
+		"oS": 1
+		},
+	"\/private\/pais&filhos\/public\/all.js": {
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/private\/pais&filhos\/public\/all-min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 0
+		},
+	"\/private\/pais&filhos\/public\/components\/navigation.css": {
+		"aP": 1,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 0,
+		"oAP": "\/private\/pais&filhos\/public\/components\/navigation-min.css",
+		"oF": 0,
+		"oS": 3
+		},
+	"\/private\/pais&filhos\/public\/components\/navigation.css.map": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/private\/pais&filhos\/public\/components\/navigation.css.map",
+		"oF": 0
+		},
+	"\/private\/pais&filhos\/public\/jquery.min.js": {
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/private\/pais&filhos\/public\/jquery.min-min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 0
+		},
+	"\/private\/pais&filhos\/public\/sprites.png": {
+		"ft": 32768,
+		"iS": 36915,
+		"oA": 0,
+		"oAP": "\/private\/pais&filhos\/public\/sprites.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"\/private\/pais&filhos\/public\/style.css": {
+		"aP": 1,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 0,
+		"oAP": "\/private\/pais&filhos\/public\/style-min.css",
+		"oF": 0,
+		"oS": 3
+		},
+	"\/private\/pais&filhos\/public\/style.css.map": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/private\/pais&filhos\/public\/style.css.map",
+		"oF": 0
+		}
+	},
+"hooks": [
+	],
+"manualImportLinks": {
+	},
+"projectAttributes": {
+	"creationDate": 533671386,
+	"displayValue": "thommorais.github.io",
+	"displayValueWasSetByUser": 0,
+	"iconImageName": "meme-greg"
+	},
+"projectSettings": {
+	"abortBuildOnError": 1,
+	"alwaysUseExternalServer": 0,
+	"animateCSSInjections": 1,
+	"autoBuildNewItems": 1,
+	"autoprefixerBrowserString": "> 1%, last 2 versions, Firefox ESR, Opera 12.1",
+	"babelAuxiliaryCommentAfter": "",
+	"babelAuxiliaryCommentBefore": "",
+	"babelConfigFileHandlingType": 0,
+	"babelCustomPluginsList": "",
+	"babelCustomPresetsList": "",
+	"babelInsertModuleIDs": 0,
+	"babelModuleID": "",
+	"babelNoComments": 0,
+	"babelPlugins": {
+		"async-generator-functions": {
+			"active": 0
+			},
+		"async-to-generator": {
+			"active": 0
+			},
+		"async-to-module-method": {
+			"active": 0
+			},
+		"class-properties": {
+			"active": 0
+			},
+		"decorators": {
+			"active": 0
+			},
+		"decorators-legacy": {
+			"active": 0
+			},
+		"do-expressions": {
+			"active": 0
+			},
+		"es2015-arrow-functions": {
+			"active": 0
+			},
+		"es2015-block-scoped-functions": {
+			"active": 0
+			},
+		"es2015-block-scoping": {
+			"active": 0
+			},
+		"es2015-classes": {
+			"active": 0
+			},
+		"es2015-computed-properties": {
+			"active": 0
+			},
+		"es2015-constants": {
+			"active": 0
+			},
+		"es2015-destructuring": {
+			"active": 0
+			},
+		"es2015-duplicate-keys": {
+			"active": 0
+			},
+		"es2015-for-of": {
+			"active": 0
+			},
+		"es2015-function-name": {
+			"active": 0
+			},
+		"es2015-literals": {
+			"active": 0
+			},
+		"es2015-modules-amd": {
+			"active": 0
+			},
+		"es2015-modules-commonjs": {
+			"active": 0
+			},
+		"es2015-modules-systemjs": {
+			"active": 0
+			},
+		"es2015-modules-umd": {
+			"active": 0
+			},
+		"es2015-object-super": {
+			"active": 0
+			},
+		"es2015-parameters": {
+			"active": 0
+			},
+		"es2015-shorthand-properties": {
+			"active": 0
+			},
+		"es2015-spread": {
+			"active": 0
+			},
+		"es2015-sticky-regex": {
+			"active": 0
+			},
+		"es2015-template-literals": {
+			"active": 0
+			},
+		"es2015-typeof-symbol": {
+			"active": 0
+			},
+		"es2015-unicode-regex": {
+			"active": 0
+			},
+		"es3-member-expression-literals": {
+			"active": 0
+			},
+		"es3-property-literals": {
+			"active": 0
+			},
+		"es5-property-mutators": {
+			"active": 0
+			},
+		"eval": {
+			"active": 0
+			},
+		"exponentiation-operator": {
+			"active": 0
+			},
+		"export-extensions": {
+			"active": 0
+			},
+		"external-helpers": {
+			"active": 0
+			},
+		"flow-comments": {
+			"active": 0
+			},
+		"flow-strip-types": {
+			"active": 0
+			},
+		"function-bind": {
+			"active": 0
+			},
+		"inline-environment-variables": {
+			"active": 0
+			},
+		"jscript": {
+			"active": 0
+			},
+		"member-expression-literals": {
+			"active": 0
+			},
+		"merge-sibling-variables": {
+			"active": 0
+			},
+		"minify-booleans": {
+			"active": 0
+			},
+		"node-env-inline": {
+			"active": 0
+			},
+		"object-assign": {
+			"active": 0
+			},
+		"object-rest-spread": {
+			"active": 0
+			},
+		"object-set-prototype-of-to-assign": {
+			"active": 0
+			},
+		"property-literals": {
+			"active": 0
+			},
+		"proto-to-assign": {
+			"active": 0
+			},
+		"react-constant-elements": {
+			"active": 0
+			},
+		"react-display-name": {
+			"active": 0
+			},
+		"react-inline-elements": {
+			"active": 0
+			},
+		"react-jsx": {
+			"active": 0
+			},
+		"react-jsx-compat": {
+			"active": 0
+			},
+		"react-jsx-self": {
+			"active": 0
+			},
+		"react-jsx-source": {
+			"active": 0
+			},
+		"regenerator": {
+			"active": 0
+			},
+		"remove-console": {
+			"active": 0
+			},
+		"remove-debugger": {
+			"active": 0
+			},
+		"runtime": {
+			"active": 0
+			},
+		"simplify-comparison-operators": {
+			"active": 0
+			},
+		"strict-mode": {
+			"active": 0
+			},
+		"syntax-async-generators": {
+			"active": 0
+			},
+		"syntax-class-properties": {
+			"active": 0
+			},
+		"syntax-decorators": {
+			"active": 0
+			},
+		"syntax-do-expressions": {
+			"active": 0
+			},
+		"syntax-export-extensions": {
+			"active": 0
+			},
+		"syntax-flow": {
+			"active": 0
+			},
+		"syntax-function-bind": {
+			"active": 0
+			},
+		"syntax-function-sent": {
+			"active": 0
+			},
+		"syntax-jsx": {
+			"active": 0
+			},
+		"syntax-object-rest-spread": {
+			"active": 0
+			},
+		"undeclared-variables-check": {
+			"active": 0
+			},
+		"undefined-to-void": {
+			"active": 0
+			}
+		},
+	"babelPresetType": 193,
+	"babelRetainLines": 0,
+	"bowerAbbreviatedPath": "bower_components",
+	"bowerAutoCreateInfoFile": 1,
+	"bowerInstallDevDependencies": 0,
+	"bowerSaveDependencies": 1,
+	"bowerSaveDevDependencies": 0,
+	"bowerUseExactVersion": 0,
+	"browserRefreshDelay": 0,
+	"buildFolderActive": 0,
+	"buildFolderName": "build",
+	"cleanBuild": 1,
+	"coffeeLintFlags2": {
+		"arrow_spacing": {
+			"active": 0,
+			"flagValue": -1
+			},
+		"camel_case_classes": {
+			"active": 1,
+			"flagValue": -1
+			},
+		"colon_assignment_spacing": {
+			"active": 0,
+			"flagValue": 1
+			},
+		"cyclomatic_complexity": {
+			"active": 0,
+			"flagValue": 10
+			},
+		"duplicate_key": {
+			"active": 1,
+			"flagValue": -1
+			},
+		"empty_constructor_needs_parens": {
+			"active": 0,
+			"flagValue": -1
+			},
+		"ensure_comprehensions": {
+			"active": 1,
+			"flagValue": -1
+			},
+		"indentation": {
+			"active": 1,
+			"flagValue": 2
+			},
+		"line_endings": {
+			"active": 0,
+			"flagValue": 0
+			},
+		"max_line_length": {
+			"active": 0,
+			"flagValue": 150
+			},
+		"missing_fat_arrows": {
+			"active": 0,
+			"flagValue": -1
+			},
+		"newlines_after_classes": {
+			"active": 0,
+			"flagValue": 3
+			},
+		"no_backticks": {
+			"active": 1,
+			"flagValue": -1
+			},
+		"no_debugger": {
+			"active": 1,
+			"flagValue": -1
+			},
+		"no_empty_functions": {
+			"active": 0,
+			"flagValue": -1
+			},
+		"no_empty_param_list": {
+			"active": 0,
+			"flagValue": -1
+			},
+		"no_implicit_braces": {
+			"active": 1,
+			"flagValue": -1
+			},
+		"no_implicit_parens": {
+			"active": 0,
+			"flagValue": -1
+			},
+		"no_interpolation_in_single_quotes": {
+			"active": 0,
+			"flagValue": -1
+			},
+		"no_nested_string_interpolation": {
+			"active": 1,
+			"flagValue": -1
+			},
+		"no_plusplus": {
+			"active": 0,
+			"flagValue": -1
+			},
+		"no_private_function_fat_arrows": {
+			"active": 1,
+			"flagValue": -1
+			},
+		"no_stand_alone_at": {
+			"active": 1,
+			"flagValue": -1
+			},
+		"no_tabs": {
+			"active": 1,
+			"flagValue": -1
+			},
+		"no_this": {
+			"active": 0,
+			"flagValue": -1
+			},
+		"no_throwing_strings": {
+			"active": 1,
+			"flagValue": -1
+			},
+		"no_trailing_semicolons": {
+			"active": 1,
+			"flagValue": -1
+			},
+		"no_trailing_whitespace": {
+			"active": 1,
+			"flagValue": -1
+			},
+		"no_unnecessary_double_quotes": {
+			"active": 0,
+			"flagValue": -1
+			},
+		"no_unnecessary_fat_arrows": {
+			"active": 1,
+			"flagValue": -1
+			},
+		"non_empty_constructor_needs_parens": {
+			"active": 0,
+			"flagValue": -1
+			},
+		"prefer_english_operator": {
+			"active": 0,
+			"flagValue": -1
+			},
+		"space_operators": {
+			"active": 0,
+			"flagValue": -1
+			},
+		"spacing_after_comma": {
+			"active": 1,
+			"flagValue": -1
+			}
+		},
+	"esLintConfigFileHandlingType": 0,
+	"esLintECMAVersion": 7,
+	"esLintEnvironmentsMask": 1,
+	"esLintRules": {
+		"accessor-pairs": {
+			"active": 0,
+			"optionString": "{'setWithoutGet': true, 'getWithoutSet': false}"
+			},
+		"array-bracket-newline": {
+			"active": 0,
+			"optionString": "{'multiline': true, 'minItems': null}"
+			},
+		"array-bracket-spacing": {
+			"active": 0,
+			"optionString": "'never', {'singleValue': false, 'objectsInArrays': false, 'arraysInArrays': false}"
+			},
+		"array-callback-return": {
+			"active": 0,
+			"optionString": ""
+			},
+		"array-element-newline": {
+			"active": 0,
+			"optionString": "'always'"
+			},
+		"arrow-body-style": {
+			"active": 0,
+			"optionString": "'as-needed', {'requireReturnForObjectLiteral': false}"
+			},
+		"arrow-parens": {
+			"active": 0,
+			"optionString": "'always'"
+			},
+		"arrow-spacing": {
+			"active": 0,
+			"optionString": "{'before': true, 'after': true}"
+			},
+		"block-scoped-var": {
+			"active": 0,
+			"optionString": ""
+			},
+		"block-spacing": {
+			"active": 0,
+			"optionString": "'always'"
+			},
+		"brace-style": {
+			"active": 0,
+			"optionString": "'1tbs', {'allowSingleLine': true}"
+			},
+		"callback-return": {
+			"active": 0,
+			"optionString": "['callback', 'cb', 'next']"
+			},
+		"camelcase": {
+			"active": 0,
+			"optionString": "{'properties': 'always'}"
+			},
+		"capitalized-comments": {
+			"active": 0,
+			"optionString": "'always', {'ignoreInlineComments': false, 'ignoreConsecutiveComments': false}"
+			},
+		"class-methods-use-this": {
+			"active": 0,
+			"optionString": "{'exceptMethods': []}"
+			},
+		"comma-dangle": {
+			"active": 1,
+			"optionString": "'never'"
+			},
+		"comma-spacing": {
+			"active": 0,
+			"optionString": "{'before': false, 'after': true}"
+			},
+		"comma-style": {
+			"active": 0,
+			"optionString": "'last'"
+			},
+		"complexity": {
+			"active": 0,
+			"optionString": "20"
+			},
+		"computed-property-spacing": {
+			"active": 0,
+			"optionString": "'never'"
+			},
+		"consistent-return": {
+			"active": 0,
+			"optionString": "{'treatUndefinedAsUnspecified': false}"
+			},
+		"consistent-this": {
+			"active": 0,
+			"optionString": "'that'"
+			},
+		"constructor-super": {
+			"active": 1,
+			"optionString": ""
+			},
+		"curly": {
+			"active": 0,
+			"optionString": "'all'"
+			},
+		"default-case": {
+			"active": 0,
+			"optionString": ""
+			},
+		"dot-location": {
+			"active": 0,
+			"optionString": "'object'"
+			},
+		"dot-notation": {
+			"active": 0,
+			"optionString": "{'allowKeywords': false}"
+			},
+		"eol-last": {
+			"active": 0,
+			"optionString": "'always'"
+			},
+		"eqeqeq": {
+			"active": 0,
+			"optionString": "'always', {'null': 'always'}"
+			},
+		"for-direction": {
+			"active": 0,
+			"optionString": ""
+			},
+		"func-call-spacing": {
+			"active": 0,
+			"optionString": "'never'"
+			},
+		"func-name-matching": {
+			"active": 0,
+			"optionString": "'always', {'includeCommonJSModuleExports': false}"
+			},
+		"func-names": {
+			"active": 0,
+			"optionString": "'always'"
+			},
+		"func-style": {
+			"active": 0,
+			"optionString": "'expression'"
+			},
+		"function-paren-newline": {
+			"active": 0,
+			"optionString": "'multiline'"
+			},
+		"generator-star-spacing": {
+			"active": 0,
+			"optionString": "{'before': true, 'after': false}"
+			},
+		"getter-return": {
+			"active": 0,
+			"optionString": "{'allowImplicit': false}"
+			},
+		"global-require": {
+			"active": 0,
+			"optionString": ""
+			},
+		"guard-for-in": {
+			"active": 0,
+			"optionString": ""
+			},
+		"handle-callback-err": {
+			"active": 0,
+			"optionString": "'err'"
+			},
+		"id-blacklist": {
+			"active": 0,
+			"optionString": "'data', 'err', 'e', 'cb', 'callback'"
+			},
+		"id-length": {
+			"active": 0,
+			"optionString": "{'min': 2, 'max': 1000, 'properties': 'always', 'exceptions': ['x', 'i', 'y']}"
+			},
+		"id-match": {
+			"active": 0,
+			"optionString": "'^[a-z]+([A-Z][a-z]+)*$', {'properties': false, 'onlyDeclarations': true}"
+			},
+		"indent": {
+			"active": 0,
+			"optionString": "4, {'SwitchCase': 0, 'VariableDeclarator': 1, 'outerIIFEBody': 1, }"
+			},
+		"init-declarations": {
+			"active": 0,
+			"optionString": "'always',  {'ignoreForLoopInit': true}"
+			},
+		"jsx-quotes": {
+			"active": 0,
+			"optionString": "'prefer-double'"
+			},
+		"key-spacing": {
+			"active": 0,
+			"optionString": "{'singleLine': {'beforeColon': false, 'afterColon': true, 'mode':'strict'}, 'multiLine': {'beforeColon': false, 'afterColon': true, 'align': 'value', 'mode':'minimum'}}"
+			},
+		"keyword-spacing": {
+			"active": 0,
+			"optionString": "{'before': true, 'after': true, 'overrides': {}}"
+			},
+		"line-comment-position": {
+			"active": 0,
+			"optionString": "{'position': 'above'}"
+			},
+		"linebreak-style": {
+			"active": 0,
+			"optionString": "'unix'"
+			},
+		"lines-around-comment": {
+			"active": 0,
+			"optionString": "{'beforeBlockComment': true}"
+			},
+		"lines-between-class-members": {
+			"active": 0,
+			"optionString": "'always', {exceptAfterSingleLine: false}"
+			},
+		"max-depth": {
+			"active": 0,
+			"optionString": "{'max': 4}"
+			},
+		"max-len": {
+			"active": 0,
+			"optionString": "{'code': 80, 'comments': 80, 'tabWidth': 4, 'ignoreUrls': true, 'ignoreStrings': true, 'ignoreTemplateLiterals': true, 'ignoreRegExpLiterals': true}"
+			},
+		"max-lines": {
+			"active": 0,
+			"optionString": "{'max': 300, 'skipBlankLines': true, 'skipComments': true}"
+			},
+		"max-nested-callbacks": {
+			"active": 0,
+			"optionString": "{'max': 10}"
+			},
+		"max-params": {
+			"active": 0,
+			"optionString": "{'max': 4}"
+			},
+		"max-statements": {
+			"active": 0,
+			"optionString": "{'max': 10}, {'ignoreTopLevelFunctions': true}"
+			},
+		"max-statements-per-line": {
+			"active": 0,
+			"optionString": "{'max': 1}"
+			},
+		"multiline-comment-style": {
+			"active": 0,
+			"optionString": "'starred-block'"
+			},
+		"multiline-ternary": {
+			"active": 0,
+			"optionString": "'always'"
+			},
+		"new-cap": {
+			"active": 0,
+			"optionString": "{'newIsCap': true, 'capIsNew': true, 'newIsCapExceptions': [], 'capIsNewExceptions': ['Array', 'Boolean', 'Date', 'Error', 'Function', 'Number', 'Object', 'RegExp', 'String', 'Symbol'], 'properties': true}"
+			},
+		"new-parens": {
+			"active": 0,
+			"optionString": ""
+			},
+		"newline-per-chained-call": {
+			"active": 0,
+			"optionString": "{'ignoreChainWithDepth': 2}"
+			},
+		"no-alert": {
+			"active": 0,
+			"optionString": ""
+			},
+		"no-array-constructor": {
+			"active": 0,
+			"optionString": ""
+			},
+		"no-await-in-loop": {
+			"active": 0,
+			"optionString": ""
+			},
+		"no-bitwise": {
+			"active": 0,
+			"optionString": "{'allow': ['~'], 'int32Hint': true}"
+			},
+		"no-buffer-constructor": {
+			"active": 0,
+			"optionString": ""
+			},
+		"no-caller": {
+			"active": 0,
+			"optionString": ""
+			},
+		"no-case-declarations": {
+			"active": 1,
+			"optionString": ""
+			},
+		"no-catch-shadow": {
+			"active": 0,
+			"optionString": ""
+			},
+		"no-class-assign": {
+			"active": 1,
+			"optionString": ""
+			},
+		"no-compare-neg-zero": {
+			"active": 0,
+			"optionString": ""
+			},
+		"no-cond-assign": {
+			"active": 1,
+			"optionString": "'except-parens'"
+			},
+		"no-confusing-arrow": {
+			"active": 0,
+			"optionString": "{'allowParens': false}"
+			},
+		"no-console": {
+			"active": 1,
+			"optionString": "{'allow': ['warn', 'error']}"
+			},
+		"no-const-assign": {
+			"active": 1,
+			"optionString": ""
+			},
+		"no-constant-condition": {
+			"active": 1,
+			"optionString": "{'checkLoops': true}"
+			},
+		"no-continue": {
+			"active": 0,
+			"optionString": ""
+			},
+		"no-control-regex": {
+			"active": 1,
+			"optionString": ""
+			},
+		"no-debugger": {
+			"active": 1,
+			"optionString": ""
+			},
+		"no-delete-var": {
+			"active": 1,
+			"optionString": ""
+			},
+		"no-div-regex": {
+			"active": 0,
+			"optionString": ""
+			},
+		"no-dupe-args": {
+			"active": 1,
+			"optionString": ""
+			},
+		"no-dupe-class-members": {
+			"active": 1,
+			"optionString": ""
+			},
+		"no-dupe-keys": {
+			"active": 1,
+			"optionString": ""
+			},
+		"no-duplicate-imports": {
+			"active": 0,
+			"optionString": "{'includeExports': false}"
+			},
+		"no-else-return": {
+			"active": 0,
+			"optionString": ""
+			},
+		"no-empty": {
+			"active": 1,
+			"optionString": "{'allowEmptyCatch': false}"
+			},
+		"no-empty-character-class": {
+			"active": 1,
+			"optionString": ""
+			},
+		"no-empty-function": {
+			"active": 0,
+			"optionString": "{'allow': []}"
+			},
+		"no-empty-pattern": {
+			"active": 1,
+			"optionString": ""
+			},
+		"no-eq-null": {
+			"active": 0,
+			"optionString": ""
+			},
+		"no-eval": {
+			"active": 0,
+			"optionString": "{'allowIndirect': false}"
+			},
+		"no-ex-assign": {
+			"active": 1,
+			"optionString": ""
+			},
+		"no-extend-native": {
+			"active": 0,
+			"optionString": "{'exceptions': []}"
+			},
+		"no-extra-bind": {
+			"active": 0,
+			"optionString": ""
+			},
+		"no-extra-boolean-cast": {
+			"active": 1,
+			"optionString": ""
+			},
+		"no-extra-labels": {
+			"active": 0,
+			"optionString": ""
+			},
+		"no-extra-parens": {
+			"active": 0,
+			"optionString": "'all', {'conditionalAssign': false, 'returnAssign': false, 'nestedBinaryExpressions': false, 'ignoreJSX': 'none', 'enforceForArrowConditionals': false}"
+			},
+		"no-extra-semi": {
+			"active": 1,
+			"optionString": ""
+			},
+		"no-fallthrough": {
+			"active": 1,
+			"optionString": ""
+			},
+		"no-floating-decimal": {
+			"active": 0,
+			"optionString": ""
+			},
+		"no-func-assign": {
+			"active": 1,
+			"optionString": ""
+			},
+		"no-global-assign": {
+			"active": 1,
+			"optionString": "{'exceptions': []}"
+			},
+		"no-implicit-coercion": {
+			"active": 0,
+			"optionString": "{'boolean': true, 'number': true, 'string': true, 'allow': []}"
+			},
+		"no-implicit-globals": {
+			"active": 0,
+			"optionString": ""
+			},
+		"no-implied-eval": {
+			"active": 0,
+			"optionString": ""
+			},
+		"no-inline-comments": {
+			"active": 0,
+			"optionString": ""
+			},
+		"no-inner-declarations": {
+			"active": 1,
+			"optionString": "'functions'"
+			},
+		"no-invalid-regexp": {
+			"active": 1,
+			"optionString": "{'allowConstructorFlags': ['u', 'y']}"
+			},
+		"no-invalid-this": {
+			"active": 0,
+			"optionString": ""
+			},
+		"no-irregular-whitespace": {
+			"active": 1,
+			"optionString": "{'skipStrings': true, 'skipComments': false, 'skipRegExps': true, 'skipTemplates': true}"
+			},
+		"no-iterator": {
+			"active": 0,
+			"optionString": ""
+			},
+		"no-label-var": {
+			"active": 0,
+			"optionString": ""
+			},
+		"no-labels": {
+			"active": 0,
+			"optionString": "{'allowLoop': false, 'allowSwitch': false}"
+			},
+		"no-lone-blocks": {
+			"active": 0,
+			"optionString": ""
+			},
+		"no-lonely-if": {
+			"active": 0,
+			"optionString": ""
+			},
+		"no-loop-func": {
+			"active": 0,
+			"optionString": ""
+			},
+		"no-magic-numbers": {
+			"active": 0,
+			"optionString": "{'ignore': [], 'ignoreArrayIndexes': true, 'enforceConst': false, 'detectObjects': false}"
+			},
+		"no-mixed-operators": {
+			"active": 0,
+			"optionString": "{'groups': [['+', '-', '*', '\/', '%', '**'], ['&', '|', '^', '~', '<<', '>>', '>>>'], ['==', '!=', '===', '!==', '>', '>=', '<', '<='], ['&&', '||'], ['in', 'instanceof']], 'allowSamePrecedence': true}"
+			},
+		"no-mixed-requires": {
+			"active": 0,
+			"optionString": "{'grouping': false, 'allowCall': false }"
+			},
+		"no-mixed-spaces-and-tabs": {
+			"active": 0,
+			"optionString": ""
+			},
+		"no-multi-assign": {
+			"active": 0,
+			"optionString": ""
+			},
+		"no-multi-spaces": {
+			"active": 0,
+			"optionString": "{'exceptions': {'Property': true, 'BinaryExpression': false, 'VariableDeclarator': false, 'ImportDeclaration': false}}"
+			},
+		"no-multi-str": {
+			"active": 0,
+			"optionString": ""
+			},
+		"no-multiple-empty-lines": {
+			"active": 0,
+			"optionString": "{'max': 2, 'maxBOF': 2, 'maxEOF': 2}"
+			},
+		"no-negated-condition": {
+			"active": 0,
+			"optionString": ""
+			},
+		"no-nested-ternary": {
+			"active": 0,
+			"optionString": ""
+			},
+		"no-new": {
+			"active": 0,
+			"optionString": ""
+			},
+		"no-new-func": {
+			"active": 0,
+			"optionString": ""
+			},
+		"no-new-object": {
+			"active": 0,
+			"optionString": ""
+			},
+		"no-new-require": {
+			"active": 0,
+			"optionString": ""
+			},
+		"no-new-symbol": {
+			"active": 1,
+			"optionString": ""
+			},
+		"no-new-wrappers": {
+			"active": 0,
+			"optionString": ""
+			},
+		"no-obj-calls": {
+			"active": 1,
+			"optionString": ""
+			},
+		"no-octal": {
+			"active": 1,
+			"optionString": ""
+			},
+		"no-octal-escape": {
+			"active": 0,
+			"optionString": ""
+			},
+		"no-param-reassign": {
+			"active": 0,
+			"optionString": "{'props': false}"
+			},
+		"no-path-concat": {
+			"active": 0,
+			"optionString": ""
+			},
+		"no-plusplus": {
+			"active": 0,
+			"optionString": "{'allowForLoopAfterthoughts': false}"
+			},
+		"no-process-env": {
+			"active": 0,
+			"optionString": ""
+			},
+		"no-process-exit": {
+			"active": 0,
+			"optionString": ""
+			},
+		"no-proto": {
+			"active": 0,
+			"optionString": ""
+			},
+		"no-prototype-builtins": {
+			"active": 0,
+			"optionString": ""
+			},
+		"no-redeclare": {
+			"active": 1,
+			"optionString": "{'builtinGlobals': false}"
+			},
+		"no-regex-spaces": {
+			"active": 1,
+			"optionString": ""
+			},
+		"no-restricted-globals": {
+			"active": 0,
+			"optionString": "'event', 'fdescribe'"
+			},
+		"no-restricted-imports": {
+			"active": 0,
+			"optionString": ""
+			},
+		"no-restricted-modules": {
+			"active": 0,
+			"optionString": ""
+			},
+		"no-restricted-properties": {
+			"active": 0,
+			"optionString": "[{'object': 'disallowedObjectName', 'property': 'disallowedPropertyName'}, {'object': 'disallowedObjectName', 'property': 'anotherDisallowedPropertyName', 'message': 'Please use allowedObjectName.allowedPropertyName.'}]"
+			},
+		"no-restricted-syntax": {
+			"active": 0,
+			"optionString": "'FunctionExpression', 'WithStatement'"
+			},
+		"no-return-assign": {
+			"active": 0,
+			"optionString": "'except-parens'"
+			},
+		"no-return-await": {
+			"active": 0,
+			"optionString": ""
+			},
+		"no-script-url": {
+			"active": 0,
+			"optionString": ""
+			},
+		"no-self-assign": {
+			"active": 1,
+			"optionString": "{'props': false}"
+			},
+		"no-self-compare": {
+			"active": 0,
+			"optionString": ""
+			},
+		"no-sequences": {
+			"active": 0,
+			"optionString": ""
+			},
+		"no-shadow": {
+			"active": 0,
+			"optionString": "{'builtinGlobals': false, 'hoist': 'functions', 'allow': []}"
+			},
+		"no-shadow-restricted-names": {
+			"active": 0,
+			"optionString": ""
+			},
+		"no-sparse-arrays": {
+			"active": 1,
+			"optionString": ""
+			},
+		"no-sync": {
+			"active": 0,
+			"optionString": "{'allowAtRootLevel': false}"
+			},
+		"no-tabs": {
+			"active": 0,
+			"optionString": ""
+			},
+		"no-template-curly-in-string": {
+			"active": 0,
+			"optionString": ""
+			},
+		"no-ternary": {
+			"active": 0,
+			"optionString": ""
+			},
+		"no-this-before-super": {
+			"active": 1,
+			"optionString": ""
+			},
+		"no-throw-literal": {
+			"active": 0,
+			"optionString": ""
+			},
+		"no-trailing-spaces": {
+			"active": 0,
+			"optionString": "{'skipBlankLines': false, 'ignoreComments': false}"
+			},
+		"no-undef": {
+			"active": 1,
+			"optionString": "{'typeof': false}"
+			},
+		"no-undef-init": {
+			"active": 0,
+			"optionString": ""
+			},
+		"no-undefined": {
+			"active": 0,
+			"optionString": ""
+			},
+		"no-underscore-dangle": {
+			"active": 0,
+			"optionString": "{'allow': [], 'allowAfterThis': false, 'allowAfterSuper': false, 'enforceInMethodNames': false}"
+			},
+		"no-unexpected-multiline": {
+			"active": 1,
+			"optionString": ""
+			},
+		"no-unmodified-loop-condition": {
+			"active": 0,
+			"optionString": ""
+			},
+		"no-unneeded-ternary": {
+			"active": 0,
+			"optionString": "{'defaultAssignment': true}"
+			},
+		"no-unreachable": {
+			"active": 1,
+			"optionString": ""
+			},
+		"no-unsafe-finally": {
+			"active": 1,
+			"optionString": ""
+			},
+		"no-unsafe-negation": {
+			"active": 1,
+			"optionString": ""
+			},
+		"no-unused-expressions": {
+			"active": 0,
+			"optionString": "{'allowShortCircuit': false, 'allowTernary': false, 'allowTaggedTemplates': false}"
+			},
+		"no-unused-labels": {
+			"active": 1,
+			"optionString": ""
+			},
+		"no-unused-vars": {
+			"active": 1,
+			"optionString": "{'vars': 'all', 'args': 'after-used', 'caughtErrors': 'none', 'ignoreRestSiblings': false}"
+			},
+		"no-use-before-define": {
+			"active": 0,
+			"optionString": "{'functions': true, 'classes': true, 'variables': true}"
+			},
+		"no-useless-call": {
+			"active": 0,
+			"optionString": ""
+			},
+		"no-useless-computed-key": {
+			"active": 0,
+			"optionString": ""
+			},
+		"no-useless-concat": {
+			"active": 0,
+			"optionString": ""
+			},
+		"no-useless-constructor": {
+			"active": 0,
+			"optionString": ""
+			},
+		"no-useless-escape": {
+			"active": 0,
+			"optionString": ""
+			},
+		"no-useless-rename": {
+			"active": 0,
+			"optionString": "{'ignoreDestructuring': false, 'ignoreImport': false, 'ignoreExport': false}"
+			},
+		"no-useless-return": {
+			"active": 0,
+			"optionString": ""
+			},
+		"no-var": {
+			"active": 0,
+			"optionString": ""
+			},
+		"no-void": {
+			"active": 0,
+			"optionString": ""
+			},
+		"no-warning-comments": {
+			"active": 0,
+			"optionString": "{'terms': ['todo', 'fixme', 'xxx'], 'location': 'start'}"
+			},
+		"no-whitespace-before-property": {
+			"active": 0,
+			"optionString": ""
+			},
+		"no-with": {
+			"active": 0,
+			"optionString": ""
+			},
+		"nonblock-statement-body-position": {
+			"active": 0,
+			"optionString": "'beside'"
+			},
+		"object-curly-newline": {
+			"active": 0,
+			"optionString": "{'ObjectExpression': {'multiline': true}, 'ObjectPattern': {'multiline': true}}"
+			},
+		"object-curly-spacing": {
+			"active": 0,
+			"optionString": "'never'"
+			},
+		"object-property-newline": {
+			"active": 0,
+			"optionString": "{'allowMultiplePropertiesPerLine': true}"
+			},
+		"object-shorthand": {
+			"active": 0,
+			"optionString": "'always', {'avoidQuotes': false, 'ignoreConstructors': false}"
+			},
+		"one-var": {
+			"active": 0,
+			"optionString": "'always'"
+			},
+		"one-var-declaration-per-line": {
+			"active": 0,
+			"optionString": "'always'"
+			},
+		"operator-assignment": {
+			"active": 0,
+			"optionString": "'always'"
+			},
+		"operator-linebreak": {
+			"active": 0,
+			"optionString": "'after', {'overrides': {'?': 'after', '+=': 'none'}}"
+			},
+		"padded-blocks": {
+			"active": 0,
+			"optionString": "{'blocks': 'always', 'switches': 'always', 'classes': 'always'}"
+			},
+		"padding-line-between-statements": {
+			"active": 0,
+			"optionString": "{blankLine: 'always', prev:'*', next:'return'}"
+			},
+		"prefer-arrow-callback": {
+			"active": 0,
+			"optionString": ""
+			},
+		"prefer-const": {
+			"active": 0,
+			"optionString": "{'destructuring': 'any', 'ignoreReadBeforeAssign': false}"
+			},
+		"prefer-destructuring": {
+			"active": 0,
+			"optionString": "{'array': true, 'object': true}, {'enforceForRenamedProperties': false}"
+			},
+		"prefer-numeric-literals": {
+			"active": 0,
+			"optionString": ""
+			},
+		"prefer-promise-reject-errors": {
+			"active": 0,
+			"optionString": "{'allowEmptyReject': false}"
+			},
+		"prefer-rest-params": {
+			"active": 0,
+			"optionString": ""
+			},
+		"prefer-spread": {
+			"active": 0,
+			"optionString": ""
+			},
+		"prefer-template": {
+			"active": 0,
+			"optionString": ""
+			},
+		"quote-props": {
+			"active": 0,
+			"optionString": "'always'"
+			},
+		"quotes": {
+			"active": 0,
+			"optionString": "'double', {'avoidEscape': true, 'allowTemplateLiterals': true}"
+			},
+		"radix": {
+			"active": 0,
+			"optionString": "'always'"
+			},
+		"require-await": {
+			"active": 0,
+			"optionString": ""
+			},
+		"require-jsdoc": {
+			"active": 0,
+			"optionString": "{'require': {'FunctionDeclaration': true, 'MethodDefinition': false, 'ClassDeclaration': false, 'ArrowFunctionExpression': false}}"
+			},
+		"require-yield": {
+			"active": 1,
+			"optionString": ""
+			},
+		"rest-spread-spacing": {
+			"active": 0,
+			"optionString": "'never'"
+			},
+		"semi": {
+			"active": 0,
+			"optionString": "'always', {'omitLastInOneLineBlock': false}"
+			},
+		"semi-spacing": {
+			"active": 0,
+			"optionString": "{'before': false, 'after': true}"
+			},
+		"semi-style": {
+			"active": 0,
+			"optionString": "'last'"
+			},
+		"sort-imports": {
+			"active": 0,
+			"optionString": "{'ignoreCase': false, 'ignoreMemberSort': true, 'memberSyntaxSortOrder': ['none', 'all', 'multiple', 'single']}"
+			},
+		"sort-keys": {
+			"active": 0,
+			"optionString": "'asc', {'caseSensitive': true, 'natural': false}"
+			},
+		"sort-vars": {
+			"active": 0,
+			"optionString": "{'ignoreCase': false}"
+			},
+		"space-before-blocks": {
+			"active": 0,
+			"optionString": "{'functions': 'always', 'keywords': 'always', 'classes': 'always'}"
+			},
+		"space-before-function-paren": {
+			"active": 0,
+			"optionString": "{'anonymous': 'always', 'named': 'never'}"
+			},
+		"space-in-parens": {
+			"active": 0,
+			"optionString": "'never', {'exceptions': []}"
+			},
+		"space-infix-ops": {
+			"active": 0,
+			"optionString": "{'int32Hint': false}"
+			},
+		"space-unary-ops": {
+			"active": 0,
+			"optionString": "{'words': true, 'nonwords': false, 'overrides': {}}"
+			},
+		"spaced-comment": {
+			"active": 0,
+			"optionString": "'always', {'line': {'markers': ['\/'], 'exceptions': ['-', '+']}, 'block': {'markers': ['!'], 'exceptions': ['*'], 'balanced': false}}"
+			},
+		"strict": {
+			"active": 0,
+			"optionString": "'safe'"
+			},
+		"switch-colon-spacing": {
+			"active": 0,
+			"optionString": "{'after': true, 'before': false}"
+			},
+		"symbol-description": {
+			"active": 0,
+			"optionString": ""
+			},
+		"template-curly-spacing": {
+			"active": 0,
+			"optionString": "'never'"
+			},
+		"template-tag-spacing": {
+			"active": 0,
+			"optionString": "'never'"
+			},
+		"unicode-bom": {
+			"active": 0,
+			"optionString": "'never'"
+			},
+		"use-isnan": {
+			"active": 1,
+			"optionString": ""
+			},
+		"valid-jsdoc": {
+			"active": 0,
+			"optionString": "{'prefer': {'return': 'returns'}, 'requireReturn': true, 'requireReturnDescription': true, 'requireReturnType': true, 'requireParamDescription': true}"
+			},
+		"valid-typeof": {
+			"active": 1,
+			"optionString": "{'requireStringLiterals': true}"
+			},
+		"vars-on-top": {
+			"active": 0,
+			"optionString": ""
+			},
+		"wrap-iife": {
+			"active": 0,
+			"optionString": "'outside'"
+			},
+		"wrap-regex": {
+			"active": 0,
+			"optionString": ""
+			},
+		"yield-star-spacing": {
+			"active": 0,
+			"optionString": "{'before': false, 'after': true}"
+			},
+		"yoda": {
+			"active": 0,
+			"optionString": "'never', {'exceptRange': false, 'onlyEquality': false}"
+			}
+		},
+	"esLintSourceType": 0,
+	"externalServerAddress": "http:\/\/localhost:8888",
+	"gitIgnoreBuildFolder": 1,
+	"hideConfigFile": 0,
+	"jsCheckerReservedNamesString": "",
+	"jsHintFlags2": {
+		"asi": {
+			"active": 0,
+			"flagValue": -1
+			},
+		"bitwise": {
+			"active": 1,
+			"flagValue": -1
+			},
+		"boss": {
+			"active": 0,
+			"flagValue": -1
+			},
+		"browser": {
+			"active": 1,
+			"flagValue": -1
+			},
+		"browserify": {
+			"active": 0,
+			"flagValue": -1
+			},
+		"camelcase": {
+			"active": 0,
+			"flagValue": -1
+			},
+		"couch": {
+			"active": 0,
+			"flagValue": -1
+			},
+		"curly": {
+			"active": 1,
+			"flagValue": -1
+			},
+		"debug": {
+			"active": 0,
+			"flagValue": -1
+			},
+		"devel": {
+			"active": 0,
+			"flagValue": -1
+			},
+		"dojo": {
+			"active": 0,
+			"flagValue": -1
+			},
+		"elision": {
+			"active": 1,
+			"flagValue": -1
+			},
+		"eqeqeq": {
+			"active": 1,
+			"flagValue": -1
+			},
+		"eqnull": {
+			"active": 0,
+			"flagValue": -1
+			},
+		"es3": {
+			"active": 0,
+			"flagValue": -1
+			},
+		"esnext": {
+			"active": 0,
+			"flagValue": -1
+			},
+		"evil": {
+			"active": 0,
+			"flagValue": -1
+			},
+		"expr": {
+			"active": 0,
+			"flagValue": -1
+			},
+		"forin": {
+			"active": 0,
+			"flagValue": -1
+			},
+		"freeze": {
+			"active": 1,
+			"flagValue": -1
+			},
+		"funcscope": {
+			"active": 0,
+			"flagValue": -1
+			},
+		"futurehostile": {
+			"active": 0,
+			"flagValue": -1
+			},
+		"globalstrict": {
+			"active": 0,
+			"flagValue": -1
+			},
+		"immed": {
+			"active": 0,
+			"flagValue": -1
+			},
+		"indent": {
+			"active": 0,
+			"flagValue": 4
+			},
+		"iterator": {
+			"active": 0,
+			"flagValue": -1
+			},
+		"jasmine": {
+			"active": 0,
+			"flagValue": -1
+			},
+		"jquery": {
+			"active": 1,
+			"flagValue": -1
+			},
+		"lastsemic": {
+			"active": 0,
+			"flagValue": -1
+			},
+		"latedef": {
+			"active": 1,
+			"flagValue": -1
+			},
+		"laxbreak": {
+			"active": 0,
+			"flagValue": -1
+			},
+		"laxcomma": {
+			"active": 0,
+			"flagValue": -1
+			},
+		"loopfunc": {
+			"active": 0,
+			"flagValue": -1
+			},
+		"maxcomplexity": {
+			"active": 0,
+			"flagValue": 10
+			},
+		"maxdepth": {
+			"active": 0,
+			"flagValue": 3
+			},
+		"maxlen": {
+			"active": 0,
+			"flagValue": 150
+			},
+		"maxparams": {
+			"active": 0,
+			"flagValue": 3
+			},
+		"maxstatements": {
+			"active": 0,
+			"flagValue": 4
+			},
+		"mocha": {
+			"active": 0,
+			"flagValue": -1
+			},
+		"mootools": {
+			"active": 0,
+			"flagValue": -1
+			},
+		"moz": {
+			"active": 0,
+			"flagValue": -1
+			},
+		"multistr": {
+			"active": 0,
+			"flagValue": -1
+			},
+		"newcap": {
+			"active": 1,
+			"flagValue": -1
+			},
+		"noarg": {
+			"active": 1,
+			"flagValue": -1
+			},
+		"nocomma": {
+			"active": 0,
+			"flagValue": -1
+			},
+		"node": {
+			"active": 0,
+			"flagValue": -1
+			},
+		"noempty": {
+			"active": 0,
+			"flagValue": -1
+			},
+		"nonbsp": {
+			"active": 0,
+			"flagValue": -1
+			},
+		"nonew": {
+			"active": 1,
+			"flagValue": -1
+			},
+		"nonstandard": {
+			"active": 0,
+			"flagValue": -1
+			},
+		"notypeof": {
+			"active": 1,
+			"flagValue": -1
+			},
+		"noyield": {
+			"active": 0,
+			"flagValue": -1
+			},
+		"onecase": {
+			"active": 0,
+			"flagValue": -1
+			},
+		"phantom": {
+			"active": 0,
+			"flagValue": -1
+			},
+		"plusplus": {
+			"active": 0,
+			"flagValue": -1
+			},
+		"proto": {
+			"active": 0,
+			"flagValue": -1
+			},
+		"prototypejs": {
+			"active": 0,
+			"flagValue": -1
+			},
+		"qunit": {
+			"active": 0,
+			"flagValue": -1
+			},
+		"regexp": {
+			"active": 1,
+			"flagValue": -1
+			},
+		"rhino": {
+			"active": 0,
+			"flagValue": -1
+			},
+		"scripturl": {
+			"active": 0,
+			"flagValue": -1
+			},
+		"shadow": {
+			"active": 0,
+			"flagValue": -1
+			},
+		"shelljs": {
+			"active": 0,
+			"flagValue": -1
+			},
+		"singleGroups": {
+			"active": 0,
+			"flagValue": -1
+			},
+		"strict": {
+			"active": 0,
+			"flagValue": -1
+			},
+		"sub": {
+			"active": 0,
+			"flagValue": -1
+			},
+		"supernew": {
+			"active": 0,
+			"flagValue": -1
+			},
+		"typed": {
+			"active": 0,
+			"flagValue": -1
+			},
+		"undef": {
+			"active": 1,
+			"flagValue": -1
+			},
+		"unused": {
+			"active": 1,
+			"flagValue": -1
+			},
+		"varstmt": {
+			"active": 0,
+			"flagValue": -1
+			},
+		"withstmt": {
+			"active": 0,
+			"flagValue": -1
+			},
+		"worker": {
+			"active": 0,
+			"flagValue": -1
+			},
+		"wsh": {
+			"active": 0,
+			"flagValue": -1
+			},
+		"yui": {
+			"active": 0,
+			"flagValue": -1
+			}
+		},
+	"jsLintFlags2": {
+		"bitwise": {
+			"active": 0,
+			"flagValue": -1
+			},
+		"browser": {
+			"active": 1,
+			"flagValue": -1
+			},
+		"couch": {
+			"active": 0,
+			"flagValue": -1
+			},
+		"devel": {
+			"active": 0,
+			"flagValue": -1
+			},
+		"es6": {
+			"active": 0,
+			"flagValue": -1
+			},
+		"eval": {
+			"active": 0,
+			"flagValue": -1
+			},
+		"for": {
+			"active": 0,
+			"flagValue": -1
+			},
+		"maxlen": {
+			"active": 0,
+			"flagValue": 150
+			},
+		"node": {
+			"active": 0,
+			"flagValue": -1
+			},
+		"this": {
+			"active": 0,
+			"flagValue": -1
+			},
+		"white": {
+			"active": 0,
+			"flagValue": -1
+			}
+		},
+	"languageDefaultsCOFFEE": {
+		"autoOutputAction": 0,
+		"autoOutputPathFilenamePattern": "*.js",
+		"autoOutputPathRelativePath": "",
+		"autoOutputPathReplace1": "",
+		"autoOutputPathReplace2": "",
+		"autoOutputPathStyle": 0,
+		"createSourceMap": 0,
+		"minifyOutput": 1,
+		"outputStyle": 0,
+		"syntaxCheckerStyle": 1,
+		"transpilerStyle": 1
+		},
+	"languageDefaultsCSS": {
+		"autoOutputAction": 0,
+		"autoOutputPathFilenamePattern": "*-min.css",
+		"autoOutputPathRelativePath": "",
+		"autoOutputPathReplace1": "",
+		"autoOutputPathReplace2": "",
+		"autoOutputPathStyle": 0,
+		"createSourceMap": 0,
+		"outputStyle": 3,
+		"shouldRunAutoprefixer": 1,
+		"shouldRunBless": 0
+		},
+	"languageDefaultsGIF": {
+		"autoOutputAction": 0,
+		"autoOutputPathFilenamePattern": "*.gif",
+		"autoOutputPathRelativePath": "",
+		"autoOutputPathReplace1": "",
+		"autoOutputPathReplace2": "",
+		"autoOutputPathStyle": 0
+		},
+	"languageDefaultsHAML": {
+		"autoOutputAction": 0,
+		"autoOutputPathFilenamePattern": "*.html",
+		"autoOutputPathRelativePath": "",
+		"autoOutputPathReplace1": "",
+		"autoOutputPathReplace2": "",
+		"autoOutputPathStyle": 0,
+		"escapeHTMLCharacters": 0,
+		"noEscapeInAttributes": 0,
+		"outputFormat": 2,
+		"outputStyle": 0,
+		"shouldRunCacheBuster": 0,
+		"useCDATA": 0,
+		"useDoubleQuotes": 0,
+		"useUnixNewlines": 0
+		},
+	"languageDefaultsJPG": {
+		"autoOutputAction": 0,
+		"autoOutputPathFilenamePattern": "*.jpg",
+		"autoOutputPathRelativePath": "",
+		"autoOutputPathReplace1": "",
+		"autoOutputPathReplace2": "",
+		"autoOutputPathStyle": 0,
+		"quality": 100
+		},
+	"languageDefaultsJS": {
+		"autoOutputAction": 0,
+		"autoOutputPathFilenamePattern": "*-min.js",
+		"autoOutputPathRelativePath": "\/min",
+		"autoOutputPathReplace1": "",
+		"autoOutputPathReplace2": "",
+		"autoOutputPathStyle": 0,
+		"createSourceMap": 0,
+		"minifyOutput": 1,
+		"syntaxCheckerStyle": 3,
+		"transpilerStyle": 0
+		},
+	"languageDefaultsJSON": {
+		"autoOutputAction": 1,
+		"autoOutputPathFilenamePattern": "*-min.json",
+		"autoOutputPathRelativePath": "",
+		"autoOutputPathReplace1": "",
+		"autoOutputPathReplace2": "",
+		"autoOutputPathStyle": 0,
+		"orderOutput": 0,
+		"outputStyle": 1
+		},
+	"languageDefaultsKIT": {
+		"autoOutputAction": 0,
+		"autoOutputPathFilenamePattern": "*.html",
+		"autoOutputPathRelativePath": "",
+		"autoOutputPathReplace1": "kit",
+		"autoOutputPathReplace2": "html",
+		"autoOutputPathStyle": 0,
+		"shouldRunCacheBuster": 0
+		},
+	"languageDefaultsLESS": {
+		"allowInsecureImports": 0,
+		"autoOutputAction": 0,
+		"autoOutputPathFilenamePattern": "*.css",
+		"autoOutputPathRelativePath": "..\/css",
+		"autoOutputPathReplace1": "less",
+		"autoOutputPathReplace2": "css",
+		"autoOutputPathStyle": 0,
+		"createSourceMap": 1,
+		"disableJavascript": 0,
+		"ieCompatibility": 1,
+		"outputStyle": 0,
+		"relativeURLS": 0,
+		"shouldRunAutoprefixer": 0,
+		"shouldRunBless": 0,
+		"strictImports": 0,
+		"strictMath": 0,
+		"strictUnits": 0
+		},
+	"languageDefaultsMARKDOWN": {
+		"autoOutputAction": 0,
+		"autoOutputPathFilenamePattern": "*.html",
+		"autoOutputPathRelativePath": "",
+		"autoOutputPathReplace1": "",
+		"autoOutputPathReplace2": "",
+		"autoOutputPathStyle": 0,
+		"criticStyle": 0,
+		"enableFootnotes": 1,
+		"enableLabels": 1,
+		"enableSmartQuotes": 1,
+		"maskEmailAddresses": 1,
+		"outputFormat": 0,
+		"outputStyle": 0,
+		"parseMetadata": 1,
+		"processHTML": 0,
+		"randomFootnoteNumbers": 0,
+		"shouldRunCacheBuster": 0,
+		"useCompatibilityMode": 0
+		},
+	"languageDefaultsOTHER": {
+		"autoOutputAction": 0,
+		"autoOutputPathFilenamePattern": "*.*",
+		"autoOutputPathRelativePath": "",
+		"autoOutputPathReplace1": "",
+		"autoOutputPathReplace2": "",
+		"autoOutputPathStyle": 0,
+		"shouldRunCacheBuster": 0
+		},
+	"languageDefaultsPNG": {
+		"autoOutputAction": 0,
+		"autoOutputPathFilenamePattern": "*.png",
+		"autoOutputPathRelativePath": "",
+		"autoOutputPathReplace1": "",
+		"autoOutputPathReplace2": "",
+		"autoOutputPathStyle": 0,
+		"optimizerType": 1,
+		"quality": 100
+		},
+	"languageDefaultsPUG": {
+		"autoOutputAction": 0,
+		"autoOutputPathFilenamePattern": "*.html",
+		"autoOutputPathRelativePath": "",
+		"autoOutputPathReplace1": "",
+		"autoOutputPathReplace2": "",
+		"autoOutputPathStyle": 0,
+		"compileDebug": 1,
+		"outputStyle": 0,
+		"shouldRunCacheBuster": 0
+		},
+	"languageDefaultsSASS": {
+		"autoOutputAction": 0,
+		"autoOutputPathFilenamePattern": "*.css",
+		"autoOutputPathRelativePath": "..\/css",
+		"autoOutputPathReplace1": "sass",
+		"autoOutputPathReplace2": "css",
+		"autoOutputPathStyle": 0,
+		"createSourceMap": 0,
+		"debugStyle": 0,
+		"decimalPrecision": 10,
+		"outputStyle": 0,
+		"shouldRunAutoprefixer": 0,
+		"shouldRunBless": 0,
+		"useLibsass": 1
+		},
+	"languageDefaultsSLIM": {
+		"autoOutputAction": 0,
+		"autoOutputPathFilenamePattern": "*.html",
+		"autoOutputPathRelativePath": "",
+		"autoOutputPathReplace1": "",
+		"autoOutputPathReplace2": "",
+		"autoOutputPathStyle": 0,
+		"compileOnly": 0,
+		"logicless": 0,
+		"outputFormat": 0,
+		"outputStyle": 1,
+		"railsCompatible": 0,
+		"shouldRunCacheBuster": 0
+		},
+	"languageDefaultsSTYLUS": {
+		"autoOutputAction": 0,
+		"autoOutputPathFilenamePattern": "*.css",
+		"autoOutputPathRelativePath": "..\/css",
+		"autoOutputPathReplace1": "stylus",
+		"autoOutputPathReplace2": "css",
+		"autoOutputPathStyle": 0,
+		"createSourceMap": 0,
+		"debugStyle": 0,
+		"importCSS": 0,
+		"outputStyle": 0,
+		"resolveRelativeURLS": 0,
+		"shouldRunAutoprefixer": 0,
+		"shouldRunBless": 0
+		},
+	"languageDefaultsSVG": {
+		"autoOutputAction": 2,
+		"autoOutputPathFilenamePattern": "*.svg",
+		"autoOutputPathRelativePath": "",
+		"autoOutputPathReplace1": "",
+		"autoOutputPathReplace2": "",
+		"autoOutputPathStyle": 0,
+		"pluginMask": 3758088159
+		},
+	"languageDefaultsTS": {
+		"autoOutputAction": 0,
+		"autoOutputPathFilenamePattern": "*.js",
+		"autoOutputPathRelativePath": "\/js",
+		"autoOutputPathReplace1": "",
+		"autoOutputPathReplace2": "",
+		"autoOutputPathStyle": 0,
+		"createDeclarationFile": 0,
+		"createSourceMap": 0,
+		"jsxMode": 0,
+		"minifyOutput": 0,
+		"moduleResolutionType": 0,
+		"moduleType": 2,
+		"noImplicitAny": 0,
+		"preserveConstEnums": 0,
+		"removeComments": 0,
+		"suppressImplicitAnyIndexErrors": 0,
+		"targetECMAVersion": 0
+		},
+	"languageDefaultsUserDefined": [
+		],
+	"overrideExternalServerCSS": 0,
+	"previewPathAddition": "",
+	"skippedFoldersString": "log, _logs, logs, _cache, cache, \/storage\/framework\/sessions, node_modules",
+	"sourceFolderName": "source",
+	"susyVersion": 3,
+	"uglifyDefinesString": "",
+	"uglifyFlags2": {
+		"ascii-only": {
+			"active": 0,
+			"flagValue": -1
+			},
+		"bare-returns": {
+			"active": 0,
+			"flagValue": -1
+			},
+		"booleans": {
+			"active": 1,
+			"flagValue": -1
+			},
+		"bracketize": {
+			"active": 0,
+			"flagValue": -1
+			},
+		"cascade": {
+			"active": 1,
+			"flagValue": -1
+			},
+		"comments": {
+			"active": 1,
+			"flagValue": -1
+			},
+		"comparisons": {
+			"active": 1,
+			"flagValue": -1
+			},
+		"compress": {
+			"active": 1,
+			"flagValue": -1
+			},
+		"conditionals": {
+			"active": 1,
+			"flagValue": -1
+			},
+		"dead_code": {
+			"active": 0,
+			"flagValue": -1
+			},
+		"drop_console": {
+			"active": 0,
+			"flagValue": -1
+			},
+		"drop_debugger": {
+			"active": 1,
+			"flagValue": -1
+			},
+		"eval": {
+			"active": 0,
+			"flagValue": -1
+			},
+		"evaluate": {
+			"active": 1,
+			"flagValue": -1
+			},
+		"hoist_funs": {
+			"active": 1,
+			"flagValue": -1
+			},
+		"hoist_vars": {
+			"active": 0,
+			"flagValue": -1
+			},
+		"if_return": {
+			"active": 1,
+			"flagValue": -1
+			},
+		"indent-level": {
+			"active": 0,
+			"flagValue": 4
+			},
+		"indent-start": {
+			"active": 0,
+			"flagValue": 0
+			},
+		"inline-script": {
+			"active": 0,
+			"flagValue": -1
+			},
+		"join_vars": {
+			"active": 1,
+			"flagValue": -1
+			},
+		"keep_fargs": {
+			"active": 0,
+			"flagValue": -1
+			},
+		"keep_fnames": {
+			"active": 0,
+			"flagValue": -1
+			},
+		"loops": {
+			"active": 1,
+			"flagValue": -1
+			},
+		"mangle": {
+			"active": 1,
+			"flagValue": -1
+			},
+		"max-line-len": {
+			"active": 1,
+			"flagValue": 32000
+			},
+		"negate_iife": {
+			"active": 1,
+			"flagValue": -1
+			},
+		"properties": {
+			"active": 1,
+			"flagValue": -1
+			},
+		"pure_getters": {
+			"active": 0,
+			"flagValue": -1
+			},
+		"quote-keys": {
+			"active": 0,
+			"flagValue": -1
+			},
+		"screw-ie8": {
+			"active": 1,
+			"flagValue": -1
+			},
+		"semicolons": {
+			"active": 1,
+			"flagValue": -1
+			},
+		"sequences": {
+			"active": 1,
+			"flagValue": -1
+			},
+		"sort": {
+			"active": 0,
+			"flagValue": -1
+			},
+		"space-colon": {
+			"active": 1,
+			"flagValue": -1
+			},
+		"support-ie8": {
+			"active": 0,
+			"flagValue": -1
+			},
+		"toplevel": {
+			"active": 0,
+			"flagValue": -1
+			},
+		"unsafe": {
+			"active": 0,
+			"flagValue": -1
+			},
+		"unused": {
+			"active": 0,
+			"flagValue": -1
+			},
+		"warnings": {
+			"active": 0,
+			"flagValue": -1
+			},
+		"width": {
+			"active": 1,
+			"flagValue": 80
+			}
+		},
+	"uglifyReservedNamesString": "$",
+	"websiteRelativeRoot": ""
+	},
+"settingsFileVersion": "3"
+}

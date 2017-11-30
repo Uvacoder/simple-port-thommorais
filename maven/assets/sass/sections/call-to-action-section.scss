@@ -1,5 +1,6 @@
 .call-to-action-section{
-
+  position: relative;
+  z-index: 9;
   border-radius: 1px;
   background: $cWhite;
   @extend %grey-shadow;

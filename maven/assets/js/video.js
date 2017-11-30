@@ -10,7 +10,7 @@ export default function video(){
 
   const videoSlider = new Swiper('.slider-videos', {
     init: false,
-    autoplay: {delay: 2500}
+    autoplay: {delay: 3000}
   })
 
   parts.forEach((part, index) => {

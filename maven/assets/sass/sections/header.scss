@@ -14,16 +14,15 @@ header{
     @extend %bg;
 
     &:before{
-      background-image: url('~/public/gov.jpg');
+      background-image: url('imagem17.jpg');
     }
-
   }
 
   &.jornais-e-revistas{
     @extend %bg;
 
     &:before{
-      background-image: url('~/public/jornaisErevistas.jpg');
+      background-image: url('imagem11C.jpg');
     }
   }
 
@@ -31,7 +30,7 @@ header{
     @extend %bg;
 
     &:before{
-      background-image: url('~/public/portais.jpg');
+    background-image: url('portais.jpg');
     }
   }
 
