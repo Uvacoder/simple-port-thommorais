@@ -87,7 +87,7 @@
 		},
 	"\/private\/CP_desktop.jpg": {
 		"ft": 16384,
-		"iS": 515860,
+		"iS": 486030,
 		"oA": 0,
 		"oAP": "\/private\/CP_desktop.jpg",
 		"oF": 0,
@@ -97,7 +97,7 @@
 		},
 	"\/private\/CP_mobile.jpg": {
 		"ft": 16384,
-		"iS": 361743,
+		"iS": 326969,
 		"oA": 0,
 		"oAP": "\/private\/CP_mobile.jpg",
 		"oF": 0,
@@ -107,7 +107,7 @@
 		},
 	"\/private\/CP_tablet.jpg": {
 		"ft": 16384,
-		"iS": 194422,
+		"iS": 164976,
 		"oA": 0,
 		"oAP": "\/private\/CP_tablet.jpg",
 		"oF": 0,
@@ -117,7 +117,7 @@
 		},
 	"\/private\/CRCSC_desktop.jpg": {
 		"ft": 16384,
-		"iS": 253482,
+		"iS": 232419,
 		"oA": 0,
 		"oAP": "\/private\/CRCSC_desktop.jpg",
 		"oF": 0,
@@ -127,7 +127,7 @@
 		},
 	"\/private\/CRCSC_mobile.jpg": {
 		"ft": 16384,
-		"iS": 201085,
+		"iS": 175847,
 		"oA": 0,
 		"oAP": "\/private\/CRCSC_mobile.jpg",
 		"oF": 0,
@@ -137,7 +137,7 @@
 		},
 	"\/private\/CRCSC_tablet.jpg": {
 		"ft": 16384,
-		"iS": 389476,
+		"iS": 365869,
 		"oA": 0,
 		"oAP": "\/private\/CRCSC_tablet.jpg",
 		"oF": 0,
@@ -183,7 +183,7 @@
 		},
 	"\/private\/gov.jpg": {
 		"ft": 16384,
-		"iS": 232218,
+		"iS": 228924,
 		"oA": 0,
 		"oAP": "\/private\/gov.jpg",
 		"oF": 0,
@@ -193,7 +193,7 @@
 		},
 	"\/private\/icone-app-tela.png": {
 		"ft": 32768,
-		"iS": 15270,
+		"iS": 5989,
 		"oA": 0,
 		"oAP": "\/private\/icone-app-tela.png",
 		"oF": 0,
@@ -204,7 +204,7 @@
 		},
 	"\/private\/icone-gov-telascases.png": {
 		"ft": 32768,
-		"iS": 194188,
+		"iS": 51389,
 		"oA": 0,
 		"oAP": "\/private\/icone-gov-telascases.png",
 		"oF": 0,
@@ -215,7 +215,7 @@
 		},
 	"\/private\/icone-pilhadedocumento.png": {
 		"ft": 32768,
-		"iS": 45505,
+		"iS": 45486,
 		"oA": 0,
 		"oAP": "\/private\/icone-pilhadedocumento.png",
 		"oF": 0,
@@ -259,7 +259,7 @@
 		},
 	"\/private\/imagem11C.jpg": {
 		"ft": 16384,
-		"iS": 216638,
+		"iS": 215798,
 		"oA": 0,
 		"oAP": "\/private\/imagem11C.jpg",
 		"oF": 0,
@@ -269,7 +269,7 @@
 		},
 	"\/private\/imagem17.jpg": {
 		"ft": 16384,
-		"iS": 213757,
+		"iS": 212860,
 		"oA": 0,
 		"oAP": "\/private\/imagem17.jpg",
 		"oF": 0,
@@ -289,7 +289,7 @@
 		},
 	"\/private\/ipad-solucoes.png": {
 		"ft": 32768,
-		"iS": 30491,
+		"iS": 7177,
 		"oA": 0,
 		"oAP": "\/private\/ipad-solucoes.png",
 		"oF": 0,
@@ -339,7 +339,7 @@
 		},
 	"\/private\/laptop-solucoes.png": {
 		"ft": 32768,
-		"iS": 68182,
+		"iS": 9702,
 		"oA": 0,
 		"oAP": "\/private\/laptop-solucoes.png",
 		"oF": 0,
@@ -393,7 +393,7 @@
 		},
 	"\/private\/mprs_case.png": {
 		"ft": 32768,
-		"iS": 35842,
+		"iS": 35617,
 		"oA": 0,
 		"oAP": "\/private\/mprs_case.png",
 		"oF": 0,
@@ -404,7 +404,7 @@
 		},
 	"\/private\/note-ok.png": {
 		"ft": 32768,
-		"iS": 215994,
+		"iS": 61791,
 		"oA": 0,
 		"oAP": "\/private\/note-ok.png",
 		"oF": 0,
@@ -415,7 +415,7 @@
 		},
 	"\/private\/noticiasApp.png": {
 		"ft": 32768,
-		"iS": 25318,
+		"iS": 14212,
 		"oA": 0,
 		"oAP": "\/private\/noticiasApp.png",
 		"oF": 0,
@@ -458,7 +458,7 @@
 		},
 	"\/private\/senai-desktop.png": {
 		"ft": 32768,
-		"iS": 148470,
+		"iS": 148416,
 		"oA": 0,
 		"oAP": "\/private\/senai-desktop.png",
 		"oF": 0,
@@ -479,7 +479,7 @@
 		},
 	"\/private\/senai_smartphone.png": {
 		"ft": 32768,
-		"iS": 277809,
+		"iS": 107375,
 		"oA": 0,
 		"oAP": "\/private\/senai_smartphone.png",
 		"oF": 0,
@@ -490,7 +490,7 @@
 		},
 	"\/private\/senai_tablet.png": {
 		"ft": 32768,
-		"iS": 216129,
+		"iS": 99912,
 		"oA": 0,
 		"oAP": "\/private\/senai_tablet.png",
 		"oF": 0,
@@ -534,7 +534,7 @@
 		},
 	"\/private\/smartphone.png": {
 		"ft": 32768,
-		"iS": 218401,
+		"iS": 63353,
 		"oA": 0,
 		"oAP": "\/private\/smartphone.png",
 		"oF": 0,
@@ -612,7 +612,7 @@
 		},
 	"\/private\/TCE_case.png": {
 		"ft": 32768,
-		"iS": 13055,
+		"iS": 13052,
 		"oA": 0,
 		"oAP": "\/private\/TCE_case.png",
 		"oF": 0,
@@ -623,7 +623,7 @@
 		},
 	"\/private\/TCU_case.png": {
 		"ft": 32768,
-		"iS": 39215,
+		"iS": 17785,
 		"oA": 0,
 		"oAP": "\/private\/TCU_case.png",
 		"oF": 0,
@@ -639,7 +639,7 @@
 		"oAP": "\/private\/tecnologia.jpg",
 		"oF": 0,
 		"oIPL": 0,
-		"opt": 1,
+		"opt": 0,
 		"q": 100
 		},
 	"\/private\/zero.png": {
@@ -655,7 +655,7 @@
 		},
 	"\/private\/zh_desktop.jpg": {
 		"ft": 16384,
-		"iS": 621885,
+		"iS": 581804,
 		"oA": 0,
 		"oAP": "\/private\/zh_desktop.jpg",
 		"oF": 0,
@@ -665,7 +665,7 @@
 		},
 	"\/private\/zh_mobile.jpg": {
 		"ft": 16384,
-		"iS": 278615,
+		"iS": 252925,
 		"oA": 0,
 		"oAP": "\/private\/zh_mobile.jpg",
 		"oF": 0,
@@ -675,7 +675,7 @@
 		},
 	"\/private\/zh_tablet.jpg": {
 		"ft": 16384,
-		"iS": 1211676,
+		"iS": 1144114,
 		"oA": 0,
 		"oAP": "\/private\/zh_tablet.jpg",
 		"oF": 0,
