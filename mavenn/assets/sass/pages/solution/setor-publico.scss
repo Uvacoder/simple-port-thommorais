@@ -1,27 +1,27 @@
 .process-itens{
   position: relative;
-  margin-top: 150px;
+  margin-bottom: 150px;
   width: 90%;
   @extend .flex;
   border-top-right-radius: 2px;
   border-bottom-right-radius: 2px;
-  background-color: $c4;
-
-  &:before{
-    position: absolute;
-    top: 0;
-    left: -90%;
-    height: 100%;
-    width: 100vw;
-    content: '';
-    background-color: $c4;
-  }
-
+  // background-color: $c4;
+  //
+  // &:before{
+  //   position: absolute;
+  //   top: 0;
+  //   left: -90%;
+  //   height: 100%;
+  //   width: 100vw;
+  //   content: '';
+  //   background-color: $c4;
+  // }
   li{
      position: relative;
      margin-bottom: 40px;
      padding-left: 30px;
-     color: $cWhite;
+     //color: $cWhite;
+     color: $c4;
      font-size: em(14px);
      line-height: 22px;
 
@@ -36,10 +36,10 @@
        height: 8px;
        width: 8px;
        border-radius: 4px;
-       background: $cWhite;
+       background: $c4;
        content: '';
      }
-     
+
    }
 
    ul{
@@ -68,7 +68,6 @@
   position: absolute;
   width: 55%;
   max-width: 531px;
-  bottom: 0;
   left: 0;
 
   img{

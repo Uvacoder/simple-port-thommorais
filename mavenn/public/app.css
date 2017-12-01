@@ -91,7 +91,9 @@ figure {
 *  =Verticaly centered
 *********************************************************************/
 svg:not(.dflt) path {
-  fill: inherit; }
+  fill: inherit;
+  stroke: inherit;
+  stroke-width: inherit; }
 svg:not(.dflt) .tofill {
   fill: #79889D; }
 svg:not(.dflt) line {
@@ -251,6 +253,8 @@ header {
 .feature {
   margin-bottom: 40px;
   min-height: 210px; }
+.feature p {
+    color: currentColor; }
 .feature h4 {
     margin: 0;
     height: 60px;
@@ -1271,21 +1275,29 @@ button.swiper-pagination-bullet {
     display: block;
     color: inherit; }
 .features {
-  max-width: 1180px;
   margin: 60px auto 0; }
-.features > .flex, .features > .tabber, .features > .process-itens {
+.features > div {
+    padding: 0 40px; }
+.features > div > .flex, .features > div > .tabber, .features > div > .process-itens {
     margin: 0 -40px;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap; }
 .feature {
-  color: #79889D;
+  color: #fff;
   width: 33%;
   padding: 0 40px; }
 .feature p {
-    font-size: 0.875em; }
+    font-size: 0.875em;
+    color: #fff; }
 @media (min-width: 1130px) {
     .feature h4 {
       height: auto; } }
+.feature svg:not(.notes) {
+    fill: #fff; }
+.feature svg.notes {
+    fill: transparent;
+    stroke: #fff;
+    stroke-width: 2; }
 .blue .feature {
     color: #fff; }
 .blue .feature svg {
@@ -1370,7 +1382,7 @@ header.setor-publico:before, header.jornais-e-revistas:before, header.portais:be
 header.setor-publico .intro, header.jornais-e-revistas .intro, header.portais .intro {
   position: relative;
   z-index: 999; }
-header, .depoiments .depoiment, .our-clients, .who-this-serves, .app, #attributes, div > .cases-solution, .cases-solution {
+header, .depoiments .depoiment, .our-clients, .who-this-serves, .features, .app, #attributes, div > .cases-solution, .cases-solution {
   background-color: #009EE0;
   background-image: linear-gradient(45deg, #009EE0 0, #2F7BB9 75%); }
 #solution-presentention {
@@ -1397,8 +1409,6 @@ header, .depoiments .depoiment, .our-clients, .who-this-serves, .app, #attribute
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center; }
-#solution-presentention p {
-    color: #79889D; }
 #solution-presentention .half {
     width: 45%;
     padding: 0 10px; }
@@ -1738,16 +1748,16 @@ header, .depoiments .depoiment, .our-clients, .who-this-serves, .app, #attribute
     background: #fff; }
 .app .plataforms svg {
     fill: #79889D; }
-.app, #attributes, div > .cases-solution, .cases-solution {
+.features, .app, #attributes, div > .cases-solution, .cases-solution {
   padding: 50px 10px;
   color: #fff;
   overflow: hidden; }
-.app .section-intro, #attributes .section-intro, .cases-solution .section-intro {
+.features .section-intro, .app .section-intro, #attributes .section-intro, .cases-solution .section-intro {
     margin: 0 auto 80px;
     max-width: 620px;
     text-align: center;
     color: #fff; }
-.app h2, #attributes h2, .cases-solution h2 {
+.features h2, .app h2, #attributes h2, .cases-solution h2 {
     color: #fff; }
 div > .cases-solution, .cases-solution {
   position: relative;
@@ -1813,24 +1823,15 @@ div > .cases-solution p.section-intro, .cases-solution p.section-intro {
       height: 44px; }
 .process-itens {
   position: relative;
-  margin-top: 150px;
+  margin-bottom: 150px;
   width: 90%;
   border-top-right-radius: 2px;
-  border-bottom-right-radius: 2px;
-  background-color: #79889D; }
-.process-itens:before {
-    position: absolute;
-    top: 0;
-    left: -90%;
-    height: 100%;
-    width: 100vw;
-    content: '';
-    background-color: #79889D; }
+  border-bottom-right-radius: 2px; }
 .process-itens li {
     position: relative;
     margin-bottom: 40px;
     padding-left: 30px;
-    color: #fff;
+    color: #79889D;
     font-size: 0.875em;
     line-height: 22px; }
 .process-itens li:last-child {
@@ -1842,7 +1843,7 @@ div > .cases-solution p.section-intro, .cases-solution p.section-intro {
       height: 8px;
       width: 8px;
       border-radius: 4px;
-      background: #fff;
+      background: #79889D;
       content: ''; }
 .process-itens ul {
     margin-left: 50%;
@@ -1862,7 +1863,6 @@ div > .cases-solution p.section-intro, .cases-solution p.section-intro {
   position: absolute;
   width: 55%;
   max-width: 531px;
-  bottom: 0;
   left: 0; }
 #processos-ilustracao img {
     width: 100%;
