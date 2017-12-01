@@ -1,14 +1,19 @@
 .features{
   // max-width: 1180px;
   margin: 60px auto 0;
-  @extend %defaultSection;
+  //@extend %defaultSection;
+
+  .tab &{
+    @extend %defaultSection;
+  }
 
   > div{
       padding: 0 40px;
   }
 
 
-  > div > .flex{
+  > div > .flex,
+  > .flex{
     margin: 0 -40px;
     flex-wrap: wrap;
   }
