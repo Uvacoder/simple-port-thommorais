@@ -58,7 +58,15 @@ domready( () => {
     navigation: {
       nextEl: '.swiper-button-next',
       prevEl: '.swiper-button-prev',
-    }
+    },
+    breakpoints: {
+        640: {
+          slidesPerView: 2,
+        },
+        320: {
+          slidesPerView: 1,
+        }
+      }
 
   })
 

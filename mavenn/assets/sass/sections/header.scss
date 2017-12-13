@@ -14,7 +14,7 @@ header{
     @extend %bg;
 
     &:before{
-      background-image: url('imagem17.jpg');
+      background-image: url('~/imagem17.jpg');
     }
   }
 
@@ -22,7 +22,7 @@ header{
     @extend %bg;
 
     &:before{
-      background-image: url('imagem11C.jpg');
+      background-image: url('~/imagem11C.jpg');
     }
   }
 
@@ -30,11 +30,13 @@ header{
     @extend %bg;
 
     &:before{
-    background-image: url('portais.jpg');
+    background-image: url('~/portais.jpg');
     }
   }
 
-
+  @include sm{
+    padding: 0 15px;
+  }
 
 }
 

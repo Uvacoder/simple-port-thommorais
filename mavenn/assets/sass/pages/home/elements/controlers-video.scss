@@ -56,18 +56,35 @@
     background: $cWhite;
     transform: rotate(45deg) translate3d(500%, -500%, 0);
     transition: transform 0.2s $transitionss;
+
+    @include mm{
+      transform: rotate(45deg) translate3d(350%, -350%, 0);
+    }
+
   }
 
   &.showing-0 .marker{
-    transform: rotate(45deg) translate3d(500%, -500%, 0)
+    transform: rotate(45deg) translate3d(500%, -500%, 0);
+
+    @include mm{
+      transform: rotate(45deg) translate3d(400%, -400%, 0);
+    }
   }
 
   &.showing-1 .marker{
-    transform: rotate(45deg) translate3d(1450%, -1450%, 0)
+    transform: rotate(45deg) translate3d(1450%, -1450%, 0);
+
+    @include mm{
+      transform: rotate(45deg) translate3d(1050%, -1050%, 0);
+    }
+
   }
 
   &.showing-2 .marker{
-    transform: rotate(45deg) translate3d(2400%, -2400%, 0)
+    transform: rotate(45deg) translate3d(2400%, -2400%, 0);
+    @include mm{
+      transform: rotate(45deg) translate3d(1750%, -1750%, 0);
+    }
   }
 
 

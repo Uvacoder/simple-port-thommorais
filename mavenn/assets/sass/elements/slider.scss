@@ -24,6 +24,12 @@
       }
     }
 
+    @include mm{
+      img{
+        display: none;
+      }
+    }
+
   }
 
   .slider-content{
@@ -36,6 +42,11 @@
     width: 51%;
     color: $cWhite;
     text-align: left;
+
+    @include mm{
+      width: 100%;
+    }
+
   }
 
   img{
@@ -43,6 +54,10 @@
     height: auto;
     display: block;
     align-self: flex-end;
+  }
+
+  @include sm{
+    margin-top: 35px;
   }
 
 }
@@ -58,6 +73,10 @@
 
     .strong{
       font-weight: 700;
+    }
+
+    @include sm{
+      margin-top: 0;
     }
 
   }

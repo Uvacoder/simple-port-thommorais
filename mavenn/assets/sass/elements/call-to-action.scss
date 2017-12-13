@@ -35,7 +35,6 @@
     }
   }
 
-
   &.blue, &.white{
     &:active{
       transform: translate3d(0, 0, 0);
@@ -52,5 +51,9 @@
     transform: translate3d(0, -2px, 0);
   }
 
+  @include sm{
+    padding:20px;
+    width: 100%;
+  }
 
 }

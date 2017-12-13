@@ -16,6 +16,12 @@
 /*********************************************************************
 *  =Media Screen
 *********************************************************************/
+/*
+  *Ipad
+  * All generations - including iPad mini
+*/
+/* Iphone */
+/* Iphone */
 /*********************************************************************
 *  =Functions
 *********************************************************************/
@@ -51,6 +57,9 @@ html, body {
   font-family: "Poppins", sans-serif;
   -webkit-font-smoothing: antialiased;
   background: #F6F9FC; }
+@media (max-width: 801px) {
+    html, body {
+      font-size: 0.9375em; } }
 .wf-poppins-n3-active body {
   font-family: "Poppins", sans-serif; }
 * {
@@ -153,6 +162,10 @@ svg:not(.dflt) circle {
 .call-to-action:hover {
     -webkit-transform: translate3d(0, -2px, 0);
             transform: translate3d(0, -2px, 0); }
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+    .call-to-action {
+      padding: 20px;
+      width: 100%; } }
 .rows .case {
   padding: 10px;
   line-height: 1.5em;
@@ -250,6 +263,9 @@ header {
   fill: #F6F9FC;
   width: 100%;
   pointer-events: none; }
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+    .enclination {
+      bottom: -1px; } }
 .feature {
   margin-bottom: 40px;
   min-height: 210px; }
@@ -376,7 +392,7 @@ header {
           animation: device 10s infinite cubic-bezier(1, 0.015, 0.295, 1.225) forwards;
   background-repeat: no-repeat;
   background-size: cover;
-  background-image: url("./senai-desktop.png");
+  background-image: url("/senai-desktop.png");
   background-position: 0 20px; }
 .device figcaption {
     position: absolute;
@@ -399,7 +415,7 @@ header {
     box-shadow: 10px 10px 0 -2px rgba(227, 236, 246, 0.3), 10px 10px 0 rgba(227, 236, 246, 0.1);
     -webkit-transform: rotate(0);
             transform: rotate(0);
-    background-image: url("./senai-desktop.png");
+    background-image: url("/senai-desktop.png");
     background-position: 0 20px; }
   25%, 40% {
     width: 70%;
@@ -408,7 +424,7 @@ header {
     box-shadow: 9px -9px 0 -2px rgba(227, 236, 246, 0.3), 9px -9px 0 rgba(227, 236, 246, 0.1);
     -webkit-transform: rotate(90deg);
             transform: rotate(90deg);
-    background-image: url("./senai_tablet.png");
+    background-image: url("/senai_tablet.png");
     background-position: 0 0; }
   60%, 80% {
     width: 38%;
@@ -417,7 +433,7 @@ header {
     box-shadow: -8px -8px 0 -2px rgba(227, 236, 246, 0.3), -8px -8px 0 rgba(227, 236, 246, 0.1);
     -webkit-transform: rotate(180deg);
             transform: rotate(180deg);
-    background-image: url("./senai_smartphone.png");
+    background-image: url("/senai_smartphone.png");
     background-position: -6px 0; }
   100% {
     width: 100%;
@@ -434,7 +450,7 @@ header {
     box-shadow: 10px 10px 0 -2px rgba(227, 236, 246, 0.3), 10px 10px 0 rgba(227, 236, 246, 0.1);
     -webkit-transform: rotate(0);
             transform: rotate(0);
-    background-image: url("./senai-desktop.png");
+    background-image: url("/senai-desktop.png");
     background-position: 0 20px; }
   25%, 40% {
     width: 70%;
@@ -443,7 +459,7 @@ header {
     box-shadow: 9px -9px 0 -2px rgba(227, 236, 246, 0.3), 9px -9px 0 rgba(227, 236, 246, 0.1);
     -webkit-transform: rotate(90deg);
             transform: rotate(90deg);
-    background-image: url("./senai_tablet.png");
+    background-image: url("/senai_tablet.png");
     background-position: 0 0; }
   60%, 80% {
     width: 38%;
@@ -452,7 +468,7 @@ header {
     box-shadow: -8px -8px 0 -2px rgba(227, 236, 246, 0.3), -8px -8px 0 rgba(227, 236, 246, 0.1);
     -webkit-transform: rotate(180deg);
             transform: rotate(180deg);
-    background-image: url("./senai_smartphone.png");
+    background-image: url("/senai_smartphone.png");
     background-position: -6px 0; }
   100% {
     width: 100%;
@@ -697,6 +713,9 @@ span:hover .submenu {
 .slider-header .swiper-slide.one img {
       position: relative;
       top: 120px; }
+@media (max-width: 801px) {
+      .slider-header .swiper-slide img {
+        display: none; } }
 .slider-header .slider-content {
     width: 100%;
     margin: 0 auto;
@@ -705,12 +724,18 @@ span:hover .submenu {
     width: 51%;
     color: #fff;
     text-align: left; }
+@media (max-width: 801px) {
+      .slider-header article {
+        width: 100%; } }
 .slider-header img {
     max-width: 49%;
     height: auto;
     display: block;
     -ms-flex-item-align: end;
         align-self: flex-end; }
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+    .slider-header {
+      margin-top: 35px; } }
 .slider-content h2 {
   margin-top: 45px;
   font-size: 1.9375em;
@@ -719,6 +744,9 @@ span:hover .submenu {
   font-weight: 300; }
 .slider-content h2 .strong {
     font-weight: 700; }
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+    .slider-content h2 {
+      margin-top: 0; } }
 .slider-content p {
   font-size: 1em;
   line-height: 1.375em;
@@ -1358,11 +1386,14 @@ header .header-top {
     position: relative;
     z-index: 10; }
 header.setor-publico:before {
-    background-image: url("imagem17.jpg"); }
+    background-image: url("/imagem17.jpg"); }
 header.jornais-e-revistas:before {
-    background-image: url("imagem11C.jpg"); }
+    background-image: url("/imagem11C.jpg"); }
 header.portais:before {
-    background-image: url("portais.jpg"); }
+    background-image: url("/portais.jpg"); }
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+    header {
+      padding: 0 15px; } }
 header.setor-publico:before, header.jornais-e-revistas:before, header.portais:before, header.setor-publico:after, header.jornais-e-revistas:after, header.portais:after {
   position: absolute;
   left: -20px;
@@ -1451,15 +1482,31 @@ header, .depoiments .depoiment, .our-clients, .who-this-serves, .tab .features, 
     transition: -webkit-transform 0.2s cubic-bezier(0.455, 0.03, 0.515, 0.955);
     transition: transform 0.2s cubic-bezier(0.455, 0.03, 0.515, 0.955);
     transition: transform 0.2s cubic-bezier(0.455, 0.03, 0.515, 0.955), -webkit-transform 0.2s cubic-bezier(0.455, 0.03, 0.515, 0.955); }
+@media (max-width: 801px) {
+      .controlers-video .marker {
+        -webkit-transform: rotate(45deg) translate3d(350%, -350%, 0);
+                transform: rotate(45deg) translate3d(350%, -350%, 0); } }
 .controlers-video.showing-0 .marker {
     -webkit-transform: rotate(45deg) translate3d(500%, -500%, 0);
             transform: rotate(45deg) translate3d(500%, -500%, 0); }
+@media (max-width: 801px) {
+      .controlers-video.showing-0 .marker {
+        -webkit-transform: rotate(45deg) translate3d(400%, -400%, 0);
+                transform: rotate(45deg) translate3d(400%, -400%, 0); } }
 .controlers-video.showing-1 .marker {
     -webkit-transform: rotate(45deg) translate3d(1450%, -1450%, 0);
             transform: rotate(45deg) translate3d(1450%, -1450%, 0); }
+@media (max-width: 801px) {
+      .controlers-video.showing-1 .marker {
+        -webkit-transform: rotate(45deg) translate3d(1050%, -1050%, 0);
+                transform: rotate(45deg) translate3d(1050%, -1050%, 0); } }
 .controlers-video.showing-2 .marker {
     -webkit-transform: rotate(45deg) translate3d(2400%, -2400%, 0);
             transform: rotate(45deg) translate3d(2400%, -2400%, 0); }
+@media (max-width: 801px) {
+      .controlers-video.showing-2 .marker {
+        -webkit-transform: rotate(45deg) translate3d(1750%, -1750%, 0);
+                transform: rotate(45deg) translate3d(1750%, -1750%, 0); } }
 .controlers-video .icon {
     fill: #79889D;
     height: 39px;
@@ -1657,6 +1704,25 @@ header, .depoiments .depoiment, .our-clients, .who-this-serves, .tab .features, 
       overflow: hidden; }
 .for-all-plataforms .smartphones-devices img {
       width: 69px; }
+@media (max-width: 801px) {
+    .for-all-plataforms > .flex, .for-all-plataforms > .tabber, .for-all-plataforms > .process-itens {
+      padding: 0 20px;
+      display: block; }
+    .for-all-plataforms .text {
+      padding: 0 20px;
+      max-width: 100%;
+      width: 100%; }
+    .for-all-plataforms .devices {
+      margin: 0 auto;
+      height: 280px; }
+    .for-all-plataforms .ic-smartphone {
+      top: 51%;
+      left: 0; }
+    .for-all-plataforms .smartphones-devices {
+      top: 59%;
+      left: 1.4%; }
+    .for-all-plataforms .ipad-devices {
+      right: -1px; } }
 .our-clients {
   padding: 70px 10px; }
 .we-are-humans .swiper-pagination {

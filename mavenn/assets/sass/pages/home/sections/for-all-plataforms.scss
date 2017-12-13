@@ -151,4 +151,38 @@
 
   }
 
+  @include mm{
+
+    > .flex{
+      padding: 0 20px;
+      display: block;
+    }
+
+    .text{
+      padding: 0 20px;
+      max-width: 100%;
+      width: 100%;
+    }
+
+    .devices{
+      margin: 0 auto;
+      height: 280px;
+    }
+
+    .ic-smartphone{
+      top: 51%;
+      left: 0;
+    }
+
+    .smartphones-devices{
+      top: 59%;
+      left: 1.4%;
+    }
+
+    .ipad-devices{
+      right: -1px;
+    }
+
+  }
+
 }

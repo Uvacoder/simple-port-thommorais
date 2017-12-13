@@ -9,6 +9,10 @@ html, body{
   -webkit-font-smoothing: antialiased;
   background: $c5;
 
+  @include mm{
+    font-size: em(15px);
+  }
+
 }
 
 .wf-poppins-n3-active body{
