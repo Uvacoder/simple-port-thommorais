@@ -1,0 +1,59 @@
+.call-to-action{
+  position: relative;
+  margin: 40px 0;
+  display: block;
+  width: 300px;
+  padding:20px 30px;
+  border-radius: 100px;
+  text-align: center;
+  font-weight: 700;
+  font-size: em(16px);
+  line-height: 20px;
+  cursor: pointer;
+  border: none;
+  transition: box-shadow 0.15s linear, transform 0.1s linear;
+  transform: translate3d(0, -1px, 0);
+
+  &.white{
+    color: $c1;
+    background: $cWhite;
+    box-shadow: 0 7px 14px darken($c1, 8), 0 3px 6px darken($c1, 4);
+
+    &:hover{
+      transform: translate3d(0, -2px, 0);
+      box-shadow: 0 9px 16px darken($c1, 8), 0 5px 8px darken($c1, 4);
+    }
+  }
+
+  &.blue{
+    color: $cWhite;
+    background: $c1;
+    box-shadow: 0 15px 20px -10px rgba(lighten($c1, 3), 0.8);
+
+    &:hover{
+      box-shadow: 0 17px 22px -8px rgba(lighten($c1, 3), 0.8);
+    }
+  }
+
+  &.blue, &.white{
+    &:active{
+      transform: translate3d(0, 0, 0);
+      box-shadow: 0 0 0 rgba($cWhite, 0);
+    }
+  }
+
+  &.send{
+    padding: 15px 25px;
+    width: 250px;
+  }
+
+  &:hover{
+    transform: translate3d(0, -2px, 0);
+  }
+
+  @include sm{
+    padding:20px;
+    width: 100%;
+  }
+
+}

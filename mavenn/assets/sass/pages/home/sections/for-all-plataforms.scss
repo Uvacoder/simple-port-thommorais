@@ -1,0 +1,188 @@
+.for-all-plataforms{
+  position: relative;
+  background: $c5;
+
+  .flex.wrp{
+    margin: 0 auto;
+    padding: 50px 0;
+    max-width: 1014px;
+  }
+
+  .section-intro{
+    color: $c4;
+  }
+
+  h2{
+    font-weight: 500;
+  }
+
+  .text{
+    width: 45%;
+    max-width: 420px;
+  }
+
+  .devices{
+    position: relative;
+    top: 30px;
+    width: 55%;
+  }
+
+  figure{
+    width: 55vw;
+    max-width: 680px;
+  }
+
+  .notebook{
+    position: relative;
+    width: 100%;
+    height: auto;
+  }
+
+  .ipad{
+    right: 0;
+    width: 32%;
+    height: auto;
+  }
+
+  .iphone{
+    left: 3%;
+    width: 17%;
+  }
+
+  .ipad,
+  .iphone{
+    position: absolute;
+    height: auto;
+    bottom: -10px;
+  }
+
+  .smartphones-devices,
+  .slider-devices,
+  .ipad-devices{
+    position: absolute;
+
+    img{
+      height: auto;
+    }
+
+  }
+
+  .slider-devices{
+    right: 40px;
+    top: 16px;
+    width: 352px;
+    height: 198px;
+
+    .swiper-slide{
+      height: 198px;
+      overflow: hidden;
+    }
+
+    img{
+      width: 352px;
+    }
+
+  }
+
+  .ic-desktop,
+  .ic-ipad,
+  .ic-smartphone{
+    position: absolute;
+    fill: transparent;
+    stroke: $c4;
+    fill: lighten($c4, 40);
+  }
+
+  .ic-desktop{
+    right: 24px;
+    width: 384px;
+    height: 300px;
+  }
+
+  .ipad-devices{
+    right: 0;
+    top: 117px;
+    z-index: 9;
+    width: 124px;
+    height: 165px;
+
+    .swiper-slide{
+      height: 165px;
+      overflow: hidden;
+    }
+
+    img{
+      width: 124px;
+    }
+
+  }
+
+  .ic-ipad{
+    top: 100px;
+    right: -8px;
+    z-index: 2;
+    height: 200px;
+    width: 138px;
+  }
+
+  .ic-smartphone{
+    left: 25%;
+    top: 32%;
+    z-index: 2;
+    height: 162px;
+    width: 81px;
+  }
+
+  .smartphones-devices{
+    margin: 0 auto;
+    width: 69px;
+    left: 26.1%;
+    top: 37%;
+    z-index: 3;
+
+    .swiper-slide{
+      height: 160px;
+      overflow: hidden;
+    }
+
+    img{
+      width: 69px;
+    }
+
+  }
+
+  @include mm{
+
+    > .flex{
+      padding: 0 20px;
+      display: block;
+    }
+
+    .text{
+      padding: 0 20px;
+      max-width: 100%;
+      width: 100%;
+    }
+
+    .devices{
+      margin: 0 auto;
+      height: 280px;
+    }
+
+    .ic-smartphone{
+      top: 51%;
+      left: 0;
+    }
+
+    .smartphones-devices{
+      top: 59%;
+      left: 1.4%;
+    }
+
+    .ipad-devices{
+      right: -1px;
+    }
+
+  }
+
+}
