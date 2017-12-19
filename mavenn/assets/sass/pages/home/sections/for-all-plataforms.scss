@@ -164,23 +164,62 @@
       width: 100%;
     }
 
+    .ic-desktop{
+      width: 300px;
+      height: 366px;
+      right: 50%;
+      transform: translateX(50%);
+    }
+
+    .slider-devices{
+      top: 78px;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 276px;
+    }
+
     .devices{
+      top: 0;
       margin: 0 auto;
       height: 280px;
+      width: 300px;
     }
 
     .ic-smartphone{
-      top: 51%;
+      top: 58%;
+      width: 60px;
       left: 0;
     }
 
     .smartphones-devices{
-      top: 59%;
+      top: 71.5%;
       left: 1.4%;
+      width: 50px;
+
+      img{
+        width: 50px;
+      }
+
+    }
+    
+    .ic-ipad{ 
+      top: initial;
+      right: 8px;
+      bottom: -20px;
+      width: 100px;
+      height: 140px;
     }
 
     .ipad-devices{
-      right: -1px;
+      right: 16px;
+      top: 172px;
+      width: 85px;
+      height: auto;
+
+      img{
+        width: 100%;
+        height: auto;
+      }
     }
 
   }

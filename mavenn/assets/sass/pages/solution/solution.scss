@@ -1,0 +1,11 @@
+#solution-presentention{
+
+	img{
+		height: auto;
+
+		@include mm {
+			width: 100%;
+		}
+	}
+
+}

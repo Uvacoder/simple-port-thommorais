@@ -1,0 +1,14 @@
+[data-tab="para-revistas-e-jornais-publicos"]{
+
+  @include mm {
+	img {
+		max-width: 320px;
+	}
+
+	.content{
+		margin: 0 auto;
+		max-width: 600px;
+	}
+  }
+
+}

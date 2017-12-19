@@ -70,4 +70,15 @@ domready( () => {
 
   })
 
+
+  const header = the('#header')
+  const hamburger = the('#hamburger')
+
+  hamburger.addEventListener('click',  _=>{
+    header.classList.toggle('menu-open')
+  })
+
+
+  
+
 })

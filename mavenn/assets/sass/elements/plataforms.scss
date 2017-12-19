@@ -1,0 +1,42 @@
+.plataforms{
+    margin: 50px 0;
+    font-size: em(14px);
+    color: $c4;
+    letter-spacing: 0;
+
+    > div{
+      margin-right: 30px;
+      align-items: center;
+    }
+
+    i{
+      margin-right: 10px;
+      background: $c4;
+      height: 36px;
+      width: 36px;
+      border-radius: 20px;
+      justify-content: center;
+      align-items: center;
+    }
+    
+    svg{
+      position: relative;
+      fill: $cWhite;
+    }
+
+    .ios{
+      svg{
+        left: -1px;
+        height: 21px;
+        width: 17px;
+      }
+    }
+
+    .android{
+      svg{
+        height: 21px;
+        width: 18px;
+      }
+    }
+
+  }

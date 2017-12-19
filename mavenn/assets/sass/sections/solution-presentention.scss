@@ -17,16 +17,47 @@
     color: currentColor;
   }
 
+  @include mm {
+    img.center{
+      max-width: 500px;
+    }
+  }
+
   .product{
     padding: 0 20px;
     margin: 50px auto 0;
     max-width: 960px;
     justify-content: space-around;
+
+
+    
+    @include sm {
+      flex-wrap: wrap;
+
+      figure{
+        max-width: 98%;
+
+        img{
+          width: 100%;
+          height: auto;
+        }
+      }
+
+    }
+    
+
   }
 
   .flex{
     align-items: center;
+
+    @include mm {
+      figure{
+        width: 45%;
+      }
+    }
   }
+
 
   // h2{
   //   font-size: em(22px);
@@ -40,11 +71,17 @@
   .half{
     width: 45%;
     padding: 0 10px;
+
+    @include sm {
+     width: 100%;
+    }
+
   }
 
   .content{
     position: relative;
     z-index: 1;
   }
+
 
 }

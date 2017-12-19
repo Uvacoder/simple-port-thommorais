@@ -21,8 +21,8 @@
     p{
       font-size: em(14px);
     }
-
   }
+  
 
   .icon{
     fill: $c4;
@@ -44,6 +44,14 @@
 
   }
 
+  @include sm {
+    display: block;
+
+    article{
+      margin-bottom: 50px;
+    }
+
+  }
 
 
 }

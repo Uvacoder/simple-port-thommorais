@@ -1,0 +1,21 @@
+.header-interna{
+  min-height: 450px;
+  border-bottom: 1px solid $cGrey;
+}
+
+.intro{
+  margin: 100px auto 200px;
+  color: currentColor;
+  text-align: center;
+  max-width: 540px;
+
+  h1{
+    font-weight: 400;
+  }
+
+    @include mm {
+      margin: 50px auto 150px;
+    }
+
+
+}

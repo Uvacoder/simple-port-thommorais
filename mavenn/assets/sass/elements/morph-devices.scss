@@ -12,8 +12,8 @@ $outline: rgba(darken($c3, 5),0.1);
 	box-shadow: 10px 10px 0 -2px $bg-color, 10px 10px 0 rgba(255,255,255,.2);
 	backface-visibility: hidden;
 	animation: device 10s infinite cubic-bezier(1,.015,.295,1.225) forwards;
-  background-repeat: no-repeat;
-  background-size: cover;
+	background-repeat: no-repeat;
+	background-size: cover;
 	background-image: url('~/senai-desktop.png');
 	background-position: 0 20px;
 
@@ -124,17 +124,18 @@ $outline: rgba(darken($c3, 5),0.1);
 
 //50:37
 // ( height / width) x new width = new height
-$newHeight:(222 / 300) * 70;
+$newHeight:40;
 
 .absolute-center {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-	transform: translate(-50%,-50%);
-  width: 70vw;
-  height: $newHeight + vh;
-  max-width: 700px;
-  max-height: $newHeight + %;
+   position: absolute;
+   top: 0;
+   left: 50%;
+   transform: translate(-50%,-50%);
+	margin: 0 auto;
+	width: 70vw;
+	height: $newHeight + vh;
+	max-width: 700px;
+	max-height: $newHeight + %;
 }
 
 .ir {

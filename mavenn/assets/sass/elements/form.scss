@@ -40,4 +40,11 @@
 #contact .form-wrp > div:first-child{
   width: 62%;
   max-width: 700px;
+
+  @include sm {
+    width: 100%;
+    flex: 0 0 auto;
+    order: 2;
+  }
+
 }
