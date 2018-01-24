@@ -1,0 +1,42 @@
+%follow-us-content{
+
+    .share{
+        position: relative;
+        z-index: 1;
+        width: 33%;
+        height: 50px;
+    }
+
+    h4{
+        position: relative;
+        @include m-y-($spacer-sm);
+        z-index: 1;
+        color: $cWhite;
+        text-align: center;
+        @include rem(font-size, 24px);
+    }
+
+    &:before{
+        @extend %pseudo_icon;
+        top: -86px;
+        left: 0;
+        height: 300px;
+        width: 100%;
+        z-index: 0;
+        background-image: url('../assets/img/newsletter-banner.png');
+        background-repeat: no-repeat;
+    }
+
+    #newsletter-button {
+        margin: 0 auto;
+        display: block;
+        color: $cWhite;
+        @include rem(font-size, 24px);
+        font-family: $defaultFont;
+        text-transform: uppercase;
+        background-color: $c8;
+        @extend %button-basic;
+        @extend %button-behavior;
+    }
+
+}

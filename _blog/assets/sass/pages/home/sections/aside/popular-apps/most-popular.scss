@@ -1,0 +1,11 @@
+.most-popular{
+    position: relative;
+
+    .content{
+        position: absolute;
+        bottom: 0;
+    }
+
+    @extend %content-popular-apps;
+
+}

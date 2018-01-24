@@ -1,0 +1,27 @@
+.list-popular-apps{
+    @include m-t-($spacer-md);
+    @include m-x-($spacer-none);
+
+    li{
+        margin-bottom: 15px;
+
+        &:last-child{
+            margin-bottom: 0;
+        }
+
+
+       > .flex{
+            margin-left: 15px;
+        }
+    }
+
+    h4{
+        margin: 3px 0 0;
+
+        span{
+            margin-right: 0.5rem;
+        }
+    }
+
+    @extend %list-popular-apps-content;
+}

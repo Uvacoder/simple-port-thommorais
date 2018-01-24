@@ -1,0 +1,80 @@
+// &.bg stand for background color
+// &.txt stand for text color
+
+.c-guides{
+
+  &.bg{
+    background: $c-guides;
+    color: $cWhite;
+  }
+
+  &.txt{
+    color: $c-guides;
+  }
+
+}
+
+.c-videos{
+
+  &.bg{
+    background:$c-videos;
+    color: $cWhite;
+  }
+
+  &.txt{
+    color: $c-videos;
+  }
+
+}
+
+.c-exclusives{
+
+  &.bg{
+    background: $c-exclusives;
+    color: $cWhite;
+  }
+
+  &.txt{
+    color: $c-exclusives;
+  }
+
+}
+
+.c-news{
+
+  &.bg{
+    background:  $c-news;
+    color: $cWhite;
+  }
+
+  &.txt{
+    color:  $c-news;
+  }
+
+}
+
+.c-roundups{
+
+  &.bg{
+    background: $c-roundups;
+    color: $cWhite;
+  }
+
+  &.txt{
+    color: $c-roundups;
+  }
+
+}
+
+.c-reviews{
+
+  &.bg{
+    background: $c-reviews;
+    color: $cWhite;
+  }
+
+  &.txt{
+    color: $c-reviews;
+  }
+
+}

@@ -1,0 +1,32 @@
+.play-btn{
+    position: relative;
+    width: 96px;
+    height: 96px;
+    opacity: 0.5;
+    
+    &:before, 
+    &:after{
+        position: absolute;
+        content: '';
+    }
+
+    &:before{
+        left: 0;
+        top: 0;
+        height: inherit;
+        width: inherit;
+        border-radius: 50%;
+        border: 2px solid $cWhite;
+        background: rgba($cBlack, 0.2);
+    }
+
+    &:after{
+        top: 50%;
+        left: calc(50% + 5px);
+        transform: translate(-50%, -50%);
+        border-left: 34px solid $cWhite;
+        border-top: 22px solid rgba($cWhite, 0);
+        border-bottom: 22px solid rgba($cWhite, 0);
+    }
+
+}

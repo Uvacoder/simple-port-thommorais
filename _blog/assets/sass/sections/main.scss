@@ -1,0 +1,6 @@
+.main{
+  margin-top: 40px;
+  max-width: 765px;
+  @include p-r-($spacer-sm);
+
+}

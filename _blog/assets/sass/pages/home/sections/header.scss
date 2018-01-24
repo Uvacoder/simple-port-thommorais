@@ -1,0 +1,16 @@
+header.blog-home{
+    position: relative;
+    @include p-t-($spacer-md);
+    @include p-b-($spacer-sm);
+    display: block;
+    background-image: linear-gradient(-180deg, $c1 0%, $c2 100%);
+
+    &:before{
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        content: '';
+        pointer-events: none;
+    }
+
+}

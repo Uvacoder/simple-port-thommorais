@@ -1,0 +1,15 @@
+/**
+* when images is loaded hide the loader
+**/
+
+img.lazy{
+  + .loader{
+    pointer-events: none;
+  }
+
+  &.loaded{
+    + .loader{
+      opacity: 0;
+    }
+  }
+}

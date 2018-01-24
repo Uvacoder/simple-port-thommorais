@@ -1,0 +1,6 @@
+.post-resume{
+  // margin-bottom: 1.5rem;
+  @include m-b-($spacer-md);
+  @extend %post-resume-content;
+
+}

@@ -1,0 +1,6 @@
+// Primary Font
+@mixin font--primary-regular {
+    font-family: $defaultFont;
+    font-style: normal;
+    font-weight: 400;
+}
