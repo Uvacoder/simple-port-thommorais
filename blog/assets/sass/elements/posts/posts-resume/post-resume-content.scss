@@ -1,0 +1,77 @@
+%post-resume-content{
+
+  .post-title {
+    margin-top: 0;
+    color: $c1;
+    @include rem(font-size, 24px);
+  }
+
+  figure {
+    position: relative;
+    max-height: 215px;
+    max-width: 390px;
+    overflow: hidden;
+    @extend %link-icon;
+  }
+
+  img{
+    position: relative;
+    transform: scale(1.03);
+  }
+
+  .content{
+    flex: 1;
+  }
+
+  p{
+    line-height: 1.35em;
+    @include rem(font-size, 16px);
+    font-weight: 300;
+    color: $c4;
+  }
+
+  .metadata{
+    width: 100%;
+    line-height: 1em;
+    align-items: center;
+
+    .flex{
+      align-items: center;
+    }
+
+  }
+
+  .cat-label{
+    margin-left: 7px;
+  }
+
+  time{
+    margin: 10px 0;
+  }
+
+
+  &:hover{
+
+    img{
+      filter: blur(3px);
+    }
+
+    figure:before {
+      opacity: 1;
+      transform: translate(-50%, -50%);
+      transition: 0.5s opacity $transition1, 0.3s transform $transition1;
+    }
+  }
+
+
+  @include responsive(768px,'max') {
+    figure{
+      img{
+        max-width: 100%;
+        width: 100%;
+        height: auto;
+      }
+    }
+	}
+
+}

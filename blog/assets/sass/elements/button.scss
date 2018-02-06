@@ -1,0 +1,54 @@
+%button-behavior{
+    transition: transform 0.15s $transition;
+    user-select: none;
+    cursor: pointer;
+
+    &:hover {
+      transform: translate3d(0, -1px, 0);
+    }
+
+    &:active {
+      transform: translate3d(0, 1px, 0);
+    }
+}
+
+%button-basic {
+  font-weight: 900;
+  border: none;
+  border-radius: 5px;
+  user-select: none;
+}
+
+.button{
+    @include rem(font-size, 16px);
+    line-height: 1em;
+    text-transform: uppercase;
+    display: inline-block;
+    border: 2px solid currentColor;
+    @extend %button-basic;
+    @extend %button-behavior;
+
+    &.white{
+      color: $cWhite;
+
+      &:hover{
+          background: $cWhite;
+          border-color: $cWhite;
+          color: $c1;
+      }
+
+    }
+
+    &.dark{
+      color: $c1;
+
+      &:hover{
+          background: $c1;
+          border-color: $c1;
+          color: $cWhite;
+      }
+
+    }
+
+
+}

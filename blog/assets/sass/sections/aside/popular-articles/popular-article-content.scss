@@ -1,0 +1,44 @@
+%popular-article-content{
+    
+    transition: 0.2s background $transition1;
+
+    figure {
+        position: relative;
+        width: 110px;
+        max-height: 110px;
+        overflow: hidden;
+        @extend %link-icon;
+    }
+
+    img {
+        position: relative;
+        left: 50%;
+        top: -5px;
+        transform: translateX(-50%);
+        width: auto;
+    }
+
+    .post-title {
+        color: $c1;
+        flex: 1;
+        @include m-y-($spacer-none);
+        @include p-t-($spacer-sm);
+        @include p-x-($spacer-sm);
+    }
+
+    &:hover{
+        background: #d3dce5;
+
+        img{
+            filter: blur(3px);
+        }
+
+        figure:before{
+            opacity: 1;
+            transform: translate(-50%, -50%);
+            transition: 0.5s opacity $transition1, 0.3s transform $transition1;
+        }
+
+    }
+
+}

@@ -1,0 +1,4 @@
+// Alias to `flex` function, using `em` as format.
+@function em($target, $context: $PROJECT_FONT_SIZE) {
+    @return flex($target, $context, "em");
+}

@@ -1,0 +1,18 @@
+%content-popular-apps{
+
+    .content{
+        width: 100%;
+        padding: 0 30px;
+    }
+
+    h4{
+        color: $cWhite;
+        font-size: em(18px);
+        font-weight: 700;
+    }
+    
+    img {
+        max-width: 100%;
+    }
+
+}

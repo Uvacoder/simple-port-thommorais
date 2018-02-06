@@ -1,0 +1,11 @@
+.aside{
+  margin-top: 40px;
+  max-width: 410px;
+
+  // img{
+  //   max-width: 100%;
+  // }
+
+  @extend %aside-content;
+
+}

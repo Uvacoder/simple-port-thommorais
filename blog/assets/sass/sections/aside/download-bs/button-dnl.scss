@@ -1,0 +1,34 @@
+%button-dnl{
+
+	.dwl-bs{
+		position: absolute;
+		color: $cWhite;
+
+		&:hover{
+			background: $cWhite;
+			color: $c1;
+		}
+
+		&.b{
+			bottom: 7%;
+		}
+
+		&.t{
+			top: 7%;
+		}
+
+		&.r{
+			right: 7%;
+		}
+		
+		&.l{
+			left: 7%;
+		}
+
+		strong{
+			font-weight: 700;
+		}
+		
+	}
+
+}
