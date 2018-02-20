@@ -1,0 +1,11 @@
+@include responsive(568px, 'max') {
+
+    .cat-header{
+        
+        .container > .flex {
+            display: block;
+        }
+
+    }
+
+}

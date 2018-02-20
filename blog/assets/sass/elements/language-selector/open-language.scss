@@ -1,0 +1,26 @@
+%open-language{
+    .language-selector-btn {
+        background: rgba($c6, 0.7);
+        transition: 0.1s background $transition1;
+    }
+
+    ul {
+        opacity: 1;
+        transform: scale3d(1, 1, 1);
+        transition: 0.3s transform $transition1, 0.25s opacity $transition1;
+        @extend %active;
+    }
+
+    svg {
+        transform: rotate(180deg);
+    }
+}
+
+%active {
+  li {
+    opacity: 1;
+    transition: 0.1s 0.35s opacity $transition1;
+    transform: translate3d(0, 0, 0);
+  }
+}
+

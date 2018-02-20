@@ -6,8 +6,7 @@
     
     &:before, 
     &:after{
-        position: absolute;
-        content: '';
+        @extend %pseudo_icon;
     }
 
     &:before{

@@ -1,0 +1,33 @@
+%button-hover-transition{
+
+  .button{
+    position: relative;
+    opacity: 0;
+    transform: translate3d(0, 60px, 0);
+    transition: transform .4s .2s $transition, opacity .4s .25s $transition,  top .2s $transition;
+
+    &:hover{
+      top: -1px;
+    }
+
+    &:active{
+      top: 0;
+    }
+
+    @media only screen and (max-width: 769px) and (min-width: 480px) {
+      opacity: 1;
+      transform: translate3d(0, 0, 0);
+    }
+    
+  }
+
+  &:hover{
+
+    .button{
+      opacity: 1;
+      transform: translate3d(0, 0, 0);
+    }
+
+  }
+
+}

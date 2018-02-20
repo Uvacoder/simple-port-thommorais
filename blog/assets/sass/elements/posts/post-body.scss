@@ -1,9 +1,15 @@
 .post-body{
+    @include m-b-($spacer-md);
     line-height: 1.3em;
-    margin-bottom: 30px;
     overflow: hidden;
 
     p{
         margin-top: 0;
+
+        &:last-child{
+            margin-bottom: 0;
+        }
     }
+    
+    
 }

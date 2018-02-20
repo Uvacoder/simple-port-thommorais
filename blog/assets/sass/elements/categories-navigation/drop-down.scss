@@ -1,0 +1,85 @@
+%dropdown{
+
+    &.drop-down {
+        position: relative;
+        z-index: 9;
+        margin-left: auto;
+        margin-right: auto;
+        @include m-t-($spacer-sm);
+        @include m-b-($spacer-sm);
+        display: table;
+        @include p-($spacer-sm);
+        transition: 0.2s 0.3s background $transition1;
+
+        a {
+            @include m-b-($spacer-md);
+            padding: 0;
+            display: block;
+            @include rem(font-size, 16px);
+            opacity: 0;
+
+            &:after{
+                left: 0;
+                transform: scale3d(1, 1, 1);
+            }
+        }
+
+        &:hover, &.active{
+
+            transition: 0.1s background $transition1;
+            background: rgba($c6, 0.8);
+
+            .drop {
+                transform: scale3d(1, 1, 1);
+
+                a {
+                    opacity: 1;
+                    transition: 0.2s 0.3s opacity linear;
+                }
+                
+            }
+
+            .holder > svg{
+                transform: rotate(180deg);
+            }
+
+        }
+
+        @include responsive(768px, 'min') {
+            display: none;
+        }
+
+    }
+
+    .holder {
+        margin: 0;
+        color: $cWhite;
+        text-align: center;
+        line-height: 1em;
+        @extend %arrow-down;
+        cursor: pointer;
+
+        svg{
+            margin-left: 10px;
+        }
+
+    }
+
+    .drop {
+        position: absolute;
+        left: 0;
+        top: calc(100% - $spacer-sm);
+        width: 100%;
+        @include m-t-($spacer-sm);
+        @include p-($spacer-sm);
+        transform-origin: top left;
+        transform: scale3d(1, 0, 1);
+        transition:transform 0.3s $transition1;
+        will-change: transform;
+        perspective: 1px;
+        transform-style: preserve-3d;
+        background: rgba($c6, 0.8);
+
+    }
+
+}

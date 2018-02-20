@@ -1,0 +1,9 @@
+%button-featured{
+
+  .button{
+    margin-top: 20px;
+    padding: 12px 15px;
+    @include rem(font-size, 13px);
+  }
+
+}

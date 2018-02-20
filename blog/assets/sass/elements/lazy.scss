@@ -3,6 +3,8 @@
 **/
 
 img.lazy{
+  transition: filter 5s linear;
+
   + .loader{
     pointer-events: none;
   }
@@ -13,3 +15,15 @@ img.lazy{
     }
   }
 }
+
+
+figure .lazy,
+.swiper-lazy{
+    transition: filter 0.2s ease-in;
+}
+
+figure .lazy:not(.unblur),
+.swiper-lazy:not(.swiper-lazy-loaded) {
+    filter: blur(6px);
+}
+

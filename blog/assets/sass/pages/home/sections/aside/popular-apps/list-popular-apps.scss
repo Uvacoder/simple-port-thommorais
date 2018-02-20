@@ -23,5 +23,10 @@
         }
     }
 
+    .button {
+        position: relative;
+        top: -5px;
+    }
+
     @extend %list-popular-apps-content;
 }

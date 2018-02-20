@@ -6,8 +6,8 @@
 
 // Create spacing sizes tied to type
 
-$cap: 10px; 
-
+$cap: 8px; 
+$min-cap: $cap - 3;
 $spacer-none: 0;
 $spacer-2xs: round($cap * .5); 
 $spacer-xs: $cap; 
@@ -29,7 +29,7 @@ $sizes: (
 );
 
 // Design choice to scale the text by this value at mobile
-$mobile-scale: .7;
+$mobile-scale: .8;
 
 // margin
 @each $size, $value in $sizes {
@@ -83,41 +83,47 @@ $mobile-scale: .7;
   .p-t-#{$size} {
     padding-top: $value * $mobile-scale;
     @include breakpoint(sm) {
-      padding-top: $value * $mobile-scale;
+      padding-top: $value;
     }
   }
   .p-b-#{$size} {
     padding-bottom: $value * $mobile-scale;
     @include breakpoint(sm) {
-      padding-bottom: $value * $mobile-scale;
+      padding-bottom: $value;
     }
   }
   .p-l-#{$size} {
     padding-left: $value * $mobile-scale;
     @include breakpoint(sm) {
-      padding-left: $value * $mobile-scale;
+      padding-left: $value;
     }
   }
   .p-r-#{$size} {
     padding-right: $value * $mobile-scale;
     @include breakpoint(sm) {
-      padding-right: $value * $mobile-scale;
+      padding-right: $value;
     }
   }
   .p-x-#{$size} {
     padding-right: $value * $mobile-scale;
     padding-left: $value * $mobile-scale;
     @include breakpoint(sm) {
-      padding-right: $value * $mobile-scale;
-      padding-left: $value * $mobile-scale;
+      padding-right: $value;
+      padding-left: $value;
     }
   }
   .p-y-#{$size} {
     padding-top: $value * $mobile-scale;
     padding-bottom: $value * $mobile-scale;
     @include breakpoint(sm) {
-      padding-top: $value * $mobile-scale;
-      padding-bottom: $value * $mobile-scale;
+      padding-top: $value;
+      padding-bottom: $value;
+    }
+  }
+  .p-#{$size} {
+    padding: $value * $mobile-scale;
+    @include breakpoint(sm) {
+      padding: $value ;
     }
   }
 }
@@ -214,4 +220,12 @@ $mobile-scale: .7;
     padding-top: $value;
     padding-bottom: $value;
   }
+}
+
+@mixin p-($value) {
+    padding: $value * $mobile-scale;
+    @include breakpoint(sm) {
+      padding: $value;
+  }
+
 }

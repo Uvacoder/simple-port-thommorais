@@ -1,4 +1,5 @@
 %list-popular-apps-content{
+
   li{
 
      > .flex{
@@ -25,5 +26,18 @@
           color: $c1;
       }
   }
+
+
+
+    @include breakpoint(mobile-only) {
+        h4 {
+            white-space: nowrap;
+            text-overflow: ellipsis;
+            width: 140px;
+            display: block;
+            overflow: hidden
+        }
+    }
+
 
 }

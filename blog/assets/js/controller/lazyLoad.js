@@ -1,48 +1,24 @@
-import { the, all, doc } from '../utils'
-import polyfillIntersectionObserver from '../vendors/polyfillIntersectionObserver'
+import { the, all, forEach} from '../utils/helpers'
+import classie from '../vendors/classie'
 
 // preload images
-export default function lazzyLoad() {
+export default _ => {
 
   /**
-   * @description this give support to older browsers that do not support IntersectionObserver
-   * @see https://caniuse.com/#feat=intersectionobserver
-  **/
-  polyfillIntersectionObserver()
-
-  /**
-   * [onIntersection description]
-   * @param  {[type]} entries [description]
-  */
-  function onIntersection(entries) {
-
-    entries.forEach(entry => {
-      // Are we in viewport?
-      if (entry.intersectionRatio > 0) {
-        scroll.unobserve(entry.target)
-        preloadImage(entry.target)
-      }
-    })
-
-  }
-
-  /**
-   * instance of the IntersectionObserver
-   * @param {[callback]} onIntersection
-   * @see https://developer.mozilla.org/en-US/docs/Web/API/Intersection_Observer_API
-  */
-  const scroll = new IntersectionObserver(onIntersection, {
-    rootMargin: '50px 0px',
-    threshold: 0.10
-  })
-
-  /**
-   * this replace img src with the data-src of the image
-   * @param {Element} img DOM node
-   */
+ * this replace img src with the data-src of the image
+ * @param {Element} img DOM node
+ */
   const preloadImage = img => {
+
     img.src = img.dataset.src
-    img.classList.add('loaded')
+   
+    img.addEventListener('load', () => {
+
+      classie.add(img, 'loaded')
+      classie.add(img, 'unblur')
+
+    }, false)
+
   }
 
   /**
@@ -51,8 +27,40 @@ export default function lazzyLoad() {
   const lazys = all('.lazy')
 
   /**
-   * Targeting all selected elements to be observed
-  */
-  lazys.forEach(lazy => scroll.observe(lazy))
+   * Checking for Browser support, if not has load it all.
+   */
+  if (!("IntersectionObserver" in window)){
+    forEach(lazys, lazy => preloadImage(lazy))
 
+  }else{
+    /**
+     * [onIntersection description]
+     * @param  {[type]} entries [description]
+    */
+     const onIntersection = entries => {
+
+      forEach(entries, entry => {
+        if (entry.intersectionRatio > 0) {
+          scroll.unobserve(entry.target)
+          preloadImage(entry.target)
+        }
+      })
+
+    }
+
+    /**
+     * instance of the IntersectionObserver
+     * @param {[callback]} onIntersection
+     * @see https://developer.mozilla.org/en-US/docs/Web/API/Intersection_Observer_API
+    */
+        const scroll = new IntersectionObserver(onIntersection, {
+          rootMargin: '50px 0px',
+          threshold: 0.10
+        })
+
+    /**
+     * Targeting all selected elements to be observed
+    */
+    forEach(lazys, lazy => scroll.observe(lazy))
+  }
 }

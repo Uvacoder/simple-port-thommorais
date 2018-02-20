@@ -1,38 +1,55 @@
 import fonts from './vendors/fontLoader'
-import domready from 'domready'
-import Swiper from './vendors/swiper.esm'
-import {the, all, doc} from './utils'
+// import domready from 'domready'
+import mostImportantJSOfAll from './controller/mostImportantJSOfAll'
+import home from './controller/home'
+import cat from './controller/cats'
+import single from './controller/single'
 import lazyLoad from './controller/lazyLoad'
-import latestVideos from './controller/latestVideosModal'
+import dropDown from './controller/dropDowns'
+import { windowResize } from './utils/utils'
 
-domready( () => {
+//domready( () => {
+  /**
+   *@desc things to home
+  */
+  home()
 
   /**
-   * slider of the top
-   * @type {Swiper}
-   */
-  const homeBanner = new Swiper('#slider-home',{
-    // init: false,
-    slidesPerView	: 2,
-    slidesPerGroup: 2,
-    spaceBetween: 15,
-    navigation: {
-        nextEl: '#slider-next',
-        prevEl: '#slider-prev',
-    },
-    watchSlidesVisibility: true,
-    preloadImages: false,
-    lazy: true
-  })
+   *@desc things to categories
+  */
+  cat()
 
+  /**
+   *@desc things to single
+  */
+  single()
+
+  /*** Shared ***/
+  
   /**
    *@desc lazyload of all the images
   */
   lazyLoad()
 
   /**
-   *@desc Show modal with video on click in a thumbnail
+   *@desc when window resize run this with debouncing
   */
-  latestVideos()
-  
-})
+  windowResize( width =>{
+
+    if(width <= 769){
+
+      // dropdown to post categories
+      dropDown('.categories-navigation.drop-down')
+
+      // dropdown to language selector
+      dropDown('.language-selector')
+      
+    }
+
+  })
+
+  mostImportantJSOfAll()
+
+  console.bs()
+
+//})

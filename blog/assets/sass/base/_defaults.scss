@@ -6,13 +6,22 @@ html, body{
   min-width: 100vw;
   overflow-x: hidden;
   font-family: $defaultFont;
-  -webkit-font-smoothing: antialiased;
+  perspective: 1px;
+  transform-style: preserve-3d;
+}
 
+:root{
+  font-size: 14px;
+
+  @include responsive(769px, 'min') {
+    font-size: 16px;
+  }
 }
 
 *{
   box-sizing: border-box;
   outline-width: thin;
+  -webkit-font-smoothing: antialiased;
 }
 
 @mixin clearfix {

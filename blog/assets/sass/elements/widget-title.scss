@@ -1,0 +1,17 @@
+.widget-title {
+    position: relative;
+    margin-top: 0;
+    @include rem(font-size, 30px);
+    font-weight: 700;
+    color: $c1;
+    
+    &:before {
+        @extend %pseudo_icon;
+        bottom: -10px;
+        left: 0;
+        width: 90px;
+        height: 5px;
+        background: $c3;
+    }
+
+}

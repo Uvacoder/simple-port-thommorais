@@ -1,0 +1,11 @@
+.blog-logo{
+    display: inline-block;
+
+    @include responsive(540px, 'max'){
+        img{
+            width: 120px;
+            height: auto;
+        }
+    }
+
+}

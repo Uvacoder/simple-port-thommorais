@@ -1,0 +1,6 @@
+%post-resume-content-title-categorie-view {
+    .post-title {
+        @extend .m-y-sm;
+        @include rem(font-size, 36px);
+    }
+}

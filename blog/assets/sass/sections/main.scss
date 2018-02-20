@@ -1,6 +1,10 @@
 .main{
   margin-top: 40px;
-  max-width: 765px;
-  @include p-r-($spacer-sm);
+  max-width: 800px;
+  width: 100%;
 
+  @include responsive(769px, 'min') {
+    @include p-r-($spacer-sm);
+  }
+  
 }

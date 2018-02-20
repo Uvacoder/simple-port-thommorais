@@ -1,11 +1,12 @@
 %post-content{
+  hyphens: auto;
 
   .post-content{
-    // padding: 20px;
+    padding: 20px;
     transform: translate3d(0, 60px, 0);
     transition: transform 0.3s 0.2s $transition;
   }
-
+  
   a{
     position: relative;
     display: block;

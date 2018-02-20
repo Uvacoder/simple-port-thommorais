@@ -2233,6 +2233,7 @@ var addClasses = function () {
   });
 
   $el.addClass(classNames.join(' '));
+
 };
 
 var removeClasses = function () {

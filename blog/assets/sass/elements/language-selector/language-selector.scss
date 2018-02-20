@@ -1,0 +1,106 @@
+
+.language-selector-btn {
+  transition: 0.7s background $transition1;
+}
+
+.language-selector {
+  position: relative;
+  min-width: 110px;
+  opacity: 0;
+  transition: 0.4s opacity $transition1;
+
+  @include responsive(769px, 'min'){
+    opacity: 1
+  }
+
+  &.ready{
+    opacity: 1;
+  }
+
+  &:hover, 
+  &.active{
+    @extend %open-language;
+  }
+
+
+
+  .language-selector-btn {
+    position: relative;
+    z-index: 2;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    @include p-y-($spacer-sm);
+    @include p-x-($spacer-sm);
+    background: transparent;
+    border: 2px solid $cWhite;
+    border-radius: 5px;
+    cursor: pointer;
+    
+    @extend %arrow-down;
+
+    svg{
+      position: absolute;
+      right: 10px;
+      top: 50%;
+      margin-top: -4px;
+      display: inline-block;
+    }
+
+  }
+
+  .selected-lang {
+    position: relative;
+    display: inline-block;
+    margin-right: 5px;
+    @include rem(font-size, 15px);
+    color: $cWhite;
+    text-align: left;
+  }
+
+  ul {
+    position: absolute;
+    z-index: 1;
+    top: calc(100% - 3px);
+    @include p-y-($spacer-sm);
+    width: 100%;
+    opacity: 0;
+    transform-origin: top;
+    transform: scale3d(1, 0, 1);
+    transition: 0.3s transform $transition1, 0.25s opacity $transition1;
+    border-radius: 0 0 4px 4px;
+    border: 2px solid $cWhite;
+    border-top: 0;
+    background: rgba($c6, 0.7);
+
+    li{
+      display: block;
+      opacity: 0;
+      transition: 0.1s opacity $transition1;
+    }
+
+    a{
+      display: block;
+      padding: $min-cap $spacer-sm;
+      color: $cWhite;
+
+      &:hover{
+        background: rgba($c6, 0.7);
+        opacity: 0.5;
+      }
+
+    }
+
+    &:hover{
+      transition: 0.3s transform $transition1, 0.25s opacity $transition1;
+      transform: scale3d(1, 1, 1);
+      opacity: 1;
+      
+      @extend %active;
+
+    }
+
+  }
+
+}

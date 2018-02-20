@@ -1,0 +1,30 @@
+.post-gallery{
+    position: relative;
+    max-width: 100%;
+    
+    .swiper-slide{
+        position: relative;
+        margin: 0 auto;
+        max-width: 72%;
+        display: block;
+        background: $c2;
+        line-height: 1em;
+
+        img{
+            width: 100%;
+            height: auto;
+            opacity: 0.8;
+            transition: opacity 0.2s $transition1;
+        }
+
+        &.swiper-slide-active{
+
+            img{
+                opacity: 1;
+            }
+        }
+
+    }
+
+
+}

@@ -34,7 +34,7 @@ $screen-xxl-min: 1640px;
   @else if $class == xxl {
     @media (min-width: #{$screen-xxl-min}) { @content; }
   }
-
+  
   @else {
     @warn "Breakpoint mixin supports: mobile-only, sm, md, lg";
   }
