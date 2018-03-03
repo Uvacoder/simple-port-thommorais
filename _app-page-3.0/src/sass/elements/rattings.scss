@@ -1,0 +1,19 @@
+.rattings{
+    align-items: center;
+
+    .stars{
+        width: 88px;
+    }
+
+    .ratting-star{
+        width: 15px;
+        height: 15px;
+        fill: $c3;
+
+        &.active{
+            fill: $c4;
+        }
+    }
+
+}
+

@@ -1,0 +1,11 @@
+.about-powerups-bg{
+    position: absolute;
+    left: 50%;
+    top: 0;
+    transform: translateX(-50%) scale(1.1);
+    z-index: 0;
+    width: 100%;
+    height: auto;
+    opacity: 0.3;
+    filter: blur(10px);
+}

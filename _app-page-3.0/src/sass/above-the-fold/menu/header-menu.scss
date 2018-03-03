@@ -1,0 +1,20 @@
+.header-menu {
+  position: absolute;
+  width: 100%;
+  z-index: 10;
+  @include p-y-($spacer-sm);
+  background: rgba($c2, 0.6);
+
+  .menu-container {
+    position: relative;
+    margin: 0 auto;
+    width: calc(100% - 48px);
+    align-items: center;
+    
+    @include responsive(540px, 'max') {
+      width: calc(100% - 30px);
+    }
+
+  }
+
+}

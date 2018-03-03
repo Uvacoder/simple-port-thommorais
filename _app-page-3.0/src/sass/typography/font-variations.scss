@@ -1,0 +1,22 @@
+// Primary Font
+@mixin font--primary-regular {
+    font-family: $defaultFont;
+    font-weight: 400;
+}
+
+
+@mixin font--primary-bold {
+  font-family: $defaultFont;
+  font-weight: 700;
+}
+
+@mixin font--primary-bolder {
+  font-family: $defaultFont;
+  font-weight: 900;
+}
+
+
+@mixin font--primary-light {
+  font-family: $defaultFont;
+  font-weight: 300;
+}

@@ -1,0 +1,9 @@
+#about-the-game{
+// 
+    .game{
+        @include m-t-($spacer-md);
+        flex-wrap: wrap;
+    }
+
+
+}

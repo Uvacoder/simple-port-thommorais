@@ -1,0 +1,39 @@
+#blog{
+    position: relative;
+    z-index: 2;
+    background: rgba($c8, .8);
+
+    .blog-posts{
+        margin: 40px -10px 0;
+        flex-wrap: wrap;
+    }
+
+    .section-sub-title{
+        margin-top: 0;
+        margin-bottom: 30px;
+
+        + p{
+            margin-top: 0;
+        }
+    }
+
+    .section-sub-title,p{
+        color: $cWhite;
+    }
+
+    a.button{
+        margin: 30px auto 0;
+        display: table;
+        @include p-y-($spacer-sm);
+        @include p-x-($spacer-lg);
+        border-radius: 10px;
+    }
+    
+
+    time {
+        display: block;
+        font-weight: 900;
+        color: #89cde7;
+    }
+
+}

@@ -1,0 +1,21 @@
+.about-powerups{
+    position: relative;
+    overflow: hidden;
+    background: $c8;
+
+    &:before{
+        @extend %pseudo_icon;
+        z-index: 1;
+        top: -3px;
+        left: 0;
+        width: 100%;
+        height: 26px;
+        background:$cWhite;
+    }
+
+    .section-title{
+        position: relative;
+        z-index: 3;
+    }
+
+}

@@ -1,0 +1,18 @@
+#screenshots{
+    position: absolute;
+    bottom: -20px;
+    width: 100%;
+    
+    h4{
+        position: relative;
+        z-index:5;
+        margin: 0 0 20px;
+        text-align: center;
+        @include font--primary-light;
+        @include rem(font-size, 24px);
+        color: $cWhite;
+    }
+
+    @extend %carousel;
+    
+}

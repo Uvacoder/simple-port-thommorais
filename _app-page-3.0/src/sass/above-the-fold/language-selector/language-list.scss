@@ -1,0 +1,63 @@
+.language-selector {
+
+
+	ul, li{
+		margin: 0;
+		padding: 0;
+	}
+	
+
+	ul {
+		position: absolute;
+		z-index: 1;
+		top: calc(100% - 3px);
+		@include p-y-($spacer-sm);
+		width: 100%;
+		opacity: 0;
+		transform-origin: top;
+		transform: scale3d(1, 0, 1);
+		transition: 0.3s 0.2s transform $transition1, 3s 0.2s opacity $transition1;
+		border-radius: 0 0 4px 4px;
+		border: 2px solid $cWhite;
+		border-top: 0;
+		background: rgba($c6, 0.7);
+
+		li{
+			display: block;
+			opacity: 0;
+		}
+
+		a{
+			display: block;
+			padding: $min-cap $spacer-sm;
+			color: $cWhite;
+			text-decoration: none;
+
+			&:hover{
+				background: rgba($c6, 0.7);
+				opacity: 0.5;
+			}
+
+		}
+
+		&:hover{
+			transition: 0.3s 0.6s transform $transition1, 0.25s opacity $transition1;
+			transform: scale3d(1, 1, 1);
+			opacity: 1;
+
+			@extend %active;
+
+		}
+
+	}
+
+
+	li{
+		transition:	0.2s 0.1s opacity linear;
+	}
+
+	a{
+		@include font--primary-regular;
+	}
+
+}

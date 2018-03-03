@@ -1,0 +1,39 @@
+
+.game-info{   
+    min-width: 230px;
+    @extend %app-thumbnail;
+
+    h6{
+        margin:  0 0;
+        @extend %game-info-copy;
+    }
+
+    .developer,
+    .category{
+        text-align: center;
+    }
+
+    .rattings-copy{
+        @extend %game-info-copy !optional;
+    }
+
+    .rattings{
+        margin: 20px 0;
+
+        .stars{
+            margin: 0 15px 0 0;
+        }
+    }
+
+    .last-update{
+        display: flex;
+        justify-content: center;
+        @include font--primary-light;
+        color: $c3; 
+
+        strong{
+            margin: 0 10px 0 0;
+        }
+    }
+
+}

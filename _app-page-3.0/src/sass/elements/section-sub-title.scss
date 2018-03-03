@@ -1,0 +1,16 @@
+.section-sub-title{
+    position: relative;
+    @extend %common-title;
+    @extend %underline;
+}
+
+%underline{
+    &:after{
+        @extend %pseudo_icon;
+        bottom: -12px;
+        left: 0;
+        height: 5px;
+        width: 160px;
+        background: $c7;
+    }
+}

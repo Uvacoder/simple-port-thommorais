@@ -1,0 +1,27 @@
+/**
+* when images is loaded hide the loader
+**/
+
+img.lazy{
+
+  + .loader{
+    pointer-events: none;
+  }
+
+  &.loaded{
+    + .loader{
+      opacity: 0;
+    }
+  }
+}
+
+
+figure .lazy,
+.swiper-lazy{
+    transition: filter 0.6s $transition1;
+}
+
+figure .lazy:not(.unblur),
+.swiper-lazy:not(.swiper-lazy-loaded) {
+    //filter: blur(6px);
+}

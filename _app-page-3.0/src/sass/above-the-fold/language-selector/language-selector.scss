@@ -1,0 +1,53 @@
+.language-selector {
+	position: relative;
+	min-width: 110px;
+	max-width: 130px;
+	opacity: 0;
+	transition: 0.3s opacity $transition1;
+
+	&.ready{
+		opacity: 1;
+	}
+
+	&:hover,
+	&.active{
+		@extend %open-language;
+	}
+
+	.language-selector-btn {
+		position: relative;
+		z-index: 2;
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		width: 100%;
+		@include p-y-($spacer-xs);
+		@include p-x-($spacer-sm);
+		background: transparent;
+		border: 2px solid $cWhite;
+		border-radius: 5px;
+		cursor: pointer;
+
+		@extend %arrow-down;
+
+		svg{
+			position: absolute;
+			right: 10px;
+			top: 50%;
+			margin-top: -4px;
+			display: inline-block;
+		}
+
+	}
+
+	.selected-lang {
+		position: relative;
+		display: inline-block;
+		margin-right: 20px;
+		@include rem(font-size, 15px);
+		color: $cWhite;
+		text-align: left;
+		@include font--primary-bolder;
+	}
+
+}

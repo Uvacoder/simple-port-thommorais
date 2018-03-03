@@ -1,0 +1,29 @@
+// Download button
+%big-button {
+  display: table;
+  margin: 20px auto 0;
+  width: 95vw;
+  max-width: 460px;
+  padding: 20px 20px 17px;
+  border-radius: 5px;
+  @include rem('font-size', 24px);
+  line-height: 26px;
+  @include font--primary-bolder;
+  color: #fff;
+  text-align: center;
+  text-transform: uppercase;
+  text-decoration: none;
+  transition: transform 0.1s $transition,
+  box-shadow .1s $transition;
+
+  &:active {
+    box-shadow: none !important;
+    transform: translate3d(0, 3px, 0);
+  }
+   
+  @include responsive(666px, 'max'){
+    font-size: 18px;
+  }
+
+}
+

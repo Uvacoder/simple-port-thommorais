@@ -1,0 +1,17 @@
+#more-apps-from-developer{
+        
+    .section-sub-title{
+        margin: 0 0 10px;
+        text-align: center;
+
+        &:after{
+            display: none;
+        }
+    }
+
+
+    .flex.between {
+        flex-wrap: wrap;
+    }
+
+}

@@ -1,0 +1,37 @@
+$desk-d: 1.3; // Desktop Scale Modifier
+$mobile-d: 1.2; // Mobile Scale Modifier
+// Desktop Sizes
+$d-b0: 2.5ex;
+$d-b1: $d-b0 * $desk-d;
+$d-b2: $d-b1 * $desk-d;
+$d-b3: $d-b2 * $desk-d;
+$d-b4: $d-b3 * $desk-d;
+$d-b5: $d-b4 * $desk-d;
+$d-b6: $d-b5 * $desk-d;
+// Mobile Sizes
+$m-b0: 2ex;
+$m-b1: $m-b0 * $mobile-d;
+$m-b2: $m-b1 * $mobile-d;
+$m-b3: $m-b2 * $mobile-d;
+$m-b4: $m-b3 * $mobile-d;
+$m-b5: $m-b4 * $mobile-d;
+$m-b6: $m-b5 * $mobile-d;
+
+// Size 0
+@mixin size--base-0 {
+    // Mobile font size
+    font-size: $m-b0;
+    @include breakpoint(sm) {
+        // taken from mixins.scss
+        // Desktop font size
+        font-size: $d-b0;
+    }
+}
+
+
+@mixin size--base-6 {
+    font-size: $m-b6;
+    @include breakpoint(sm) {
+        font-size: $d-b6;
+    }
+}

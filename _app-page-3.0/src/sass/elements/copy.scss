@@ -1,0 +1,6 @@
+%copy{
+    @include font--primary-light;
+    @include rem(font-size, 18px);
+    line-height: 1.4em;
+    color: $c3;
+}

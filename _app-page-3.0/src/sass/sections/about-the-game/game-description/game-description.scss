@@ -1,0 +1,18 @@
+.game-description{
+
+    .section-sub-title{
+        margin-top: 0;
+        color: $c5;
+    }
+
+    p{
+        @extend %copy;
+    }
+
+    @include responsive(668px, 'min'){
+        flex: 1;
+        @include p-l-($spacer-lg);
+        @include p-r-($spacer-md);
+    }
+
+}

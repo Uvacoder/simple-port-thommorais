@@ -1,0 +1,12 @@
+%game-info-copy{
+    @include font--primary-bold;
+    @include rem(font-size, 16px);
+    color: $c3;   
+}
+
+%common-title{
+    @include font--primary-bold;
+    @include rem(font-size, 24px);
+}
+
+

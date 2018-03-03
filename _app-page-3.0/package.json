@@ -1,0 +1,52 @@
+{
+  "name": "app-page-3.0",
+  "version": "3.0.0",
+  "description": "App Pages for Bluestacks.",
+  "scripts": {
+    "dev": "webpack",
+    "build": "webpack -p --optimize-minimize --display-error-details ",
+    "profile": "webpack --profile --json > stats.json"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bluestacks/www-wordpress"
+  },
+  "author": "https://fuerzastudio.com.br",
+  "dependencies": {
+    "dom7": "^2.0.1",
+    "domready": "^1.0.8",
+    "npm": "^5.7.1",
+    "to": "^0.2.9",
+    "update": "^0.7.4",
+    "webfontloader": "^1.6.28"
+  },
+  "devDependencies": {
+    "ajv": "^6.2.0",
+    "ajv-keywords": "^3.1.0",
+    "autoprefixer": "^7.1.6",
+    "babel-core": "^6.26.0",
+    "babel-loader": "^7.1.2",
+    "babel-preset-es2015": "^6.24.1",
+    "babel-preset-es2015-ie": "^6.7.0",
+    "babel-preset-stage-0": "^6.24.1",
+    "browser-sync": "^2.18.13",
+    "browser-sync-webpack-plugin": "^1.2.0",
+    "css-loader": "^0.28.7",
+    "customelements-v1": "0.0.5",
+    "extract-text-webpack-plugin": "^3.0.2",
+    "gaze": "^1.1.2",
+    "imagesloaded": "^4.1.4",
+    "js-cookie": "^2.2.0",
+    "jshint": "^2.9.5",
+    "lightgallery.js": "^1.0.2",
+    "node-sass": "^4.7.2",
+    "node-sass-glob-importer": "^5.0.0-alpha.17",
+    "path": "^0.12.7",
+    "postcss-loader": "^2.0.9",
+    "precss": "^2.0.0",
+    "sass-loader": "^6.0.6",
+    "uglifyjs-webpack-plugin": "^1.1.8",
+    "webpack": "^3.8.1",
+    "webpack-bundle-analyzer": "^2.11.1"
+  }
+}

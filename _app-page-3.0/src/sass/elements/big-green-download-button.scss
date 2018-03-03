@@ -1,0 +1,13 @@
+.big-green-download-button{
+    @include m-y-($spacer-xl);
+    @extend %big-button;
+    font-size: 21px;
+    background: #8bba37;
+    box-shadow: 0 4px 0 darken(#8bba37, 10);
+
+    @include responsive(666px, 'max'){
+        width: 100%;
+        font-size: 18px;
+    }
+
+}
