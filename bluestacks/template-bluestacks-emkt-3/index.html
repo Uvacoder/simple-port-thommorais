@@ -18,6 +18,37 @@
         max-width: 650px;
     }
 
+    @media(max-width:650px) {
+
+        .to-full{
+            width: 100%;
+            height: auto;
+        }
+
+        .main-table{
+            font-size: 18px;
+        }
+
+        .responsive-full{
+            max-width: 300px;
+            width: 100% !important;
+        }
+
+        .responsive-full td{
+            padding: 0 10px;
+        }
+
+        .title-game{
+            font-size: 48px;
+            padding-right: 40px;
+        }
+
+        .removable{
+            display: none;
+            width: 0 !important;
+        }
+    }
+
 </style>
 
 
@@ -49,7 +80,7 @@
                         <tr>
                             <td bgcolor="#1b3b5c" style="background-image:url(https://cdn-www.bluestacks.com/bs-images/bg-banner-game.png); font-size:0">
 
-                                <table width="42%" border="0" cellpadding="0" class="td-title-game" cellspacing="0" align="left" style="border-spacing:0;border-collapse:collapse;border:none;">
+                                <table class="responsive-full"  width="42%" border="0" cellpadding="0" cellspacing="0" align="left" style="border-spacing:0;border-collapse:collapse;border:none;">
 
                                         <tr>
                                             <td height="22px" colspan="2"> &nbsp;</td>
@@ -95,11 +126,11 @@
 
                                 </table>
 
-                                <table width="58%" border="0" class="image-banner-game" cellpadding="0" align="right" cellspacing="0" style="border-spacing:0;border-collapse:collapse;border:none">
+                                <table  class="responsive-full"  width="58%" border="0" cellpadding="0" align="right" cellspacing="0" style="border-spacing:0;border-collapse:collapse;border:none">
                                     <tbody>
                                         <tr>
                                             <td align="right">
-                                                <img src="https://cdn-www.bluestacks.com/bs-images/emkt_game-banner-image_panther.jpg" height="307" width="352" alt="" style="display:block;" />
+                                                <img src="https://cdn-www.bluestacks.com/bs-images/emkt_game-banner-image_panther.jpg" class="to-full" height="307" width="352" alt="" style="display:block;" />
                                             </td>
                                         </tr>
                                     </tbody>
@@ -140,6 +171,7 @@
                             </td>
                         </tr>
 
+                        
                         <!-- text -->
                         
                         <tr>
@@ -149,11 +181,11 @@
                                         <td width="4%">&nbsp;</td>
                                         <td align="center" valign="top" width="92%">
                                             <!-- Bloco 1 -->
-                                            <table width="288px" border="0" cellpadding="0" cellspacing="0" align="left" >
+                                            <table width="288px" border="0" cellpadding="0" cellspacing="0" align="left" class="responsive-full" >
                                                 <tbody>
                                                     <tr>
                                                         <td valign="top" align="center">
-                                                            <img src="https://cdn-www.bluestacks.com/bs-images/emtk_thumb-post-blog-right.jpg" border="0" width="288" height="178" style="display:block;">
+                                                            <img src="https://cdn-www.bluestacks.com/bs-images/emtk_thumb-post-blog-right.jpg" border="0" width="288" height="178" class="to-full"  style="display:block;">
                                                         </td>
                                                     </tr>
                                                     <tr>
@@ -200,11 +232,11 @@
                                             </table>
 
                                             <!-- Bloco 2 -->
-                                            <table width="288px" border="0" cellpadding="0" cellspacing="0" align="right">
+                                            <table width="288px" border="0" cellpadding="0" cellspacing="0" align="right" class="responsive-full">
                                                 <tbody>
                                                     <tr>
                                                         <td valign="top" align="center">
-                                                            <img src="https://cdn-www.bluestacks.com/bs-images/emtk_thumb-post-blog-right.jpg" border="0" width="288" height="178" style="display:block;">
+                                                            <img src="https://cdn-www.bluestacks.com/bs-images/emtk_thumb-post-blog-right.jpg" border="0" width="288" height="178" class="to-full" style="display:block;">
                                                         </td>
                                                     </tr>
                                                     <tr>
@@ -296,67 +328,79 @@
 
                         <tr>
 
-                            <td  bgcolor="#89cde7" width="100%" border="0" cellpadding="0" cellspacing="0" align="center">
+                            <td valign="top"  bgcolor="#89cde7" width="100%" border="0" cellpadding="0" cellspacing="0" align="center">
 
-                                <table border="0" cellpadding="0" cellspacing="0" align="left" width="48%">
+                                <table width="100%" border="0" cellpadding="0" cellspacing="0" align="center">
                                     <tr>
-                                        <td width="100%" border="0" cellpadding="0" cellspacing="0" align="left">
-                                            <img src="https://cdn-www.bluestacks.com/bs-images/emkt_thumb-post-game-left.jpg" width="332" height="493" style="display:block;">
+                                        <td valign="top">
+                                            <table  class="responsive-full"  border="0" cellpadding="0" cellspacing="0" align="left" width="48%">
+                                                <tr>
+                                                    <td width="100%" border="0" cellpadding="0" cellspacing="0" align="left">
+                                                        <img src="https://cdn-www.bluestacks.com/bs-images/emkt_thumb-post-game-left.jpg" class="to-full"  width="332" height="493" style="display:block;">
+                                                    </td>
+                                                </tr>
+                                            </table>
+                                            
+                                            <table  class="responsive-full" border="0" cellpadding="0" cellspacing="0" align="right" width="44%">
+                                                <tbody>
+                                            
+                                                    <tr>
+                                                        <td align="left" valign="top">
+                                                            <font size="5" color="#ffffff" face="Arial" style="line-height:24px;display:block">
+                                                                <b>Lorem ipsum dolor sit amet</b>
+                                                            </font>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td height="3px"></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td align="left" valign="top">
+                                                            <font size="3" color="#4c6278" face="Arial" style="line-height:20px;display:block">
+                                                                Consectetur adipiscing elit. Nullam id libero orci. Ut sed mattis leo. Nam euismod hendrerit tempor. Nunc eget orci quis
+                                                                ante fringilla cursus. Maecenas auctor blandit porttitor.
+                                                            </font>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td height="18px"></td>
+                                                    </tr>
+                                            
+                                            
+                                                </tbody>
+                                            </table>
+
+                                        </td>
+
+                                        <td width="5%" valign="top" class="removable">
+                                             &nbsp;
                                         </td>
                                     </tr>
                                 </table>
 
-                                <table border="0" cellpadding="0" cellspacing="0" align="right" width="48%">
-                                    <tbody>
-                                        
-                                        <tr>
-                                            <td align="left" valign="top">
-                                                <font size="5" color="#ffffff" face="Arial" style="line-height:24px;display:block">
-                                                     <b>Lorem ipsum dolor sit amet</b>
-                                                </font>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td height="3px"></td>
-                                        </tr>
-                                        <tr>
-                                            <td align="left" valign="top">
-                                                <font size="3" color="#4c6278" face="Arial" style="line-height:20px;display:block">
-                                                    Consectetur adipiscing elit. Nullam id libero orci. Ut sed mattis leo. Nam euismod hendrerit tempor. Nunc eget orci quis
-                                                    ante fringilla cursus. Maecenas auctor blandit porttitor.
-                                                </font>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td height="18px"></td>
-                                        </tr>
-         
-    
-                                    </tbody>
-                                </table>
 
                             </td>
                         </tr>
 
                         <tr>
-                            <td bgcolor="#1b3b5c" align="center">
-                                <table width="80%" align="center">
+                            <td bgcolor="#1b3b5c" align="center" valign="top">
+                                <table width="100%" align="center" valign="top">
                                     <tbody>
                                         <tr>
-                                            <td align="center">
+                                            <td align="center" valign="top">
                                                 <img src="https://cdn-www.bluestacks.com/bs-images/emkt_full-game-image_panter.jpg" alt="" style="display:block !important;"
                                                 />
                                                 <br>
                                             </td>
                                         </tr>
                                         <tr>
-                                            <td align="center">
+                                            <td align="center" valign="top">
                                                 <span style="display:block;font-family:Arial;color:#ffffff;text-align:center;font-size:34px;font-weight:bold;" class="title-sections">Download a special skin for your Bluestacks </span>
                                                 <br>
                                             </td>
                                         </tr>
                                         <tr>
-                                            <td align="center">
+                                            <td align="center" valign="top">
                                                 <table width="152px" border="0" cellpadding="0" cellspacing="0">
                                                     <tbody>
                                                         <tr>
@@ -368,7 +412,7 @@
                                             </td>
                                         </tr>
                                         <tr>
-                                            <td align="center">
+                                            <td align="center"  valign="top">
                                                 <br>
                                                 <span style="display:block;padding:0 50px;font-family:Arial;font-weight:400;font-size:20px;color:#d1e5ef;text-align:center;"
                                                     class="description-text-game">
@@ -385,6 +429,7 @@
                                 </table>
                             </td>
                         </tr>
+
                         <tr>
                             <td align="center" bgcolor="#1b3b5c" width="100%" class="grid-tables-responsive">
                                 <table width="69" height="51" border="0" cellpadding="0" cellspacing="0" align="left" style="border-spacing:0;border-collapse:collapse;border:none">
@@ -475,74 +520,120 @@
                                 </table>
                             </td>
                         </tr>
+
                         <tr>
                             <td width="100%" height="70" bgcolor="#1b3b5c"></td>
                         </tr>
+
                         <tr>
                             <td bgcolor="#f7f8f8">
-                                <table class="fotter-table" width="33.500%" border="0" cellpadding="0" cellspacing="0" align="left" style="border-spacing:0;border-collapse:collapse;border:none">
-                                    <tbody>
-                                        <tr>
-                                            <td valign="middle" align="center">
-                                                <br>
-                                                <br>
-                                                <a href="https://wp-s.bluestacks.com/" target="_blank" style="display:block;">
-                                                    <img src="https://i.imgur.com/l90h3TS.png" alt="" />
-                                                </a>
-                                                <br>
-                                                <!--[if mso]><br><![endif]-->
-                                                <a href="https://www.facebook.com/BlueStacksInc">
-                                                    <img src="https://i.imgur.com/n2c07Ul.png" target="_blank" alt="" />
-                                                </a>&nbsp;&nbsp;
-                                                <a href="https://twitter.com/bluestacksinc">
-                                                    <img src="https://i.imgur.com/l0P2Zuo.png" target="_blank" alt="" />
-                                                </a>&nbsp;&nbsp;
-                                                <a href="https://plus.google.com/+bluestacks">
-                                                    <img src="https://i.imgur.com/TXE7TmE.png" target="_blank" alt="" />
-                                                </a>&nbsp;&nbsp;
-                                                <a href="https://www.youtube.com/channel/UC9eB0Ysv4UcKgjEy47zcZ5A">
-                                                    <img src="https://i.imgur.com/SHQjrjE.png" target="_blank" alt="" />
-                                                </a>
-                                                <br>
-                                                <br>
-                                                <br>
-                                            </td>
-                                        </tr>
-                                    </tbody>
-                                </table>
-                                <table class="fotter-table" width="65.200%" border="0" cellpadding="0" cellspacing="0" align="right" style="border-spacing:0;border-collapse:collapse;border:none">
-                                    <tbody>
-                                        <tr>
-                                            <td valign="middle" align="left">
-                                                <br>
-                                                <br>
-                                                <span class="footer-copyright" style="font-size:10px; font-family:Arial;font-weight:100;color:#565555;padding-right:38px;display:block;">
-                                                    his email was sent to -email-. Please add
-                                                    <a href="mailto:apps@bluestacks">apps@bluestacks.com</a> to your address book. * terms and conditions apply. See disclosures
-                                                    on terms of use.
-                                                    <br>
-                                                    <br> Join 90 million people around the world already getting fullscreen enjoyment from top
-                                                    apps and games like WhatsApp and Castle Clash. Our best-in-class "Layercake" technology
-                                                    enables even the most graphics-intensive games to run smoothly on your PC. BlueStacks
-                                                    app player is the only android emulator supported with a mac version coming soon!
-                                                    <br>
-                                                    <br> Bluestack Systems, Inc is committed to protecting and respecting your privacy. For more
-                                                    information, please see our Privacy Policy
-                                                    <br>
-                                                    <br> BlueStacks, Inc.:
-                                                    <a target="_blank" style="color:#565555;" href="#">Communication Preferences |
-                                                        <a target="_blank" style="color:#565555;" href="https://wp-s.bluestacks.com/terms-and-privacy.html">
-                                                        Privacy Policy </a> |
-                                                        <a target="_blank" style="color:#565555;" href="https://wp-s.bluestacks.com/terms-and-privacy.html">
-                                                        Terms of Use </a>|
-                                                        <a target="_blank" style="color:#565555;" href="https://support.bluestacks.com">Support </a>
-                                                </span>
-                                                <br>
-                                                <br>
-                                                <br>
-                                            </td>
-                                        </tr>
-                                    </tbody>
+
+                                <table width="100%" border="0" cellpadding="0" cellspacing="0">
+
+                                    <tr>
+                                        <td width="5%">&nbsp;</td>
+                                        <td width="90%">
+                                            <table class="fotter-table" width="33.500%" border="0" cellpadding="0" cellspacing="0" align="left" style="border-spacing:0;border-collapse:collapse;border:none">
+                                                <tbody>
+                                                    <tr>
+                                                        <td valign="middle" align="center">
+                
+                                                            <table width="100%"  border="0" cellpadding="0" cellspacing="0">
+
+                                                                <tr>
+                                                                    <td height="8px">&nbsp;</td>
+                                                                </tr>
+
+                                                                <tr>
+                                                                    <td>
+                                                                        <a href="https://wp-s.bluestacks.com/" target="_blank" style="display:block;">
+                                                                            <img src="https://i.imgur.com/l90h3TS.png" alt="" />
+                                                                        </a>
+                                                                    </td>
+                                                                </tr>
+
+                                                                <tr>
+                                                                    <td height="7px">&nbsp;</td>
+                                                                </tr>
+
+                                                                <tr>
+                                                                    
+                                                                    <td>
+                                                                        <table width="160" border="0" cellpadding="0" cellspacing="0">
+                                                                            <tr>
+                                                                                <td>
+                                                                                    <a href="https://www.facebook.com/BlueStacksInc">
+                                                                                        <img src="https://i.imgur.com/n2c07Ul.png" target="_blank" alt="" />
+                                                                                    </a>
+                                                                                </td>
+                                                                                
+                                                                                <td>
+                                                                                    <a href="https://twitter.com/bluestacksinc">
+                                                                                        <img src="https://i.imgur.com/l0P2Zuo.png" target="_blank" alt="" />
+                                                                                    </a>
+                                                                                </td>
+                                                                                
+                                                                                <td>
+                                                                                    <a href="https://plus.google.com/+bluestacks">
+                                                                                        <img src="https://i.imgur.com/TXE7TmE.png" target="_blank" alt="" />
+                                                                                    </a>
+                                                                                </td>
+                                                                                
+                                                                                <td>
+                                                                                    <a href="https://www.youtube.com/channel/UC9eB0Ysv4UcKgjEy47zcZ5A">
+                                                                                        <img src="https://i.imgur.com/SHQjrjE.png" target="_blank" alt="" />
+                                                                                    </a>
+                                                                                </td>
+                                                                            </tr>
+                                                                        </table>
+                                                                    </td>
+                                                                    
+                                                                </tr>
+
+                                                            </table>
+
+                                                        </td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+
+                                            <table class="fotter-table" width="65.200%" border="0" cellpadding="0" cellspacing="0" align="right" style="border-spacing:0;border-collapse:collapse;border:none">
+                                                <tbody>
+                                                    <tr>
+                                                        <td valign="middle" align="left">
+                                                            <br>
+                                                            <br>
+                                                            <span class="footer-copyright" style="font-size:10px; font-family:Arial;font-weight:100;color:#565555;display:block;">
+                                                                This email was sent to -email-. Please add
+                                                                <a href="mailto:apps@bluestacks">apps@bluestacks.com</a> to your address book. * terms and conditions apply. See disclosures
+                                                                on terms of use.
+                                                                <br>
+                                                                <br> Join 90 million people around the world already getting fullscreen enjoyment from top
+                                                                apps and games like WhatsApp and Castle Clash. Our best-in-class "Layercake" technology
+                                                                enables even the most graphics-intensive games to run smoothly on your PC. BlueStacks
+                                                                app player is the only android emulator supported with a mac version coming soon!
+                                                                <br>
+                                                                <br> Bluestack Systems, Inc is committed to protecting and respecting your privacy. For more
+                                                                information, please see our Privacy Policy
+                                                                <br>
+                                                                <br> BlueStacks, Inc.:
+                                                                <a target="_blank" style="color:#565555;" href="#">Communication Preferences |
+                                                                    <a target="_blank" style="color:#565555;" href="https://wp-s.bluestacks.com/terms-and-privacy.html">
+                                                                    Privacy Policy </a> |
+                                                                    <a target="_blank" style="color:#565555;" href="https://wp-s.bluestacks.com/terms-and-privacy.html">
+                                                                    Terms of Use </a>|
+                                                                    <a target="_blank" style="color:#565555;" href="https://support.bluestacks.com">Support </a>
+                                                            </span>
+                                                            <br>
+                                                            <br>
+                                                            <br>
+                                                        </td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </td>
+                                        <td width="5%">&nbsp;</td>
+                                    </tr>
                                 </table>
                             </td>
                         </tr>
