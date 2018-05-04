@@ -18,21 +18,20 @@
       body {
         margin: 0;
         padding: 0;
-        background-color: #111;
+        background-color: #0E182C;
         color: #fff;
-        display: flex;
-        align-items: center;
         height: 100vh;
         width: 100vw;
-        overflow: hidden;
+        perpespective: 1000px;
+        font-family: Inconsolata, Source Code Pro, Consolas, monospace;
       }
 
       p {
         position: absolute;
         left: 50%;
         top: 50%;
+        will-change: transform;
         transform: translate(-50%, -50%);
-        font-family: Inconsolata, Source Code Pro, Consolas, monospace;
         font-size: 24px;
         font-weight: bold;
       }
@@ -43,7 +42,6 @@
         bottom: 10vh;
         text-align: center;
         width: 100%;
-        font-family: Inconsolata, Source Code Pro, Consolas, monospace;
         font-size: 15px;
         font-weight: bold;
         color: #fff;
@@ -69,16 +67,20 @@
     const skills = [
       'JavaScript',
       'HTML & CSS',
-      'Node.js'
+      'AngularJS',
+      'React',
+      'Wordpress'
     ]
 
     const delay = 2
     const step = 1
-    const tail = 5
-    const timeout = 75
-
+    const tail = 3
+    const timeout = 50
+    const parent = document.querySelector('main')
     const p = document.createElement('p')
-    document.body.appendChild(p)
+         
+    parent.insertBefore(p, parent.firstChild)
+
 
     const colors = [
       "rgb(110,64,170)",
