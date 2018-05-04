@@ -22,8 +22,14 @@
         color: #fff;
         height: 100vh;
         width: 100vw;
-        perpespective: 1000px;
+        perspective: 1000px;
         font-family: Inconsolata, Source Code Pro, Consolas, monospace;
+      }
+
+      main{
+        position: relative;
+        height: 100vh;
+        width: 100vw;
       }
 
       p {
@@ -31,9 +37,10 @@
         left: 50%;
         top: 50%;
         will-change: transform;
-        transform: translate(-50%, -50%);
+        transform: translate3d(-50%, -50%, 0);
         font-size: 24px;
         font-weight: bold;
+        letter-spacing: 1.5pt;
       }
 
       a{
@@ -43,9 +50,10 @@
         text-align: center;
         width: 100%;
         font-size: 15px;
-        font-weight: bold;
+        font-weight: 700;
+        letter-spacing: 1.5pt;
         color: #fff;
-        opacity: 0.3;
+        opacity: 0.5;
       }
 
     </style>
@@ -81,7 +89,6 @@
          
     parent.insertBefore(p, parent.firstChild)
 
-
     const colors = [
       "rgb(110,64,170)",
       "rgb(150,61,179)",
@@ -115,6 +122,7 @@
     }
 
     function getRandomColoredString(n) {
+
       const fragment = document.createDocumentFragment()
 
       for (let i = 0; i < n; i++) {
@@ -125,6 +133,7 @@
       }
       
       return fragment
+
     }
 
     const State = {
@@ -132,12 +141,11 @@
       prefixP: -tail,
       skillI: 0,
       skillP: 0,
-      direction: 'forward',
+      direction: 'backward',
       delay,
       step,
     }
-
-
+  
     function render() {
       const skill = skills[State.skillI]
 
@@ -175,14 +183,24 @@
         }
       }
 
+
+      console.log(State)
+
+
       p.textContent = State.text
-      p.appendChild(getRandomColoredString(
-        State.prefixP < prefix.length ?
-        Math.min(tail, tail + State.prefixP):
-        Math.min(tail, skill.length - State.skillP)))
-      setTimeout(render, timeout)
+
+      const randomString = getRandomColoredString(
+          State.prefixP < prefix.length ?
+          Math.min(tail, tail + State.prefixP) :
+          Math.min(tail, skill.length - State.skillP))
+
+        p.appendChild(randomString)
+        
+        setTimeout(render, timeout)
+
     }
-    setTimeout(render, 240)
+
+     setTimeout(render, 200)
 
     </script>
   </body>
