@@ -86,7 +86,7 @@
     const timeout = 50
     const parent = document.querySelector('main')
     const p = document.createElement('p')
-         
+
     parent.insertBefore(p, parent.firstChild)
 
     const colors = [
@@ -131,7 +131,7 @@
         char.style.color = getRandomColor()
         fragment.appendChild(char)
       }
-      
+
       return fragment
 
     }
@@ -145,7 +145,7 @@
       delay,
       step,
     }
-  
+
     function render() {
       const skill = skills[State.skillI]
 
@@ -183,10 +183,6 @@
         }
       }
 
-
-      console.log(State)
-
-
       p.textContent = State.text
 
       const randomString = getRandomColoredString(
@@ -195,7 +191,7 @@
           Math.min(tail, skill.length - State.skillP))
 
         p.appendChild(randomString)
-        
+
         setTimeout(render, timeout)
 
     }
