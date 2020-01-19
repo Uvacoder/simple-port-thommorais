@@ -1,187 +1,23 @@
 
 <!doctype html>
 <html lang="pt-BR">
-
   <head>
-
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Thom Morais  /  Front-end developer </title>
     <meta name="description" content="Developer">
     <link rel='dns-prefetch' href='//fonts.googleapis.com' />
     <meta name="viewport" content="width=device-width, initial-scale=1">
-
     <style>
-
-      @import url("//fonts.googleapis.com/css?family=Inconsolata:700");
-
-      body {
-        margin: 0;
-        padding: 0;
-        background-color: #111;
-        color: #fff;
-        display: flex;
-        align-items: center;
-        height: 100vh;
-        width: 100vw;
-        overflow: hidden;
-      }
-
-      p {
-        position: absolute;
-        left: 50%;
-        top: 50%;
-        transform: translate(-50%, -50%);
-        font-family: Inconsolata, Source Code Pro, Consolas, monospace;
-        font-size: 24px;
-        font-weight: bold;
-      }
-
-      a{
-        position: absolute;
-        display: block;
-        bottom: 10vh;
-        text-align: center;
-        width: 100%;
-        font-family: Inconsolata, Source Code Pro, Consolas, monospace;
-        font-size: 15px;
-        font-weight: bold;
-        color: #fff;
-        opacity: 0.3;
-      }
-
+      @import url("//fonts.googleapis.com/css?family=Inconsolata:700");body{margin:0;padding:0;background-color:#111;color:#fff;display:flex;align-items:center;height:100vh;width:100vw;overflow:hidden}p{position:absolute;left:50%;top:50%;transform:translate(-50%, -50%);font-family:Inconsolata, Source Code Pro, Consolas, monospace;font-size:24px;font-weight:bold}a{position:absolute;display:block;bottom:10vh;text-align:center;width:100%;font-family:Inconsolata, Source Code Pro, Consolas, monospace;font-size:15px;font-weight:bold;color:#fff;opacity:0.3}
     </style>
-
   </head>
-
   <body >
-
     <main>
-
-
       <a href="mailto:thommorais@gmail.com">mail me</a>
     </main>
-
     <script>
-
-    const prefix = 'Hi! I\'m Thom and I work with '
-
-    const skills = [
-      'JavaScript',
-      'HTML & CSS',
-      'Node.js'
-    ]
-
-    const delay = 2
-    const step = 1
-    const tail = 5
-    const timeout = 75
-
-    const p = document.createElement('p')
-    document.body.appendChild(p)
-
-    const colors = [
-      "rgb(110,64,170)",
-      "rgb(150,61,179)",
-      "rgb(191,60,175)",
-      "rgb(228,65,157)",
-      "rgb(254,75,131)",
-      "rgb(255,94,99)",
-      "rgb(255,120,71)",
-      "rgb(251,150,51)",
-      "rgb(226,183,47)",
-      "rgb(198,214,60)",
-      "rgb(175,240,91)",
-      "rgb(127,246,88)",
-      "rgb(82,246,103)",
-      "rgb(48,239,130)",
-      "rgb(29,223,163)",
-      "rgb(26,199,194)",
-      "rgb(35,171,216)",
-      "rgb(54,140,225)",
-      "rgb(76,110,219)",
-      "rgb(96,84,200)",
-
-    ]
-
-    function getRandomColor() {
-      return colors[Math.floor(Math.random() * colors.length)]
-    }
-
-    function getRandomChar() {
-      return String.fromCharCode(Math.random() * (127 - 33) + 33)
-    }
-
-    function getRandomColoredString(n) {
-      const fragment = document.createDocumentFragment()
-
-      for (let i = 0; i < n; i++) {
-        const char = document.createElement('span')
-        char.textContent = getRandomChar()
-        char.style.color = getRandomColor()
-        fragment.appendChild(char)
-      }
-      
-      return fragment
-    }
-
-    const State = {
-      text: '',
-      prefixP: -tail,
-      skillI: 0,
-      skillP: 0,
-      direction: 'forward',
-      delay,
-      step,
-    }
-
-
-    function render() {
-      const skill = skills[State.skillI]
-
-      if (State.step) {
-        State.step--
-      } else {
-        State.step = step
-        if (State.prefixP < prefix.length) {
-          if (State.prefixP >= 0) {
-            State.text += prefix[State.prefixP]
-          }
-          State.prefixP++
-        } else {
-          if (State.direction === 'forward') {
-            if (State.skillP < skill.length) {
-              State.text += skill[State.skillP]
-              State.skillP++
-            } else {
-              if (State.delay) {
-                State.delay--
-              } else {
-                State.direction = 'backward'
-                State.delay = delay
-              }
-            }
-          } else {
-            if (State.skillP > 0) {
-              State.text = State.text.slice(0, -1)
-              State.skillP--
-            } else {
-              State.skillI = (State.skillI + 1) % skills.length
-              State.direction = 'forward'
-            }
-          }
-        }
-      }
-
-      p.textContent = State.text
-      p.appendChild(getRandomColoredString(
-        State.prefixP < prefix.length ?
-        Math.min(tail, tail + State.prefixP):
-        Math.min(tail, skill.length - State.skillP)))
-      setTimeout(render, timeout)
-    }
-    setTimeout(render, 240)
-
+      const prefix = 'Hi! I\'m Thom and I work with '; const skills = ['Reactjs', 'React Native', 'Node.js', 'HTML & CSS'] const delay = 2; const step = 1; const tail = 5; const timeout = 75; const p = document.createElement('p'); document.body.appendChild(p); const colors = ["rgb(110,64,170)", "rgb(150,61,179)", "rgb(191,60,175)", "rgb(228,65,157)", "rgb(254,75,131)", "rgb(255,94,99)", "rgb(255,120,71)", "rgb(251,150,51)", "rgb(226,183,47)", "rgb(198,214,60)", "rgb(175,240,91)", "rgb(127,246,88)", "rgb(82,246,103)", "rgb(48,239,130)", "rgb(29,223,163)", "rgb(26,199,194)", "rgb(35,171,216)", "rgb(54,140,225)", "rgb(76,110,219)", "rgb(96,84,200)"]function getRandomColor() { return colors[Math.floor(Math.random() * colors.length)] } function getRandomChar() { return String.fromCharCode(Math.random() * (127 - 33) + 33) } function getRandomColoredString(n) { const fragment = document.createDocumentFragment(); for (let i = 0; i < n; i += 1) { const char = document.createElement('span'); char.textContent = getRandomChar(); char.style.color = getRandomColor(); fragment.appendChild(char) } return fragment } const State = { text: '', prefixP: -tail, skillI: 0, skillP: 0, direction: 'forward', delay, step }; function render() { const skill = skills[State.skillI]; if (State.step) { State.step -= 1 } else { State.step = step; if (State.prefixP < prefix.length) { if (State.prefixP >= 0) { State.text += prefix[State.prefixP] } State.prefixP += 1 } else { if (State.direction === 'forward') { if (State.skillP < skill.length) { State.text += skill[State.skillP]; State.skillP += 1 } else { if (State.delay) { State.delay -= 1 } else { State.direction = 'backward'; State.delay = delay } } } else { if (State.skillP > 0) { State.text = State.text.slice(0, -1); State.skillP -= 1 } else { State.skillI = (State.skillI + 1) % skills.length; State.direction = 'forward' } } } } p.textContent = State.text; p.appendChild(getRandomColoredString(State.prefixP < prefix.length ? Math.min(tail, tail + State.prefixP) : Math.min(tail, skill.length - State.skillP))); setTimeout(render, timeout) } window.requestIdleCallback(render);
     </script>
   </body>
 
