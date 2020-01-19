@@ -2,37 +2,41 @@
 <html lang="pt-BR">
 
 <head>
-
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Thom Morais / Front-end developer </title>
     <meta name="description" content="Developer">
     <link rel='dns-prefetch' href='//fonts.googleapis.com' />
     <meta name="viewport" content="width=device-width, initial-scale=1">
-
     <style>
         @import url("//fonts.googleapis.com/css?family=Inconsolata:700");
 
         body {
             margin: 0;
             padding: 0;
-            background-color: #111;
+            background-color: #0E182C;
             color: #fff;
-            display: flex;
-            align-items: center;
             height: 100vh;
             width: 100vw;
-            overflow: hidden;
+            perspective: 1000px;
+            font-family: Inconsolata, Source Code Pro, Consolas, monospace;
+        }
+
+        main {
+            position: relative;
+            height: 100vh;
+            width: 100vw;
         }
 
         p {
             position: absolute;
             left: 50%;
             top: 50%;
-            transform: translate(-50%, -50%);
-            font-family: Inconsolata, Source Code Pro, Consolas, monospace;
+            will-change: transform;
+            transform: translate3d(-50%, -50%, 0);
             font-size: 24px;
             font-weight: bold;
+            letter-spacing: 1.5pt;
         }
 
         a {
@@ -41,40 +45,36 @@
             bottom: 10vh;
             text-align: center;
             width: 100%;
-            font-family: Inconsolata, Source Code Pro, Consolas, monospace;
             font-size: 15px;
-            font-weight: bold;
+            font-weight: 700;
+            letter-spacing: 1.5pt;
             color: #fff;
-            opacity: 0.3;
+            opacity: 0.5;
         }
     </style>
-
 </head>
 
 <body>
-
     <main>
         <a href="mailto:thommorais@gmail.com">mail me</a>
     </main>
-
     <script>
 
-        const prefix = 'Hi! I\'m Thom and I work with '
+        const prefix = 'Hi! I\'m Thom, and I work with '
 
         const skills = [
-            'Reactjs',
-            'React Native',
-            'Node.js',
-            'HTML & CSS',
+            'web',
+            'mobile',
         ]
 
         const delay = 2
         const step = 1
-        const tail = 5
-        const timeout = 75
-
+        const tail = 3
+        const timeout = 50
+        const parent = document.querySelector('main')
         const p = document.createElement('p')
-        document.body.appendChild(p)
+
+        parent.insertBefore(p, parent.firstChild)
 
         const colors = [
             "rgb(110,64,170)",
@@ -109,6 +109,7 @@
         }
 
         function getRandomColoredString(n) {
+
             const fragment = document.createDocumentFragment()
 
             for (let i = 0; i < n; i++) {
@@ -119,6 +120,7 @@
             }
 
             return fragment
+
         }
 
         const State = {
@@ -126,11 +128,10 @@
             prefixP: -tail,
             skillI: 0,
             skillP: 0,
-            direction: 'forward',
+            direction: 'backward',
             delay,
             step,
         }
-
 
         function render() {
             const skill = skills[State.skillI]
@@ -170,13 +171,19 @@
             }
 
             p.textContent = State.text
-            p.appendChild(getRandomColoredString(
+
+            const randomString = getRandomColoredString(
                 State.prefixP < prefix.length ?
                     Math.min(tail, tail + State.prefixP) :
-                    Math.min(tail, skill.length - State.skillP)))
+                    Math.min(tail, skill.length - State.skillP))
+
+            p.appendChild(randomString)
+
             setTimeout(render, timeout)
+
         }
-        setTimeout(render, 240)
+
+        window.requestIdleCallback(render)
 
     </script>
 </body>
